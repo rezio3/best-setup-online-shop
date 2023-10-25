@@ -1,4 +1,13 @@
 .header-container {
 	display: flex;
 	flex-direction: column;
+	max-width: 1500px;
+	width: 1500px;
+
+	.header-logo-bar {
+		background-color: #ddd;
+		.header-logo-bar__logo {
+			width: 300px;
+		}
+	}
 }
