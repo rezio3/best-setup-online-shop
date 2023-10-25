@@ -5,7 +5,7 @@ const HeaderLogoBar = () => {
 	return (
 		<div className="header-logo-bar">
 			<img src={bestSetupLogo} className="header-logo-bar__logo" />
-			<span className="header-logo-bar__contact-span">Contact Us!</span>
+			<button className="header-logo-bar__contact-button">Contact Us!</button>
 		</div>
 	);
 };
