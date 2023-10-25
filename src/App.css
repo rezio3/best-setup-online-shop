@@ -1,9 +1,11 @@
 body {
 	background-color: #f8f8f8;
-}
-
-.App {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+.App {
+	display: flex;
+	justify-content: center;
 }
