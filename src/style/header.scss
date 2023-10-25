@@ -1,13 +1,37 @@
+@import "./colors.scss";
+
 .header-container {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	max-width: 1500px;
 	width: 1500px;
 
 	.header-logo-bar {
-		background-color: #ddd;
+		width: 100%;
+		margin-top: 20px;
+		padding-bottom: 20px;
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+		// border-bottom: 1px solid $black;
+
 		.header-logo-bar__logo {
 			width: 300px;
 		}
+		.header-logo-bar__contact-button {
+			padding: 20px;
+			padding-bottom: 0;
+			background: none;
+			font-size: 14px;
+			border: none;
+			cursor: pointer;
+		}
+	}
+
+	.carousel-container {
+		height: 200px;
+		width: 1200px;
+		background-color: red;
 	}
 }
