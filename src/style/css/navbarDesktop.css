@@ -6,7 +6,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #1b1b1b;
+  border-bottom: 1px solid #1b1b1b;
 }
 .navbar-container .product-pages-buttons-container {
   padding: 0;
@@ -23,8 +23,10 @@
 }
 .navbar-container .product-pages-buttons-container__nav-button {
   width: 100px;
+  padding: 20px;
   background: none;
   border: none;
+  cursor: pointer;
 }
 .navbar-container .cart-container {
   width: 50px;
