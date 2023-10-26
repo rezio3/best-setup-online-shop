@@ -11,14 +11,13 @@
   padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
 }
-.header-container .header-logo-bar .header-logo-bar__logo {
+.header-container .header-logo-bar__logo {
   width: 300px;
 }
-.header-container .header-logo-bar .header-logo-bar__contact-button {
+.header-container .header-logo-bar__contact-button {
   padding: 20px;
-  padding-bottom: 0;
   background: none;
   font-size: 14px;
   border: none;

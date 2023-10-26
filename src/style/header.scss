@@ -13,15 +13,13 @@
 		padding-bottom: 20px;
 		display: flex;
 		justify-content: space-between;
-		align-items: flex-end;
-		// border-bottom: 1px solid $black;
+		align-items: flex-start;
 
-		.header-logo-bar__logo {
+		&__logo {
 			width: 300px;
 		}
-		.header-logo-bar__contact-button {
+		&__contact-button {
 			padding: 20px;
-			padding-bottom: 0;
 			background: none;
 			font-size: 14px;
 			border: none;
