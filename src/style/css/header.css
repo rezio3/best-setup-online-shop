@@ -27,5 +27,10 @@
 .header-container .carousel-container {
   height: 200px;
   width: 1200px;
-  background-color: red;
+  border: 1px solid #1b1b1b;
+}
+.header-container .carousel-container .baner-bg {
+  width: 100%;
+  height: 100%;
+  background-image: url(../../img/baner1.png);
 }
