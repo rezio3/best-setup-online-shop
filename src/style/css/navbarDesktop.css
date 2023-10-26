@@ -3,5 +3,31 @@
   width: 1500px;
   height: 70px;
   max-width: 1500px;
-  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #1b1b1b;
+}
+.navbar-container .product-pages-buttons-container {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  list-style: none;
+}
+.navbar-container .product-pages-buttons-container__nav-element {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+}
+.navbar-container .product-pages-buttons-container__nav-button {
+  width: 100px;
+  background: none;
+  border: none;
+}
+.navbar-container .cart-container {
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
 }
