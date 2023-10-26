@@ -4,8 +4,8 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	max-width: 1500px;
-	width: 1500px;
+	max-width: 78%;
+	width: 78%;
 
 	.header-logo-bar {
 		width: 100%;
@@ -30,7 +30,6 @@
 	.carousel-container {
 		height: 200px;
 		width: 1200px;
-		border: 1px solid $black;
 
 		.baner-bg {
 			width: 100%;

@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1500px;
-  width: 1500px;
+  max-width: 78%;
+  width: 78%;
 }
 .header-container .header-logo-bar {
   width: 100%;
@@ -26,7 +26,6 @@
 .header-container .carousel-container {
   height: 200px;
   width: 1200px;
-  border: 1px solid #1b1b1b;
 }
 .header-container .carousel-container .baner-bg {
   width: 100%;
