@@ -31,7 +31,13 @@ const NavbarDesktop = () => {
 					</button>
 				</li>
 			</ul>
-			<div className="cart-container"></div>
+			<div className="cart-container">
+				<button className="cart-container__cart-button">
+					<span className="material-symbols-outlined cart-container__cart-icon">
+						shopping_cart
+					</span>
+				</button>
+			</div>
 		</div>
 	);
 };

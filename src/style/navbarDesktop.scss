@@ -1,12 +1,13 @@
 @import "./colors.scss";
 
 .navbar-container {
+	position: relative;
 	margin-top: 20px;
-	width: 1500px;
+	width: 78%;
 	height: 70px;
-	max-width: 1500px;
+	max-width: 78%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	border-bottom: 1px solid $black;
 
@@ -24,7 +25,6 @@
 			justify-content: center;
 		}
 		&__nav-button {
-			width: 100px;
 			padding: 20px;
 			background: none;
 			border: none;
@@ -32,8 +32,23 @@
 		}
 	}
 	.cart-container {
+		position: absolute;
+		right: 0;
 		width: 50px;
 		height: 50px;
-		border: 1px solid black;
+		margin-right: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&__cart-button {
+			padding: 20px;
+			background: none;
+			border: none;
+			cursor: pointer;
+		}
+		&__cart-icon {
+			font-size: 30px;
+		}
 	}
 }
