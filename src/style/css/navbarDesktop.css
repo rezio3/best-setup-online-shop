@@ -1,9 +1,9 @@
 .navbar-container {
   position: relative;
   margin-top: 20px;
-  width: 78%;
+  width: 70%;
   height: 70px;
-  max-width: 78%;
+  max-width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
