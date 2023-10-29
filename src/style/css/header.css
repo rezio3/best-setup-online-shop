@@ -24,11 +24,56 @@
   cursor: pointer;
 }
 .header-container .carousel-container {
+  position: relative;
   height: 200px;
   width: 1200px;
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
 }
 .header-container .carousel-container .baner-bg {
-  width: 100%;
+  width: 1200px;
   height: 100%;
+}
+.header-container .carousel-container .baner-bg1 {
   background-image: url(../../img/baner1.png);
+}
+.header-container .carousel-container .baner-bg2 {
+  background-image: url(../../img/baner2.png);
+  position: absolute;
+  left: 100%;
+}
+.header-container .carousel-container .baner-bg3 {
+  background-image: url(../../img/baner3.png);
+  position: absolute;
+  left: 200%;
+}
+.header-container .carousel-container .arrow-container {
+  position: absolute;
+  top: 50%;
+  height: 100%;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 20px -10px;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+.header-container .carousel-container .arrow-container .arrow-icon {
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+  user-select: none;
+}
+.header-container .carousel-container .arrow-container-left {
+  left: 0px;
+}
+.header-container .carousel-container .arrow-container-right {
+  right: 0px;
+}
+.header-container .carousel-container .arrow-container:hover {
+  background-color: rgba(0, 0, 0, 0.4);
 }
