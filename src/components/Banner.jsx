@@ -15,10 +15,8 @@ const Banner = (props) => {
 			ease: "power3",
 		});
 	}, [props.state]);
-	console.log(recentBanner);
 	setTimeout(() => {
 		setRecentBanner(props.state);
-		console.log(recentBanner);
 	}, 400);
 	return (
 		<>
