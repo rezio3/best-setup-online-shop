@@ -37,6 +37,7 @@
 }
 .header-container .carousel-container .baner-bg1 {
   background-image: url(../../img/baner1.png);
+  position: absolute;
 }
 .header-container .carousel-container .baner-bg2 {
   background-image: url(../../img/baner2.png);
