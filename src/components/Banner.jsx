@@ -1,7 +1,9 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import gsap from "gsap";
 
 const Banner = (props) => {
+	let [recentBanner, setRecentBanner] = useState(1);
+
 	useEffect(() => {
 		let moveLeftOrRight;
 		props.clicked === "left"
@@ -14,7 +16,12 @@ const Banner = (props) => {
 		});
 	}, [props.state]);
 
-	return <div className={props.class}></div>;
+	return (
+		<>
+			<div className={`baner-bg${props.state - 1} baner-bg`}></div>
+			<div className={`baner-bg${props.state} baner-bg`}></div>
+		</>
+	);
 };
 
 export default Banner;
