@@ -70,11 +70,7 @@ const HeaderCarousel = () => {
 					chevron_right
 				</span>
 			</div>
-			<Banner
-				class={`baner-bg${activeBanner.active} baner-bg`}
-				state={activeBanner.active}
-				clicked={whichArrow}
-			/>
+			<Banner state={activeBanner.active} clicked={whichArrow} />
 		</div>
 	);
 };
