@@ -12,6 +12,7 @@ const HeaderCarousel = () => {
 	const arrow = (e) => {
 		let reduction;
 		const arrowClicked = e.target.getAttribute("data");
+		console.log(arrowClicked);
 		setWhichArrow(arrowClicked);
 		arrowClicked === "left" ? (reduction = -1) : (reduction = +1);
 
@@ -38,6 +39,10 @@ const HeaderCarousel = () => {
 			}, 400);
 		}
 	};
+
+	// setInterval(() => {
+	// 	arrow({ data: "right" });
+	// }, 4000);
 
 	return (
 		<div className="carousel-container">

@@ -6,6 +6,7 @@ const Banner = (props) => {
 
 	useEffect(() => {
 		let moveLeftOrRight;
+		console.log(props.clicked);
 		props.clicked === "left"
 			? (moveLeftOrRight = -1200)
 			: (moveLeftOrRight = 1200);
