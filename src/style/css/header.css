@@ -41,12 +41,10 @@
 .header-container .carousel-container .baner-bg2 {
   background-image: url(../../img/baner2.png);
   position: absolute;
-  left: 100%;
 }
 .header-container .carousel-container .baner-bg3 {
   background-image: url(../../img/baner3.png);
   position: absolute;
-  left: 200%;
 }
 .header-container .carousel-container .arrow-container {
   position: absolute;
@@ -59,6 +57,7 @@
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.2);
   box-shadow: 0 0 20px -10px;
+  z-index: 1;
   cursor: pointer;
   transition: 0.2s ease-out;
 }
@@ -67,6 +66,7 @@
   font-size: 40px;
   cursor: pointer;
   user-select: none;
+  z-index: -2;
 }
 .header-container .carousel-container .arrow-container-left {
   left: 0px;
