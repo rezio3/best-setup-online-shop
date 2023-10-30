@@ -21,11 +21,6 @@ const HeaderCarousel = () => {
 		arrowClicked === "left" ? (resetCarousel = 3) : (resetCarousel = 1);
 		arrowClicked === "left" ? (ifCarouselEnds = 1) : (ifCarouselEnds = 3);
 
-		console.log("ifCarouselEnds: " + ifCarouselEnds);
-		console.log("resetCarousel: " + resetCarousel);
-		console.log("reduction: " + reduction);
-		console.log("arrow clicked: " + arrowClicked);
-
 		if (activeBanner.active === ifCarouselEnds && !arrowsOff) {
 			setActiveBanner({ ...activeBanner, active: resetCarousel });
 			setArrowsOff(true);
