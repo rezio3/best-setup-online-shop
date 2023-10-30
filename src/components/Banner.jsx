@@ -18,7 +18,9 @@ const Banner = (props) => {
 
 	return (
 		<>
-			<div className={`baner-bg${props.state - 1} baner-bg`}></div>
+			<div
+				className={`baner-bg${props.state - 1} baner-bg baner-absolute`}
+			></div>
 			<div className={`baner-bg${props.state} baner-bg`}></div>
 		</>
 	);
