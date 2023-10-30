@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import gsap from "gsap";
 
 const Banner = (props) => {
-	let [recentBanner, setRecentBanner] = useState(1);
+	let [recentBanner, setRecentBanner] = useState(props.state);
 
 	useEffect(() => {
 		let moveLeftOrRight;
@@ -15,12 +15,14 @@ const Banner = (props) => {
 			ease: "power3",
 		});
 	}, [props.state]);
-
+	console.log(recentBanner);
+	setTimeout(() => {
+		setRecentBanner(props.state);
+		console.log(recentBanner);
+	}, 400);
 	return (
 		<>
-			<div
-				className={`baner-bg${props.state - 1} baner-bg baner-absolute`}
-			></div>
+			<div className={`baner-bg${recentBanner} baner-bg`}></div>
 			<div className={`baner-bg${props.state} baner-bg`}></div>
 		</>
 	);
