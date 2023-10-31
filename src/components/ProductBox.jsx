@@ -23,7 +23,6 @@ const ProductBox = (props) => {
 		img9,
 		img10,
 	];
-	console.log(props);
 	return (
 		<>
 			<div className="products-container__product-box">
