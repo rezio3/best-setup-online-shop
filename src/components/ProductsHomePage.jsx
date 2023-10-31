@@ -8,7 +8,7 @@ const ProductsHomePage = () => {
 		<>
 			<div className="products-container">
 				{products.hotDeals.map((e) => {
-					return <ProductBox product={e} />;
+					return <ProductBox product={e} key={e.productId} />;
 				})}
 			</div>
 		</>
