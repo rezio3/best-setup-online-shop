@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { gsap } from "gsap";
 import img1 from "../img/products/Dell-SE2422H.webp";
 import img2 from "../img/products/G4M3R-HERO.webp";
 import img3 from "../img/products/Genesis-Xenon-220-G2-RGB.webp";
@@ -23,17 +24,30 @@ const ProductBox = (props) => {
 		img9,
 		img10,
 	];
+	let productImage = useRef(null);
+	const handleHover = () => {
+		gsap.to(productImage, { scale: 1.15, duration: 0.3, ease: "expo" });
+	};
+	const handleHoverOut = () => {
+		gsap.to(productImage, { scale: 1, duration: 0.3, ease: "expo" });
+	};
 	return (
 		<>
-			<div className="products-container__product-box">
+			<div
+				className="products-container__product-box"
+				onMouseEnter={handleHover}
+				onMouseLeave={handleHoverOut}
+			>
 				<img
 					src={productsImages[props.product.img - 1]}
 					alt="product-image"
-					width={180}
+					className="products-container__product-image"
+					ref={(el) => (productImage = el)}
 				/>
 				<h5 className="products-container__product-name">
 					{props.product.name}
 				</h5>
+				<span>{props.product.price}</span>
 			</div>
 		</>
 	);
