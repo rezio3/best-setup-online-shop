@@ -3,7 +3,7 @@ import "../style/css/navbarDesktop.css";
 
 const NavbarDesktop = () => {
 	return (
-		<div className="navbar-container">
+		<nav className="navbar-container">
 			<ul className="product-pages-buttons-container">
 				<li className="product-pages-buttons-container__nav-element">
 					<button className="product-pages-buttons-container__nav-button">
@@ -38,7 +38,7 @@ const NavbarDesktop = () => {
 					</span>
 				</button>
 			</div>
-		</div>
+		</nav>
 	);
 };
 
