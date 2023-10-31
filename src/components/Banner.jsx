@@ -10,11 +10,14 @@ const Banner = (props) => {
 			? (moveLeftOrRight = -1200)
 			: (moveLeftOrRight = 1200);
 
-		gsap.from(`.baner-bg${props.state}`, {
-			duration: 0.4,
-			x: moveLeftOrRight,
-			ease: "power3",
+		let ctx = gsap.context(() => {
+			gsap.from(`.baner-bg${props.state}`, {
+				duration: 0.4,
+				x: moveLeftOrRight,
+				ease: "power3",
+			});
 		});
+		return () => ctx.revert();
 	}, [props.state]);
 	setTimeout(() => {
 		setRecentBanner(props.state);
