@@ -1,5 +1,6 @@
 .filter-container {
-  background-color: #777;
+  margin-top: 5px;
   width: 20%;
-  height: 500px;
+  height: 700px;
+  box-shadow: 0 0 10px -6px;
 }
