@@ -1,6 +1,6 @@
 import React from "react";
 import bestSetupLogo from "../img/BestSetupLogo.png";
-import "../style/css/buttons-anim.css";
+import "../style/css/buttonsAnim.css";
 
 const HeaderLogoBar = () => {
 	return (
