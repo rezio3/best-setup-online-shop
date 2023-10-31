@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #1b1b1b;
+  box-shadow: 0 10px 10px -10px gray;
 }
 .navbar-container .product-pages-buttons-container {
   padding: 0;
