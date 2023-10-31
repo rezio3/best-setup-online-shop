@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import { gsap } from "gsap";
 import img1 from "../img/products/Dell-SE2422H.webp";
 import img2 from "../img/products/G4M3R-HERO.webp";
