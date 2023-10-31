@@ -1,4 +1,5 @@
-.home-container {
-  margin-top: 50px;
+.main-home-page-container {
+  display: flex;
   width: 70%;
+  margin-top: 50px;
 }
