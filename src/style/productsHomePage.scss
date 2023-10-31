@@ -17,4 +17,9 @@
 	&__product-name {
 		text-align: center;
 	}
+	&__product-image {
+		margin: 20px 0;
+		width: 180px;
+		transition: 0.2s ease-out;
+	}
 }
