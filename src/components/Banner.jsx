@@ -6,10 +6,10 @@ const Banner = (props) => {
 
 	useEffect(() => {
 		let moveLeftOrRight;
-		console.log(props.clicked);
 		props.clicked === "left"
 			? (moveLeftOrRight = -1200)
 			: (moveLeftOrRight = 1200);
+
 		gsap.from(`.baner-bg${props.state}`, {
 			duration: 0.4,
 			x: moveLeftOrRight,
