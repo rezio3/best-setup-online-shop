@@ -14,6 +14,7 @@ import img10 from "../img/products/Genesis-Xenon-220-G2-RGB.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar as faStarSolid } from "@fortawesome/free-solid-svg-icons";
 import { faStar as faStarRegular } from "@fortawesome/free-regular-svg-icons";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
 const ProductBox = (props) => {
 	const productsImages = [
@@ -74,8 +75,14 @@ const ProductBox = (props) => {
 				<div className="product-box__stars-and-opinions-container">
 					<div> {printStars}</div>
 
-					<span className="product-box__opinions-span">543 opinions</span>
+					<span className="product-box__opinions-span">
+						{props.product.opinions} opinions
+					</span>
 				</div>
+				<span className="product-box__read-more">
+					READ MORE{" "}
+					<FontAwesomeIcon icon={faArrowRight} className="highlight" />
+				</span>
 			</div>
 		</>
 	);
