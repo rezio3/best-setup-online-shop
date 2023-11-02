@@ -11,6 +11,8 @@ import img7 from "../img/products/Samsung-Odyssey-C34G55TWWPX.webp";
 import img8 from "../img/products/Logitech-G502-HERO.webp";
 import img9 from "../img/products/Silver-Monkey-X-Mandrill.webp";
 import img10 from "../img/products/Genesis-Xenon-220-G2-RGB.webp";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const ProductBox = (props) => {
 	const productsImages = [
@@ -52,6 +54,12 @@ const ProductBox = (props) => {
 					<button className="product-box__buy-btn button-anim">
 						Add to cart
 					</button>
+				</div>
+				<div className="product-box__stars-container">
+					<FontAwesomeIcon icon={faStar} className="highlight" />
+					<FontAwesomeIcon icon={faStar} className="highlight" />
+					<FontAwesomeIcon icon={faStar} className="highlight" />
+					<FontAwesomeIcon icon={faStar} className="highlight" />
 				</div>
 			</div>
 		</>
