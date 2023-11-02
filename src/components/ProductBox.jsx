@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import { gsap } from "gsap";
+import "../style/css/buttonsAnim.css";
 import img1 from "../img/products/Dell-SE2422H.webp";
 import img2 from "../img/products/G4M3R-HERO.webp";
 import img3 from "../img/products/Genesis-Xenon-220-G2-RGB.webp";
@@ -34,20 +35,24 @@ const ProductBox = (props) => {
 	return (
 		<>
 			<div
-				className="products-container__product-box"
+				className="product-box"
 				onMouseEnter={handleHover}
 				onMouseLeave={handleHoverOut}
 			>
 				<img
 					src={productsImages[props.product.img - 1]}
 					alt="product-image"
-					className="products-container__product-image"
+					className="product-box__product-image"
 					ref={(el) => (productImage = el)}
 				/>
-				<h5 className="products-container__product-name">
-					{props.product.name}
-				</h5>
-				<span>{props.product.price}</span>
+				<h5 className="product-box__product-name">{props.product.name}</h5>
+
+				<div className="product-box__price-and-buy-btn">
+					<span className="product-box__price-span">{props.product.price}</span>
+					<button className="product-box__buy-btn button-anim">
+						Add to cart
+					</button>
+				</div>
 			</div>
 		</>
 	);

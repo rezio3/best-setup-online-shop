@@ -4,7 +4,7 @@
 	flex-wrap: wrap;
 	justify-content: center;
 
-	&__product-box {
+	.product-box {
 		padding: 5px;
 		margin: 5px;
 		width: 240px;
@@ -13,13 +13,31 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-	}
-	&__product-name {
-		text-align: center;
-	}
-	&__product-image {
-		margin: 20px 0;
-		width: 180px;
-		transition: 0.2s ease-out;
+
+		&__product-name {
+			text-align: center;
+		}
+		&__product-image {
+			margin: 20px 0;
+			width: 180px;
+			transition: 0.2s ease-out;
+		}
+		&__price-and-buy-btn {
+			width: 80%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		&__price-span {
+			font-weight: 600;
+			font-size: 22px;
+		}
+		&__buy-btn {
+			background: none;
+			border: none;
+			box-shadow: 0 0 10px -6px;
+			width: 100px;
+			height: 50px;
+		}
 	}
 }
