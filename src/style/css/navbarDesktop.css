@@ -1,13 +1,13 @@
 .navbar-container {
   position: relative;
-  margin-top: 20px;
   width: 70%;
   height: 70px;
-  max-width: 70%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
   box-shadow: 0 10px 10px -10px gray;
+  transition: 0.4s width ease-out;
 }
 .navbar-container .product-pages-buttons-container {
   padding: 0;
@@ -29,8 +29,8 @@
   cursor: pointer;
 }
 .navbar-container .cart-container {
-  position: absolute;
-  right: 0;
+  position: relative;
+  right: -50px;
   width: 50px;
   height: 50px;
   margin-right: 20px;
@@ -46,4 +46,20 @@
 }
 .navbar-container .cart-container__cart-icon {
   font-size: 30px;
+}
+.navbar-container__empty-left-spacer {
+  width: 70px;
+  height: 50px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  margin-top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.spacer {
+  margin-top: 70px;
 }
