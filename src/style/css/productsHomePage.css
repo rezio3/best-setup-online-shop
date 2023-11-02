@@ -21,6 +21,10 @@
   margin: 0;
   height: 60px;
 }
+.products-container .product-box__product-image-container {
+  width: 180px;
+  height: 199px;
+}
 .products-container .product-box__product-image {
   margin: 20px 0;
   width: 180px;
