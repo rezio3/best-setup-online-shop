@@ -10,7 +10,13 @@ import img6 from "../img/products/Razer-Ornata-V2.webp";
 import img7 from "../img/products/Samsung-Odyssey-C34G55TWWPX.webp";
 import img8 from "../img/products/Logitech-G502-HERO.webp";
 import img9 from "../img/products/Silver-Monkey-X-Mandrill.webp";
-import img10 from "../img/products/Genesis-Xenon-220-G2-RGB.webp";
+import img10 from "../img/products/Logitech-G502-X-PLUS.webp";
+import img11 from "../img/products/Logitech-LIFT.webp";
+import img12 from "../img/products/Samsung-QE65Q77B.webp";
+import img13 from "../img/products/Cougar Argo One Blackorange.jpg";
+import img14 from "../img/products/Genesis Głośniki Helium 800BT 60W 2.1 ARGB.jpg";
+import img15 from "../img/products/Silver Monkey Fotel biurowy SMO-650.webp";
+import img16 from "../img/products/Edifier 2.1 C2XD.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar as faStarSolid } from "@fortawesome/free-solid-svg-icons";
 import { faStar as faStarRegular } from "@fortawesome/free-regular-svg-icons";
@@ -28,6 +34,12 @@ const ProductBox = (props) => {
 		img8,
 		img9,
 		img10,
+		img11,
+		img12,
+		img13,
+		img14,
+		img15,
+		img16,
 	];
 	let productImage = useRef(null);
 
