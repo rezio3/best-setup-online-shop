@@ -1,12 +1,27 @@
 const products = {
 	hotDeals: [
-		{ name: "Dell-SE2422H", img: 1, price: `1399zł`, stars: 4, productId: 1 },
-		{ name: "G4M3R-HERO", img: 2, price: `8759zł`, stars: 5, productId: 2 },
+		{
+			name: "Dell-SE2422H",
+			img: 1,
+			price: `1399zł`,
+			stars: 4,
+			opinions: 824,
+			productId: 1,
+		},
+		{
+			name: "G4M3R-HERO",
+			img: 2,
+			price: `8759zł`,
+			stars: 5,
+			opinions: 147,
+			productId: 2,
+		},
 		{
 			name: "Genesis-Xenon-220-G2-RGB",
 			img: 3,
 			price: `239zł`,
 			stars: 3,
+			opinions: 923,
 			productId: 3,
 		},
 		{
@@ -14,6 +29,7 @@ const products = {
 			img: 4,
 			price: `1289zł`,
 			stars: 4,
+			opinions: 517,
 			productId: 4,
 		},
 		{
@@ -21,6 +37,7 @@ const products = {
 			img: 5,
 			price: `1820zł`,
 			stars: 5,
+			opinions: 234,
 			productId: 5,
 		},
 		{ name: "Razer-Ornata-V2", img: 6, price: `329zł`, stars: 3, productId: 6 },
@@ -29,6 +46,7 @@ const products = {
 			img: 7,
 			price: `1658zł`,
 			stars: 4,
+			opinions: 673,
 			productId: 7,
 		},
 		{
@@ -36,6 +54,7 @@ const products = {
 			img: 8,
 			price: `189zł`,
 			stars: 4,
+			opinions: 114,
 			productId: 8,
 		},
 		{
@@ -43,6 +62,7 @@ const products = {
 			img: 9,
 			price: `243zł`,
 			stars: 3,
+			opinions: 581,
 			productId: 9,
 		},
 		{
@@ -50,6 +70,7 @@ const products = {
 			img: 10,
 			price: `89zł`,
 			stars: 4,
+			opinions: 234,
 			productId: 10,
 		},
 		{
@@ -57,6 +78,7 @@ const products = {
 			img: 8,
 			price: `129zł`,
 			stars: 4,
+			opinions: 734,
 			productId: 11,
 		},
 		{
@@ -64,6 +86,7 @@ const products = {
 			img: 9,
 			price: `149zł`,
 			stars: 5,
+			opinions: 992,
 			productId: 12,
 		},
 		{
@@ -71,6 +94,7 @@ const products = {
 			img: 8,
 			price: `79zł`,
 			stars: 3,
+			opinions: 683,
 			productId: 13,
 		},
 		{
@@ -78,6 +102,7 @@ const products = {
 			img: 10,
 			price: `84zł`,
 			stars: 5,
+			opinions: 223,
 			productId: 14,
 		},
 		{
@@ -85,6 +110,7 @@ const products = {
 			img: 4,
 			price: `899zł`,
 			stars: 4,
+			opinions: 312,
 			productId: 15,
 		},
 		{
@@ -92,6 +118,7 @@ const products = {
 			img: 9,
 			price: `289zł`,
 			stars: 4,
+			opinions: 782,
 			productId: 16,
 		},
 	],
