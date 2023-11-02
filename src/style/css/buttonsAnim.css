@@ -27,15 +27,15 @@
 }
 
 .button-anim:hover::before {
-  height: 99%;
-  width: 99%;
+  height: 98%;
+  width: 98%;
   border-top: 1px solid #1b1b1b;
   border-left: 1px solid #1b1b1b;
 }
 
 .button-anim:hover::after {
-  height: 99%;
-  width: 99%;
+  height: 98%;
+  width: 98%;
   border-bottom: 1px solid #1b1b1b;
   border-right: 1px solid #1b1b1b;
 }

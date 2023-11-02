@@ -28,14 +28,14 @@
 }
 
 .button-anim:hover::before {
-	height: 99%;
-	width: 99%;
+	height: 98%;
+	width: 98%;
 	border-top: 1px solid $black;
 	border-left: 1px solid $black;
 }
 .button-anim:hover::after {
-	height: 99%;
-	width: 99%;
+	height: 98%;
+	width: 98%;
 	border-bottom: 1px solid $black;
 	border-right: 1px solid $black;
 }
