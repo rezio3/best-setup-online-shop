@@ -72,7 +72,7 @@ const ProductBox = (props) => {
 					</button>
 				</div>
 				<div className="product-box__stars-and-opinions-container">
-					<div className="stars-container"> {printStars}</div>
+					<div> {printStars}</div>
 
 					<span className="product-box__opinions-span">543 opinions</span>
 				</div>
