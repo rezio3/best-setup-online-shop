@@ -16,7 +16,10 @@
 		justify-content: space-between;
 
 		&__product-name {
+			display: block;
 			text-align: center;
+			margin: 0;
+			height: 60px;
 		}
 		&__product-image {
 			margin: 20px 0;
@@ -45,14 +48,35 @@
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			margin-top: 10px;
 			.highlight {
-				color: rgb(0, 0, 0);
+				color: rgb(0, 97, 177);
 				font-size: 14px;
 			}
 		}
 		&__opinions-span {
 			font-size: 12px;
 			font-style: italic;
+		}
+		&__read-more {
+			width: 50%;
+			margin: 20px 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			font-weight: 600;
+			font-size: 12px;
+			.highlight {
+				transition: 0.3s ease-out;
+				font-size: 20px;
+			}
+		}
+	}
+	.product-box:hover {
+		.product-box__read-more {
+			.highlight {
+				rotate: -90deg;
+			}
 		}
 	}
 }
