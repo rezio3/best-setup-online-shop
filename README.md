@@ -1,3 +1,18 @@
+# About the project
+
+This is the 'BestSetup' online store for computer equipment. The project was built using the React.js framework. Users have the ability to filter products, add and remove them from the shopping cart, and place orders using an order form. The entire form is validated. The store is designed as a Single Page Application, with transitions to individual subpages happening instantly.
+
+Product images were sourced from the internet for non-commercial and testing purposes. The remaining graphics, including the store logo and advertising banners, were created by me. Icons such as arrows, stars, and the shopping cart were sourced from Google Fonts and FontAwesome.
+
+## Technologies
+
+- React Router
+- Sass compiler
+- GSAP (for creating most of the animations appearing on the site)
+- Photoshop
+- Figma
+- BEM methodology.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
