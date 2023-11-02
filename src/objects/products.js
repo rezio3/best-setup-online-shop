@@ -1,12 +1,12 @@
 const products = {
 	hotDeals: [
 		{
-			name: "Dell-SE2422H",
-			img: 1,
-			price: `1399zł`,
+			name: "Samsung-Odyssey-C34G55TWWPX",
+			img: 7,
+			price: `1658zł`,
 			stars: 4,
-			opinions: 824,
-			productId: 1,
+			opinions: 673,
+			productId: 7,
 		},
 		{
 			name: "G4M3R-HERO",
@@ -33,13 +33,22 @@ const products = {
 			productId: 4,
 		},
 		{
-			name: "LG-Ultrawide-34WP65CP-B",
-			img: 5,
-			price: `1820zł`,
+			name: "XIDAX Gaming PC S-200",
+			img: 17,
+			price: `7599zł`,
 			stars: 5,
-			opinions: 234,
-			productId: 5,
+			opinions: 1224,
+			productId: 17,
 		},
+		{
+			name: "Sony WH-1000XM5",
+			img: 19,
+			price: `679zł`,
+			stars: 4,
+			opinions: 329,
+			productId: 19,
+		},
+
 		{
 			name: "Razer-Ornata-V2",
 			img: 6,
@@ -49,13 +58,14 @@ const products = {
 			productId: 6,
 		},
 		{
-			name: "Samsung-Odyssey-C34G55TWWPX",
-			img: 7,
-			price: `1658zł`,
+			name: "Dell-SE2422H",
+			img: 1,
+			price: `1399zł`,
 			stars: 4,
-			opinions: 673,
-			productId: 7,
+			opinions: 824,
+			productId: 1,
 		},
+
 		{
 			name: "Edifier 2.1 C2XD",
 			img: 16,
@@ -73,12 +83,28 @@ const products = {
 			productId: 8,
 		},
 		{
+			name: "LG-Ultrawide-34WP65CP-B",
+			img: 5,
+			price: `1820zł`,
+			stars: 5,
+			opinions: 234,
+			productId: 5,
+		},
+		{
 			name: "Silver-Monkey-X-Mandrill",
 			img: 9,
 			price: `243zł`,
 			stars: 5,
 			opinions: 581,
 			productId: 9,
+		},
+		{
+			name: "ASUS Rog Strix Ultra wide",
+			img: 18,
+			price: `1119zł`,
+			stars: 5,
+			opinions: 410,
+			productId: 18,
 		},
 		{
 			name: "Logitech-G502-X-PLUS",

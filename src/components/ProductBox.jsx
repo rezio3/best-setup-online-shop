@@ -17,6 +17,9 @@ import img13 from "../img/products/Cougar Argo One Blackorange.jpg";
 import img14 from "../img/products/Genesis Głośniki Helium 800BT 60W 2.1 ARGB.jpg";
 import img15 from "../img/products/Silver Monkey Fotel biurowy SMO-650.webp";
 import img16 from "../img/products/Edifier 2.1 C2XD.webp";
+import img17 from "../img/products/XIDAX Gaming PC S-200.png";
+import img18 from "../img/products/ASUS Rog Strix Ultra wide.jpg";
+import img19 from "../img/products/Sony WH-1000XM5.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar as faStarSolid } from "@fortawesome/free-solid-svg-icons";
 import { faStar as faStarRegular } from "@fortawesome/free-regular-svg-icons";
@@ -40,6 +43,9 @@ const ProductBox = (props) => {
 		img14,
 		img15,
 		img16,
+		img17,
+		img18,
+		img19,
 	];
 	let productImage = useRef(null);
 
@@ -70,12 +76,14 @@ const ProductBox = (props) => {
 				onMouseEnter={handleHover}
 				onMouseLeave={handleHoverOut}
 			>
-				<img
-					src={productsImages[props.product.img - 1]}
-					alt="product-image"
-					className="product-box__product-image"
-					ref={(el) => (productImage = el)}
-				/>
+				<div className="product-box__product-image-container">
+					<img
+						src={productsImages[props.product.img - 1]}
+						alt="product-image"
+						className="product-box__product-image"
+						ref={(el) => (productImage = el)}
+					/>
+				</div>
 				<h5 className="product-box__product-name">{props.product.name}</h5>
 
 				<div className="product-box__price-and-buy-btn">
@@ -85,7 +93,7 @@ const ProductBox = (props) => {
 					</button>
 				</div>
 				<div className="product-box__stars-and-opinions-container">
-					<div> {printStars}</div>
+					<div>{printStars}</div>
 
 					<span className="product-box__opinions-span">
 						{props.product.opinions} opinions
