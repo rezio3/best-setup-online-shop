@@ -40,11 +40,17 @@
   width: 100px;
   height: 50px;
 }
-.products-container .product-box__stars-container {
+.products-container .product-box__stars-and-opinions-container {
   width: 80%;
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.products-container .product-box__stars-container .highlight {
+.products-container .product-box__stars-and-opinions-container .highlight {
   color: rgb(0, 0, 0);
-  font-size: 18px;
+  font-size: 14px;
+}
+.products-container .product-box__opinions-span {
+  font-size: 12px;
+  font-style: italic;
 }

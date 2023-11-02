@@ -40,13 +40,21 @@
 			width: 100px;
 			height: 50px;
 		}
-		&__stars-container {
+		&__stars-and-opinions-container {
 			width: 80%;
 			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.stars-container {
+			}
 			.highlight {
 				color: rgb(0, 0, 0);
-				font-size: 18px;
+				font-size: 14px;
 			}
+		}
+		&__opinions-span {
+			font-size: 12px;
+			font-style: italic;
 		}
 	}
 }
