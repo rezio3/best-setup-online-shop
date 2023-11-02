@@ -12,7 +12,8 @@ import img8 from "../img/products/Logitech-G502-HERO.webp";
 import img9 from "../img/products/Silver-Monkey-X-Mandrill.webp";
 import img10 from "../img/products/Genesis-Xenon-220-G2-RGB.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar as faStarSolid } from "@fortawesome/free-solid-svg-icons";
+import { faStar as faStarRegular } from "@fortawesome/free-regular-svg-icons";
 
 const ProductBox = (props) => {
 	const productsImages = [
@@ -28,12 +29,27 @@ const ProductBox = (props) => {
 		img10,
 	];
 	let productImage = useRef(null);
+
+	// product hover animation
 	const handleHover = () => {
 		gsap.to(productImage, { scale: 1.15, duration: 0.3, ease: "expo" });
 	};
 	const handleHoverOut = () => {
 		gsap.to(productImage, { scale: 1, duration: 0.3, ease: "expo" });
 	};
+
+	// print stars
+	let printStars = [];
+	for (let i = 0; i < props.product.stars; i++) {
+		printStars.push(
+			<FontAwesomeIcon icon={faStarSolid} className="highlight" />
+		);
+	}
+	for (let i = 0; i < 5 - props.product.stars; i++) {
+		printStars.push(
+			<FontAwesomeIcon icon={faStarRegular} className="highlight" />
+		);
+	}
 	return (
 		<>
 			<div
@@ -55,11 +71,10 @@ const ProductBox = (props) => {
 						Add to cart
 					</button>
 				</div>
-				<div className="product-box__stars-container">
-					<FontAwesomeIcon icon={faStar} className="highlight" />
-					<FontAwesomeIcon icon={faStar} className="highlight" />
-					<FontAwesomeIcon icon={faStar} className="highlight" />
-					<FontAwesomeIcon icon={faStar} className="highlight" />
+				<div className="product-box__stars-and-opinions-container">
+					<div className="stars-container"> {printStars}</div>
+
+					<span className="product-box__opinions-span">543 opinions</span>
 				</div>
 			</div>
 		</>
