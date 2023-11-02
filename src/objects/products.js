@@ -40,7 +40,14 @@ const products = {
 			opinions: 234,
 			productId: 5,
 		},
-		{ name: "Razer-Ornata-V2", img: 6, price: `329zł`, stars: 3, productId: 6 },
+		{
+			name: "Razer-Ornata-V2",
+			img: 6,
+			price: `329zł`,
+			stars: 3,
+			opinions: 812,
+			productId: 6,
+		},
 		{
 			name: "Samsung-Odyssey-C34G55TWWPX",
 			img: 7,
