@@ -27,7 +27,7 @@ const FilterWindow = () => {
 				<div className="filter-padding-container">
 					<h5 className="filter-container__filter-header">Filter</h5>
 					<ul>
-						<li>
+						<li className="filter-container__filter-checkbox-element">
 							<input
 								type="checkbox"
 								className="filter-container__filter-checkbox"
@@ -35,7 +35,7 @@ const FilterWindow = () => {
 							></input>
 							<label for="displays">Displays</label>
 						</li>
-						<li>
+						<li className="filter-container__filter-checkbox-element">
 							<input
 								type="checkbox"
 								className="filter-container__filter-checkbox"
@@ -43,7 +43,7 @@ const FilterWindow = () => {
 							></input>
 							<label for="sound">Sound</label>
 						</li>
-						<li>
+						<li className="filter-container__filter-checkbox-element">
 							<input
 								type="checkbox"
 								className="filter-container__filter-checkbox"
@@ -51,7 +51,7 @@ const FilterWindow = () => {
 							></input>
 							<label for="pc">PC</label>
 						</li>
-						<li>
+						<li className="filter-container__filter-checkbox-element">
 							<input
 								type="checkbox"
 								className="filter-container__filter-checkbox"
@@ -59,7 +59,7 @@ const FilterWindow = () => {
 							></input>
 							<label for="accesories">Accesories</label>
 						</li>
-						<li>
+						<li className="filter-container__filter-checkbox-element">
 							<input
 								type="checkbox"
 								className="filter-container__filter-checkbox"
