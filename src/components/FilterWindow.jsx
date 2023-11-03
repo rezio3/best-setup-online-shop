@@ -33,7 +33,7 @@ const FilterWindow = () => {
 								className="filter-container__filter-checkbox"
 								id="displays"
 							></input>
-							<label for="displays">Displays</label>
+							<label htmlFor="displays">Displays</label>
 						</li>
 						<li className="filter-container__filter-checkbox-element">
 							<input
@@ -41,7 +41,7 @@ const FilterWindow = () => {
 								className="filter-container__filter-checkbox"
 								id="sound"
 							></input>
-							<label for="sound">Sound</label>
+							<label htmlFor="sound">Sound</label>
 						</li>
 						<li className="filter-container__filter-checkbox-element">
 							<input
@@ -49,7 +49,7 @@ const FilterWindow = () => {
 								className="filter-container__filter-checkbox"
 								id="pc"
 							></input>
-							<label for="pc">PC</label>
+							<label htmlFor="pc">PC</label>
 						</li>
 						<li className="filter-container__filter-checkbox-element">
 							<input
@@ -57,7 +57,7 @@ const FilterWindow = () => {
 								className="filter-container__filter-checkbox"
 								id="accesories"
 							></input>
-							<label for="accesories">Accesories</label>
+							<label htmlFor="accesories">Accesories</label>
 						</li>
 						<li className="filter-container__filter-checkbox-element">
 							<input
@@ -65,7 +65,7 @@ const FilterWindow = () => {
 								className="filter-container__filter-checkbox"
 								id="comfort"
 							></input>
-							<label for="comfort">Comfort</label>
+							<label htmlFor="comfort">Comfort</label>
 						</li>
 					</ul>
 				</div>
