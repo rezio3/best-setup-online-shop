@@ -1,6 +1,9 @@
 import React, { useEffect, useState, useRef } from "react";
 import "../style/css/filterWindow.css";
+import FilterCheckboxElement from "./FilterCheckboxElement";
+
 const FilterWindow = () => {
+	// snap filter while scrolling
 	const [snapFilter, setSnapFilter] = useState(false);
 	const filterRef = useRef();
 	useEffect(() => {
@@ -16,6 +19,9 @@ const FilterWindow = () => {
 		observer.observe(filterRef.current);
 	}, []);
 
+	// array of checkboxes
+	const checkboxesNames = ["Displays", "Sounds", "PC", "Accesories", "Comfort"];
+
 	return (
 		<>
 			<div className="filter-threshold" ref={filterRef}></div>
@@ -27,46 +33,9 @@ const FilterWindow = () => {
 				<div className="filter-padding-container">
 					<h5 className="filter-container__filter-header">Filter</h5>
 					<ul>
-						<li className="filter-container__filter-checkbox-element">
-							<input
-								type="checkbox"
-								className="filter-container__filter-checkbox"
-								id="displays"
-							></input>
-							<label htmlFor="displays">Displays</label>
-						</li>
-						<li className="filter-container__filter-checkbox-element">
-							<input
-								type="checkbox"
-								className="filter-container__filter-checkbox"
-								id="sound"
-							></input>
-							<label htmlFor="sound">Sound</label>
-						</li>
-						<li className="filter-container__filter-checkbox-element">
-							<input
-								type="checkbox"
-								className="filter-container__filter-checkbox"
-								id="pc"
-							></input>
-							<label htmlFor="pc">PC</label>
-						</li>
-						<li className="filter-container__filter-checkbox-element">
-							<input
-								type="checkbox"
-								className="filter-container__filter-checkbox"
-								id="accesories"
-							></input>
-							<label htmlFor="accesories">Accesories</label>
-						</li>
-						<li className="filter-container__filter-checkbox-element">
-							<input
-								type="checkbox"
-								className="filter-container__filter-checkbox"
-								id="comfort"
-							></input>
-							<label htmlFor="comfort">Comfort</label>
-						</li>
+						{checkboxesNames.map((e) => {
+							return <FilterCheckboxElement name={e} key={e} />;
+						})}
 					</ul>
 				</div>
 			</div>
