@@ -6,6 +6,8 @@ Users have the ability to filter products, add and remove them from the shopping
 
 Product images were sourced from the internet for non-commercial and testing purposes. The remaining graphics, including the store logo and advertising banners, were created by me. Icons such as arrows, stars, and the shopping cart were sourced from Google Fonts and FontAwesome.
 
+Build in progress...
+
 ## Technologies
 
 - React Router
