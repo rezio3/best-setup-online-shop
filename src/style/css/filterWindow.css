@@ -1,7 +1,26 @@
 .filter-container {
+  top: 0;
+  position: sticky;
   margin-top: 5px;
   width: 20%;
   min-width: 250px;
   height: 700px;
   box-shadow: 0 0 10px -6px;
+  transition: 0.4s ease-out;
+}
+.filter-container .filter-padding-container {
+  padding: 20px;
+}
+.filter-container__filter-header {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+.filter-threshold {
+  height: 0;
+}
+
+.filter-sticky {
+  top: 90px;
+  position: sticky;
 }
