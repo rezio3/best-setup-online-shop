@@ -35,6 +35,38 @@ const FilterWindow = () => {
 							></input>
 							<label for="displays">Displays</label>
 						</li>
+						<li>
+							<input
+								type="checkbox"
+								className="filter-container__filter-checkbox"
+								id="sound"
+							></input>
+							<label for="sound">Sound</label>
+						</li>
+						<li>
+							<input
+								type="checkbox"
+								className="filter-container__filter-checkbox"
+								id="pc"
+							></input>
+							<label for="pc">PC</label>
+						</li>
+						<li>
+							<input
+								type="checkbox"
+								className="filter-container__filter-checkbox"
+								id="accesories"
+							></input>
+							<label for="accesories">Accesories</label>
+						</li>
+						<li>
+							<input
+								type="checkbox"
+								className="filter-container__filter-checkbox"
+								id="comfort"
+							></input>
+							<label for="comfort">Comfort</label>
+						</li>
 					</ul>
 				</div>
 			</div>

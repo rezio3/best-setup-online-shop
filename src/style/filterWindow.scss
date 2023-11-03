@@ -16,6 +16,9 @@
 			margin: 0;
 			padding: 0;
 		}
+		label {
+			user-select: none;
+		}
 	}
 
 	&__filter-header {

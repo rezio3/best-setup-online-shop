@@ -16,6 +16,9 @@
   margin: 0;
   padding: 0;
 }
+.filter-container .filter-padding-container label {
+  user-select: none;
+}
 .filter-container__filter-header {
   margin: 0;
   font-size: 18px;
