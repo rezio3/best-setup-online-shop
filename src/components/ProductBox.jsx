@@ -96,7 +96,7 @@ const ProductBox = (props) => {
 					<div>{printStars}</div>
 
 					<span className="product-box__opinions-span">
-						{props.product.opinions} opinions
+						{props.product.opinions} reviews
 					</span>
 				</div>
 				<span className="product-box__read-more">
