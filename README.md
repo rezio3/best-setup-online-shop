@@ -12,6 +12,7 @@ Build in progress...
 
 - React Router
 - Sass compiler
+- RegEx
 - GSAP (for creating most of the animations appearing on the site)
 - Photoshop
 - Figma
