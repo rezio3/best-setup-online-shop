@@ -37,6 +37,21 @@ const FilterWindow = () => {
 							return <FilterCheckboxElement name={e} key={e} />;
 						})}
 					</ul>
+					<span className="filter-container__price-range-span">Rank</span>
+					<div className="filter-container__price-range-inputs-container">
+						<input type="radio" name="price"></input>
+
+						<input type="radio" name="price"></input>
+					</div>
+					<span className="filter-container__price-range-span">
+						Price range
+					</span>
+					<div className="filter-container__price-range-inputs-container">
+						<span>From: </span>
+						<input type="number"></input>
+						<span> To: </span>
+						<input type="number"></input>
+					</div>
 				</div>
 			</div>
 		</>
