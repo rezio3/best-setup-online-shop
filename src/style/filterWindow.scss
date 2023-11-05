@@ -6,7 +6,6 @@
 	margin-top: 5px;
 	width: 20%;
 	min-width: 250px;
-	height: 700px;
 	box-shadow: 0 0 10px -6px;
 
 	.filter-padding-container {
@@ -55,6 +54,21 @@
 		padding: 0;
 		margin: 0;
 		position: relative;
+	}
+	&__price-range-span {
+		display: block;
+		margin: 20px 0 10px;
+		font-size: 18px;
+	}
+	&__price-range-inputs-container {
+		font-size: 12px;
+		input[type="number"] {
+			all: unset;
+			padding: 2px;
+			border: 1px solid black;
+			width: 60px;
+			font-size: 12px;
+		}
 	}
 }
 .filter-threshold {
