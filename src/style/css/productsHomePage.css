@@ -1,8 +1,15 @@
+.main-home-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
 .products-container {
   width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  flex-grow: 1;
 }
 .products-container .product-box {
   padding: 5px;

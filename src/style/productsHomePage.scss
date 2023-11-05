@@ -1,10 +1,16 @@
 @import "./colors.scss";
 
+.main-home-page-container {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
 .products-container {
 	width: 80%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
+	flex-grow: 1;
 
 	.product-box {
 		padding: 5px;
