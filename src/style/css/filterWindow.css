@@ -50,6 +50,7 @@
   padding: 0;
   margin: 0;
   position: relative;
+  margin-bottom: 1px;
 }
 .filter-container__price-range-span {
   display: block;
