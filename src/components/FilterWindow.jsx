@@ -39,9 +39,17 @@ const FilterWindow = () => {
 					</ul>
 					<span className="filter-container__price-range-span">Rank</span>
 					<div className="filter-container__price-range-inputs-container">
-						<input type="radio" name="price"></input>
+						<input
+							type="radio"
+							name="price"
+							className="filter-container__filter-checkbox"
+						></input>
 
-						<input type="radio" name="price"></input>
+						<input
+							type="radio"
+							name="price"
+							className="filter-container__filter-checkbox"
+						></input>
 					</div>
 					<span className="filter-container__price-range-span">
 						Price range
