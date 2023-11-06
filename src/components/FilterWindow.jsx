@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import "../style/css/filterWindow.css";
+import "../style/css/buttonsAnim.css";
 import FilterCheckboxElement from "./FilterCheckboxElement";
 import FilterCheckboxPrice from "./FilterCheckboxPrice";
 
@@ -53,7 +54,9 @@ const FilterWindow = () => {
 							return <FilterCheckboxPrice name={e} key={e} />;
 						})}
 					</ul>
-					<button className="filter-container__reset-button">Reset</button>
+					<button className="filter-container__reset-button button-anim">
+						Reset
+					</button>
 				</div>
 			</div>
 		</>
