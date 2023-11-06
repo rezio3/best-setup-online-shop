@@ -53,6 +53,7 @@ const FilterWindow = () => {
 							return <FilterCheckboxPrice name={e} key={e} />;
 						})}
 					</ul>
+					<button className="filter-container__reset-button">Reset</button>
 				</div>
 			</div>
 		</>
