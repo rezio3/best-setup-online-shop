@@ -64,6 +64,7 @@
 	}
 	&__price-range-inputs-container {
 		font-size: 12px;
+
 		input[type="number"] {
 			all: unset;
 			padding: 2px;
@@ -71,6 +72,12 @@
 			width: 60px;
 			font-size: 12px;
 		}
+	}
+	&__reset-button {
+		margin-top: 50px;
+	}
+	input[type="radio"] {
+		margin: 3px 10px 3px 4px;
 	}
 }
 .filter-threshold {

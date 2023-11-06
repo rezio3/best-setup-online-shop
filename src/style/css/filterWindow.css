@@ -67,6 +67,12 @@
   width: 60px;
   font-size: 12px;
 }
+.filter-container__reset-button {
+  margin-top: 50px;
+}
+.filter-container input[type=radio] {
+  margin: 3px 10px 3px 4px;
+}
 
 .filter-threshold {
   height: 0;
