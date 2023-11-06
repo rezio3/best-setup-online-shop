@@ -2,7 +2,7 @@ import React, { useEffect, useState, useRef } from "react";
 import "../style/css/filterWindow.css";
 import "../style/css/buttonsAnim.css";
 import FilterCheckboxElement from "./FilterCheckboxElement";
-import FilterCheckboxPrice from "./FilterCheckboxPrice";
+import FilterCheckboxPriceDirection from "./FilterCheckboxPriceDirection";
 
 const FilterWindow = () => {
 	// snap filter while scrolling
