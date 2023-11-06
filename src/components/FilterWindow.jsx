@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 import "../style/css/filterWindow.css";
 import FilterCheckboxElement from "./FilterCheckboxElement";
+import FilterCheckboxPrice from "./FilterCheckboxPrice";
 
 const FilterWindow = () => {
 	// snap filter while scrolling
@@ -21,6 +22,7 @@ const FilterWindow = () => {
 
 	// array of checkboxes
 	const checkboxesNames = ["Displays", "Sounds", "PC", "Accesories", "Comfort"];
+	const checkboxesPriceNames = ["Price up", "Price down"];
 
 	return (
 		<>
@@ -39,19 +41,11 @@ const FilterWindow = () => {
 					</ul>
 					<span className="filter-container__price-range-span">Price</span>
 					<div className="filter-container__price-range-inputs-container">
-						<input
-							type="radio"
-							name="price-up"
-							className="filter-container__filter-checkbox"
-						></input>
-						<label htmlFor="price-up">Price up</label>
-
-						<input
-							type="radio"
-							name="price-down"
-							className="filter-container__filter-checkbox"
-						></input>
-						<label htmlFor="price-down">Price down</label>
+						<ul>
+							{checkboxesPriceNames.map((e) => {
+								return <FilterCheckboxPrice name={e} key={e} />;
+							})}
+						</ul>
 					</div>
 					<span className="filter-container__price-range-span">
 						Price range
@@ -62,6 +56,7 @@ const FilterWindow = () => {
 						<span> To: </span>
 						<input type="number"></input>
 					</div>
+					
 				</div>
 			</div>
 		</>
