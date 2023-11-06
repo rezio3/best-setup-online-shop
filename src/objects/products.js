@@ -52,7 +52,7 @@ const products = {
 			stars: 4,
 			opinions: 329,
 			productId: 19,
-			type: "accessories",
+			type: "sounds",
 		},
 
 		{
