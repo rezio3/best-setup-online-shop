@@ -1,24 +1,26 @@
 import React from "react";
 
 const FilterCheckboxElement = (props) => {
+	const { filter, setFilter } = props.filterState;
+
 	const inputHandler = (e) => {
-		props.filterState.setFilter({
-			...props.filterState.filter,
-			[`${props.name}`]: e.target.checked,
+		setFilter({
+			...filter,
+			[props.id]: e.target.checked,
 		});
 	};
-	console.log(props.filterState.filter);
+	console.log(filter);
 	return (
 		<>
 			<li className="filter-container__filter-checkbox-element">
 				<input
 					type="checkbox"
 					className="filter-container__filter-checkbox"
-					id={props.name}
+					id={props.id}
 					onChange={inputHandler}
-					checked={props.filterState.filter[props.name]}
+					checked={filter[props.id]}
 				></input>
-				<label htmlFor={props.name}>{props.name}</label>
+				<label htmlFor={props.id}>{props.name}</label>
 			</li>
 		</>
 	);
