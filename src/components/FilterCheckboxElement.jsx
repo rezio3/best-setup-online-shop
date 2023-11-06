@@ -9,7 +9,6 @@ const FilterCheckboxElement = (props) => {
 			[props.id]: e.target.checked,
 		});
 	};
-	console.log(filter);
 	return (
 		<>
 			<li className="filter-container__filter-checkbox-element">
