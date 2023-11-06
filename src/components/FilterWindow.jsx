@@ -33,11 +33,11 @@ const FilterWindow = () => {
 
 	// array of checkboxes
 	const checkboxesNames = [
-		"Displays",
-		"Sounds",
-		"PC",
-		"Accessories",
-		"Comfort",
+		{ name: "Displays", id: "displays" },
+		{ name: "Sounds", id: "sounds" },
+		{ name: "PC", id: "pc" },
+		{ name: "Accessories", id: "accessories" },
+		{ name: "Comfort", id: "comfort" },
 	];
 	const checkboxesPriceDirectionNames = ["Price up", "Price down"];
 
@@ -55,8 +55,9 @@ const FilterWindow = () => {
 						{checkboxesNames.map((e) => {
 							return (
 								<FilterCheckboxElement
-									name={e}
-									key={e}
+									name={e.name}
+									id={e.id}
+									key={e.id}
 									filterState={{ filter, setFilter }}
 								/>
 							);
