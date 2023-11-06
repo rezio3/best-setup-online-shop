@@ -11,8 +11,8 @@
 	.filter-padding-container {
 		padding: 20px;
 		ul {
-			padding: 0;
 			margin: 0;
+			padding: 0;
 			margin-top: 20px;
 			list-style: none;
 		}
@@ -29,37 +29,37 @@
 	}
 
 	&__filter-checkbox-element {
+		margin-bottom: 10px;
 		display: flex;
 		align-items: center;
-		margin-bottom: 10px;
 	}
 
 	&__filter-checkbox {
 		appearance: none;
-		border: 1px solid black;
 		width: 15px;
 		height: 15px;
 		margin-right: 10px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		border: 1px solid black;
 	}
 	&__filter-checkbox:checked {
 		background-color: rgb(0, 0, 0);
 	}
 	&__filter-checkbox:checked::before {
 		content: "✔";
+		position: relative;
+		margin: 0;
+		padding: 0;
+		margin-bottom: 1px;
 		font-size: 12px;
 		color: $white;
-		padding: 0;
-		margin: 0;
-		position: relative;
-		margin-bottom: 1px;
 	}
 
 	&__price-range-span {
-		display: block;
 		margin: 20px 0 10px;
+		display: block;
 		font-size: 18px;
 	}
 	&__price-range-inputs-container {
@@ -68,16 +68,18 @@
 		input[type="number"] {
 			all: unset;
 			padding: 2px;
-			border: 1px solid black;
 			width: 60px;
+			border: 1px solid black;
 			font-size: 12px;
 		}
 	}
-	&__reset-button {
-		margin-top: 50px;
-	}
+
 	input[type="radio"] {
 		margin: 3px 10px 3px 4px;
+	}
+
+	&__reset-button {
+		margin-top: 50px;
 	}
 }
 .filter-threshold {
