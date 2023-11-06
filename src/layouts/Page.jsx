@@ -1,10 +1,13 @@
 import React from "react";
 import Home from "../pages/Home";
+import FilterProductsContext from "../context/FilterContext";
 
 const Page = () => {
 	return (
 		<>
-			<Home />
+			<FilterProductsContext>
+				<Home />
+			</FilterProductsContext>
 		</>
 	);
 };
