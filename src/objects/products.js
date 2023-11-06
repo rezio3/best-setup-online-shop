@@ -126,7 +126,7 @@ const products = {
 			stars: 4,
 			opinions: 234,
 			productId: 10,
-			type: "displays",
+			type: "accessories",
 		},
 		{
 			name: "Cougar Argo One Blackorange",
