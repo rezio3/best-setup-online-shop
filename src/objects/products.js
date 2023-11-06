@@ -7,6 +7,7 @@ const products = {
 			stars: 4,
 			opinions: 673,
 			productId: 7,
+			type: "displays",
 		},
 		{
 			name: "G4M3R-HERO",
@@ -15,6 +16,7 @@ const products = {
 			stars: 5,
 			opinions: 147,
 			productId: 2,
+			type: "pc",
 		},
 		{
 			name: "Genesis-Xenon-220-G2-RGB",
@@ -23,6 +25,7 @@ const products = {
 			stars: 3,
 			opinions: 923,
 			productId: 3,
+			type: "accessories",
 		},
 		{
 			name: "Gigabyte-M32QC-Curved-HDR-KVM",
@@ -31,6 +34,7 @@ const products = {
 			stars: 4,
 			opinions: 517,
 			productId: 4,
+			type: "displays",
 		},
 		{
 			name: "XIDAX Gaming PC S-200",
@@ -39,6 +43,7 @@ const products = {
 			stars: 5,
 			opinions: 1224,
 			productId: 17,
+			type: "pc",
 		},
 		{
 			name: "Sony WH-1000XM5",
@@ -47,6 +52,7 @@ const products = {
 			stars: 4,
 			opinions: 329,
 			productId: 19,
+			type: "accessories",
 		},
 
 		{
@@ -56,6 +62,7 @@ const products = {
 			stars: 3,
 			opinions: 812,
 			productId: 6,
+			type: "accessories",
 		},
 		{
 			name: "Dell-SE2422H",
@@ -64,6 +71,7 @@ const products = {
 			stars: 4,
 			opinions: 824,
 			productId: 1,
+			type: "displays",
 		},
 
 		{
@@ -73,6 +81,7 @@ const products = {
 			stars: 5,
 			opinions: 723,
 			productId: 16,
+			type: "sounds",
 		},
 		{
 			name: "Logitech-G502-HERO",
@@ -81,6 +90,7 @@ const products = {
 			stars: 4,
 			opinions: 114,
 			productId: 8,
+			type: "accessories",
 		},
 		{
 			name: "LG-Ultrawide-34WP65CP-B",
@@ -89,6 +99,7 @@ const products = {
 			stars: 5,
 			opinions: 234,
 			productId: 5,
+			type: "displays",
 		},
 		{
 			name: "Silver-Monkey-X-Mandrill",
@@ -97,6 +108,7 @@ const products = {
 			stars: 5,
 			opinions: 581,
 			productId: 9,
+			type: "accessories",
 		},
 		{
 			name: "ASUS Rog Strix Ultra wide",
@@ -105,6 +117,7 @@ const products = {
 			stars: 5,
 			opinions: 410,
 			productId: 18,
+			type: "displays",
 		},
 		{
 			name: "Logitech-G502-X-PLUS",
@@ -113,6 +126,7 @@ const products = {
 			stars: 4,
 			opinions: 234,
 			productId: 10,
+			type: "displays",
 		},
 		{
 			name: "Cougar Argo One Blackorange",
@@ -121,6 +135,7 @@ const products = {
 			stars: 4,
 			opinions: 462,
 			productId: 13,
+			type: "comfort",
 		},
 		{
 			name: "Logitech-LIFT",
@@ -129,6 +144,7 @@ const products = {
 			stars: 4,
 			opinions: 734,
 			productId: 11,
+			type: "accessories",
 		},
 		{
 			name: "Samsung-QE65Q77B",
@@ -137,22 +153,25 @@ const products = {
 			stars: 5,
 			opinions: 992,
 			productId: 12,
+			type: "displays",
 		},
 		{
-			name: "Genesis Głośniki Helium 800BT 60W 2.1 ARGB",
+			name: "Genesis Speakers Helium 800BT 60W 2.1 ARGB",
 			img: 14,
 			price: `825zł`,
 			stars: 4,
 			opinions: 283,
 			productId: 14,
+			type: "sounds",
 		},
 		{
-			name: "Silver Monkey Fotel biurowy SMO-650",
+			name: "Silver Monkey Chair SMO-650",
 			img: 15,
 			price: `379zł`,
 			stars: 3,
 			opinions: 571,
 			productId: 15,
+			type: "comfort",
 		},
 	],
 };
