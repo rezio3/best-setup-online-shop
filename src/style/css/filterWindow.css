@@ -71,7 +71,11 @@
   margin: 3px 10px 3px 4px;
 }
 .filter-container__reset-button {
-  margin-top: 50px;
+  margin-top: 10px;
+  padding: 10px 30px;
+  background: none;
+  border: none;
+  box-shadow: 0px 0px 10px -6px;
 }
 
 .filter-threshold {
