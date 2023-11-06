@@ -1,15 +1,13 @@
 import React, { createContext, useState } from "react";
 
 const filterSettings = {
-	Displays: false,
-	Sounds: false,
-	PC: false,
-	Accessories: false,
-	Comfort: false,
+	displays: false,
+	sounds: false,
+	pc: false,
+	accessories: false,
+	comfort: false,
 	priceRange: null,
 };
-
-// CHANGE VARIABLES TO LOWERCASE
 
 export const FilterContext = createContext();
 
