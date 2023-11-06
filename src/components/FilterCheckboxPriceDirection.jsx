@@ -1,6 +1,6 @@
 import React from "react";
 
-const FilterCheckboxPrice = (props) => {
+const FilterCheckboxPriceDirection = (props) => {
 	return (
 		<>
 			<li className="filter-container__filter-checkbox-element">
@@ -16,4 +16,4 @@ const FilterCheckboxPrice = (props) => {
 	);
 };
 
-export default FilterCheckboxPrice;
+export default FilterCheckboxPriceDirection;

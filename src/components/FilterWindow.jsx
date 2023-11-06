@@ -23,7 +23,7 @@ const FilterWindow = () => {
 
 	// array of checkboxes
 	const checkboxesNames = ["Displays", "Sounds", "PC", "Accesories", "Comfort"];
-	const checkboxesPriceNames = ["Price up", "Price down"];
+	const checkboxesPriceDirectionNames = ["Price up", "Price down"];
 
 	return (
 		<>
@@ -50,8 +50,8 @@ const FilterWindow = () => {
 						<input type="number"></input>
 					</div>
 					<ul>
-						{checkboxesPriceNames.map((e) => {
-							return <FilterCheckboxPrice name={e} key={e} />;
+						{checkboxesPriceDirectionNames.map((e) => {
+							return <FilterCheckboxPriceDirection name={e} key={e} />;
 						})}
 					</ul>
 					<button className="filter-container__reset-button button-anim">
