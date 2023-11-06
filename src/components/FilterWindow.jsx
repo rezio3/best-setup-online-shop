@@ -1,10 +1,20 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, useContext } from "react";
 import "../style/css/filterWindow.css";
 import "../style/css/buttonsAnim.css";
 import FilterCheckboxElement from "./FilterCheckboxElement";
 import FilterCheckboxPriceDirection from "./FilterCheckboxPriceDirection";
+import { FilterContext } from "../context/FilterContext";
 
 const FilterWindow = () => {
+	const [filter, setFilter] = useContext(FilterContext);
+	const [filterStart] = useState(filter);
+
+	const resetButtonHandler = () => {
+		setFilter({
+			filterStart,
+		});
+	};
+
 	// snap filter while scrolling
 	const [snapFilter, setSnapFilter] = useState(false);
 	const filterRef = useRef();
@@ -22,7 +32,13 @@ const FilterWindow = () => {
 	}, []);
 
 	// array of checkboxes
-	const checkboxesNames = ["Displays", "Sounds", "PC", "Accesories", "Comfort"];
+	const checkboxesNames = [
+		"Displays",
+		"Sounds",
+		"PC",
+		"Accessories",
+		"Comfort",
+	];
 	const checkboxesPriceDirectionNames = ["Price up", "Price down"];
 
 	return (
@@ -37,7 +53,13 @@ const FilterWindow = () => {
 					<h5 className="filter-container__filter-header">Filter</h5>
 					<ul>
 						{checkboxesNames.map((e) => {
-							return <FilterCheckboxElement name={e} key={e} />;
+							return (
+								<FilterCheckboxElement
+									name={e}
+									key={e}
+									filterState={{ filter, setFilter }}
+								/>
+							);
 						})}
 					</ul>
 					<span className="filter-container__price-range-span">
@@ -51,10 +73,19 @@ const FilterWindow = () => {
 					</div>
 					<ul>
 						{checkboxesPriceDirectionNames.map((e) => {
-							return <FilterCheckboxPriceDirection name={e} key={e} />;
+							return (
+								<FilterCheckboxPriceDirection
+									name={e}
+									key={e}
+									filterState={{ filter, setFilter }}
+								/>
+							);
 						})}
 					</ul>
-					<button className="filter-container__reset-button button-anim">
+					<button
+						className="filter-container__reset-button button-anim"
+						onClick={resetButtonHandler}
+					>
 						Reset
 					</button>
 				</div>
