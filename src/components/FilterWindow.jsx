@@ -39,14 +39,6 @@ const FilterWindow = () => {
 							return <FilterCheckboxElement name={e} key={e} />;
 						})}
 					</ul>
-					<span className="filter-container__price-range-span">Price</span>
-					<div className="filter-container__price-range-inputs-container">
-						<ul>
-							{checkboxesPriceNames.map((e) => {
-								return <FilterCheckboxPrice name={e} key={e} />;
-							})}
-						</ul>
-					</div>
 					<span className="filter-container__price-range-span">
 						Price range
 					</span>
@@ -56,7 +48,11 @@ const FilterWindow = () => {
 						<span> To: </span>
 						<input type="number"></input>
 					</div>
-					
+					<ul>
+						{checkboxesPriceNames.map((e) => {
+							return <FilterCheckboxPrice name={e} key={e} />;
+						})}
+					</ul>
 				</div>
 			</div>
 		</>
