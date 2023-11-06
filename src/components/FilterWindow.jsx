@@ -27,7 +27,7 @@ const FilterWindow = () => {
 
 	return (
 		<>
-			<div className="filter-threshold" ref={filterRef}></div>
+			<div className="filter-snap-threshold" ref={filterRef}></div>
 			<div
 				className={
 					snapFilter ? "filter-container filter-sticky" : "filter-container"
