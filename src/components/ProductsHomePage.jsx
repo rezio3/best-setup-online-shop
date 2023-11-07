@@ -10,29 +10,20 @@ const ProductsHomePage = () => {
 	let itemsToDisplay = [];
 
 	for (let key in products.hotDeals) {
-		if (products.hotDeals[key].type === "displays" && displays) {
+		if (
+			(products.hotDeals[key].type === "displays" && displays) ||
+			(products.hotDeals[key].type === "sounds" && sounds) ||
+			(products.hotDeals[key].type === "pc" && pc) ||
+			(products.hotDeals[key].type === "accessories" && accessories) ||
+			(products.hotDeals[key].type === "comfort" && comfort)
+		) {
 			itemsToDisplay.push(products.hotDeals[key]);
 			console.log(products.hotDeals[key]);
 		} else if (!displays && !sounds && !pc && !accessories && !comfort) {
 			itemsToDisplay = products.hotDeals;
 		}
-		if (products.hotDeals[key].type === "sounds" && sounds) {
-			itemsToDisplay.push(products.hotDeals[key]);
-			console.log(products.hotDeals[key]);
-		}
-		if (products.hotDeals[key].type === "pc" && pc) {
-			itemsToDisplay.push(products.hotDeals[key]);
-			console.log(products.hotDeals[key]);
-		}
-		if (products.hotDeals[key].type === "accessories" && accessories) {
-			itemsToDisplay.push(products.hotDeals[key]);
-			console.log(products.hotDeals[key]);
-		}
-		if (products.hotDeals[key].type === "comfort" && comfort) {
-			itemsToDisplay.push(products.hotDeals[key]);
-			console.log(products.hotDeals[key]);
-		}
 	}
+	// DO POPRAWY ^^^^
 	return (
 		<>
 			<div className="products-container">
