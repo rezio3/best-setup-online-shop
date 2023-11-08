@@ -23,7 +23,7 @@ const ProductsHomePage = () => {
 			itemsToDisplay = products.hotDeals;
 		}
 	}
-	// DO POPRAWY ^^^^
+
 	return (
 		<>
 			<div className="products-container">
