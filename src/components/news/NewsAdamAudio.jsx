@@ -32,14 +32,26 @@ const NewsAdamAudio = () => {
 				</p>
 			</div>
 			<div className="adam-audio-container__image-boxes-container">
-				<div className="adam-audio-container__image-box">
-					<img src={adam1} className="adam-image" />
+				<div className="adam-audio-container__image-box adam-audio-img-box">
+					<img src={adam1} className="adam-audio-img-box__adam-image" />
+					<h4 className="adam-audio-img-box__header">A4V</h4>
+					<span className="adam-audio-img-box__description">
+						Quality Compacted
+					</span>
 				</div>
-				<div className="adam-audio-container__image-box">
-					<img src={adam2} className="adam-image" />
+				<div className="adam-audio-container__image-box adam-audio-img-box">
+					<img src={adam2} className="adam-audio-img-box__adam-image" />
+					<h4 className="adam-audio-img-box__header">A7V</h4>
+					<span className="adam-audio-img-box__description">
+						A New Industry Standard
+					</span>
 				</div>
-				<div className="adam-audio-container__image-box">
-					<img src={adam3} className="adam-image" />
+				<div className="adam-audio-container__image-box adam-audio-img-box">
+					<img src={adam3} className="adam-audio-img-box__adam-image" />
+					<h4 className="adam-audio-img-box__header">A44H</h4>
+					<span className="adam-audio-img-box__description">
+						High Standards, Low Profile
+					</span>
 				</div>
 			</div>
 		</div>
