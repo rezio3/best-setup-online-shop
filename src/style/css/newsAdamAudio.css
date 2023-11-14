@@ -4,26 +4,36 @@
   justify-content: center;
   align-items: center;
 }
-.adam-audio-container__header {
-  font-size: 30px;
+.adam-audio-container__upper-header {
+  margin-bottom: 0;
+  font-size: 40px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.adam-audio-container__lower-header {
+  margin-top: 10px;
+  font-size: 24px;
 }
 .adam-audio-container__description {
   display: flex;
+  justify-content: space-evenly;
   font-size: 20px;
   line-height: 40px;
+}
+.adam-audio-container__description p {
+  width: 40%;
 }
 .adam-audio-container__image-boxes-container {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
-  background-color: rgb(136, 73, 73);
 }
 .adam-audio-container__image-box {
   display: flex;
   justify-content: center;
   width: 350px;
   height: 350px;
-  background-color: #1b1b1b;
+  box-shadow: 0 0 15px -6px;
 }
 .adam-audio-container__image-box .adam-image {
   scale: 80%;

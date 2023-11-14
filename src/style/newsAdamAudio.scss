@@ -5,26 +5,37 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	&__header {
-		font-size: 30px;
+	&__upper-header {
+		margin-bottom: 0;
+		font-size: 40px;
+		text-transform: uppercase;
+		letter-spacing: 5px;
+	}
+	&__lower-header {
+		margin-top: 10px;
+		font-size: 24px;
 	}
 	&__description {
 		display: flex;
+		justify-content: space-evenly;
 		font-size: 20px;
 		line-height: 40px;
+		p {
+			width: 40%;
+		}
 	}
 	&__image-boxes-container {
 		display: flex;
 		justify-content: space-evenly;
 		width: 100%;
-		background-color: rgb(136, 73, 73);
 	}
 	&__image-box {
 		display: flex;
 		justify-content: center;
 		width: 350px;
 		height: 350px;
-		background-color: $black;
+		// background-color: $black;
+		box-shadow: 0 0 15px -6px;
 
 		.adam-image {
 			scale: 80%;
