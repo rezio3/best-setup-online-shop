@@ -33,7 +33,7 @@ const ProductsHomePage = () => {
 	} else if (filter.priceDown) {
 		itemsToDisplay.sort(pricesDownwards);
 	} else {
-		itemsToDisplay = products.hotDeals;
+		itemsToDisplay = [...products.hotDeals];
 	}
 
 	return (
