@@ -1,7 +1,11 @@
 import React from "react";
 
 const FilterCheckboxPriceDirection = (props) => {
-	props.filterState.setFilter(true);
+	const inputHandler = () => {
+		props.filterState.setFilter({
+			...props.filterState.Filter,
+		});
+	};
 	return (
 		<>
 			<li className="filter-container__filter-checkbox-element">
@@ -10,6 +14,7 @@ const FilterCheckboxPriceDirection = (props) => {
 					className="filter-container__filter-checkbox"
 					id={props.name}
 					name="price-radio-checkbox"
+					onChange={inputHandler}
 				></input>
 				<label htmlFor={props.name}>{props.name}</label>
 			</li>
