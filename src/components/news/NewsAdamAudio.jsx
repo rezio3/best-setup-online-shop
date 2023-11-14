@@ -7,8 +7,10 @@ import adam3 from "../../img/news/adam-audio-a44h-studio-monitor-navigation-566x
 const NewsAdamAudio = () => {
 	return (
 		<div className="adam-audio-container">
-			<h2 className="adam-audio-container__header">Adam Audio A SERIES</h2>
-			<h3 className="adam-audio-container__header">
+			<h2 className="adam-audio-container__upper-header">
+				Adam Audio A SERIES
+			</h2>
+			<h3 className="adam-audio-container__lower-header">
 				A SERIES NOMINATED FOR 39TH TEC AWARDS
 			</h3>
 			<div className="adam-audio-container__description">
