@@ -6,6 +6,8 @@ const filterSettings = {
 	pc: false,
 	accessories: false,
 	comfort: false,
+	priceUpwards: false,
+	priceDownwards: false,
 	priceRange: null,
 };
 
