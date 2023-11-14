@@ -10,9 +10,7 @@ const FilterWindow = () => {
 	const [filterStart] = useState(filter);
 
 	const resetButtonHandler = () => {
-		setFilter({
-			filterStart,
-		});
+		setFilter(filterStart);
 	};
 
 	// snap filter while scrolling
