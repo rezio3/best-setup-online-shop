@@ -1,6 +1,7 @@
 import React from "react";
 
 const FilterCheckboxPriceDirection = (props) => {
+	props.filterState.setFilter(true);
 	return (
 		<>
 			<li className="filter-container__filter-checkbox-element">
