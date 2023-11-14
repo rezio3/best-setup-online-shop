@@ -3,7 +3,7 @@ const products = {
 		{
 			name: "Samsung-Odyssey-C34G55TWWPX",
 			img: 7,
-			price: `1658zł`,
+			price: 1658,
 			stars: 4,
 			opinions: 673,
 			productId: 7,
@@ -12,7 +12,7 @@ const products = {
 		{
 			name: "G4M3R-HERO",
 			img: 2,
-			price: `8759zł`,
+			price: 8759,
 			stars: 5,
 			opinions: 147,
 			productId: 2,
@@ -21,7 +21,7 @@ const products = {
 		{
 			name: "Genesis-Xenon-220-G2-RGB",
 			img: 3,
-			price: `239zł`,
+			price: 239,
 			stars: 3,
 			opinions: 923,
 			productId: 3,
@@ -30,7 +30,7 @@ const products = {
 		{
 			name: "Gigabyte-M32QC-Curved-HDR-KVM",
 			img: 4,
-			price: `1289zł`,
+			price: 1289,
 			stars: 4,
 			opinions: 517,
 			productId: 4,
@@ -39,7 +39,7 @@ const products = {
 		{
 			name: "XIDAX Gaming PC S-200",
 			img: 17,
-			price: `7599zł`,
+			price: 7599,
 			stars: 5,
 			opinions: 1224,
 			productId: 17,
@@ -48,7 +48,7 @@ const products = {
 		{
 			name: "Sony WH-1000XM5",
 			img: 19,
-			price: `679zł`,
+			price: 679,
 			stars: 4,
 			opinions: 329,
 			productId: 19,
@@ -58,7 +58,7 @@ const products = {
 		{
 			name: "Razer-Ornata-V2",
 			img: 6,
-			price: `329zł`,
+			price: 159,
 			stars: 3,
 			opinions: 812,
 			productId: 6,
@@ -67,7 +67,7 @@ const products = {
 		{
 			name: "Dell-SE2422H",
 			img: 1,
-			price: `1399zł`,
+			price: 499,
 			stars: 4,
 			opinions: 824,
 			productId: 1,
@@ -77,7 +77,7 @@ const products = {
 		{
 			name: "Edifier 2.1 C2XD",
 			img: 16,
-			price: `926zł`,
+			price: 1655,
 			stars: 5,
 			opinions: 723,
 			productId: 16,
@@ -86,7 +86,7 @@ const products = {
 		{
 			name: "Logitech-G502-HERO",
 			img: 8,
-			price: `189zł`,
+			price: 189,
 			stars: 4,
 			opinions: 114,
 			productId: 8,
@@ -95,7 +95,7 @@ const products = {
 		{
 			name: "LG-Ultrawide-34WP65CP-B",
 			img: 5,
-			price: `1820zł`,
+			price: 1820,
 			stars: 5,
 			opinions: 234,
 			productId: 5,
@@ -104,7 +104,7 @@ const products = {
 		{
 			name: "Silver-Monkey-X-Mandrill",
 			img: 9,
-			price: `243zł`,
+			price: 243,
 			stars: 5,
 			opinions: 581,
 			productId: 9,
@@ -113,7 +113,7 @@ const products = {
 		{
 			name: "ASUS Rog Strix Ultra wide",
 			img: 18,
-			price: `1119zł`,
+			price: 1119,
 			stars: 5,
 			opinions: 410,
 			productId: 18,
@@ -122,7 +122,7 @@ const products = {
 		{
 			name: "Logitech-G502-X-PLUS",
 			img: 10,
-			price: `129zł`,
+			price: 129,
 			stars: 4,
 			opinions: 234,
 			productId: 10,
@@ -131,7 +131,7 @@ const products = {
 		{
 			name: "Cougar Argo One Blackorange",
 			img: 13,
-			price: `459zł`,
+			price: 859,
 			stars: 4,
 			opinions: 462,
 			productId: 13,
@@ -140,7 +140,7 @@ const products = {
 		{
 			name: "Logitech-LIFT",
 			img: 11,
-			price: `184zł`,
+			price: 184,
 			stars: 4,
 			opinions: 734,
 			productId: 11,
@@ -149,7 +149,7 @@ const products = {
 		{
 			name: "Samsung-QE65Q77B",
 			img: 12,
-			price: `2349zł`,
+			price: 2349,
 			stars: 5,
 			opinions: 992,
 			productId: 12,
@@ -158,7 +158,7 @@ const products = {
 		{
 			name: "Genesis Speakers Helium 800BT 60W 2.1 ARGB",
 			img: 14,
-			price: `825zł`,
+			price: 825,
 			stars: 4,
 			opinions: 283,
 			productId: 14,
@@ -167,7 +167,7 @@ const products = {
 		{
 			name: "Silver Monkey Chair SMO-650",
 			img: 15,
-			price: `379zł`,
+			price: 379,
 			stars: 3,
 			opinions: 571,
 			productId: 15,
