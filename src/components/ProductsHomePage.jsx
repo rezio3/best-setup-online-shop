@@ -8,7 +8,7 @@ const ProductsHomePage = () => {
 	const [filter, setFilter] = useContext(FilterContext);
 	const { displays, sounds, pc, accessories, comfort } = filter;
 	let itemsToDisplay = [];
-
+	// sort products depending on selected filter types
 	for (let key in products.hotDeals) {
 		if (
 			(products.hotDeals[key].type === "displays" && displays) ||
@@ -23,6 +23,19 @@ const ProductsHomePage = () => {
 			itemsToDisplay = products.hotDeals;
 		}
 	}
+
+	// sort products depending on the price
+
+	const pricesUpWords = (a, b) => {
+		console.log(a.price);
+		return a.price - b.price;
+	};
+	const pricesDownWords = (a, b) => {
+		console.log(a.price);
+		return a.price - b.price;
+	};
+
+	// itemsToDisplay.sort(comparePrices);
 
 	return (
 		<>
