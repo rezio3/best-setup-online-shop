@@ -1,10 +1,12 @@
 import React from "react";
 
 const FilterCheckboxPriceDirection = (props) => {
+	const { filter, setFilter } = props.filterState;
+
 	const inputHandler = (el) => {
 		const directionSetter = el.target.id === "price-up" ? true : false;
-		props.filterState.setFilter({
-			...props.filterState.filter,
+		setFilter({
+			...filter,
 			priceUp: directionSetter,
 			priceDown: !directionSetter,
 		});
@@ -19,7 +21,7 @@ const FilterCheckboxPriceDirection = (props) => {
 					id="price-up"
 					name="price-radio-checkbox"
 					onChange={inputHandler}
-					checked={props.filterState.filter.priceUp}
+					checked={filter.priceUp}
 				></input>
 				<label htmlFor="price-up">Price up</label>
 			</li>
@@ -30,7 +32,7 @@ const FilterCheckboxPriceDirection = (props) => {
 					id="price-down"
 					name="price-radio-checkbox"
 					onChange={inputHandler}
-					checked={props.filterState.filter.priceDown}
+					checked={filter.priceDown}
 				></input>
 				<label htmlFor="price-down">Price down</label>
 			</li>
