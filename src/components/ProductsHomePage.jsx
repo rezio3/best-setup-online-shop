@@ -3,10 +3,13 @@ import "../style/css/productsHomePage.css";
 import ProductBox from "./ProductBox";
 import products from "../objects/products";
 import { FilterContext } from "../context/FilterContext";
+import pricesUpwards from "../functions/sortItemsUpwards";
+import pricesDownwards from "../functions/sortItemsDownwards";
 
 const ProductsHomePage = () => {
 	const [filter, setFilter] = useContext(FilterContext);
 	const { displays, sounds, pc, accessories, comfort } = filter;
+	let hotDealCopyArr = [...products.hotDeals];
 	let itemsToDisplay = [];
 	// sort products depending on selected filter types
 	for (let key in products.hotDeals) {
@@ -17,21 +20,24 @@ const ProductsHomePage = () => {
 			(products.hotDeals[key].type === "accessories" && accessories) ||
 			(products.hotDeals[key].type === "comfort" && comfort)
 		) {
-			itemsToDisplay.push(products.hotDeals[key]);
+			itemsToDisplay.push(hotDealCopyArr[key]);
 		} else if (!displays && !sounds && !pc && !accessories && !comfort) {
-			itemsToDisplay = products.hotDeals;
+			itemsToDisplay = hotDealCopyArr;
 		}
 	}
 
 	// sort products depending on the price
 
-	const pricesUpwards = (a, b) => {
-		return a.price - b.price;
-	};
-	const pricesDownwards = (a, b) => {
-		return a.price - b.price;
-	};
-
+	if (filter.priceUp) {
+		itemsToDisplay.sort(pricesUpwards);
+		console.log("sort up");
+	} else if (filter.priceDown) {
+		itemsToDisplay.sort(pricesDownwards);
+		console.log("sort down");
+	} else {
+		itemsToDisplay = products.hotDeals;
+		console.log("punkt wyjścia");
+	}
 	// itemsToDisplay.sort(comparePrices);
 
 	return (
