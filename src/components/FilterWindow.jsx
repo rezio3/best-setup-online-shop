@@ -39,7 +39,6 @@ const FilterWindow = () => {
 		{ name: "Accessories", id: "accessories" },
 		{ name: "Comfort", id: "comfort" },
 	];
-	const checkboxesPriceDirectionNames = ["Price up", "Price down"];
 
 	return (
 		<>
@@ -73,15 +72,7 @@ const FilterWindow = () => {
 						<input type="number"></input>
 					</div>
 					<ul>
-						{checkboxesPriceDirectionNames.map((e) => {
-							return (
-								<FilterCheckboxPriceDirection
-									name={e}
-									key={e}
-									filterState={{ filter, setFilter }}
-								/>
-							);
-						})}
+						<FilterCheckboxPriceDirection filterState={{ filter, setFilter }} />
 					</ul>
 					<button
 						className="filter-container__reset-button button-anim"
