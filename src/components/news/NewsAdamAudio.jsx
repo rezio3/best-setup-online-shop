@@ -13,8 +13,8 @@ const NewsAdamAudio = () => {
 			<h3 className="adam-audio-container__lower-header">
 				A SERIES NOMINATED FOR 39TH TEC AWARDS
 			</h3>
-			<div className="adam-audio-container__description">
-				<p>
+			<div className="adam-audio-container__description-box">
+				<p className="adam-audio-container__description">
 					The ADAM Audio A Series delivers highly accurate, transparent sound
 					across a full line of monitors that can be controlled remotely and in
 					real time. Comprising five models, the A4V, A7V, A44H, A77H and A8H
@@ -22,7 +22,7 @@ const NewsAdamAudio = () => {
 					well as broadcast, fixed-installation, 3D, immersive, and home audio
 					environments.
 				</p>
-				<p>
+				<p className="adam-audio-container__description">
 					ADAM Audio monitors have earned a worldwide reputation as the
 					pre-eminent tool for sound engineers based on our technological
 					innovations in the field of loudspeaker technology. These advances
