@@ -18,7 +18,6 @@ const ProductsHomePage = () => {
 			(products.hotDeals[key].type === "comfort" && comfort)
 		) {
 			itemsToDisplay.push(products.hotDeals[key]);
-			console.log(products.hotDeals[key]);
 		} else if (!displays && !sounds && !pc && !accessories && !comfort) {
 			itemsToDisplay = products.hotDeals;
 		}
@@ -26,12 +25,10 @@ const ProductsHomePage = () => {
 
 	// sort products depending on the price
 
-	const pricesUpWords = (a, b) => {
-		console.log(a.price);
+	const pricesUpwards = (a, b) => {
 		return a.price - b.price;
 	};
-	const pricesDownWords = (a, b) => {
-		console.log(a.price);
+	const pricesDownwards = (a, b) => {
 		return a.price - b.price;
 	};
 
