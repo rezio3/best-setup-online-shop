@@ -3,7 +3,7 @@ const products = {
 		{
 			name: "Samsung-Odyssey-C34G55TWWPX",
 			img: 7,
-			price: 1658,
+			price: 414,
 			stars: 4,
 			opinions: 673,
 			productId: 7,
@@ -12,7 +12,7 @@ const products = {
 		{
 			name: "G4M3R-HERO",
 			img: 2,
-			price: 8759,
+			price: 2189,
 			stars: 5,
 			opinions: 147,
 			productId: 2,
@@ -21,7 +21,7 @@ const products = {
 		{
 			name: "Genesis-Xenon-220-G2-RGB",
 			img: 3,
-			price: 239,
+			price: 59,
 			stars: 3,
 			opinions: 923,
 			productId: 3,
@@ -30,7 +30,7 @@ const products = {
 		{
 			name: "Gigabyte-M32QC-Curved-HDR-KVM",
 			img: 4,
-			price: 1289,
+			price: 322,
 			stars: 4,
 			opinions: 517,
 			productId: 4,
@@ -39,7 +39,7 @@ const products = {
 		{
 			name: "XIDAX Gaming PC S-200",
 			img: 17,
-			price: 7599,
+			price: 1899,
 			stars: 5,
 			opinions: 1224,
 			productId: 17,
@@ -48,7 +48,7 @@ const products = {
 		{
 			name: "Sony WH-1000XM5",
 			img: 19,
-			price: 679,
+			price: 169,
 			stars: 4,
 			opinions: 329,
 			productId: 19,
@@ -67,7 +67,7 @@ const products = {
 		{
 			name: "Dell-SE2422H",
 			img: 1,
-			price: 499,
+			price: 39,
 			stars: 4,
 			opinions: 824,
 			productId: 1,
@@ -77,7 +77,7 @@ const products = {
 		{
 			name: "Edifier 2.1 C2XD",
 			img: 16,
-			price: 1655,
+			price: 413,
 			stars: 5,
 			opinions: 723,
 			productId: 16,
@@ -86,7 +86,7 @@ const products = {
 		{
 			name: "Logitech-G502-HERO",
 			img: 8,
-			price: 189,
+			price: 47,
 			stars: 4,
 			opinions: 114,
 			productId: 8,
@@ -95,7 +95,7 @@ const products = {
 		{
 			name: "LG-Ultrawide-34WP65CP-B",
 			img: 5,
-			price: 1820,
+			price: 457,
 			stars: 5,
 			opinions: 234,
 			productId: 5,
@@ -104,7 +104,7 @@ const products = {
 		{
 			name: "Silver-Monkey-X-Mandrill",
 			img: 9,
-			price: 243,
+			price: 60,
 			stars: 5,
 			opinions: 581,
 			productId: 9,
@@ -113,7 +113,7 @@ const products = {
 		{
 			name: "ASUS Rog Strix Ultra wide",
 			img: 18,
-			price: 1119,
+			price: 279,
 			stars: 5,
 			opinions: 410,
 			productId: 18,
@@ -122,7 +122,7 @@ const products = {
 		{
 			name: "Logitech-G502-X-PLUS",
 			img: 10,
-			price: 129,
+			price: 32,
 			stars: 4,
 			opinions: 234,
 			productId: 10,
@@ -131,7 +131,7 @@ const products = {
 		{
 			name: "Cougar Argo One Blackorange",
 			img: 13,
-			price: 859,
+			price: 214,
 			stars: 4,
 			opinions: 462,
 			productId: 13,
@@ -140,7 +140,7 @@ const products = {
 		{
 			name: "Logitech-LIFT",
 			img: 11,
-			price: 184,
+			price: 46,
 			stars: 4,
 			opinions: 734,
 			productId: 11,
@@ -149,7 +149,7 @@ const products = {
 		{
 			name: "Samsung-QE65Q77B",
 			img: 12,
-			price: 2349,
+			price: 587,
 			stars: 5,
 			opinions: 992,
 			productId: 12,
@@ -158,7 +158,7 @@ const products = {
 		{
 			name: "Genesis Speakers Helium 800BT 60W 2.1 ARGB",
 			img: 14,
-			price: 825,
+			price: 206,
 			stars: 4,
 			opinions: 283,
 			productId: 14,
@@ -167,7 +167,7 @@ const products = {
 		{
 			name: "Silver Monkey Chair SMO-650",
 			img: 15,
-			price: 379,
+			price: 94,
 			stars: 3,
 			opinions: 571,
 			productId: 15,
