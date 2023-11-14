@@ -30,15 +30,11 @@ const ProductsHomePage = () => {
 
 	if (filter.priceUp) {
 		itemsToDisplay.sort(pricesUpwards);
-		console.log("sort up");
 	} else if (filter.priceDown) {
 		itemsToDisplay.sort(pricesDownwards);
-		console.log("sort down");
 	} else {
 		itemsToDisplay = products.hotDeals;
-		console.log("punkt wyjścia");
 	}
-	// itemsToDisplay.sort(comparePrices);
 
 	return (
 		<>
