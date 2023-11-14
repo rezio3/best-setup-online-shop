@@ -12,20 +12,23 @@
 }
 .adam-audio-container__lower-header {
   margin-top: 10px;
+  margin-bottom: 50px;
   font-size: 24px;
 }
-.adam-audio-container__description {
+.adam-audio-container__description-box {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   font-size: 20px;
   line-height: 40px;
 }
-.adam-audio-container__description p {
-  width: 40%;
+.adam-audio-container__description {
+  width: 45%;
+  color: #222;
+  font-size: 18px;
 }
 .adam-audio-container__image-boxes-container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   width: 100%;
 }
 .adam-audio-container .adam-audio-img-box {
@@ -35,6 +38,7 @@
   flex-direction: column;
   width: 350px;
   height: 350px;
+  margin-top: 40px;
   background-color: #222;
   box-shadow: 0 0 15px -6px;
   z-index: 0;

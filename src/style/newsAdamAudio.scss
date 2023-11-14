@@ -14,20 +14,23 @@
 	}
 	&__lower-header {
 		margin-top: 10px;
+		margin-bottom: 50px;
 		font-size: 24px;
 	}
-	&__description {
+	&__description-box {
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		font-size: 20px;
 		line-height: 40px;
-		p {
-			width: 40%;
-		}
+	}
+	&__description {
+		width: 45%;
+		color: $dark;
+		font-size: 18px;
 	}
 	&__image-boxes-container {
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-between;
 		width: 100%;
 	}
 	.adam-audio-img-box {
@@ -38,6 +41,7 @@
 		// justify-content: center;
 		width: 350px;
 		height: 350px;
+		margin-top: 40px;
 		background-color: $dark;
 		box-shadow: 0 0 15px -6px;
 		z-index: 0;
