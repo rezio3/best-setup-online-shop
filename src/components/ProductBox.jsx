@@ -87,7 +87,9 @@ const ProductBox = (props) => {
 				<h5 className="product-box__product-name">{props.product.name}</h5>
 
 				<div className="product-box__price-and-buy-btn">
-					<span className="product-box__price-span">{props.product.price}</span>
+					<span className="product-box__price-span">
+						{props.product.price}zł
+					</span>
 					<button className="product-box__buy-btn button-anim">
 						Add to cart
 					</button>
