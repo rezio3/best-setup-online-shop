@@ -1,0 +1,33 @@
+@import "./colors.scss";
+
+.adam-audio-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	&__header {
+		font-size: 30px;
+	}
+	&__description {
+		display: flex;
+		font-size: 20px;
+		line-height: 40px;
+	}
+	&__image-boxes-container {
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+		background-color: rgb(136, 73, 73);
+	}
+	&__image-box {
+		display: flex;
+		justify-content: center;
+		width: 350px;
+		height: 350px;
+		background-color: $black;
+
+		.adam-image {
+			scale: 80%;
+		}
+	}
+}

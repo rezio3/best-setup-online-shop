@@ -1,0 +1,30 @@
+.adam-audio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.adam-audio-container__header {
+  font-size: 30px;
+}
+.adam-audio-container__description {
+  display: flex;
+  font-size: 20px;
+  line-height: 40px;
+}
+.adam-audio-container__image-boxes-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: rgb(136, 73, 73);
+}
+.adam-audio-container__image-box {
+  display: flex;
+  justify-content: center;
+  width: 350px;
+  height: 350px;
+  background-color: #1b1b1b;
+}
+.adam-audio-container__image-box .adam-image {
+  scale: 80%;
+}
