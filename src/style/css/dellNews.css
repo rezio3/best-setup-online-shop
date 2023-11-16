@@ -1,0 +1,32 @@
+.dell-news-scroller-container {
+  margin-top: 200px;
+  width: 100%;
+}
+.dell-news-scroller-container .dell-news-box {
+  width: 450px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px -6px;
+}
+.dell-news-scroller-container .dell-news-box__image-container {
+  width: 100%;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dell-news-scroller-container .dell-news-box__image {
+  width: 350px;
+}
+.dell-news-scroller-container .dell-news-box__description-container {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  background-color: #7eb8e6;
+}
