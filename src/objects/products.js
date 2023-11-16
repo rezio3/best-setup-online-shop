@@ -67,7 +67,7 @@ const products = {
 		{
 			name: "Dell-SE2422H",
 			img: 1,
-			price: 89,
+			price: 181,
 			stars: 4,
 			opinions: 824,
 			productId: 1,
