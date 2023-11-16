@@ -50,6 +50,7 @@
   transform: translateX(-50%);
   width: 300px;
   z-index: -1;
+  transition: 0.2s ease-out;
 }
 .adam-audio-container .adam-audio-img-box__header {
   margin-left: 30px;

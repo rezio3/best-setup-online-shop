@@ -53,6 +53,7 @@
 			transform: translateX(-50%);
 			width: 300px;
 			z-index: -1;
+			transition: 0.2s ease-out;
 		}
 		&__header {
 			margin-left: 30px;
