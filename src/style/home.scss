@@ -1,9 +1,27 @@
 @import "./colors.scss";
 
+.navigator-description-container {
+	margin: 25px 0 20px;
+	width: 70%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+	&__arrow-span {
+		font-size: 26px;
+		font-weight: 400;
+	}
+	&__header {
+		margin: 0;
+		margin-left: 10px;
+		font-weight: 200;
+	}
+}
+
 .main-home-page-container {
 	display: flex;
 	justify-content: center;
 	align-items: flex-start;
 	width: 70%;
-	margin-top: 50px;
+	// margin-top: 50px;
 }
