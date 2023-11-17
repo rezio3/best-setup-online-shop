@@ -1,10 +1,19 @@
 @import "./colors.scss";
+// @import "https://unpkg.com/open-props";
+// @import "https://unpkg.com/open-props/normalize.min.css";
 
 .dell-news-scroller-container {
+	padding: 10px 0 50px;
 	margin-top: 200px;
 	width: 100%;
-	display: flex;
+	display: grid;
+	grid-auto-flow: column;
+	// grid-auto-columns: 450px;
+	overflow-x: auto;
 
+	.spacer {
+		width: 380px;
+	}
 	.dell-news-box {
 		margin: 0 20px;
 		width: 450px;
@@ -33,7 +42,8 @@
 			flex-direction: column;
 			justify-content: flex-start;
 			align-content: flex-start;
-			background-color: $lightblue;
+			// background-color: $lightblue;
+			box-shadow: 0px -10px 10px -16px;
 		}
 		&__product-type-span {
 			margin-top: 20px;
@@ -42,6 +52,31 @@
 		// 		}
 		// 		&__product-description {
 		// 		}
+	}
+	.dell-news-header-container {
+		justify-content: flex-start;
+		align-items: flex-start;
+		width: 450px;
+		box-shadow: none;
+
+		.dell-news-box__header {
+			margin: 0;
+			font-size: 50px;
+		}
+		.dell-news-box__lower-span {
+			font-size: 24px;
+		}
+		.dell-news-box__promo-description {
+			margin: 0;
+			margin-top: 50px;
+			font-size: 16px;
+			letter-spacing: 1px;
+			line-height: 40px;
+		}
+		.dell-news-box__promo-description-lower {
+			margin-top: 0;
+			font-size: 14px;
+		}
 	}
 }
 
