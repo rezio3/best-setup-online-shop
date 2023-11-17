@@ -5,8 +5,10 @@ import DellNews from "./news/DellNews";
 
 const News = () => {
 	return (
-		<div className="news-container">
-			<NewsAdamAudio />
+		<div className="news-section">
+			<div className="news-container">
+				<NewsAdamAudio />
+			</div>
 			<DellNews />
 		</div>
 	);
