@@ -5,7 +5,7 @@
 .vertical-scroll::-webkit-scrollbar-track {
   background-color: #7eb8e6;
   margin-block: 0.5em;
-  margin-inline: 50px;
+  margin-inline: 150px;
 }
 
 .vertical-scroll::-webkit-scrollbar-thumb {
