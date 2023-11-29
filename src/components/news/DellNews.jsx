@@ -10,8 +10,65 @@ import dell6 from "../../img/news/Nintendo Switch - OLED Model.jpg";
 import dell7 from "../../img/news/Inpiron 24 All-In-One.jpg";
 import dell8 from "../../img/news/Alienware m18 Gaming Laptop.jpg";
 import dell9 from "../../img/news/Dell 27 Monitor - E2723H.jpg";
+import DellProductBox from "./DellProductBox";
 
 const DellNews = () => {
+	const dellProductsArr = [
+		{
+			type: "PC | Gaming",
+			name: "Alienware Aurora R16 Gaming Desktop",
+			description: `Refined and simplified, the Aurora R16 is designed to be a more minimal and efficient desktop with improvements in every category.`,
+			img: dell1,
+			id: 1,
+		},
+		{
+			type: "Console | PS",
+			name: "Alienware 34 Curved QD-OLED Gaming Monitor - AW3424DWF",
+			description: `	Experience Marvel’s Spider-Man 2 with PS5 innovations. Feel the
+			force of web-swinging with adaptive triggers, while haptic
+			feedback responds to Peter Parker’s new symbiote abilities and
+			Miles Morales’ evolved bio-electric skills.`,
+			img: dell2,
+			id: 2,
+		},
+		{
+			type: "Monitor | Ultrawide",
+			name: "PS5 Console - Marvel's Spider-Man 2 Bundle",
+			description: `	34" curved monitor with QD-OLED technology and AMD FreeSync™
+			Premium Pro. Featuring infinite contrast ratio and VESA DisplayHDR
+			TrueBlack 400 for an incredible front-of-screen performance.`,
+			img: dell1,
+			id: 3,
+		},
+		{
+			type: "PC | Gaming",
+			name: "Alienware Aurora R16 Gaming Desktop",
+			description: `Refined and simplified, the Aurora R16 is designed to be a more minimal and efficient desktop with improvements in every category.`,
+			img: dell1,
+			id: 4,
+		},
+		{
+			type: "PC | Gaming",
+			name: "Alienware Aurora R16 Gaming Desktop",
+			description: `Refined and simplified, the Aurora R16 is designed to be a more minimal and efficient desktop with improvements in every category.`,
+			img: dell1,
+			id: 5,
+		},
+		{
+			type: "PC | Gaming",
+			name: "Alienware Aurora R16 Gaming Desktop",
+			description: `Refined and simplified, the Aurora R16 is designed to be a more minimal and efficient desktop with improvements in every category.`,
+			img: dell1,
+			id: 6,
+		},
+		{
+			type: "PC | Gaming",
+			name: "Alienware Aurora R16 Gaming Desktop",
+			description: `Refined and simplified, the Aurora R16 is designed to be a more minimal and efficient desktop with improvements in every category.`,
+			img: dell1,
+			id: 7,
+		},
+	];
 	return (
 		<>
 			<div className="dell-news-scroller-container vertical-scroll">
@@ -36,54 +93,20 @@ const DellNews = () => {
 						strings attached!
 					</p>
 				</div>
-				{/* --------------------------------- 1 ------------------------ */}
-				<div className="dell-news-box">
-					<div className="dell-news-box__image-container">
-						<img
-							src={dell1}
-							alt="Alienware Aurora R16 Gaming Desktop"
-							className="dell-news-box__image"
-						/>
-					</div>
 
-					<div className="dell-news-box__description-container">
-						<span className="dell-news-box__product-type-span">
-							PC | Gaming
-						</span>
-						<h4 className="dell-news-box__product-name">
-							Alienware Aurora R16 Gaming Desktop
-						</h4>
-						<p className="dell-news-box__product-description">
-							Refined and simplified, the Aurora R16 is designed to be a more
-							minimal and efficient desktop with improvements in every category.
-						</p>
-					</div>
-				</div>
-				{/* ----------------------------- 2 ---------------------------- */}
-				<div className="dell-news-box">
-					<div className="dell-news-box__image-container">
-						<img
-							src={dell2}
-							alt="Alienware 34 Curved QD-OLED Gaming Monitor - AW3424DWF"
-							className="dell-news-box__image"
+				{dellProductsArr.map((e) => {
+					console.log(e.name);
+					return (
+						<DellProductBox
+							type={e.type}
+							name={e.name}
+							description={e.description}
+							img={e.img}
+							key={e.id}
 						/>
-					</div>
+					);
+				})}
 
-					<div className="dell-news-box__description-container">
-						<span className="dell-news-box__product-type-span">
-							Console | PS
-						</span>
-						<h4 className="dell-news-box__product-name">
-							Alienware 34 Curved QD-OLED Gaming Monitor - AW3424DWF
-						</h4>
-						<p className="dell-news-box__product-description">
-							Experience Marvel’s Spider-Man 2 with PS5 innovations. Feel the
-							force of web-swinging with adaptive triggers, while haptic
-							feedback responds to Peter Parker’s new symbiote abilities and
-							Miles Morales’ evolved bio-electric skills.
-						</p>
-					</div>
-				</div>
 				{/* ------------------------------- 3 ---------------------------- */}
 				<div className="dell-news-box">
 					<div className="dell-news-box__image-container">
