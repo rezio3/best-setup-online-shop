@@ -40,15 +40,17 @@
   box-shadow: 0px -10px 10px -16px;
 }
 .dell-news-scroller-container .dell-news-box__product-header-container {
+  margin-top: 20px;
   height: 100px;
 }
 .dell-news-scroller-container .dell-news-box__product-type-span {
-  margin-top: 20px;
   letter-spacing: 2px;
 }
 .dell-news-scroller-container .dell-news-box__product-name {
+  margin: 0;
+  margin-top: 20px;
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 700;
 }
 .dell-news-scroller-container .dell-news-box__product-description {
   font-size: 18px;

@@ -46,15 +46,17 @@
 			box-shadow: 0px -10px 10px -16px;
 		}
 		&__product-header-container {
+			margin-top: 20px;
 			height: 100px;
 		}
 		&__product-type-span {
-			margin-top: 20px;
 			letter-spacing: 2px;
 		}
 		&__product-name {
+			margin: 0;
+			margin-top: 20px;
 			font-size: 20px;
-			font-weight: 400;
+			font-weight: 700;
 		}
 		&__product-description {
 			font-size: 18px;
