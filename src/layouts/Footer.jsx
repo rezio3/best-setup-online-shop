@@ -17,7 +17,7 @@ const Footer = () => {
 	return (
 		<>
 			<footer className="footer-layout">
-				<span className="payments-span">Shop and Pay Safely</span>
+				<span className="payments-span">Shop and pay safely</span>
 				<div className="footer-upper-container">
 					<div className="footer-upper-container__payment-methods-box">
 						<img

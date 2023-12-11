@@ -54,11 +54,14 @@
 			justify-content: space-between;
 
 			.social-icon {
-				margin: 0 10px;
+				padding: 10px 10px;
 				font-size: 30px;
 			}
 			.social-icon:first-child {
-				margin-left: 0;
+				padding-left: 0;
+			}
+			.social-icon:hover {
+				color: $blue;
 			}
 		}
 	}

@@ -50,11 +50,14 @@
   justify-content: space-between;
 }
 .footer-layout .footer-lower-container__social-icons .social-icon {
-  margin: 0 10px;
+  padding: 10px 10px;
   font-size: 30px;
 }
 .footer-layout .footer-lower-container__social-icons .social-icon:first-child {
-  margin-left: 0;
+  padding-left: 0;
+}
+.footer-layout .footer-lower-container__social-icons .social-icon:hover {
+  color: #277ec1;
 }
 .footer-layout .copyright-container {
   margin: 50px 0 30px;
