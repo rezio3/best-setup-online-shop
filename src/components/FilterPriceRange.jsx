@@ -8,7 +8,7 @@ const FilterPriceRange = (props) => {
 				...filter,
 				priceRange: {
 					...filter.priceRange,
-					priceFrom: e.target.value,
+					priceFrom: Number(e.target.value),
 				},
 			});
 		} else if (e.target.id === "price-to-input") {
@@ -16,7 +16,7 @@ const FilterPriceRange = (props) => {
 				...filter,
 				priceRange: {
 					...filter.priceRange,
-					priceTo: e.target.value,
+					priceTo: Number(e.target.value),
 				},
 			});
 		}
