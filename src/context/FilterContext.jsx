@@ -8,7 +8,10 @@ const filterSettings = {
 	comfort: false,
 	priceUp: false,
 	priceDown: false,
-	priceRange: null,
+	priceRange: {
+		priceFrom: null,
+		priceTo: null,
+	},
 };
 
 export const FilterContext = createContext();
