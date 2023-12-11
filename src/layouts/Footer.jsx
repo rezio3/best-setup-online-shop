@@ -6,11 +6,18 @@ import paymentMethod3 from "../img/payment-methods/payment-method-3.png";
 import paymentMethod4 from "../img/payment-methods/payment-method-4.png";
 import paymentMethod5 from "../img/payment-methods/payment-method-5.png";
 import paymentMethod6 from "../img/payment-methods/payment-method-6.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
+import { faInstagram } from "@fortawesome/free-brands-svg-icons";
+import { faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faTwitter } from "@fortawesome/free-brands-svg-icons";
+import { faPinterest } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
 	return (
 		<>
 			<footer className="footer-layout">
+				<span className="payments-span">Shop and Pay Safely</span>
 				<div className="footer-upper-container">
 					<div className="footer-upper-container__payment-methods-box">
 						<img
@@ -66,6 +73,13 @@ const Footer = () => {
 						<span>Jobs & Careers</span>
 						<span>Blog</span>
 						<span>Classified Ads</span>
+						<div className="footer-lower-container__social-icons">
+							<FontAwesomeIcon icon={faFacebook} className="social-icon" />
+							<FontAwesomeIcon icon={faInstagram} className="social-icon" />
+							<FontAwesomeIcon icon={faYoutube} className="social-icon" />
+							<FontAwesomeIcon icon={faTwitter} className="social-icon" />
+							<FontAwesomeIcon icon={faPinterest} className="social-icon" />
+						</div>
 					</div>
 				</div>
 				<div className="copyright-container">

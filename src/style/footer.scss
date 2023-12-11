@@ -9,8 +9,17 @@
 	align-items: center;
 	box-shadow: 0 0 10px -6px;
 
-	.footer-upper-container {
+	.payments-span {
 		padding-top: 50px;
+		width: 70%;
+		display: flex;
+		justify-content: flex-start;
+		font-size: 24px;
+		font-weight: 400;
+	}
+
+	.footer-upper-container {
+		padding-bottom: 25px;
 		width: 70%;
 
 		&__payment-methods-box {
@@ -25,14 +34,32 @@
 	}
 
 	.footer-lower-container {
-		padding-top: 50px;
+		margin: 50px 0;
+		padding: 80px 20px 0;
 		width: 70%;
 		display: flex;
 		justify-content: space-between;
+		box-shadow: 0px -10px 10px -15px;
 		&__box {
-			gap: 10px;
+			gap: 20px;
 			display: flex;
 			flex-direction: column;
+			span {
+				cursor: pointer;
+			}
+		}
+		&__social-icons {
+			margin-top: 15px;
+			display: flex;
+			justify-content: space-between;
+
+			.social-icon {
+				margin: 0 10px;
+				font-size: 30px;
+			}
+			.social-icon:first-child {
+				margin-left: 0;
+			}
 		}
 	}
 	.copyright-container {
