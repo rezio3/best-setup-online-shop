@@ -103,7 +103,6 @@ const DellNews = () => {
 				<div className="spacer"></div>
 				<DellNewsHeader />
 				{dellProductsArr.map((e) => {
-					console.log(e.name);
 					return (
 						<DellProductBox
 							type={e.type}
