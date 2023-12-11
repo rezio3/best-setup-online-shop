@@ -9,8 +9,8 @@ const filterSettings = {
 	priceUp: false,
 	priceDown: false,
 	priceRange: {
-		priceFrom: 0,
-		priceTo: 0,
+		priceFrom: "",
+		priceTo: "",
 	},
 };
 
