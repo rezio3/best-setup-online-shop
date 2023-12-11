@@ -1,8 +1,47 @@
 @import "./colors.scss";
 
-.footer-container {
+.footer-layout {
 	margin-top: 30px;
 	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
 	box-shadow: 0 0 10px -6px;
-	height: 400px;
+
+	.footer-upper-container {
+		padding-top: 50px;
+		width: 70%;
+
+		&__payment-methods-box {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			gap: 30px;
+		}
+		&__payment-icon {
+			width: 70px;
+		}
+	}
+
+	.footer-lower-container {
+		padding-top: 50px;
+		width: 70%;
+		display: flex;
+		justify-content: space-between;
+		&__box {
+			gap: 10px;
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	.copyright-container {
+		margin: 50px 0 30px;
+		width: 70%;
+		display: flex;
+		justify-content: flex-start;
+		&__copyright-span {
+			font-size: 12px;
+		}
+	}
 }
