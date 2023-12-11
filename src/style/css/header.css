@@ -17,7 +17,8 @@
 .header-container .header-logo-bar__logo {
   width: 300px;
 }
-.header-container .header-logo-bar__contact-button {
+.header-container .header-logo-bar__button {
+  margin: 0 10px;
   padding: 20px;
   background: none;
   font-size: 14px;

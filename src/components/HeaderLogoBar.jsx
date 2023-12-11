@@ -6,9 +6,15 @@ const HeaderLogoBar = () => {
 	return (
 		<div className="header-logo-bar">
 			<img src={bestSetupLogo} className="header-logo-bar__logo" />
-			<button className="header-logo-bar__contact-button button-anim">
-				Contact Us!
-			</button>
+			<div className="header-logo-bar__buttons-container">
+				<button className="header-logo-bar__button button-anim">
+					About Us
+				</button>
+				<button className="header-logo-bar__button button-anim">Service</button>
+				<button className="header-logo-bar__button button-anim">
+					Contact Us!
+				</button>
+			</div>
 		</div>
 	);
 };
