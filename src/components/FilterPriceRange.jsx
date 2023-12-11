@@ -8,7 +8,7 @@ const FilterPriceRange = (props) => {
 				...filter,
 				priceRange: {
 					...filter.priceRange,
-					priceFrom: Number(e.target.value),
+					priceFrom: e.target.value,
 				},
 			});
 		} else if (e.target.id === "price-to-input") {
@@ -16,7 +16,7 @@ const FilterPriceRange = (props) => {
 				...filter,
 				priceRange: {
 					...filter.priceRange,
-					priceTo: Number(e.target.value),
+					priceTo: e.target.value,
 				},
 			});
 		}
@@ -30,12 +30,14 @@ const FilterPriceRange = (props) => {
 					type="number"
 					id="price-from-input"
 					onChange={handlePriceRangeInputs}
+					value={filter.priceRange.priceFrom}
 				></input>
 				<span> To: </span>
 				<input
 					type="number"
 					id="price-to-input"
 					onChange={handlePriceRangeInputs}
+					value={filter.priceRange.priceTo}
 				></input>
 			</div>
 		</>
