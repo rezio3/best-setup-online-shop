@@ -61,6 +61,7 @@
 			color: $white;
 			font-size: 50px;
 			font-weight: 400;
+			user-select: none;
 			z-index: 1;
 		}
 		&__description {
@@ -69,6 +70,7 @@
 			color: $white;
 			font-size: 18px;
 			font-weight: 200;
+			user-select: none;
 		}
 	}
 }

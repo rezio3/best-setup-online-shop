@@ -58,6 +58,7 @@
   color: #ffffff;
   font-size: 50px;
   font-weight: 400;
+  user-select: none;
   z-index: 1;
 }
 .adam-audio-container .adam-audio-img-box__description {
@@ -66,4 +67,5 @@
   color: #ffffff;
   font-size: 18px;
   font-weight: 200;
+  user-select: none;
 }

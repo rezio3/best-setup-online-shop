@@ -2,7 +2,6 @@ import React, { useRef } from "react";
 import { gsap } from "gsap";
 
 const AdamAudioProduct = (props) => {
-	// DLACZEGO TEN USEREF NIE POBIERA ELEMENTU?! SKORO W PRODUCTBOX.JSX POBIERA BEZ PROBLEMU
 	let productImage = useRef(null);
 
 	const handleHover = () => {
