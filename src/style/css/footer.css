@@ -41,8 +41,25 @@
   display: flex;
   flex-direction: column;
 }
-.footer-layout .footer-lower-container__box span {
+.footer-layout .footer-lower-container__link {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
   cursor: pointer;
+}
+.footer-layout .footer-lower-container__link::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  border-bottom: 1px solid black;
+  transition: 0.2s ease-out;
+}
+.footer-layout .footer-lower-container__link:hover::after {
+  width: 100%;
 }
 .footer-layout .footer-lower-container__social-icons {
   margin-top: 15px;

@@ -54,25 +54,39 @@ const Footer = () => {
 				</div>
 				<div className="footer-lower-container">
 					<div className="footer-lower-container__box">
-						<span>Terms & Conditions</span>
-						<span>Privacy Policy</span>
-						<span>Cookie Settings</span>
-						<span>Right of Withdrawal</span>
-						<span>Online Ordering Process</span>
-						<span>Statutory Warranty Rights</span>
+						<span className="footer-lower-container__link">
+							Terms & Conditions
+						</span>
+						<span className="footer-lower-container__link">Privacy Policy</span>
+						<span className="footer-lower-container__link">
+							Cookie Settings
+						</span>
+						<span className="footer-lower-container__link">
+							Right of Withdrawal
+						</span>
+						<span className="footer-lower-container__link">
+							Online Ordering Process
+						</span>
+						<span className="footer-lower-container__link">
+							Statutory Warranty Rights
+						</span>
 					</div>
 					<div className="footer-lower-container__box">
-						<span>Shipping Costs and Delivery Times</span>
-						<span>Help Centre</span>
-						<span>Vouchers</span>
-						<span>Contact us</span>
-						<span>Serivce Overview</span>
+						<span className="footer-lower-container__link">
+							Shipping Costs and Delivery Times
+						</span>
+						<span className="footer-lower-container__link">Help Centre</span>
+						<span className="footer-lower-container__link">Vouchers</span>
+						<span className="footer-lower-container__link">Contact us</span>
+						<span className="footer-lower-container__link">
+							Serivce Overview
+						</span>
 					</div>
 					<div className="footer-lower-container__box">
-						<span>About Us</span>
-						<span>Jobs & Careers</span>
-						<span>Blog</span>
-						<span>Classified Ads</span>
+						<span className="footer-lower-container__link">About Us</span>
+						<span className="footer-lower-container__link">Jobs & Careers</span>
+						<span className="footer-lower-container__link">Blog</span>
+						<span className="footer-lower-container__link">Classified Ads</span>
 						<div className="footer-lower-container__social-icons">
 							<FontAwesomeIcon icon={faFacebook} className="social-icon" />
 							<FontAwesomeIcon icon={faInstagram} className="social-icon" />
