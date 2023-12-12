@@ -12,44 +12,27 @@ import { faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faPinterest } from "@fortawesome/free-brands-svg-icons";
+import PaymentMethodsFooter from "../components/footer/PaymentMethodsFooter";
 
 const Footer = () => {
+	const paymentMethodsArray = [
+		{ img: paymentMethod1, alt: "first-payment-method" },
+		{ img: paymentMethod2, alt: "second-payment-method" },
+		{ img: paymentMethod3, alt: "third-payment-method" },
+		{ img: paymentMethod4, alt: "fourth-payment-method" },
+		{ img: paymentMethod5, alt: "fifth-payment-method" },
+		{ img: paymentMethod6, alt: "sixth-payment-method" },
+	];
 	return (
 		<>
 			<footer className="footer-layout">
 				<span className="payments-span">Shop and pay safely</span>
 				<div className="footer-upper-container">
 					<div className="footer-upper-container__payment-methods-box">
-						<img
-							src={paymentMethod1}
-							alt="first-payment-method"
-							className="footer-upper-container__payment-icon"
-						/>
-						<img
-							src={paymentMethod2}
-							alt="second-payment-method"
-							className="footer-upper-container__payment-icon"
-						/>
-						<img
-							src={paymentMethod3}
-							alt="third-payment-method"
-							className="footer-upper-container__payment-icon"
-						/>
-						<img
-							src={paymentMethod4}
-							alt="fourth-payment-method"
-							className="footer-upper-container__payment-icon"
-						/>
-						<img
-							src={paymentMethod5}
-							alt="fifth-payment-method"
-							className="footer-upper-container__payment-icon"
-						/>
-						<img
-							src={paymentMethod6}
-							alt="sixth-payment-method"
-							className="footer-upper-container__payment-icon"
-						/>
+						{paymentMethodsArray.map((e) => {
+							console.log(e);
+							return <PaymentMethodsFooter img={e.img} alt={e.alt} />;
+						})}
 					</div>
 				</div>
 				<div className="footer-lower-container">
