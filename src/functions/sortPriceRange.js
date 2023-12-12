@@ -1,5 +1,4 @@
 const sortPriceRange = (priceRange, itemsArray) => {
-	console.log(itemsArray);
 	let newArrPriceFrom = itemsArray.filter(
 		(e) => e.price >= Number(priceRange.priceFrom)
 	);
