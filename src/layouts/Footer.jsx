@@ -13,6 +13,7 @@ import { faYoutube } from "@fortawesome/free-brands-svg-icons";
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faPinterest } from "@fortawesome/free-brands-svg-icons";
 import PaymentMethodsFooter from "../components/footer/PaymentMethodsFooter";
+import LinkFooter from "../components/footer/LinkFooter";
 
 const Footer = () => {
 	const paymentMethodsArray = [
@@ -23,6 +24,24 @@ const Footer = () => {
 		{ img: paymentMethod5, alt: "fifth-payment-method" },
 		{ img: paymentMethod6, alt: "sixth-payment-method" },
 	];
+	const footerLinksArray = {
+		leftLinks: [
+			"Terms & Conditions",
+			"Privacy Policy",
+			"Cookie Settings",
+			"Right of Withdrawal",
+			"Online Ordering Process",
+			"Statutory Warranty Rights",
+		],
+		middleLinks: [
+			"Shipping Costs and Delivery Times",
+			"Help Centre",
+			"Vouchers",
+			"Contact us",
+			"Serivce Overview",
+		],
+		rightLinks: ["About Us", "Jobs & Careers", "Blog", "Classified Ads"],
+	};
 	return (
 		<>
 			<footer className="footer-layout">
@@ -37,39 +56,19 @@ const Footer = () => {
 				</div>
 				<div className="footer-lower-container">
 					<div className="footer-lower-container__box">
-						<span className="footer-lower-container__link">
-							Terms & Conditions
-						</span>
-						<span className="footer-lower-container__link">Privacy Policy</span>
-						<span className="footer-lower-container__link">
-							Cookie Settings
-						</span>
-						<span className="footer-lower-container__link">
-							Right of Withdrawal
-						</span>
-						<span className="footer-lower-container__link">
-							Online Ordering Process
-						</span>
-						<span className="footer-lower-container__link">
-							Statutory Warranty Rights
-						</span>
+						{footerLinksArray.leftLinks.map((e) => {
+							return <LinkFooter name={e} />;
+						})}
 					</div>
 					<div className="footer-lower-container__box">
-						<span className="footer-lower-container__link">
-							Shipping Costs and Delivery Times
-						</span>
-						<span className="footer-lower-container__link">Help Centre</span>
-						<span className="footer-lower-container__link">Vouchers</span>
-						<span className="footer-lower-container__link">Contact us</span>
-						<span className="footer-lower-container__link">
-							Serivce Overview
-						</span>
+						{footerLinksArray.middleLinks.map((e) => {
+							return <LinkFooter name={e} />;
+						})}
 					</div>
 					<div className="footer-lower-container__box">
-						<span className="footer-lower-container__link">About Us</span>
-						<span className="footer-lower-container__link">Jobs & Careers</span>
-						<span className="footer-lower-container__link">Blog</span>
-						<span className="footer-lower-container__link">Classified Ads</span>
+						{footerLinksArray.rightLinks.map((e) => {
+							return <LinkFooter name={e} />;
+						})}
 						<div className="footer-lower-container__social-icons">
 							<FontAwesomeIcon icon={faFacebook} className="social-icon" />
 							<FontAwesomeIcon icon={faInstagram} className="social-icon" />
