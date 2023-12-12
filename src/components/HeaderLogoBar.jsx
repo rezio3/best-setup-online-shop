@@ -1,14 +1,14 @@
 import React from "react";
 import bestSetupLogo from "../img/BestSetupLogo.png";
 import "../style/css/buttonsAnim.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const HeaderLogoBar = () => {
 	return (
 		<div className="header-logo-bar">
-			<Link to="/">
+			<NavLink to="/">
 				<img src={bestSetupLogo} className="header-logo-bar__logo" />
-			</Link>
+			</NavLink>
 			<div className="header-logo-bar__buttons-container">
 				<button className="header-logo-bar__button button-anim">
 					About Us

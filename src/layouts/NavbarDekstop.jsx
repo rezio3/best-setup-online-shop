@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "../style/css/navbarDesktop.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const NavbarDesktop = () => {
 	const [snapNav, setSnapNav] = useState(false);
@@ -24,39 +24,39 @@ const NavbarDesktop = () => {
 				<div className="navbar-container__empty-left-spacer"></div>
 				<ul className="product-pages-buttons-container">
 					<li className="product-pages-buttons-container__nav-element">
-						<Link to="/display">
+						<NavLink to="/display">
 							<button className="product-pages-buttons-container__nav-button">
 								Display
 							</button>
-						</Link>
+						</NavLink>
 					</li>
 					<li className="product-pages-buttons-container__nav-element">
-						<Link to="/sound">
+						<NavLink to="/sound">
 							<button className="product-pages-buttons-container__nav-button">
 								Sound
 							</button>
-						</Link>
+						</NavLink>
 					</li>
 					<li className="product-pages-buttons-container__nav-element">
-						<Link to="/pc">
+						<NavLink to="/pc">
 							<button className="product-pages-buttons-container__nav-button">
 								PC
 							</button>
-						</Link>
+						</NavLink>
 					</li>
 					<li className="product-pages-buttons-container__nav-element">
-						<Link to="/accessories">
+						<NavLink to="/accessories">
 							<button className="product-pages-buttons-container__nav-button">
 								Accessories
 							</button>
-						</Link>
+						</NavLink>
 					</li>
 					<li className="product-pages-buttons-container__nav-element">
-						<Link to="/comfort">
+						<NavLink to="/comfort">
 							<button className="product-pages-buttons-container__nav-button">
 								Comfort
 							</button>
-						</Link>
+						</NavLink>
 					</li>
 				</ul>
 				<div className="cart-container">
