@@ -9,6 +9,8 @@ const Display = () => {
 					&#8594;{" "}
 				</span>
 				<h2 className="navigator-description-container__header">Display</h2>
+				{/* <Filter />
+				<Display /> */}
 			</div>
 		</>
 	);

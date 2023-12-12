@@ -18,7 +18,7 @@ const Banner = (props) => {
 			});
 		});
 		return () => ctx.revert();
-	}, [props.state]);
+	}, [props.state, props.clicked]);
 	setTimeout(() => {
 		setRecentBanner(props.state);
 	}, 400);

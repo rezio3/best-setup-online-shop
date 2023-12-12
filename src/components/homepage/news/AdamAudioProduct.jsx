@@ -20,6 +20,7 @@ const AdamAudioProduct = (props) => {
 			>
 				<img
 					src={props.image}
+					alt={props.name}
 					id={props.name}
 					className="adam-audio-img-box__adam-image"
 					ref={(el) => (productImage = el)}

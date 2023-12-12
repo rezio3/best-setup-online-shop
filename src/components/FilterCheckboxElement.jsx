@@ -4,9 +4,10 @@ const FilterCheckboxElement = (props) => {
 	const { filter, setFilter } = props.filterState;
 
 	const inputHandler = (e) => {
+		console.log("inputHandler", e, filter);
 		setFilter({
 			...filter,
-			[props.id]: e.target.checked,
+			appliedFilters: [...filter.appliedFilters, e.target.name],
 		});
 	};
 	return (

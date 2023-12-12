@@ -7,7 +7,11 @@ const HeaderLogoBar = () => {
 	return (
 		<div className="header-logo-bar">
 			<NavLink to="/">
-				<img src={bestSetupLogo} className="header-logo-bar__logo" />
+				<img
+					src={bestSetupLogo}
+					alt="shop-logo"
+					className="header-logo-bar__logo"
+				/>
 			</NavLink>
 			<div className="header-logo-bar__buttons-container">
 				<button className="header-logo-bar__button button-anim">

@@ -79,7 +79,7 @@ const ProductBox = (props) => {
 				<div className="product-box__product-image-container">
 					<img
 						src={productsImages[props.product.img - 1]}
-						alt="product-image"
+						alt="product"
 						className="product-box__product-image"
 						ref={(el) => (productImage = el)}
 					/>
