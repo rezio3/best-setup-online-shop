@@ -1,8 +1,8 @@
 import React from "react";
-import "../../style/css/newsAdamAudio.css";
-import adam1 from "../../img/news/adam-audio-a4v-studio-monitor-navigation-566x566px.png";
-import adam2 from "../../img/news/adam-audio-a7v-studio-monitor-navigation-566x566px.png";
-import adam3 from "../../img/news/adam-audio-a44h-studio-monitor-navigation-566x566px.png";
+import "../../../style/css/newsAdamAudio.css";
+import adam1 from "../../../img/news/adam-audio-a4v-studio-monitor-navigation-566x566px.png";
+import adam2 from "../../../img/news/adam-audio-a7v-studio-monitor-navigation-566x566px.png";
+import adam3 from "../../../img/news/adam-audio-a44h-studio-monitor-navigation-566x566px.png";
 import AdamAudioProduct from "./AdamAudioProduct";
 import AdamAudioDescription from "./AdamAudioDescription";
 

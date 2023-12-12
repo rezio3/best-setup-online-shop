@@ -1,8 +1,8 @@
 import React from "react";
 import "../style/css/home.css";
 import FilterWindow from "../components/FilterWindow";
-import ProductsHomePage from "../components/ProductsHomePage";
-import News from "../components/News";
+import ProductsHomePage from "../components/homepage/ProductsHomePage";
+import News from "../components/homepage/News";
 
 const Home = () => {
 	return (

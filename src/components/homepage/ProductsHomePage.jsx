@@ -1,11 +1,11 @@
 import React, { useContext } from "react";
-import "../style/css/productsHomePage.css";
-import ProductBox from "./ProductBox";
-import products from "../objects/products";
-import { FilterContext } from "../context/FilterContext";
-import pricesUpwards from "../functions/sortItemsUpwards";
-import pricesDownwards from "../functions/sortItemsDownwards";
-import sortPriceRange from "../functions/sortPriceRange";
+import "../../style/css/productsHomePage.css";
+import ProductBox from "../ProductBox";
+import products from "../../objects/products";
+import { FilterContext } from "../../context/FilterContext";
+import pricesUpwards from "../../functions/sortItemsUpwards";
+import pricesDownwards from "../../functions/sortItemsDownwards";
+import sortPriceRange from "../../functions/sortPriceRange";
 
 const ProductsHomePage = () => {
 	const [filter, setFilter] = useContext(FilterContext);

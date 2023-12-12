@@ -1,15 +1,15 @@
 import React from "react";
-import "../../style/css/dellNews.css";
-import "../../style/css/scrollCustom.css";
-import dell1 from "../../img/news/Alienware Aurora R16 Gaming Desktop.jpg";
-import dell2 from "../../img/news/PS5 Console - Marvel's Spider-Man 2 Bundle.jpg";
-import dell3 from "../../img/news/Alienware 34 Curved QD-OLED Gaming Monitor - AW3424DWF.jpg";
-import dell4 from "../../img/news/Alienware Aurora R15 Gaming Desktop.jpg";
-import dell5 from "../../img/news/Bose QuietComfort Earbuds II - Triple Black.jpg";
-import dell6 from "../../img/news/Nintendo Switch - OLED Model.jpg";
-import dell7 from "../../img/news/Inpiron 24 All-In-One.jpg";
-import dell8 from "../../img/news/Alienware m18 Gaming Laptop.jpg";
-import dell9 from "../../img/news/Dell 27 Monitor - E2723H.jpg";
+import "../../../style/css/dellNews.css";
+import "../../../style/css/scrollCustom.css";
+import dell1 from "../../../img/news/Alienware Aurora R16 Gaming Desktop.jpg";
+import dell2 from "../../../img/news/PS5 Console - Marvel's Spider-Man 2 Bundle.jpg";
+import dell3 from "../../../img/news/Alienware 34 Curved QD-OLED Gaming Monitor - AW3424DWF.jpg";
+import dell4 from "../../../img/news/Alienware Aurora R15 Gaming Desktop.jpg";
+import dell5 from "../../../img/news/Bose QuietComfort Earbuds II - Triple Black.jpg";
+import dell6 from "../../../img/news/Nintendo Switch - OLED Model.jpg";
+import dell7 from "../../../img/news/Inpiron 24 All-In-One.jpg";
+import dell8 from "../../../img/news/Alienware m18 Gaming Laptop.jpg";
+import dell9 from "../../../img/news/Dell 27 Monitor - E2723H.jpg";
 import DellProductBox from "./DellProductBox";
 import DellNewsHeader from "./DellNewsHeader";
 
