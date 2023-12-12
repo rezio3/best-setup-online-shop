@@ -23,29 +23,39 @@ const NavbarDesktop = () => {
 				<div className="navbar-container__empty-left-spacer"></div>
 				<ul className="product-pages-buttons-container">
 					<li className="product-pages-buttons-container__nav-element">
-						<button className="product-pages-buttons-container__nav-button">
-							Display
-						</button>
+						<a href="/display">
+							<button className="product-pages-buttons-container__nav-button">
+								Display
+							</button>
+						</a>
 					</li>
 					<li className="product-pages-buttons-container__nav-element">
-						<button className="product-pages-buttons-container__nav-button">
-							Sound
-						</button>
+						<a href="/sound">
+							<button className="product-pages-buttons-container__nav-button">
+								Sound
+							</button>
+						</a>
 					</li>
 					<li className="product-pages-buttons-container__nav-element">
-						<button className="product-pages-buttons-container__nav-button">
-							PC
-						</button>
+						<a href="/pc">
+							<button className="product-pages-buttons-container__nav-button">
+								PC
+							</button>
+						</a>
 					</li>
 					<li className="product-pages-buttons-container__nav-element">
-						<button className="product-pages-buttons-container__nav-button">
-							Accessories
-						</button>
+						<a href="/accessories">
+							<button className="product-pages-buttons-container__nav-button">
+								Accessories
+							</button>
+						</a>
 					</li>
 					<li className="product-pages-buttons-container__nav-element">
-						<button className="product-pages-buttons-container__nav-button">
-							Comfort
-						</button>
+						<a href="/comfort">
+							<button className="product-pages-buttons-container__nav-button">
+								Comfort
+							</button>
+						</a>
 					</li>
 				</ul>
 				<div className="cart-container">
