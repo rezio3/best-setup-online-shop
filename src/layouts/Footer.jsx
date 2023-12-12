@@ -49,25 +49,26 @@ const Footer = () => {
 				<div className="footer-upper-container">
 					<div className="footer-upper-container__payment-methods-box">
 						{paymentMethodsArray.map((e) => {
-							console.log(e);
-							return <PaymentMethodsFooter img={e.img} alt={e.alt} />;
+							return (
+								<PaymentMethodsFooter img={e.img} alt={e.alt} key={e.alt} />
+							);
 						})}
 					</div>
 				</div>
 				<div className="footer-lower-container">
 					<div className="footer-lower-container__box">
 						{footerLinksArray.leftLinks.map((e) => {
-							return <LinkFooter name={e} />;
+							return <LinkFooter name={e} key={e} />;
 						})}
 					</div>
 					<div className="footer-lower-container__box">
 						{footerLinksArray.middleLinks.map((e) => {
-							return <LinkFooter name={e} />;
+							return <LinkFooter name={e} key={e} />;
 						})}
 					</div>
 					<div className="footer-lower-container__box">
 						{footerLinksArray.rightLinks.map((e) => {
-							return <LinkFooter name={e} />;
+							return <LinkFooter name={e} key={e} />;
 						})}
 						<div className="footer-lower-container__social-icons">
 							<FontAwesomeIcon icon={faFacebook} className="social-icon" />
