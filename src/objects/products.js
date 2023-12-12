@@ -174,8 +174,6 @@ const products = {
 			type: "comfort",
 		},
 	],
-	// display: [{}],
-	// sound: [{}],
 };
 
 export default products;

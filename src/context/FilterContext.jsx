@@ -1,7 +1,11 @@
 import React, { createContext, useState } from "react";
 
 const filterSettings = {
-	appliedFilters: [],
+	displays: false,
+	sounds: false,
+	pc: false,
+	accessories: false,
+	comfort: false,
 	priceUp: false,
 	priceDown: false,
 	priceRange: {
