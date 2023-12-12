@@ -2,8 +2,7 @@ import React, { createContext, useState } from "react";
 
 const filterSettings = {
 	appliedFilters: [],
-	priceUp: false,
-	priceDown: false,
+	pricesOrder: 'asc',
 	priceRange: {
 		priceFrom: "",
 		priceTo: "",

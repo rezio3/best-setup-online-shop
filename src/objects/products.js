@@ -111,6 +111,15 @@ const products = {
 			type: "accessories",
 		},
 		{
+			name: "Keyboard",
+			img: 9,
+			price: 60,
+			stars: 5,
+			opinions: 581,
+			productId: 9,
+			type: "other",
+		},
+		{
 			name: "ASUS Rog Strix Ultra wide",
 			img: 18,
 			price: 279,

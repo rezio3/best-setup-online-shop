@@ -9,40 +9,23 @@ import sortPriceRange from "../../functions/sortPriceRange";
 
 const ProductsHomePage = () => {
 	const [filter, setFilter] = useContext(FilterContext);
-	const { displays, sounds, pc, accessories, comfort } = filter;
-	let hotDealCopyArr = [...products.hotDeals];
-	let itemsToDisplay = [];
-	// sort products depending on selected filter types
-	for (let key in products.hotDeals) {
-		if (
-			(products.hotDeals[key].type === "displays" && displays) ||
-			(products.hotDeals[key].type === "sounds" && sounds) ||
-			(products.hotDeals[key].type === "pc" && pc) ||
-			(products.hotDeals[key].type === "accessories" && accessories) ||
-			(products.hotDeals[key].type === "comfort" && comfort)
-		) {
-			itemsToDisplay.push(hotDealCopyArr[key]);
-		} else if (!displays && !sounds && !pc && !accessories && !comfort) {
-			itemsToDisplay = hotDealCopyArr;
-		}
-	}
+	const { appliedFilters } = filter;
+	let filteredProduct = products.hotDeals.filter(singleProduct => appliedFilters.some(element => element === singleProduct.type));
 
 	// sort products depending on the price direction
-
 	if (filter.priceUp) {
-		itemsToDisplay.sort(pricesUpwards);
+		filteredProduct.sort(pricesUpwards);
 	} else if (filter.priceDown) {
-		itemsToDisplay.sort(pricesDownwards);
+		filteredProduct.sort(pricesDownwards);
 	}
-
 	// sort products depending on the price range
 
-	itemsToDisplay = sortPriceRange(filter.priceRange, itemsToDisplay);
+	filteredProduct = sortPriceRange(filter.priceRange, filteredProduct);
 
 	return (
 		<>
 			<div className="products-container">
-				{itemsToDisplay.map((e) => {
+				{filteredProduct.map((e) => {
 					return <ProductBox product={e} key={e.productId} />;
 				})}
 			</div>

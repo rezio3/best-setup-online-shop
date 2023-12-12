@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef, useContext } from "react";
+import { FormGroup, FormControlLabel, Checkbox } from '@mui/material';
 import "../style/css/filterWindow.css";
 import "../style/css/buttonsAnim.css";
 import FilterCheckboxElement from "./FilterCheckboxElement";
@@ -37,6 +38,7 @@ const FilterWindow = () => {
 		{ name: "PC", id: "pc" },
 		{ name: "Accessories", id: "accessories" },
 		{ name: "Comfort", id: "comfort" },
+		{ name: "Other", id: "other" },
 	];
 
 	return (
@@ -49,6 +51,11 @@ const FilterWindow = () => {
 			>
 				<div className="filter-padding-container">
 					<h5 className="filter-container__filter-header">Filter</h5>
+					<FormGroup>
+  <FormControlLabel control={<Checkbox defaultChecked />} label="Label" />
+  <FormControlLabel required control={<Checkbox />} label="Required" />
+  <FormControlLabel disabled control={<Checkbox />} label="Disabled" />
+</FormGroup>
 					<ul>
 						{checkboxesNames.map((e) => {
 							return (
