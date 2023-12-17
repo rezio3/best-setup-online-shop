@@ -14,7 +14,7 @@ const Display = () => {
 				<h2 className="navigator-description-container__header">Display</h2>
 			</div>
 			<div className="main-product-container">
-				<FilterWindow />
+				<FilterWindow page={"display-page"} />
 				<ProductsDisplayPage />
 			</div>
 		</>
