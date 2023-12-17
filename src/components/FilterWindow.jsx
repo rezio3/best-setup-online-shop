@@ -5,6 +5,10 @@ import FilterCheckboxElement from "./FilterCheckboxElement";
 import FilterCheckboxPriceDirection from "./FilterCheckboxPriceDirection";
 import { FilterContext } from "../context/FilterContext";
 import FilterPriceRange from "./FilterPriceRange";
+import {
+	homePageCheckboxesNames,
+	displayPageCheckboxesNames,
+} from "../objects/filterCheckboxes";
 // import { useLocation } from "react-router-dom";
 
 import { defaultFilterSettings } from "../context/FilterContext";
@@ -37,31 +41,26 @@ const FilterWindow = (props) => {
 		observer.observe(filterRef.current);
 	}, []);
 
-	// array of checkboxes
-
-	const homePageCheckboxesNames = [
-		{ name: "Displays", id: "displays" },
-		{ name: "Sounds", id: "sounds" },
-		{ name: "PC", id: "pc" },
-		{ name: "Accessories", id: "accessories" },
-		{ name: "Comfort", id: "comfort" },
-	];
-
-	const displayPageCheckboxesNames = [
-		{ name: "Full HD", id: "ultrawide" },
-		{ name: "2k", id: "ultrawide" },
-		{ name: "4k", id: "ultrawide" },
-		{ name: "5k", id: "ultrawide" },
-		{ name: "Ultrawide", id: "ultrawide" },
-		{ name: "60 FPS" },
-		{ name: "120 FPS" },
-		{ name: "24&quot;" },
-	];
-
 	const homePageCheckboxes =
 		props.page === "home-page" ? (
 			<ul>
 				{homePageCheckboxesNames.map((e) => {
+					return (
+						<FilterCheckboxElement
+							name={e.name}
+							id={e.id}
+							key={e.id}
+							filterState={{ filter, setFilter }}
+						/>
+					);
+				})}
+			</ul>
+		) : null;
+
+	const displayPageCheckboxes =
+		props.page === "display-page" ? (
+			<ul>
+				{displayPageCheckboxesNames.map((e) => {
 					return (
 						<FilterCheckboxElement
 							name={e.name}
@@ -85,6 +84,7 @@ const FilterWindow = (props) => {
 				<div className="filter-padding-container">
 					<h5 className="filter-container__filter-header">Filter</h5>
 					{homePageCheckboxes}
+					{displayPageCheckboxes}
 					<FilterPriceRange filterState={{ filter, setFilter }} />
 					<ul>
 						<FilterCheckboxPriceDirection filterState={{ filter, setFilter }} />
