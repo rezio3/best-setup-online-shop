@@ -1,6 +1,6 @@
 import React, { createContext, useState } from "react";
 
-const filterSettings = {
+export const defaultFilterSettings = {
 	displays: false,
 	sounds: false,
 	pc: false,
@@ -17,7 +17,7 @@ const filterSettings = {
 export const FilterContext = createContext();
 
 const FilterProductsContext = ({ children }) => {
-	const [filter, setFilter] = useState(filterSettings);
+	const [filter, setFilter] = useState(defaultFilterSettings);
 
 	return (
 		<FilterContext.Provider value={[filter, setFilter]}>
