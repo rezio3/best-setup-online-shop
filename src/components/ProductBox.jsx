@@ -109,12 +109,20 @@ const ProductBox = (props) => {
 	let printStars = [];
 	for (let i = 0; i < props.product.stars; i++) {
 		printStars.push(
-			<FontAwesomeIcon icon={faStarSolid} className="highlight" />
+			<FontAwesomeIcon
+				icon={faStarSolid}
+				className="highlight"
+				key={i + "starSolid"}
+			/>
 		);
 	}
 	for (let i = 0; i < 5 - props.product.stars; i++) {
 		printStars.push(
-			<FontAwesomeIcon icon={faStarRegular} className="highlight" />
+			<FontAwesomeIcon
+				icon={faStarRegular}
+				className="highlight"
+				key={i + "starRegular"}
+			/>
 		);
 	}
 	return (
