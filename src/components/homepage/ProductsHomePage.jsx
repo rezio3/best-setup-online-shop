@@ -9,22 +9,15 @@ import sortPriceRange from "../../functions/sortPriceRange";
 
 const ProductsHomePage = () => {
 	const [filter, setFilter] = useContext(FilterContext);
-	const { displays, sounds, pc, accessories, comfort } = filter;
-	let hotDealCopyArr = [...products.hotDeals];
-	let itemsToDisplay = [];
-	// sort products depending on selected filter types
-	for (let key in products.hotDeals) {
-		if (
-			(products.hotDeals[key].type === "displays" && displays) ||
-			(products.hotDeals[key].type === "sounds" && sounds) ||
-			(products.hotDeals[key].type === "pc" && pc) ||
-			(products.hotDeals[key].type === "accessories" && accessories) ||
-			(products.hotDeals[key].type === "comfort" && comfort)
-		) {
-			itemsToDisplay.push(hotDealCopyArr[key]);
-		} else if (!displays && !sounds && !pc && !accessories && !comfort) {
-			itemsToDisplay = hotDealCopyArr;
-		}
+	const { appliedFilters } = filter;
+
+	let itemsToDisplay;
+	if (appliedFilters.length !== 0) {
+		itemsToDisplay = products.hotDeals.filter((singleProduct) => {
+			return appliedFilters.some((element) => element === singleProduct.type);
+		});
+	} else {
+		itemsToDisplay = [...products.hotDeals];
 	}
 
 	// sort products depending on the price direction

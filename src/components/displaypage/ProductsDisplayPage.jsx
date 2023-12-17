@@ -10,20 +10,6 @@ const ProductsDisplayPage = () => {
 	const [filter, setFilter] = useContext(FilterContext);
 	const { displays, sounds, pc, accessories, comfort } = filter;
 	let itemsToDisplay = [...products.display];
-	// sort products depending on selected filter types
-	// for (let key in products.hotDeals) {
-	// 	if (
-	// 		(products.hotDeals[key].type === "displays" && displays) ||
-	// 		(products.hotDeals[key].type === "sounds" && sounds) ||
-	// 		(products.hotDeals[key].type === "pc" && pc) ||
-	// 		(products.hotDeals[key].type === "accessories" && accessories) ||
-	// 		(products.hotDeals[key].type === "comfort" && comfort)
-	// 	) {
-	// 		itemsToDisplay.push(hotDealCopyArr[key]);
-	// 	} else if (!displays && !sounds && !pc && !accessories && !comfort) {
-	// 		itemsToDisplay = hotDealCopyArr;
-	// 	}
-	// }
 
 	// sort products depending on the price direction
 
