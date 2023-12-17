@@ -5,14 +5,21 @@ import FilterCheckboxElement from "./FilterCheckboxElement";
 import FilterCheckboxPriceDirection from "./FilterCheckboxPriceDirection";
 import { FilterContext } from "../context/FilterContext";
 import FilterPriceRange from "./FilterPriceRange";
+// import { useLocation } from "react-router-dom";
+
+import { defaultFilterSettings } from "../context/FilterContext";
 
 const FilterWindow = (props) => {
 	const [filter, setFilter] = useContext(FilterContext);
-	const [filterStart] = useState(filter);
 
 	const resetButtonHandler = () => {
-		setFilter(filterStart);
+		setFilter(defaultFilterSettings);
 	};
+	// Setting that allows resetting the filter every time the user changes the page.
+	// let location = useLocation;
+	// useEffect(() => {
+	// 	resetButtonHandler();
+	// }, [location]);
 
 	// snap filter while scrolling
 	const [snapFilter, setSnapFilter] = useState(false);
@@ -38,6 +45,17 @@ const FilterWindow = (props) => {
 		{ name: "PC", id: "pc" },
 		{ name: "Accessories", id: "accessories" },
 		{ name: "Comfort", id: "comfort" },
+	];
+
+	const displayPageCheckboxesNames = [
+		{ name: "Full HD", id: "ultrawide" },
+		{ name: "2k", id: "ultrawide" },
+		{ name: "4k", id: "ultrawide" },
+		{ name: "5k", id: "ultrawide" },
+		{ name: "Ultrawide", id: "ultrawide" },
+		{ name: "60 FPS" },
+		{ name: "120 FPS" },
+		{ name: "24&quot;" },
 	];
 
 	const homePageCheckboxes =
