@@ -1,5 +1,5 @@
 import React from "react";
-import "../style/css/home.css";
+import "../style/css/productPages.css";
 import FilterWindow from "../components/FilterWindow";
 import ProductsHomePage from "../components/homepage/ProductsHomePage";
 import News from "../components/homepage/News";
@@ -14,8 +14,8 @@ const Home = () => {
 				</span>
 				<h2 className="navigator-description-container__header">Hot deals</h2>
 			</div>
-			<div className="main-home-page-container">
-				<FilterWindow />
+			<div className="main-product-container">
+				<FilterWindow page={"home-page"} />
 				<ProductsHomePage />
 			</div>
 			<News />
