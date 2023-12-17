@@ -6,7 +6,7 @@ import FilterCheckboxPriceDirection from "./FilterCheckboxPriceDirection";
 import { FilterContext } from "../context/FilterContext";
 import FilterPriceRange from "./FilterPriceRange";
 
-const FilterWindow = () => {
+const FilterWindow = (props) => {
 	const [filter, setFilter] = useContext(FilterContext);
 	const [filterStart] = useState(filter);
 
@@ -31,13 +31,30 @@ const FilterWindow = () => {
 	}, []);
 
 	// array of checkboxes
-	const checkboxesNames = [
+
+	const homePageCheckboxesNames = [
 		{ name: "Displays", id: "displays" },
 		{ name: "Sounds", id: "sounds" },
 		{ name: "PC", id: "pc" },
 		{ name: "Accessories", id: "accessories" },
 		{ name: "Comfort", id: "comfort" },
 	];
+
+	const homePageCheckboxes =
+		props.page === "home-page" ? (
+			<ul>
+				{homePageCheckboxesNames.map((e) => {
+					return (
+						<FilterCheckboxElement
+							name={e.name}
+							id={e.id}
+							key={e.id}
+							filterState={{ filter, setFilter }}
+						/>
+					);
+				})}
+			</ul>
+		) : null;
 
 	return (
 		<>
@@ -49,18 +66,7 @@ const FilterWindow = () => {
 			>
 				<div className="filter-padding-container">
 					<h5 className="filter-container__filter-header">Filter</h5>
-					<ul>
-						{checkboxesNames.map((e) => {
-							return (
-								<FilterCheckboxElement
-									name={e.name}
-									id={e.id}
-									key={e.id}
-									filterState={{ filter, setFilter }}
-								/>
-							);
-						})}
-					</ul>
+					{homePageCheckboxes}
 					<FilterPriceRange filterState={{ filter, setFilter }} />
 					<ul>
 						<FilterCheckboxPriceDirection filterState={{ filter, setFilter }} />
