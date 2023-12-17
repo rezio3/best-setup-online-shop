@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import "../../style/css/productsHomePage.css";
+import "../../style/css/productBox.css";
 import ProductBox from "../ProductBox";
 import products from "../../objects/products";
 import { FilterContext } from "../../context/FilterContext";
