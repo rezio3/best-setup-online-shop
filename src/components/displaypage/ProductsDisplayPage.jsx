@@ -8,8 +8,36 @@ import sortPriceRange from "../../functions/sortPriceRange";
 
 const ProductsDisplayPage = () => {
 	const [filter, setFilter] = useContext(FilterContext);
-	const { displays, sounds, pc, accessories, comfort } = filter;
-	let itemsToDisplay = [...products.display];
+	const {
+		appliedFiltersDisplaysResolution,
+		appliedFiltersDisplaysFps,
+		appliedFiltersDisplaysSize,
+	} = filter;
+
+	let itemsToDisplay = [...products.displays];
+
+	if (appliedFiltersDisplaysResolution.length !== 0) {
+		itemsToDisplay = itemsToDisplay.filter((singleProduct) => {
+			return appliedFiltersDisplaysResolution.some(
+				(element) => element === singleProduct.resolution
+			);
+		});
+	}
+
+	if (appliedFiltersDisplaysFps.length !== 0) {
+		itemsToDisplay = itemsToDisplay.filter((singleProduct) => {
+			return appliedFiltersDisplaysFps.some(
+				(element) => element === singleProduct.fps
+			);
+		});
+	}
+	if (appliedFiltersDisplaysSize.length !== 0) {
+		itemsToDisplay = itemsToDisplay.filter((singleProduct) => {
+			return appliedFiltersDisplaysSize.some(
+				(element) => element === singleProduct.size
+			);
+		});
+	}
 
 	// sort products depending on the price direction
 

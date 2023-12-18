@@ -1,7 +1,10 @@
 import React, { createContext, useState } from "react";
 
 export const defaultFilterSettings = {
-	appliedFilters: [],
+	appliedFiltersHomePage: [],
+	appliedFiltersDisplaysResolution: [],
+	appliedFiltersDisplaysFps: [],
+	appliedFiltersDisplaysSize: [],
 	priceUp: false,
 	priceDown: false,
 	priceRange: {

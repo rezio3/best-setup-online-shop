@@ -9,12 +9,14 @@ import sortPriceRange from "../../functions/sortPriceRange";
 
 const ProductsHomePage = () => {
 	const [filter, setFilter] = useContext(FilterContext);
-	const { appliedFilters } = filter;
+	const { appliedFiltersHomePage } = filter;
 
 	let itemsToDisplay;
-	if (appliedFilters.length !== 0) {
+	if (appliedFiltersHomePage.length !== 0) {
 		itemsToDisplay = products.hotDeals.filter((singleProduct) => {
-			return appliedFilters.some((element) => element === singleProduct.type);
+			return appliedFiltersHomePage.some(
+				(element) => element === singleProduct.type
+			);
 		});
 	} else {
 		itemsToDisplay = [...products.hotDeals];

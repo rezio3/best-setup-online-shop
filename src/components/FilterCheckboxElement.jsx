@@ -7,12 +7,12 @@ const FilterCheckboxElement = (props) => {
 		if (e.target.checked) {
 			setFilter({
 				...filter,
-				appliedFilters: [...filter.appliedFilters, props.id],
+				[props.data]: [...filter[props.data], props.id],
 			});
 		} else {
 			setFilter({
 				...filter,
-				appliedFilters: filter.appliedFilters.filter(
+				[props.data]: filter[props.data].filter(
 					(element) => element !== props.id
 				),
 			});
@@ -25,10 +25,9 @@ const FilterCheckboxElement = (props) => {
 					type="checkbox"
 					className="filter-container__filter-checkbox"
 					id={props.id}
+					data={props.data}
 					onChange={inputHandler}
-					checked={filter.appliedFilters.some(
-						(element) => element === props.id
-					)}
+					checked={filter[props.data].some((element) => element === props.id)}
 				></input>
 				<label htmlFor={props.id}>{props.name}</label>
 			</li>

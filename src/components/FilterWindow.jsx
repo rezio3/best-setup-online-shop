@@ -50,6 +50,7 @@ const FilterWindow = (props) => {
 							name={e.name}
 							id={e.id}
 							key={e.id}
+							data={"appliedFiltersHomePage"}
 							filterState={{ filter, setFilter }}
 						/>
 					);
@@ -57,15 +58,48 @@ const FilterWindow = (props) => {
 			</ul>
 		) : null;
 
-	const displayPageCheckboxes =
+	const displayPageCheckboxesResolution =
 		props.page === "display-page" ? (
 			<ul>
-				{displayPageCheckboxesNames.map((e) => {
+				{displayPageCheckboxesNames[0].map((e) => {
 					return (
 						<FilterCheckboxElement
 							name={e.name}
 							id={e.id}
 							key={e.id}
+							data={"appliedFiltersDisplaysResolution"}
+							filterState={{ filter, setFilter }}
+						/>
+					);
+				})}
+			</ul>
+		) : null;
+	const displayPageCheckboxesFps =
+		props.page === "display-page" ? (
+			<ul>
+				{displayPageCheckboxesNames[1].map((e) => {
+					return (
+						<FilterCheckboxElement
+							name={e.name}
+							id={e.id}
+							key={e.id}
+							data={"appliedFiltersDisplaysFps"}
+							filterState={{ filter, setFilter }}
+						/>
+					);
+				})}
+			</ul>
+		) : null;
+	const displayPageCheckboxesSize =
+		props.page === "display-page" ? (
+			<ul>
+				{displayPageCheckboxesNames[2].map((e) => {
+					return (
+						<FilterCheckboxElement
+							name={e.name}
+							id={e.id}
+							key={e.id}
+							data={"appliedFiltersDisplaysSize"}
 							filterState={{ filter, setFilter }}
 						/>
 					);
@@ -84,7 +118,9 @@ const FilterWindow = (props) => {
 				<div className="filter-padding-container">
 					<h5 className="filter-container__filter-header">Filter</h5>
 					{homePageCheckboxes}
-					{displayPageCheckboxes}
+					{displayPageCheckboxesResolution}
+					{displayPageCheckboxesFps}
+					{displayPageCheckboxesSize}
 					<FilterPriceRange filterState={{ filter, setFilter }} />
 					<ul>
 						<FilterCheckboxPriceDirection filterState={{ filter, setFilter }} />
