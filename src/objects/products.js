@@ -174,7 +174,7 @@ const products = {
 			type: "comfort",
 		},
 	],
-	display: [
+	displays: [
 		{
 			name: "Acer Nitro EI242QRPbiipx",
 			img: 20,
@@ -182,6 +182,9 @@ const products = {
 			stars: 4,
 			opinions: 961,
 			productId: 20,
+			resolution: "Full HD",
+			fps: "100fps",
+			size: `26"`,
 		},
 		{
 			name: "AOC C24G2AE",
@@ -190,6 +193,9 @@ const products = {
 			stars: 5,
 			opinions: 716,
 			productId: 21,
+			resolution: "2k",
+			fps: "100fps",
+			size: `25"`,
 		},
 		{
 			name: "AOC CU34G2X BK",
@@ -198,6 +204,9 @@ const products = {
 			stars: 4,
 			opinions: 912,
 			productId: 22,
+			resolution: "Ultrawide",
+			fps: "120fps",
+			size: `28"`,
 		},
 		{
 			name: "AOC Q27G2E BK",
@@ -206,6 +215,9 @@ const products = {
 			stars: 3,
 			opinions: 214,
 			productId: 23,
+			resolution: "Full HD",
+			fps: "60fps",
+			size: `27"`,
 		},
 		{
 			name: "BenQ GW2480",
@@ -214,6 +226,9 @@ const products = {
 			stars: 3,
 			opinions: 374,
 			productId: 24,
+			resolution: "Full HD",
+			fps: "60fps",
+			size: `24"`,
 		},
 		{
 			name: "Dell Alienware AW3423DWF OLED 210-BFRQ",
@@ -222,6 +237,9 @@ const products = {
 			stars: 5,
 			opinions: 1295,
 			productId: 25,
+			resolution: "Ultrawide",
+			fps: "120fps",
+			size: `27"`,
 		},
 		{
 			name: "Gigabyte G24F 2",
@@ -230,6 +248,9 @@ const products = {
 			stars: 5,
 			opinions: 988,
 			productId: 26,
+			resolution: "4k",
+			fps: "120fps",
+			size: `26"`,
 		},
 		{
 			name: "Gigabyte G27Q",
@@ -238,6 +259,9 @@ const products = {
 			stars: 4,
 			opinions: 844,
 			productId: 27,
+			resolution: "2k",
+			fps: "100fps",
+			size: `25"`,
 		},
 		{
 			name: "Gigabyte G27QC A",
@@ -246,6 +270,9 @@ const products = {
 			stars: 4,
 			opinions: 721,
 			productId: 28,
+			resolution: "2k",
+			fps: "100fps",
+			size: `26"`,
 		},
 		{
 			name: "iiyama G-Master G2470HSU-B1 Red Eagle",
@@ -254,6 +281,9 @@ const products = {
 			stars: 3,
 			opinions: 516,
 			productId: 29,
+			resolution: "Full HD",
+			fps: "60fps",
+			size: `24"`,
 		},
 		{
 			name: "iiyama ProLite XU2494HSU-B2",
@@ -262,6 +292,9 @@ const products = {
 			stars: 4,
 			opinions: 956,
 			productId: 30,
+			resolution: "2k",
+			fps: "120fps",
+			size: `25"`,
 		},
 		{
 			name: "Lenovo G24e-20",
@@ -270,6 +303,9 @@ const products = {
 			stars: 5,
 			opinions: 681,
 			productId: 31,
+			resolution: "4k",
+			fps: "100fps",
+			size: `24"`,
 		},
 		{
 			name: "LG 24MR400-B",
@@ -278,6 +314,9 @@ const products = {
 			stars: 3,
 			opinions: 1025,
 			productId: 32,
+			resolution: "Full HD",
+			fps: "120fps",
+			size: `26"`,
 		},
 		{
 			name: "LG UltraGear 27GP850P-B",
@@ -286,6 +325,9 @@ const products = {
 			stars: 5,
 			opinions: 2896,
 			productId: 33,
+			resolution: "4k",
+			fps: "100fps",
+			size: `27"`,
 		},
 		{
 			name: "LG UltraGear 27GR75Q-B",
@@ -294,6 +336,9 @@ const products = {
 			stars: 3,
 			opinions: 1794,
 			productId: 34,
+			resolution: "5k",
+			fps: "100fps",
+			size: `26"`,
 		},
 		{
 			name: "LG UltraGear OLED 45GR95QE-B",
@@ -302,6 +347,9 @@ const products = {
 			stars: 5,
 			opinions: 1912,
 			productId: 35,
+			resolution: "Ultrawide",
+			fps: "120fps",
+			size: `28"`,
 		},
 		{
 			name: "LG UltraWide 29WP60G",
@@ -310,6 +358,9 @@ const products = {
 			stars: 2,
 			opinions: 171,
 			productId: 36,
+			resolution: "Ultrawide",
+			fps: "60fps",
+			size: `27"`,
 		},
 		{
 			name: "Philips E-line 242E1GAJ",
@@ -318,6 +369,9 @@ const products = {
 			stars: 4,
 			opinions: 891,
 			productId: 37,
+			resolution: "2k",
+			fps: "100fps",
+			size: `26"`,
 		},
 		{
 			name: "Philips E-line 276E8VJSB",
@@ -326,6 +380,9 @@ const products = {
 			stars: 5,
 			opinions: 1220,
 			productId: 38,
+			resolution: "2k",
+			fps: "60fps",
+			size: `24"`,
 		},
 		{
 			name: "Philips V-line 243V7QDAB",
@@ -334,6 +391,9 @@ const products = {
 			stars: 5,
 			opinions: 937,
 			productId: 39,
+			resolution: "4k",
+			fps: "60fps",
+			size: `25"`,
 		},
 		{
 			name: "Samsung Odyssey G32A",
@@ -342,6 +402,9 @@ const products = {
 			stars: 5,
 			opinions: 1462,
 			productId: 40,
+			resolution: "5k",
+			fps: "100fps",
+			size: `27"`,
 		},
 		{
 			name: "Samsung Odyssey Neo G9",
@@ -350,6 +413,9 @@ const products = {
 			stars: 4,
 			opinions: 852,
 			productId: 41,
+			resolution: "Ultrawide",
+			fps: "120fps",
+			size: `28"`,
 		},
 		{
 			name: "Samsung UJ590",
@@ -358,6 +424,9 @@ const products = {
 			stars: 3,
 			opinions: 579,
 			productId: 42,
+			resolution: "2k",
+			fps: "100fps",
+			size: `25"`,
 		},
 	],
 };
