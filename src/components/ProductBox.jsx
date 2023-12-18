@@ -70,7 +70,7 @@ const ProductBox = (props) => {
 		img17,
 		img18,
 		img19,
-		//display
+		//displays
 		img20,
 		img21,
 		img22,
