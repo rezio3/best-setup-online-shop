@@ -28,3 +28,16 @@ export const displayPageCheckboxesNames = [
 		{ name: `28"`, id: `28"` },
 	],
 ];
+
+export const soundsPageCheckboxesNames = [
+	[
+		{ name: "Headphones", id: "headphones" },
+		{ name: "Speakers", id: "speakers" },
+	],
+	[
+		{ name: "1.0", id: "1.0" },
+		{ name: "2.0", id: "2.0" },
+		{ name: "2.1", id: "2.1" },
+		{ name: "5.1", id: "5.1" },
+	],
+];
