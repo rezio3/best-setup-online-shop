@@ -1,8 +1,90 @@
+import img1 from "../img/products/Dell-SE2422H.webp";
+import img2 from "../img/products/G4M3R-HERO.webp";
+import img3 from "../img/products/Genesis-Xenon-220-G2-RGB.webp";
+import img4 from "../img/products/Gigabyte-M32QC-Curved-HDR-KVM.webp";
+import img5 from "../img/products/LG-Ultrawide-34WP65CP-B.webp";
+import img6 from "../img/products/Razer-Ornata-V2.webp";
+import img7 from "../img/products/Samsung-Odyssey-C34G55TWWPX.webp";
+import img8 from "../img/products/Logitech-G502-HERO.webp";
+import img9 from "../img/products/Silver-Monkey-X-Mandrill.webp";
+import img10 from "../img/products/Logitech-G502-X-PLUS.webp";
+import img11 from "../img/products/Logitech-LIFT.webp";
+import img12 from "../img/products/Samsung-QE65Q77B.webp";
+import img13 from "../img/products/Cougar Argo One Blackorange.jpg";
+import img14 from "../img/products/Genesis Głośniki Helium 800BT 60W 2.1 ARGB.jpg";
+import img15 from "../img/products/Silver Monkey Fotel biurowy SMO-650.webp";
+import img16 from "../img/products/Edifier 2.1 C2XD.webp";
+import img17 from "../img/products/XIDAX Gaming PC S-200.png";
+import img18 from "../img/products/ASUS Rog Strix Ultra wide.jpg";
+import img19 from "../img/products/Sony WH-1000XM5.png";
+import img20 from "../img/display/Acer Nitro EI242QRPbiipx.jpg";
+import img21 from "../img/display/AOC C24G2AE.jpg";
+import img22 from "../img/display/AOC CU34G2X BK.jpg";
+import img23 from "../img/display/AOC Q27G2E BK.jpg";
+import img24 from "../img/display/BenQ GW2480.jpg";
+import img25 from "../img/display/Dell Alienware AW3423DWF OLED 210-BFRQ.jpg";
+import img26 from "../img/display/Gigabyte G24F 2.jpg";
+import img27 from "../img/display/Gigabyte G27Q.jpg";
+import img28 from "../img/display/Gigabyte G27QC A.jpg";
+import img29 from "../img/display/iiyama G-Master G2470HSU-B1 Red Eagle.jpg";
+import img30 from "../img/display/iiyama ProLite XU2494HSU-B2.jpg";
+import img31 from "../img/display/Lenovo G24e-20.jpg";
+import img32 from "../img/display/LG 24MR400-B.jpg";
+import img33 from "../img/display/LG UltraGear 27GP850P-B.jpg";
+import img34 from "../img/display/LG UltraGear 27GR75Q-B.jpg";
+import img35 from "../img/display/LG UltraGear OLED 45GR95QE-B.jpg";
+import img36 from "../img/display/LG UltraWide 29WP60G.jpg";
+import img37 from "../img/display/Philips E-line 242E1GAJ.jpg";
+import img38 from "../img/display/Philips E-line 276E8VJSB.jpg";
+import img39 from "../img/display/Philips V-line 243V7QDAB.jpg";
+import img40 from "../img/display/Samsung Odyssey G32A.jpg";
+import img41 from "../img/display/Samsung Odyssey Neo G9.jpg";
+import img42 from "../img/display/Samsung UJ590.jpg";
+import img43 from "../img/sounds/Creative 2.0 GigaWorks T40 II.jpg";
+import img44 from "../img/sounds/Creative SBS E2500.jpg";
+import img45 from "../img/sounds/Creative SBS E2900.jpg";
+import img46 from "../img/sounds/Edifier G1500 MAX.jpg";
+import img47 from "../img/sounds/Edifier QD35.jpg";
+import img48 from "../img/sounds/Edifier R1010BT.jpg";
+import img49 from "../img/sounds/Edifier R1080BT.jpg";
+import img50 from "../img/sounds/Edifier R1855DB.jpg";
+import img51 from "../img/sounds/Edifier R2750DB BT.jpg";
+import img52 from "../img/sounds/Edifier TWS HECATE GX07.jpg";
+import img53 from "../img/sounds/Edifier X3s.jpg";
+import img54 from "../img/sounds/JBL Quantum DUO.jpg";
+import img55 from "../img/sounds/Logitech 5.1 Z906 Surround Sound Speakers.jpg";
+import img56 from "../img/sounds/Logitech G335.jpg";
+import img57 from "../img/sounds/Logitech Z407.jpg";
+import img58 from "../img/sounds/Razer Kraken V3 X USB.jpg";
+import img59 from "../img/sounds/Razer Leviathan V2.jpg";
+import img60 from "../img/sounds/Redragon Andante.jpg";
+import img61 from "../img/sounds/Sharkoon Skiller SGH2.jpg";
+import img62 from "../img/sounds/Silver Monkey SP100 2.0 USB.jpg";
+import img63 from "../img/sounds/Sony WH-1000XM5.jpg";
+import img64 from "../img/sounds/SoundCore Life Q30.jpg";
+import img65 from "../img/sounds/SoundCore Space Q20i.jpg";
+import img66 from "../img/sounds/SpeedLink GRAVITY CARBON RGB 2.1.jpg";
+import img67 from "../img/sounds/SteelSeries Arctis 7X.jpg";
+import img68 from "../img/sounds/SteelSeries Arena 7.jpg";
+import img69 from "../img/sounds/SteelSeries Arena 9.jpg";
+import img70 from "../img/sounds/Tozo T18 Crystal Buds.jpg";
+import img71 from "../img/sounds/Trust Gemi RGB.jpg";
+import img72 from "../img/sounds/Trust GXT606B JAVV RGB.jpg";
+import img73 from "../img/accessories/A4Tech XGame X87 Maze.webp";
+import img74 from "../img/accessories/A4Tech XGame X89 Maze.webp";
+import img75 from "../img/accessories/AOC GK200 Gaming Rainbow LX.webp";
+import img76 from "../img/accessories/Delux M618DB BT 2.4G RGB.webp";
+import img77 from "../img/accessories/Genesis Thor 300 RGB.webp";
+import img78 from "../img/accessories/Genesis Thor 404 TKL Kailh Brown RGB.webp";
+import img79 from "../img/accessories/Keychron K2 C1H.webp";
+import img80 from "../img/accessories/Logitech G213 PRODIGY.webp";
+import img81 from "../img/accessories/Logitech G502 X.webp";
+
 const products = {
 	hotDeals: [
 		{
 			name: "Samsung-Odyssey-C34G55TWWPX",
-			img: 7,
+			img: img7,
 			price: 414,
 			stars: 4,
 			opinions: 673,
@@ -11,7 +93,7 @@ const products = {
 		},
 		{
 			name: "G4M3R-HERO",
-			img: 2,
+			img: img2,
 			price: 2189,
 			stars: 5,
 			opinions: 147,
@@ -20,7 +102,7 @@ const products = {
 		},
 		{
 			name: "Genesis-Xenon-220-G2-RGB",
-			img: 3,
+			img: img3,
 			price: 59,
 			stars: 3,
 			opinions: 923,
@@ -29,7 +111,7 @@ const products = {
 		},
 		{
 			name: "Gigabyte-M32QC-Curved-HDR-KVM",
-			img: 4,
+			img: img4,
 			price: 322,
 			stars: 4,
 			opinions: 517,
@@ -38,7 +120,7 @@ const products = {
 		},
 		{
 			name: "XIDAX Gaming PC S-200",
-			img: 17,
+			img: img17,
 			price: 1899,
 			stars: 5,
 			opinions: 1224,
@@ -47,7 +129,7 @@ const products = {
 		},
 		{
 			name: "Sony WH-1000XM5",
-			img: 19,
+			img: img19,
 			price: 169,
 			stars: 4,
 			opinions: 329,
@@ -57,7 +139,7 @@ const products = {
 
 		{
 			name: "Razer-Ornata-V2",
-			img: 6,
+			img: img6,
 			price: 159,
 			stars: 3,
 			opinions: 812,
@@ -66,7 +148,7 @@ const products = {
 		},
 		{
 			name: "Dell-SE2422H",
-			img: 1,
+			img: img1,
 			price: 181,
 			stars: 4,
 			opinions: 824,
@@ -76,7 +158,7 @@ const products = {
 
 		{
 			name: "Edifier 2.1 C2XD",
-			img: 16,
+			img: img16,
 			price: 413,
 			stars: 5,
 			opinions: 723,
@@ -85,7 +167,7 @@ const products = {
 		},
 		{
 			name: "Logitech-G502-HERO",
-			img: 8,
+			img: img8,
 			price: 47,
 			stars: 4,
 			opinions: 114,
@@ -94,7 +176,7 @@ const products = {
 		},
 		{
 			name: "LG-Ultrawide-34WP65CP-B",
-			img: 5,
+			img: img5,
 			price: 457,
 			stars: 5,
 			opinions: 234,
@@ -103,7 +185,7 @@ const products = {
 		},
 		{
 			name: "Silver-Monkey-X-Mandrill",
-			img: 9,
+			img: img9,
 			price: 60,
 			stars: 5,
 			opinions: 581,
@@ -112,7 +194,7 @@ const products = {
 		},
 		{
 			name: "ASUS Rog Strix Ultra wide",
-			img: 18,
+			img: img18,
 			price: 279,
 			stars: 5,
 			opinions: 410,
@@ -121,7 +203,7 @@ const products = {
 		},
 		{
 			name: "Logitech-G502-X-PLUS",
-			img: 10,
+			img: img10,
 			price: 32,
 			stars: 4,
 			opinions: 234,
@@ -130,7 +212,7 @@ const products = {
 		},
 		{
 			name: "Cougar Argo One Blackorange",
-			img: 13,
+			img: img13,
 			price: 214,
 			stars: 4,
 			opinions: 462,
@@ -139,7 +221,7 @@ const products = {
 		},
 		{
 			name: "Logitech-LIFT",
-			img: 11,
+			img: img11,
 			price: 46,
 			stars: 4,
 			opinions: 734,
@@ -148,7 +230,7 @@ const products = {
 		},
 		{
 			name: "Samsung-QE65Q77B",
-			img: 12,
+			img: img12,
 			price: 587,
 			stars: 5,
 			opinions: 992,
@@ -157,7 +239,7 @@ const products = {
 		},
 		{
 			name: "Genesis Speakers Helium 800BT 60W 2.1 ARGB",
-			img: 14,
+			img: img14,
 			price: 206,
 			stars: 4,
 			opinions: 283,
@@ -166,7 +248,7 @@ const products = {
 		},
 		{
 			name: "Silver Monkey Chair SMO-650",
-			img: 15,
+			img: img15,
 			price: 94,
 			stars: 3,
 			opinions: 571,
@@ -174,10 +256,10 @@ const products = {
 			type: "comfort",
 		},
 	],
-	displays: [
+	display: [
 		{
 			name: "Acer Nitro EI242QRPbiipx",
-			img: 20,
+			img: img20,
 			price: 298,
 			stars: 4,
 			opinions: 961,
@@ -188,7 +270,7 @@ const products = {
 		},
 		{
 			name: "AOC C24G2AE",
-			img: 21,
+			img: img21,
 			price: 311,
 			stars: 5,
 			opinions: 716,
@@ -199,7 +281,7 @@ const products = {
 		},
 		{
 			name: "AOC CU34G2X BK",
-			img: 22,
+			img: img22,
 			price: 368,
 			stars: 4,
 			opinions: 912,
@@ -210,7 +292,7 @@ const products = {
 		},
 		{
 			name: "AOC Q27G2E BK",
-			img: 23,
+			img: img23,
 			price: 244,
 			stars: 3,
 			opinions: 214,
@@ -221,7 +303,7 @@ const products = {
 		},
 		{
 			name: "BenQ GW2480",
-			img: 24,
+			img: img24,
 			price: 239,
 			stars: 3,
 			opinions: 374,
@@ -232,7 +314,7 @@ const products = {
 		},
 		{
 			name: "Dell Alienware AW3423DWF OLED 210-BFRQ",
-			img: 25,
+			img: img25,
 			price: 395,
 			stars: 5,
 			opinions: 1295,
@@ -243,7 +325,7 @@ const products = {
 		},
 		{
 			name: "Gigabyte G24F 2",
-			img: 26,
+			img: img26,
 			price: 422,
 			stars: 5,
 			opinions: 988,
@@ -254,7 +336,7 @@ const products = {
 		},
 		{
 			name: "Gigabyte G27Q",
-			img: 27,
+			img: img27,
 			price: 369,
 			stars: 4,
 			opinions: 844,
@@ -265,7 +347,7 @@ const products = {
 		},
 		{
 			name: "Gigabyte G27QC A",
-			img: 28,
+			img: img28,
 			price: 349,
 			stars: 4,
 			opinions: 721,
@@ -276,7 +358,7 @@ const products = {
 		},
 		{
 			name: "iiyama G-Master G2470HSU-B1 Red Eagle",
-			img: 29,
+			img: img29,
 			price: 289,
 			stars: 3,
 			opinions: 516,
@@ -287,7 +369,7 @@ const products = {
 		},
 		{
 			name: "iiyama ProLite XU2494HSU-B2",
-			img: 30,
+			img: img30,
 			price: 312,
 			stars: 4,
 			opinions: 956,
@@ -298,7 +380,7 @@ const products = {
 		},
 		{
 			name: "Lenovo G24e-20",
-			img: 31,
+			img: img31,
 			price: 345,
 			stars: 5,
 			opinions: 681,
@@ -309,7 +391,7 @@ const products = {
 		},
 		{
 			name: "LG 24MR400-B",
-			img: 32,
+			img: img32,
 			price: 229,
 			stars: 3,
 			opinions: 1025,
@@ -320,7 +402,7 @@ const products = {
 		},
 		{
 			name: "LG UltraGear 27GP850P-B",
-			img: 33,
+			img: img33,
 			price: 578,
 			stars: 5,
 			opinions: 2896,
@@ -331,7 +413,7 @@ const products = {
 		},
 		{
 			name: "LG UltraGear 27GR75Q-B",
-			img: 34,
+			img: img34,
 			price: 619,
 			stars: 3,
 			opinions: 1794,
@@ -342,7 +424,7 @@ const products = {
 		},
 		{
 			name: "LG UltraGear OLED 45GR95QE-B",
-			img: 35,
+			img: img35,
 			price: 708,
 			stars: 5,
 			opinions: 1912,
@@ -353,7 +435,7 @@ const products = {
 		},
 		{
 			name: "LG UltraWide 29WP60G",
-			img: 36,
+			img: img36,
 			price: 652,
 			stars: 2,
 			opinions: 171,
@@ -364,7 +446,7 @@ const products = {
 		},
 		{
 			name: "Philips E-line 242E1GAJ",
-			img: 37,
+			img: img37,
 			price: 294,
 			stars: 4,
 			opinions: 891,
@@ -375,7 +457,7 @@ const products = {
 		},
 		{
 			name: "Philips E-line 276E8VJSB",
-			img: 38,
+			img: img38,
 			price: 316,
 			stars: 5,
 			opinions: 1220,
@@ -386,7 +468,7 @@ const products = {
 		},
 		{
 			name: "Philips V-line 243V7QDAB",
-			img: 39,
+			img: img39,
 			price: 398,
 			stars: 5,
 			opinions: 937,
@@ -397,7 +479,7 @@ const products = {
 		},
 		{
 			name: "Samsung Odyssey G32A",
-			img: 40,
+			img: img40,
 			price: 285,
 			stars: 5,
 			opinions: 1462,
@@ -408,7 +490,7 @@ const products = {
 		},
 		{
 			name: "Samsung Odyssey Neo G9",
-			img: 41,
+			img: img41,
 			price: 511,
 			stars: 4,
 			opinions: 852,
@@ -419,7 +501,7 @@ const products = {
 		},
 		{
 			name: "Samsung UJ590",
-			img: 42,
+			img: img42,
 			price: 279,
 			stars: 3,
 			opinions: 579,
@@ -427,6 +509,381 @@ const products = {
 			resolution: "2k",
 			fps: "100fps",
 			size: `25"`,
+		},
+	],
+	sound: [
+		{
+			name: "Creative 2.0 GigaWorks T40 II",
+			img: img43,
+			price: 89,
+			stars: 4,
+			opinions: 571,
+			productId: 43,
+			type: "speakers",
+			set: "2.0",
+		},
+		{
+			name: "Creative SBS E2500",
+			img: img44,
+			price: 389,
+			stars: 5,
+			opinions: 895,
+			productId: 44,
+			type: "speakers",
+			set: "2.1",
+		},
+		{
+			name: "Creative SBS E2900",
+			img: img45,
+			price: 244,
+			stars: 4,
+			opinions: 462,
+			productId: 45,
+			type: "speakers",
+			set: "2.1",
+		},
+		{
+			name: "Edifier G1500 MAX",
+			img: img46,
+			price: 459,
+			stars: 5,
+			opinions: 1952,
+			productId: 46,
+			type: "speakers",
+			set: "2.1",
+		},
+		{
+			name: "Edifier G1500 MAX",
+			img: img47,
+			price: 214,
+			stars: 3,
+			opinions: 242,
+			productId: 47,
+			type: "speakers",
+			set: "1.0",
+		},
+		{
+			name: "Edifier R1010BT",
+			img: img48,
+			price: 176,
+			stars: 4,
+			opinions: 377,
+			productId: 48,
+			type: "speakers",
+			set: "2.0",
+		},
+		{
+			name: "Edifier R1080BT",
+			img: img49,
+			price: 209,
+			stars: 3,
+			opinions: 864,
+			productId: 49,
+			type: "speakers",
+			set: "2.0",
+		},
+		{
+			name: "Edifier R1855DB",
+			img: img50,
+			price: 288,
+			stars: 5,
+			opinions: 467,
+			productId: 50,
+			type: "speakers",
+			set: "2.0",
+		},
+		{
+			name: "Edifier R2750DB BT",
+			img: img51,
+			price: 355,
+			stars: 3,
+			opinions: 785,
+			productId: 51,
+			type: "speakers",
+			set: "2.0",
+		},
+		{
+			name: "Edifier TWS HECATE GX07",
+			img: img52,
+			price: 114,
+			stars: 4,
+			opinions: 318,
+			productId: 52,
+			type: "headphones",
+		},
+		{
+			name: "Edifier X3s",
+			img: img53,
+			price: 59,
+			stars: 4,
+			opinions: 762,
+			productId: 53,
+			type: "headphones",
+		},
+		{
+			name: "JBL Quantum DUO",
+			img: img54,
+			price: 128,
+			stars: 5,
+			opinions: 427,
+			productId: 54,
+			type: "speakers",
+			set: "2.0",
+		},
+		{
+			name: "Logitech 5.1 Z906 Surround Sound Speakers",
+			img: img55,
+			price: 689,
+			stars: 5,
+			opinions: 1242,
+			productId: 55,
+			type: "speakers",
+			set: "5.1",
+		},
+		{
+			name: "Logitech G335",
+			img: img56,
+			price: 79,
+			stars: 3,
+			opinions: 260,
+			productId: 56,
+			type: "headphones",
+		},
+		{
+			name: "Logitech Z407",
+			img: img57,
+			price: 89,
+			stars: 4,
+			opinions: 318,
+			productId: 57,
+			type: "speakers",
+			set: "2.1",
+		},
+		{
+			name: "Razer Kraken V3 X USB",
+			img: img58,
+			price: 38,
+			stars: 4,
+			opinions: 851,
+			productId: 58,
+			type: "headphones",
+		},
+		{
+			name: "Razer Leviathan V2",
+			img: img59,
+			price: 177,
+			stars: 5,
+			opinions: 853,
+			productId: 59,
+			type: "speakers",
+			set: "2.1",
+		},
+		{
+			name: "Redragon Andante",
+			img: img60,
+			price: 115,
+			stars: 3,
+			opinions: 471,
+			productId: 60,
+			type: "speakers",
+			set: "2.0",
+		},
+		{
+			name: "Sharkoon Skiller SGH2",
+			img: img61,
+			price: 211,
+			stars: 5,
+			opinions: 2785,
+			productId: 61,
+			type: "headphones",
+		},
+		{
+			name: "Silver Monkey SP100 2.0 USB",
+			img: img62,
+			price: 29,
+			stars: 3,
+			opinions: 185,
+			productId: 62,
+			type: "speakers",
+			set: "2.0",
+		},
+		{
+			name: "Sony WH-1000XM5",
+			img: img63,
+			price: 599,
+			stars: 5,
+			opinions: 2572,
+			productId: 63,
+			type: "headphones",
+		},
+		{
+			name: "SoundCore Life Q30",
+			img: img64,
+			price: 89,
+			stars: 4,
+			opinions: 1824,
+			productId: 64,
+			type: "headphones",
+		},
+		{
+			name: "SoundCore Space Q20i",
+			img: img65,
+			price: 126,
+			stars: 2,
+			opinions: 733,
+			productId: 65,
+			type: "headphones",
+		},
+		{
+			name: "SpeedLink GRAVITY CARBON RGB 2.1",
+			img: img66,
+			price: 359,
+			stars: 4,
+			opinions: 995,
+			productId: 66,
+			type: "speakers",
+			set: "2.1",
+		},
+		{
+			name: "SteelSeries Arctis 7X",
+			img: img67,
+			price: 69,
+			stars: 5,
+			opinions: 1889,
+			productId: 67,
+			type: "headphones",
+		},
+		{
+			name: "SteelSeries Arena 7",
+			img: img68,
+			price: 189,
+			stars: 4,
+			opinions: 895,
+			productId: 68,
+			type: "speakers",
+			set: "2.1",
+		},
+		{
+			name: "SteelSeries Arena 9",
+			img: img69,
+			price: 379,
+			stars: 5,
+			opinions: 3849,
+			productId: 69,
+			type: "speakers",
+			set: "5.1",
+		},
+		{
+			name: "Tozo T18 Crystal Buds",
+			img: img70,
+			price: 59,
+			stars: 3,
+			opinions: 257,
+			productId: 70,
+			type: "headphones",
+		},
+		{
+			name: "Trust Gemi RGB",
+			img: img71,
+			price: 72,
+			stars: 4,
+			opinions: 508,
+			productId: 71,
+			type: "speakers",
+			set: "2.0",
+		},
+		{
+			name: "Trust GXT606B JAVV RGB",
+			img: img72,
+			price: 166,
+			stars: 5,
+			opinions: 875,
+			productId: 72,
+			type: "speakers",
+			set: "2.0",
+		},
+	],
+	accessories: [
+		{
+			name: "A4Tech XGame X87 Maze",
+			img: img73,
+			price: 119,
+			stars: 4,
+			opinions: 1952,
+			productId: 73,
+			type: "mouse",
+		},
+		{
+			name: "A4Tech XGame X89 Maze",
+			img: img74,
+			price: 139,
+			stars: 5,
+			opinions: 2175,
+			productId: 74,
+			type: "mouse",
+		},
+		{
+			name: "AOC GK200 Gaming Rainbow LX",
+			img: img75,
+			price: 76,
+			stars: 4,
+			opinions: 803,
+			productId: 75,
+			type: "keyboard",
+		},
+		{
+			name: "Delux M618DB BT 2.4G RGB",
+			img: img76,
+			price: 185,
+			stars: 4,
+			opinions: 489,
+			productId: 76,
+			type: "mouse",
+		},
+		{
+			name: "Genesis Thor 300 RGB",
+			img: img77,
+			price: 81,
+			stars: 3,
+			opinions: 198,
+			productId: 77,
+			type: "keyboard",
+		},
+		{
+			name: "Genesis Thor 404 TKL Kailh Brown RGB",
+			img: img78,
+			price: 77,
+			stars: 4,
+			opinions: 575,
+			productId: 78,
+			type: "keyboard",
+		},
+		{
+			name: "Keychron K2 C1H",
+			img: img79,
+			price: 180,
+			stars: 3,
+			opinions: 741,
+			productId: 79,
+			type: "keyboard",
+		},
+		{
+			name: "Logitech G213 PRODIGY",
+			img: img80,
+			price: 68,
+			stars: 5,
+			opinions: 2895,
+			productId: 80,
+			type: "keyboard",
+		},
+		{
+			name: "Logitech G502 X",
+			img: img81,
+			price: 39,
+			stars: 4,
+			opinions: 1407,
+			productId: 81,
+			type: "mouse",
 		},
 	],
 };
