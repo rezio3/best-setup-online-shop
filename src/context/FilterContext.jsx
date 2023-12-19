@@ -5,6 +5,8 @@ export const defaultFilterSettings = {
 	appliedFiltersDisplaysResolution: [],
 	appliedFiltersDisplaysFps: [],
 	appliedFiltersDisplaysSize: [],
+	appliedFiltersSoundsType: [],
+	appliedFiltersSoundsSet: [],
 	priceUp: false,
 	priceDown: false,
 	priceRange: {
