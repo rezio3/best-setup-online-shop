@@ -12,7 +12,6 @@ const HeaderCarousel = () => {
 	const arrow = (e) => {
 		let reduction;
 		const arrowClicked = e.target.getAttribute("data");
-		console.log(arrowClicked);
 		setWhichArrow(arrowClicked);
 		arrowClicked === "left" ? (reduction = -1) : (reduction = +1);
 
