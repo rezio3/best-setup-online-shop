@@ -8,6 +8,7 @@ import FilterPriceRange from "./FilterPriceRange";
 import {
 	homePageCheckboxesNames,
 	displayPageCheckboxesNames,
+	soundsPageCheckboxesNames,
 } from "../objects/filterCheckboxes";
 // import { useLocation } from "react-router-dom";
 
@@ -108,6 +109,39 @@ const FilterWindow = (props) => {
 			</ul>
 		) : null;
 
+	const soundsPageCheckboxesType =
+		props.page === "sounds-page" ? (
+			<ul>
+				{soundsPageCheckboxesNames[0].map((e) => {
+					return (
+						<FilterCheckboxElement
+							name={e.name}
+							id={e.id}
+							key={e.id}
+							data={"appliedFiltersSoundsType"}
+							filterState={{ filter, setFilter }}
+						/>
+					);
+				})}
+			</ul>
+		) : null;
+	const soundsPageCheckboxesSet =
+		props.page === "sounds-page" ? (
+			<ul>
+				{soundsPageCheckboxesNames[1].map((e) => {
+					return (
+						<FilterCheckboxElement
+							name={e.name}
+							id={e.id}
+							key={e.id}
+							data={"appliedFiltersSoundsSet"}
+							filterState={{ filter, setFilter }}
+						/>
+					);
+				})}
+			</ul>
+		) : null;
+
 	return (
 		<>
 			<div className="filter-snap-threshold" ref={filterRef}></div>
@@ -122,6 +156,8 @@ const FilterWindow = (props) => {
 					{displayPageCheckboxesResolution}
 					{displayPageCheckboxesFps}
 					{displayPageCheckboxesSize}
+					{soundsPageCheckboxesType}
+					{soundsPageCheckboxesSet}
 					<FilterPriceRange filterState={{ filter, setFilter }} />
 					<ul>
 						<FilterCheckboxPriceDirection filterState={{ filter, setFilter }} />
