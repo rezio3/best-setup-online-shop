@@ -6,7 +6,7 @@ import pricesUpwards from "../../functions/sortItemsUpwards";
 import pricesDownwards from "../../functions/sortItemsDownwards";
 import sortPriceRange from "../../functions/sortPriceRange";
 
-const ProductsDisplayPage = () => {
+const ProductsDisplaysPage = () => {
 	const [filter, setFilter] = useContext(FilterContext);
 	const {
 		appliedFiltersDisplaysResolution,
@@ -14,7 +14,7 @@ const ProductsDisplayPage = () => {
 		appliedFiltersDisplaysSize,
 	} = filter;
 
-	let itemsToDisplay = [...products.displays];
+	let itemsToDisplay = [...products.display];
 
 	if (appliedFiltersDisplaysResolution.length !== 0) {
 		itemsToDisplay = itemsToDisplay.filter((singleProduct) => {
@@ -61,4 +61,4 @@ const ProductsDisplayPage = () => {
 	);
 };
 
-export default ProductsDisplayPage;
+export default ProductsDisplaysPage;
