@@ -90,6 +90,7 @@ const FilterWindow = (props) => {
 				})}
 			</ul>
 		) : null;
+
 	const displayPageCheckboxesSize =
 		props.page === "display-page" ? (
 			<ul>

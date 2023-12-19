@@ -23,7 +23,6 @@ const ProductsDisplayPage = () => {
 			);
 		});
 	}
-
 	if (appliedFiltersDisplaysFps.length !== 0) {
 		itemsToDisplay = itemsToDisplay.filter((singleProduct) => {
 			return appliedFiltersDisplaysFps.some(
