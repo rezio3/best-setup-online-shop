@@ -73,12 +73,33 @@ import img72 from "../img/sounds/Trust GXT606B JAVV RGB.jpg";
 import img73 from "../img/accessories/A4Tech XGame X87 Maze.webp";
 import img74 from "../img/accessories/A4Tech XGame X89 Maze.webp";
 import img75 from "../img/accessories/AOC GK200 Gaming Rainbow LX.webp";
-import img76 from "../img/accessories/Delux M618DB BT 2.4G RGB.webp";
-import img77 from "../img/accessories/Genesis Thor 300 RGB.webp";
-import img78 from "../img/accessories/Genesis Thor 404 TKL Kailh Brown RGB.webp";
-import img79 from "../img/accessories/Keychron K2 C1H.webp";
-import img80 from "../img/accessories/Logitech G213 PRODIGY.webp";
-import img81 from "../img/accessories/Logitech G502 X.webp";
+import img76 from "../img/accessories/Brother HL-B2080DW.webp";
+import img77 from "../img/accessories/Delux M618DB BT 2.4G RGB.webp";
+import img78 from "../img/accessories/Canon PIXMA G640.webp";
+import img79 from "../img/accessories/Genesis Thor 300 RGB.webp";
+import img80 from "../img/accessories/Genesis Thor 404 TKL Kailh Brown RGB.jpg";
+import img81 from "../img/accessories/Canon Pixma G3470.webp";
+import img82 from "../img/accessories/Keychron K2 C1H.webp";
+import img83 from "../img/accessories/Canon SELPHY CP1500.webp";
+import img84 from "../img/accessories/Logitech G213 PRODIGY.webp";
+import img85 from "../img/accessories/Logitech G502 X.webp";
+import img86 from "../img/accessories/Epson Expression Photo HD XP-15000.webp";
+import img87 from "../img/accessories/HP LaserJet M110w WiFi USB AirPrint.webp";
+import img88 from "../img/accessories/HP LaserJet M209dw Duplex Mono LAN WiFi.webp";
+import img89 from "../img/accessories/Logitech M705 Marathon.webp";
+import img90 from "../img/accessories/Razer Basilisk V3.webp";
+import img91 from "../img/accessories/Razer Ornata V3.webp";
+import img92 from "../img/accessories/Redragon Draconic PRO.webp";
+import img93 from "../img/accessories/Silver Monkey M40 Wireless Comfort.webp";
+import img94 from "../img/accessories/Silver Monkey X Mandrill.webp";
+import img95 from "../img/accessories/SPC Gear LIX Plus.webp";
+import img96 from "../img/accessories/SpeedLink PIAVO 2,4GHz.webp";
+import img97 from "../img/accessories/SteelSeries Aerox 3 Snow.webp";
+import img98 from "../img/accessories/SteelSeries Aerox 5.webp";
+import img99 from "../img/accessories/SteelSeries Apex 3 TKL.webp";
+import img100 from "../img/accessories/SteelSeries Apex 3.webp";
+import img101 from "../img/accessories/SteelSeries Rival 5.webp";
+import img102 from "../img/accessories/Xerox Phaser 3020.webp";
 
 const products = {
 	hotDeals: [
@@ -832,58 +853,248 @@ const products = {
 			type: "keyboard",
 		},
 		{
-			name: "Delux M618DB BT 2.4G RGB",
+			name: "Brother HL-B2080DW",
 			img: img76,
+			price: 229,
+			stars: 5,
+			opinions: 952,
+			productId: 76,
+			type: "printer",
+		},
+		{
+			name: "Delux M618DB BT 2.4G RGB",
+			img: img77,
 			price: 185,
 			stars: 4,
 			opinions: 489,
-			productId: 76,
+			productId: 77,
 			type: "mouse",
+		},
+
+		{
+			name: "Canon PIXMA G640",
+			img: img78,
+			price: 278,
+			stars: 3,
+			opinions: 481,
+			productId: 78,
+			type: "printer",
 		},
 		{
 			name: "Genesis Thor 300 RGB",
-			img: img77,
+			img: img79,
 			price: 81,
 			stars: 3,
 			opinions: 198,
-			productId: 77,
-			type: "keyboard",
-		},
-		{
-			name: "Genesis Thor 404 TKL Kailh Brown RGB",
-			img: img78,
-			price: 77,
-			stars: 4,
-			opinions: 575,
-			productId: 78,
-			type: "keyboard",
-		},
-		{
-			name: "Keychron K2 C1H",
-			img: img79,
-			price: 180,
-			stars: 3,
-			opinions: 741,
 			productId: 79,
 			type: "keyboard",
 		},
 		{
-			name: "Logitech G213 PRODIGY",
+			name: "Genesis Thor 404 TKL Kailh Brown RGB",
 			img: img80,
-			price: 68,
-			stars: 5,
-			opinions: 2895,
+			price: 77,
+			stars: 4,
+			opinions: 575,
 			productId: 80,
 			type: "keyboard",
 		},
 		{
-			name: "Logitech G502 X",
+			name: "Canon Pixma G3470",
 			img: img81,
+			price: 319,
+			stars: 5,
+			opinions: 1205,
+			productId: 81,
+			type: "printer",
+		},
+		{
+			name: "Keychron K2 C1H",
+			img: img82,
+			price: 180,
+			stars: 3,
+			opinions: 741,
+			productId: 82,
+			type: "keyboard",
+		},
+		{
+			name: "Canon SELPHY CP1500",
+			img: img83,
+			price: 159,
+			stars: 4,
+			opinions: 482,
+			productId: 83,
+			type: "printer",
+		},
+		{
+			name: "Logitech G213 PRODIGY",
+			img: img84,
+			price: 68,
+			stars: 5,
+			opinions: 2895,
+			productId: 84,
+			type: "keyboard",
+		},
+		{
+			name: "Logitech G502 X",
+			img: img85,
 			price: 39,
 			stars: 4,
 			opinions: 1407,
-			productId: 81,
+			productId: 85,
 			type: "mouse",
+		},
+		{
+			name: "Epson Expression Photo HD XP-15000",
+			img: img86,
+			price: 389,
+			stars: 5,
+			opinions: 2895,
+			productId: 86,
+			type: "printer",
+		},
+		{
+			name: "HP LaserJet M110w WiFi USB AirPrint",
+			img: img87,
+			price: 89,
+			stars: 2,
+			opinions: 109,
+			productId: 87,
+			type: "printer",
+		},
+		{
+			name: "HP LaserJet M209dw Duplex Mono LAN WiFi",
+			img: img88,
+			price: 108,
+			stars: 3,
+			opinions: 428,
+			productId: 88,
+			type: "printer",
+		},
+		{
+			name: "Logitech M705 Marathon",
+			img: img89,
+			price: 68,
+			stars: 5,
+			opinions: 891,
+			productId: 89,
+			type: "mouse",
+		},
+		{
+			name: "Razer Basilisk V3",
+			img: img90,
+			price: 79,
+			stars: 5,
+			opinions: 3877,
+			productId: 90,
+			type: "mouse",
+		},
+		{
+			name: "Razer Ornata V3",
+			img: img91,
+			price: 126,
+			stars: 4,
+			opinions: 807,
+			productId: 91,
+			type: "keyboard",
+		},
+		{
+			name: "Redragon Draconic PRO",
+			img: img92,
+			price: 205,
+			stars: 5,
+			opinions: 1221,
+			productId: 92,
+			type: "keyboard",
+		},
+		{
+			name: "Silver Monkey M40 Wireless Comfort",
+			img: img93,
+			price: 48,
+			stars: 4,
+			opinions: 865,
+			productId: 93,
+			type: "mouse",
+		},
+		{
+			name: "Silver Monkey X Mandrill",
+			img: img94,
+			price: 62,
+			stars: 5,
+			opinions: 517,
+			productId: 94,
+			type: "keyboard",
+		},
+		{
+			name: "SPC Gear LIX Plus",
+			img: img95,
+			price: 99,
+			stars: 5,
+			opinions: 4771,
+			productId: 95,
+			type: "mouse",
+		},
+		{
+			name: "SpeedLink PIAVO 2,4GHz",
+			img: img96,
+			price: 289,
+			stars: 4,
+			opinions: 713,
+			productId: 96,
+			type: "mouse",
+		},
+		{
+			name: "SteelSeries Aerox 3 Snow",
+			img: img97,
+			price: 119,
+			stars: 3,
+			opinions: 614,
+			productId: 97,
+			type: "mouse",
+		},
+		{
+			name: "SteelSeries Aerox 5",
+			img: img98,
+			price: 109,
+			stars: 4,
+			opinions: 969,
+			productId: 98,
+			type: "mouse",
+		},
+		{
+			name: "SteelSeries Apex 3 TKL",
+			img: img99,
+			price: 115,
+			stars: 3,
+			opinions: 274,
+			productId: 99,
+			type: "keyboard",
+		},
+		{
+			name: "SteelSeries Apex 3",
+			img: img100,
+			price: 89,
+			stars: 4,
+			opinions: 784,
+			productId: 100,
+			type: "keyboard",
+		},
+		{
+			name: "SteelSeries Rival 5",
+			img: img101,
+			price: 79,
+			stars: 5,
+			opinions: 1181,
+			productId: 101,
+			type: "mouse",
+		},
+		{
+			name: "Xerox Phaser 3020",
+			img: img102,
+			price: 177,
+			stars: 4,
+			opinions: 722,
+			productId: 102,
+			type: "printer",
 		},
 	],
 };

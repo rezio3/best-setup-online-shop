@@ -1,4 +1,6 @@
 import React from "react";
+import FilterWindow from "../components/FilterWindow";
+import ProductsAccessoriesPage from "../components/accessoriespage/ProductsAccessoriesPage";
 
 const Accessories = () => {
 	return (
@@ -9,6 +11,10 @@ const Accessories = () => {
 					&#8594;{" "}
 				</span>
 				<h2 className="navigator-description-container__header">Accessories</h2>
+			</div>
+			<div className="main-product-container">
+				<FilterWindow page={"accessories-page"} />
+				<ProductsAccessoriesPage />
 			</div>
 		</>
 	);
