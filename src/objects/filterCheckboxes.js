@@ -41,3 +41,9 @@ export const soundsPageCheckboxesNames = [
 		{ name: "5.1", id: "5.1" },
 	],
 ];
+
+export const accessoriesPageCheckboxesNames = [
+	{ name: "Keyboards", id: "keyboard" },
+	{ name: "Mouses", id: "mouse" },
+	{ name: "Printers", id: "printer" },
+];

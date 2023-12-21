@@ -9,6 +9,7 @@ import {
 	homePageCheckboxesNames,
 	displayPageCheckboxesNames,
 	soundsPageCheckboxesNames,
+	accessoriesPageCheckboxesNames,
 } from "../objects/filterCheckboxes";
 // import { useLocation } from "react-router-dom";
 
@@ -141,6 +142,22 @@ const FilterWindow = (props) => {
 				})}
 			</ul>
 		) : null;
+	const accessoriesPageCheckboxesType =
+		props.page === "accessories-page" ? (
+			<ul>
+				{accessoriesPageCheckboxesNames.map((e) => {
+					return (
+						<FilterCheckboxElement
+							name={e.name}
+							id={e.id}
+							key={e.id}
+							data={"appliedFiltersAccessoriesType"}
+							filterState={{ filter, setFilter }}
+						/>
+					);
+				})}
+			</ul>
+		) : null;
 
 	return (
 		<>
@@ -158,6 +175,7 @@ const FilterWindow = (props) => {
 					{displayPageCheckboxesSize}
 					{soundsPageCheckboxesType}
 					{soundsPageCheckboxesSet}
+					{accessoriesPageCheckboxesType}
 					<FilterPriceRange filterState={{ filter, setFilter }} />
 					<ul>
 						<FilterCheckboxPriceDirection filterState={{ filter, setFilter }} />
