@@ -3,7 +3,7 @@ import FilterCheckboxElement from "./FilterCheckboxElement";
 import { FilterContext } from "../../context/FilterContext";
 import { displayPageCheckboxesNames } from "../../objects/filterCheckboxes";
 
-const FilterWindowDisplayProducts = (props) => {
+const FilterWindowDisplayProducts = () => {
 	const [filter, setFilter] = useContext(FilterContext);
 
 	const displayPageCheckboxesResolution = (
