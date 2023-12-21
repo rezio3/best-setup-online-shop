@@ -6,59 +6,41 @@ import { displayPageCheckboxesNames } from "../../objects/filterCheckboxes";
 const FilterWindowDisplayProducts = () => {
 	const [filter, setFilter] = useContext(FilterContext);
 
-	const displayPageCheckboxesResolution = (
-		<ul>
-			{displayPageCheckboxesNames[0].map((e) => {
-				return (
-					<FilterCheckboxElement
-						name={e.name}
-						id={e.id}
-						key={e.id}
-						data={"appliedFiltersDisplaysResolution"}
-						filterState={{ filter, setFilter }}
-					/>
-				);
-			})}
-		</ul>
-	);
-	const displayPageCheckboxesFps = (
-		<ul>
-			{displayPageCheckboxesNames[1].map((e) => {
-				return (
-					<FilterCheckboxElement
-						name={e.name}
-						id={e.id}
-						key={e.id}
-						data={"appliedFiltersDisplaysFps"}
-						filterState={{ filter, setFilter }}
-					/>
-				);
-			})}
-		</ul>
-	);
+	let displayPageCheckboxes = [];
+	for (let i = 0; i < displayPageCheckboxesNames.length; i++) {
+		// console.log(i);
+		let data;
+		let subtitle;
+		if (i == 0) {
+			data = "appliedFiltersDisplaysResolution";
+			subtitle = "Resolution";
+		} else if (i === 1) {
+			data = "appliedFiltersDisplaysFps";
+			subtitle = "FPS";
+		} else if (i === 2) {
+			data = "appliedFiltersDisplaysSize";
+			subtitle = "Size";
+		}
 
-	const displayPageCheckboxesSize = (
-		<ul>
-			{displayPageCheckboxesNames[2].map((e) => {
-				return (
-					<FilterCheckboxElement
-						name={e.name}
-						id={e.id}
-						key={e.id}
-						data={"appliedFiltersDisplaysSize"}
-						filterState={{ filter, setFilter }}
-					/>
-				);
-			})}
-		</ul>
-	);
-	return (
-		<>
-			{displayPageCheckboxesResolution}
-			{displayPageCheckboxesFps}
-			{displayPageCheckboxesSize}
-		</>
-	);
+		displayPageCheckboxes.push(
+			<ul>
+				<span className="filter-container__subtitle">{subtitle}</span>
+				{displayPageCheckboxesNames[i].map((e) => {
+					return (
+						<FilterCheckboxElement
+							name={e.name}
+							id={e.id}
+							key={e.id}
+							data={data}
+							filterState={{ filter, setFilter }}
+						/>
+					);
+				})}
+			</ul>
+		);
+	}
+
+	return <>{displayPageCheckboxes}</>;
 };
 
 export default FilterWindowDisplayProducts;
