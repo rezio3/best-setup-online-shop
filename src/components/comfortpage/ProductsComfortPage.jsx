@@ -10,7 +10,7 @@ const ProductsComfortPage = () => {
 	const [filter, setFilter] = useContext(FilterContext);
 	const { appliedFiltersComfortType } = filter;
 
-	let itemsToDisplay = [...products.sound];
+	let itemsToDisplay = [...products.comfort];
 
 	if (appliedFiltersComfortType.length !== 0) {
 		itemsToDisplay = itemsToDisplay.filter((singleProduct) => {
