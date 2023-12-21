@@ -1,6 +1,6 @@
 import React from "react";
 import "../style/css/productPages.css";
-import FilterWindow from "../components/FilterWindow";
+import FilterWindowGeneral from "../components/filter/FilterWindowGeneral";
 import ProductsDisplayPage from "../components/displaypage/ProductsDisplayPage";
 
 const Display = () => {
@@ -14,7 +14,7 @@ const Display = () => {
 				<h2 className="navigator-description-container__header">Display</h2>
 			</div>
 			<div className="main-product-container">
-				<FilterWindow page={"display-page"} />
+				<FilterWindowGeneral page={"display-page"} />
 				<ProductsDisplayPage />
 			</div>
 		</>

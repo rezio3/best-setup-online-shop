@@ -1,5 +1,5 @@
 import React from "react";
-import FilterWindow from "../components/FilterWindow";
+import FilterWindowGeneral from "../components/filter/FilterWindowGeneral";
 import ProductsComfortPage from "../components/comfortpage/ProductsComfortPage";
 
 const Comfort = () => {
@@ -13,7 +13,7 @@ const Comfort = () => {
 				<h2 className="navigator-description-container__header">Comfort</h2>
 			</div>
 			<div className="main-product-container">
-				<FilterWindow page={"comfort-page"} />
+				<FilterWindowGeneral page={"comfort-page"} />
 				<ProductsComfortPage />
 			</div>
 		</>
