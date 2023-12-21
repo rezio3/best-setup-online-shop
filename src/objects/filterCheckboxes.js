@@ -47,3 +47,8 @@ export const accessoriesPageCheckboxesNames = [
 	{ name: "Mouses", id: "mouse" },
 	{ name: "Printers", id: "printer" },
 ];
+
+export const comfortPageCheckboxesNames = [
+	{ name: "Chairs", id: "chair" },
+	{ name: "Desks", id: "desk" },
+];
