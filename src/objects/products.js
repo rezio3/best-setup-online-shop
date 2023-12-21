@@ -100,6 +100,28 @@ import img99 from "../img/accessories/SteelSeries Apex 3 TKL.webp";
 import img100 from "../img/accessories/SteelSeries Apex 3.webp";
 import img101 from "../img/accessories/SteelSeries Rival 5.webp";
 import img102 from "../img/accessories/Xerox Phaser 3020.webp";
+import img103 from "../img/comfort/Cougar ARGO Black.webp";
+import img104 from "../img/comfort/Cougar Argo One Black Orange.webp";
+import img105 from "../img/comfort/Cougar E-DEIMUS.webp";
+import img106 from "../img/comfort/Diablo Chairs V-Basic.webp";
+import img107 from "../img/comfort/Diablo Chairs V-Commander.webp";
+import img108 from "../img/comfort/ENDORFY Atlas L.webp";
+import img109 from "../img/comfort/Huzaro Combat 8.0 White.webp";
+import img110 from "../img/comfort/Huzaro Hero 8.5 Black.webp";
+import img111 from "../img/comfort/Huzaro Mark Adler Boss 8.0.webp";
+import img112 from "../img/comfort/Huzaro Mark Adler Boss 8.2 White.webp";
+import img113 from "../img/comfort/Huzaro Mark Adler Expert 6.2.webp";
+import img114 from "../img/comfort/Pro-Gamer D-6000 XXL.webp";
+import img115 from "../img/comfort/Silver Monkey ED-140 black.webp";
+import img116 from "../img/comfort/Silver Monkey SMO-650.webp";
+import img117 from "../img/comfort/Spacetronik Bard.webp";
+import img118 from "../img/comfort/Spacetronik Elsa.webp";
+import img119 from "../img/comfort/Spacetronik Gerd 4D.webp";
+import img120 from "../img/comfort/Spacetronik Moris SPE-O133BB.webp";
+import img121 from "../img/comfort/Spacetronik SPE-G110B.webp";
+import img122 from "../img/comfort/Ultradesk LEVEL V2 LED RGB.webp";
+import img123 from "../img/comfort/Ultradesk Pulsar.webp";
+import img124 from "../img/comfort/Ultradesk UPLIFT.webp";
 
 const products = {
 	hotDeals: [
@@ -1095,6 +1117,206 @@ const products = {
 			opinions: 722,
 			productId: 102,
 			type: "printer",
+		},
+	],
+	comfort: [
+		{
+			name: "Cougar ARGO Black",
+			img: img103,
+			price: 499,
+			stars: 5,
+			opinions: 1895,
+			productId: 103,
+			type: "chair",
+		},
+		{
+			name: "Cougar Argo One Black Orange",
+			img: img104,
+			price: 559,
+			stars: 5,
+			opinions: 1122,
+			productId: 104,
+			type: "chair",
+		},
+		{
+			name: "Cougar E-DEIMUS",
+			img: img105,
+			price: 229,
+			stars: 4,
+			opinions: 562,
+			productId: 105,
+			type: "desk",
+		},
+		{
+			name: "Diablo Chairs V-Basic",
+			img: img106,
+			price: 439,
+			stars: 4,
+			opinions: 848,
+			productId: 106,
+			type: "chair",
+		},
+		{
+			name: "Diablo Chairs V-Commander",
+			img: img107,
+			price: 499,
+			stars: 5,
+			opinions: 1159,
+			productId: 107,
+			type: "chair",
+		},
+		{
+			name: "ENDORFY Atlas L",
+			img: img108,
+			price: 319,
+			stars: 4,
+			opinions: 721,
+			productId: 108,
+			type: "desk",
+		},
+		{
+			name: "Huzaro Combat 8.0 White",
+			img: img109,
+			price: 289,
+			stars: 3,
+			opinions: 761,
+			productId: 109,
+			type: "chair",
+		},
+		{
+			name: "Huzaro Hero 8.5 Black",
+			img: img110,
+			price: 251,
+			stars: 5,
+			opinions: 576,
+			productId: 110,
+			type: "desk",
+		},
+		{
+			name: "Huzaro Mark Adler Boss 8.0",
+			img: img111,
+			price: 399,
+			stars: 5,
+			opinions: 2009,
+			productId: 111,
+			type: "chair",
+		},
+		{
+			name: "Huzaro Mark Adler Boss 8.2 White",
+			img: img112,
+			price: 419,
+			stars: 5,
+			opinions: 1896,
+			productId: 112,
+			type: "chair",
+		},
+		{
+			name: "Huzaro Mark Adler Expert 6.2",
+			img: img113,
+			price: 322,
+			stars: 3,
+			opinions: 117,
+			productId: 113,
+			type: "chair",
+		},
+		{
+			name: "Pro-Gamer D-6000 XXL",
+			img: img114,
+			price: 448,
+			stars: 4,
+			opinions: 980,
+			productId: 114,
+			type: "desk",
+		},
+		{
+			name: "Silver Monkey ED-140 black",
+			img: img115,
+			price: 109,
+			stars: 4,
+			opinions: 571,
+			productId: 115,
+			type: "desk",
+		},
+		{
+			name: "Silver Monkey SMO-650",
+			img: img116,
+			price: 129,
+			stars: 3,
+			opinions: 278,
+			productId: 116,
+			type: "chair",
+		},
+		{
+			name: "Spacetronik Bard",
+			img: img117,
+			price: 205,
+			stars: 4,
+			opinions: 188,
+			productId: 117,
+			type: "chair",
+		},
+		{
+			name: "Spacetronik Elsa",
+			img: img118,
+			price: 239,
+			stars: 5,
+			opinions: 281,
+			productId: 118,
+			type: "chair",
+		},
+		{
+			name: "Spacetronik Gerd 4D",
+			img: img119,
+			price: 347,
+			stars: 3,
+			opinions: 736,
+			productId: 119,
+			type: "chair",
+		},
+		{
+			name: "Spacetronik Moris SPE-O133BB",
+			img: img120,
+			price: 415,
+			stars: 2,
+			opinions: 298,
+			productId: 120,
+			type: "desk",
+		},
+		{
+			name: "Spacetronik SPE-G110B",
+			img: img121,
+			price: 389,
+			stars: 4,
+			opinions: 925,
+			productId: 121,
+			type: "desk",
+		},
+		{
+			name: "Ultradesk LEVEL V2 LED RGB",
+			img: img122,
+			price: 469,
+			stars: 5,
+			opinions: 2866,
+			productId: 122,
+			type: "desk",
+		},
+		{
+			name: "Ultradesk Pulsar",
+			img: img123,
+			price: 417,
+			stars: 4,
+			opinions: 1786,
+			productId: 123,
+			type: "desk",
+		},
+		{
+			name: "Ultradesk UPLIFT",
+			img: img124,
+			price: 379,
+			stars: 5,
+			opinions: 1127,
+			productId: 124,
+			type: "desk",
 		},
 	],
 };
