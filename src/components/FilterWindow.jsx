@@ -248,7 +248,7 @@ const FilterWindow = (props) => {
 			<div
 				className={
 					snapFilter
-						? "filter-container -scroll filter-sticky"
+						? "filter-container filter-scroll filter-sticky"
 						: "filter-container filter-scroll"
 				}
 			>
