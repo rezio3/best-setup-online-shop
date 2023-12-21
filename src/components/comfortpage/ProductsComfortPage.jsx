@@ -6,23 +6,16 @@ import pricesUpwards from "../../functions/sortItemsUpwards";
 import pricesDownwards from "../../functions/sortItemsDownwards";
 import sortPriceRange from "../../functions/sortPriceRange";
 
-const ProductsSoundPage = () => {
+const ProductsComfortPage = () => {
 	const [filter, setFilter] = useContext(FilterContext);
-	const { appliedFiltersSoundsType, appliedFiltersSoundsSet } = filter;
+	const { appliedFiltersComfortType } = filter;
 
 	let itemsToDisplay = [...products.sound];
 
-	if (appliedFiltersSoundsType.length !== 0) {
+	if (appliedFiltersComfortType.length !== 0) {
 		itemsToDisplay = itemsToDisplay.filter((singleProduct) => {
-			return appliedFiltersSoundsType.some(
+			return appliedFiltersComfortType.some(
 				(element) => element === singleProduct.type
-			);
-		});
-	}
-	if (appliedFiltersSoundsSet.length !== 0) {
-		itemsToDisplay = itemsToDisplay.filter((singleProduct) => {
-			return appliedFiltersSoundsSet.some(
-				(element) => element === singleProduct.set
 			);
 		});
 	}
@@ -50,4 +43,4 @@ const ProductsSoundPage = () => {
 	);
 };
 
-export default ProductsSoundPage;
+export default ProductsComfortPage;
