@@ -8,6 +8,7 @@ export const defaultFilterSettings = {
 	appliedFiltersSoundsType: [],
 	appliedFiltersSoundsSet: [],
 	appliedFiltersAccessoriesType: [],
+	appliedFiltersComfortType: [],
 	priceUp: false,
 	priceDown: false,
 	priceRange: {
