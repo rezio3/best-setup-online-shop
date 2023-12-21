@@ -7,7 +7,6 @@ import { FilterContext } from "../../context/FilterContext";
 import FilterPriceRange from "./FilterPriceRange";
 import {
 	homePageCheckboxesNames,
-	soundsPageCheckboxesNames,
 	accessoriesPageCheckboxesNames,
 	comfortPageCheckboxesNames,
 	pcPageCheckboxesNames,
@@ -17,6 +16,7 @@ import "../../style/css/scrollCustom.css";
 
 import { defaultFilterSettings } from "../../context/FilterContext";
 import FilterWindowDisplayProducts from "./FilterWindowDisplayProducts";
+import FilterWindowSoundProducts from "./FilterWindowSoundProducts";
 
 const FilterWindow = (props) => {
 	const [filter, setFilter] = useContext(FilterContext);
@@ -63,38 +63,38 @@ const FilterWindow = (props) => {
 			</ul>
 		) : null;
 
-	const soundsPageCheckboxesType =
-		props.page === "sounds-page" ? (
-			<ul>
-				{soundsPageCheckboxesNames[0].map((e) => {
-					return (
-						<FilterCheckboxElement
-							name={e.name}
-							id={e.id}
-							key={e.id}
-							data={"appliedFiltersSoundsType"}
-							filterState={{ filter, setFilter }}
-						/>
-					);
-				})}
-			</ul>
-		) : null;
-	const soundsPageCheckboxesSet =
-		props.page === "sounds-page" ? (
-			<ul>
-				{soundsPageCheckboxesNames[1].map((e) => {
-					return (
-						<FilterCheckboxElement
-							name={e.name}
-							id={e.id}
-							key={e.id}
-							data={"appliedFiltersSoundsSet"}
-							filterState={{ filter, setFilter }}
-						/>
-					);
-				})}
-			</ul>
-		) : null;
+	// const soundsPageCheckboxesType =
+	// 	props.page === "sounds-page" ? (
+	// 		<ul>
+	// 			{soundsPageCheckboxesNames[0].map((e) => {
+	// 				return (
+	// 					<FilterCheckboxElement
+	// 						name={e.name}
+	// 						id={e.id}
+	// 						key={e.id}
+	// 						data={"appliedFiltersSoundsType"}
+	// 						filterState={{ filter, setFilter }}
+	// 					/>
+	// 				);
+	// 			})}
+	// 		</ul>
+	// 	) : null;
+	// const soundsPageCheckboxesSet =
+	// 	props.page === "sounds-page" ? (
+	// 		<ul>
+	// 			{soundsPageCheckboxesNames[1].map((e) => {
+	// 				return (
+	// 					<FilterCheckboxElement
+	// 						name={e.name}
+	// 						id={e.id}
+	// 						key={e.id}
+	// 						data={"appliedFiltersSoundsSet"}
+	// 						filterState={{ filter, setFilter }}
+	// 					/>
+	// 				);
+	// 			})}
+	// 		</ul>
+	// 	) : null;
 	const accessoriesPageCheckboxesType =
 		props.page === "accessories-page" ? (
 			<ul>
@@ -208,8 +208,9 @@ const FilterWindow = (props) => {
 					{props.page === "display-page" ? (
 						<FilterWindowDisplayProducts />
 					) : null}
-					{soundsPageCheckboxesType}
-					{soundsPageCheckboxesSet}
+					{props.page === "sound-page" ? <FilterWindowSoundProducts /> : null}
+					{/* {soundsPageCheckboxesType}
+					{soundsPageCheckboxesSet} */}
 					{accessoriesPageCheckboxesType}
 					{comfortPageCheckboxesType}
 					{pcPageCheckboxesCpu}

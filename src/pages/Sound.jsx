@@ -13,7 +13,7 @@ const Sound = () => {
 				<h2 className="navigator-description-container__header">Sound</h2>
 			</div>
 			<div className="main-product-container">
-				<FilterWindowGeneral page={"sounds-page"} />
+				<FilterWindowGeneral page={"sound-page"} />
 				<ProductsSoundPage />
 			</div>
 		</>

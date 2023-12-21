@@ -29,7 +29,7 @@ export const displayPageCheckboxesNames = [
 	],
 ];
 
-export const soundsPageCheckboxesNames = [
+export const soundPageCheckboxesNames = [
 	[
 		{ name: "Headphones", id: "headphones" },
 		{ name: "Speakers", id: "speakers" },

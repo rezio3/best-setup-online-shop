@@ -19,7 +19,10 @@ const ProductsSoundPage = () => {
 			);
 		});
 	}
-	if (appliedFiltersSoundsSet.length !== 0) {
+	if (
+		appliedFiltersSoundsSet.length !== 0 &&
+		appliedFiltersSoundsType.some((e) => e === "speakers")
+	) {
 		itemsToDisplay = itemsToDisplay.filter((singleProduct) => {
 			return appliedFiltersSoundsSet.some(
 				(element) => element === singleProduct.set
