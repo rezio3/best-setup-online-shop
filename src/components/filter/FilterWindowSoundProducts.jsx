@@ -8,7 +8,6 @@ const FilterWindowSoundProducts = () => {
 
 	let soundPageCheckboxes = [];
 	for (let i = 0; i < soundPageCheckboxesNames.length; i++) {
-		// console.log(i);
 		let data;
 		let subtitle;
 		if (i == 0) {
