@@ -9,6 +9,10 @@ export const defaultFilterSettings = {
 	appliedFiltersSoundsSet: [],
 	appliedFiltersAccessoriesType: [],
 	appliedFiltersComfortType: [],
+	appliedFiltersPcCpu: [],
+	appliedFiltersPcRam: [],
+	appliedFiltersPcMemory: [],
+	appliedFiltersPcGpu: [],
 	priceUp: false,
 	priceDown: false,
 	priceRange: {

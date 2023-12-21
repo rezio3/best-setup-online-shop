@@ -11,7 +11,9 @@ import {
 	soundsPageCheckboxesNames,
 	accessoriesPageCheckboxesNames,
 	comfortPageCheckboxesNames,
+	pcPageCheckboxesNames,
 } from "../objects/filterCheckboxes";
+import "../style/css/scrollCustom.css";
 // import { useLocation } from "react-router-dom";
 
 import { defaultFilterSettings } from "../context/FilterContext";
@@ -168,7 +170,71 @@ const FilterWindow = (props) => {
 							name={e.name}
 							id={e.id}
 							key={e.id}
-							data={"appliedFiltersAccessoriesType"}
+							data={"appliedFiltersComfortType"}
+							filterState={{ filter, setFilter }}
+						/>
+					);
+				})}
+			</ul>
+		) : null;
+	const pcPageCheckboxesCpu =
+		props.page === "pc-page" ? (
+			<ul>
+				{pcPageCheckboxesNames[0].map((e) => {
+					return (
+						<FilterCheckboxElement
+							name={e.name}
+							id={e.id}
+							key={e.id}
+							data={"appliedFiltersPcCpu"}
+							filterState={{ filter, setFilter }}
+						/>
+					);
+				})}
+			</ul>
+		) : null;
+	const pcPageCheckboxesRam =
+		props.page === "pc-page" ? (
+			<ul>
+				{pcPageCheckboxesNames[1].map((e) => {
+					return (
+						<FilterCheckboxElement
+							name={e.name}
+							id={e.id}
+							key={e.id}
+							data={"appliedFiltersPcRam"}
+							filterState={{ filter, setFilter }}
+						/>
+					);
+				})}
+			</ul>
+		) : null;
+	const pcPageCheckboxesMemory =
+		props.page === "pc-page" ? (
+			<ul>
+				{pcPageCheckboxesNames[2].map((e) => {
+					return (
+						<FilterCheckboxElement
+							name={e.name}
+							id={e.id}
+							key={e.id}
+							data={"appliedFiltersPcMemory"}
+							filterState={{ filter, setFilter }}
+						/>
+					);
+				})}
+			</ul>
+		) : null;
+	const pcPageCheckboxesGpu =
+		props.page === "pc-page" ? (
+			<ul>
+				{pcPageCheckboxesNames[3].map((e) => {
+					return (
+						<FilterCheckboxElement
+							name={e.name}
+							id={e.id}
+							key={e.id}
+							data={"appliedFiltersPcGpu"}
 							filterState={{ filter, setFilter }}
 						/>
 					);
@@ -181,7 +247,9 @@ const FilterWindow = (props) => {
 			<div className="filter-snap-threshold" ref={filterRef}></div>
 			<div
 				className={
-					snapFilter ? "filter-container filter-sticky" : "filter-container"
+					snapFilter
+						? "filter-container -scroll filter-sticky"
+						: "filter-container filter-scroll"
 				}
 			>
 				<div className="filter-padding-container">
@@ -194,6 +262,10 @@ const FilterWindow = (props) => {
 					{soundsPageCheckboxesSet}
 					{accessoriesPageCheckboxesType}
 					{comfortPageCheckboxesType}
+					{pcPageCheckboxesCpu}
+					{pcPageCheckboxesRam}
+					{pcPageCheckboxesMemory}
+					{pcPageCheckboxesGpu}
 					<FilterPriceRange filterState={{ filter, setFilter }} />
 					<ul>
 						<FilterCheckboxPriceDirection filterState={{ filter, setFilter }} />

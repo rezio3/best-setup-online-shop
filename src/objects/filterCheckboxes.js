@@ -52,3 +52,26 @@ export const comfortPageCheckboxesNames = [
 	{ name: "Chairs", id: "chair" },
 	{ name: "Desks", id: "desk" },
 ];
+
+export const pcPageCheckboxesNames = [
+	[
+		{ name: "i5", id: "i5" },
+		{ name: "i7", id: "i7" },
+		{ name: "i9", id: "i9" },
+	],
+	[
+		{ name: "16GB", id: "16GB" },
+		{ name: "32GB", id: "32GB" },
+		{ name: "64GB", id: "64GB" },
+	],
+	[
+		{ name: "1TB", id: "1TB" },
+		{ name: "2TB", id: "2TB" },
+	],
+	[
+		{ name: "RTX 4060", id: "RTX4060" },
+		{ name: "RTX 4070", id: "RTX4070" },
+		{ name: "RTX 4080", id: "RTX4080" },
+		{ name: "RTX 4090", id: "RTX4090" },
+	],
+];
