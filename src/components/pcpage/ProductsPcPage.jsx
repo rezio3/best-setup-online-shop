@@ -17,13 +17,34 @@ const ProductsPcPage = () => {
 
 	let itemsToDisplay = [...products.pc];
 
-	// if (appliedFiltersSoundsType.length !== 0) {
-	// 	itemsToDisplay = itemsToDisplay.filter((singleProduct) => {
-	// 		return appliedFiltersSoundsType.some(
-	// 			(element) => element === singleProduct.type
-	// 		);
-	// 	});
-	// }
+	if (appliedFiltersPcCpu.length !== 0) {
+		itemsToDisplay = itemsToDisplay.filter((singleProduct) => {
+			return appliedFiltersPcCpu.some(
+				(element) => element === singleProduct.cpu
+			);
+		});
+	}
+	if (appliedFiltersPcRam.length !== 0) {
+		itemsToDisplay = itemsToDisplay.filter((singleProduct) => {
+			return appliedFiltersPcRam.some(
+				(element) => element === singleProduct.ram
+			);
+		});
+	}
+	if (appliedFiltersPcMemory.length !== 0) {
+		itemsToDisplay = itemsToDisplay.filter((singleProduct) => {
+			return appliedFiltersPcMemory.some(
+				(element) => element === singleProduct.memory
+			);
+		});
+	}
+	if (appliedFiltersPcGpu.length !== 0) {
+		itemsToDisplay = itemsToDisplay.filter((singleProduct) => {
+			return appliedFiltersPcGpu.some(
+				(element) => element === singleProduct.gpu
+			);
+		});
+	}
 
 	// sort products depending on the price direction
 
