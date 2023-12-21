@@ -10,6 +10,7 @@ import {
 	displayPageCheckboxesNames,
 	soundsPageCheckboxesNames,
 	accessoriesPageCheckboxesNames,
+	comfortPageCheckboxesNames,
 } from "../objects/filterCheckboxes";
 // import { useLocation } from "react-router-dom";
 
@@ -158,6 +159,22 @@ const FilterWindow = (props) => {
 				})}
 			</ul>
 		) : null;
+	const comfortPageCheckboxesType =
+		props.page === "comfort-page" ? (
+			<ul>
+				{comfortPageCheckboxesNames.map((e) => {
+					return (
+						<FilterCheckboxElement
+							name={e.name}
+							id={e.id}
+							key={e.id}
+							data={"appliedFiltersAccessoriesType"}
+							filterState={{ filter, setFilter }}
+						/>
+					);
+				})}
+			</ul>
+		) : null;
 
 	return (
 		<>
@@ -176,6 +193,7 @@ const FilterWindow = (props) => {
 					{soundsPageCheckboxesType}
 					{soundsPageCheckboxesSet}
 					{accessoriesPageCheckboxesType}
+					{comfortPageCheckboxesType}
 					<FilterPriceRange filterState={{ filter, setFilter }} />
 					<ul>
 						<FilterCheckboxPriceDirection filterState={{ filter, setFilter }} />
