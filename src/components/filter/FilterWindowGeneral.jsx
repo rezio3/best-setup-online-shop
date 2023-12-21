@@ -1,22 +1,22 @@
 import React, { useEffect, useState, useRef, useContext } from "react";
-import "../style/css/filterWindow.css";
-import "../style/css/buttonsAnim.css";
+import "../../style/css/filterWindow.css";
+import "../../style/css/buttonsAnim.css";
 import FilterCheckboxElement from "./FilterCheckboxElement";
 import FilterCheckboxPriceDirection from "./FilterCheckboxPriceDirection";
-import { FilterContext } from "../context/FilterContext";
+import { FilterContext } from "../../context/FilterContext";
 import FilterPriceRange from "./FilterPriceRange";
 import {
 	homePageCheckboxesNames,
-	displayPageCheckboxesNames,
 	soundsPageCheckboxesNames,
 	accessoriesPageCheckboxesNames,
 	comfortPageCheckboxesNames,
 	pcPageCheckboxesNames,
-} from "../objects/filterCheckboxes";
-import "../style/css/scrollCustom.css";
+} from "../../objects/filterCheckboxes";
+import "../../style/css/scrollCustom.css";
 // import { useLocation } from "react-router-dom";
 
-import { defaultFilterSettings } from "../context/FilterContext";
+import { defaultFilterSettings } from "../../context/FilterContext";
+import FilterWindowDisplayProducts from "./FilterWindowDisplayProducts";
 
 const FilterWindow = (props) => {
 	const [filter, setFilter] = useContext(FilterContext);
@@ -56,56 +56,6 @@ const FilterWindow = (props) => {
 							id={e.id}
 							key={e.id}
 							data={"appliedFiltersHomePage"}
-							filterState={{ filter, setFilter }}
-						/>
-					);
-				})}
-			</ul>
-		) : null;
-
-	const displayPageCheckboxesResolution =
-		props.page === "display-page" ? (
-			<ul>
-				{displayPageCheckboxesNames[0].map((e) => {
-					return (
-						<FilterCheckboxElement
-							name={e.name}
-							id={e.id}
-							key={e.id}
-							data={"appliedFiltersDisplaysResolution"}
-							filterState={{ filter, setFilter }}
-						/>
-					);
-				})}
-			</ul>
-		) : null;
-	const displayPageCheckboxesFps =
-		props.page === "display-page" ? (
-			<ul>
-				{displayPageCheckboxesNames[1].map((e) => {
-					return (
-						<FilterCheckboxElement
-							name={e.name}
-							id={e.id}
-							key={e.id}
-							data={"appliedFiltersDisplaysFps"}
-							filterState={{ filter, setFilter }}
-						/>
-					);
-				})}
-			</ul>
-		) : null;
-
-	const displayPageCheckboxesSize =
-		props.page === "display-page" ? (
-			<ul>
-				{displayPageCheckboxesNames[2].map((e) => {
-					return (
-						<FilterCheckboxElement
-							name={e.name}
-							id={e.id}
-							key={e.id}
-							data={"appliedFiltersDisplaysSize"}
 							filterState={{ filter, setFilter }}
 						/>
 					);
@@ -255,9 +205,9 @@ const FilterWindow = (props) => {
 				<div className="filter-padding-container">
 					<h5 className="filter-container__filter-header">Filter</h5>
 					{homePageCheckboxes}
-					{displayPageCheckboxesResolution}
-					{displayPageCheckboxesFps}
-					{displayPageCheckboxesSize}
+					{props.page === "display-page" ? (
+						<FilterWindowDisplayProducts />
+					) : null}
 					{soundsPageCheckboxesType}
 					{soundsPageCheckboxesSet}
 					{accessoriesPageCheckboxesType}
