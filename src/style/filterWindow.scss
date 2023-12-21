@@ -30,6 +30,23 @@
 		font-weight: 600;
 	}
 
+	&__subtitle {
+		position: relative;
+		display: block;
+		margin-bottom: 10px;
+		font-size: 14px;
+		font-weight: 700;
+	}
+
+	&__subtitle::before {
+		content: "";
+		position: absolute;
+		bottom: -2px;
+		width: 120px;
+		// height: 50px;
+		border-bottom: 1px solid $gray;
+	}
+
 	&__filter-checkbox-element {
 		margin-bottom: 10px;
 		display: flex;
@@ -62,7 +79,8 @@
 	&__price-range-span {
 		margin: 20px 0 10px;
 		display: block;
-		font-size: 18px;
+		font-size: 14px;
+		font-weight: 700;
 	}
 	&__price-range-inputs-container {
 		font-size: 12px;
