@@ -37,7 +37,7 @@
 .filter-container__subtitle::before {
   content: "";
   position: absolute;
-  bottom: -2px;
+  bottom: -4px;
   width: 120px;
   border-bottom: 1px solid #c7c7c7;
 }
@@ -68,13 +68,8 @@
   font-size: 12px;
   color: #ffffff;
 }
-.filter-container__price-range-span {
-  margin: 20px 0 10px;
-  display: block;
-  font-size: 14px;
-  font-weight: 700;
-}
 .filter-container__price-range-inputs-container {
+  margin-top: 15px;
   font-size: 12px;
 }
 .filter-container__price-range-inputs-container input[type=number] {

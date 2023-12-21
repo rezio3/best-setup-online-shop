@@ -41,7 +41,7 @@
 	&__subtitle::before {
 		content: "";
 		position: absolute;
-		bottom: -2px;
+		bottom: -4px;
 		width: 120px;
 		// height: 50px;
 		border-bottom: 1px solid $gray;
@@ -76,13 +76,8 @@
 		color: $white;
 	}
 
-	&__price-range-span {
-		margin: 20px 0 10px;
-		display: block;
-		font-size: 14px;
-		font-weight: 700;
-	}
 	&__price-range-inputs-container {
+		margin-top: 15px;
 		font-size: 12px;
 
 		input[type="number"] {

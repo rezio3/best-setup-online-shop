@@ -23,7 +23,7 @@ const FilterPriceRange = (props) => {
 	};
 	return (
 		<>
-			<span className="filter-container__price-range-span">Price range</span>
+			<span className="filter-container__subtitle">Price range</span>
 			<div className="filter-container__price-range-inputs-container">
 				<span>From: </span>
 				<input
