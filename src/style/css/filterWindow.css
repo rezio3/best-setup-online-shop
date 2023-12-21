@@ -6,6 +6,7 @@
   margin-bottom: 4px;
   width: 20%;
   min-width: 250px;
+  max-height: 80vh;
   box-shadow: 0 0 10px -6px;
 }
 .filter-container .filter-padding-container {
