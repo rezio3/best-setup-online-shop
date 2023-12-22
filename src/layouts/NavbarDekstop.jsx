@@ -33,7 +33,6 @@ const NavbarDesktop = () => {
 
 	let navLogo = logoNav ? "block" : "none";
 
-	console.log(navLogo);
 	return (
 		<>
 			<div className="nav-treshhold" ref={navRef}></div>
