@@ -2,6 +2,7 @@ import React from "react";
 import FilterWindowGeneral from "../components/filter/FilterWindowGeneral";
 import ProductsComfortPage from "../components/comfortpage/ProductsComfortPage";
 import InstallmentOffer from "../components/InstallmentOffer";
+import QuestionsGeneral from "../components/QuestionsGeneral";
 
 const Comfort = () => {
 	return (
