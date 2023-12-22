@@ -1,0 +1,53 @@
+@charset "UTF-8";
+.installment-offer-wrapper {
+  margin: 100px 0;
+  width: 70%;
+}
+.installment-offer-wrapper .installment-offer-section {
+  padding: 60px 100px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 10px -6px;
+}
+.installment-offer-wrapper .installment-offer-section__header {
+  margin: 0 0 10px 0;
+  font-size: 24px;
+  font-weight: 400;
+}
+.installment-offer-wrapper .installment-offer-section .lower-header {
+  font-size: 16px;
+}
+.installment-offer-wrapper .installment-offer-section ul {
+  margin-top: 30px;
+  padding-left: 0;
+  list-style: none;
+}
+.installment-offer-wrapper .installment-offer-section ul li {
+  display: flex;
+  margin: 15px 0;
+}
+.installment-offer-wrapper .installment-offer-section ul li .tick-ul-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgb(109, 196, 109);
+}
+.installment-offer-wrapper .installment-offer-section ul li .tick-ul-list::after {
+  content: "✔";
+  margin-bottom: 1px;
+}
+.installment-offer-wrapper .installment-offer-section__description {
+  font-size: 14px;
+  line-height: 20px;
+}
+.installment-offer-wrapper .installment-offer-section__link {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #277ec1;
+  font-size: 14px;
+  cursor: pointer;
+}

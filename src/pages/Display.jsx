@@ -2,6 +2,7 @@ import React from "react";
 import "../style/css/productPages.css";
 import FilterWindowGeneral from "../components/filter/FilterWindowGeneral";
 import ProductsDisplayPage from "../components/displaypage/ProductsDisplayPage";
+import InstallmentOffer from "../components/InstallmentOffer";
 
 const Display = () => {
 	return (
@@ -17,6 +18,7 @@ const Display = () => {
 				<FilterWindowGeneral page={"display-page"} />
 				<ProductsDisplayPage />
 			</div>
+			<InstallmentOffer />
 		</>
 	);
 };
