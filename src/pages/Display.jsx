@@ -19,6 +19,7 @@ const Display = () => {
 				<ProductsDisplayPage />
 			</div>
 			<InstallmentOffer />
+			<QuestionsGeneral />
 		</>
 	);
 };

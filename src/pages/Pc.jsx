@@ -18,6 +18,7 @@ const Pc = () => {
 				<ProductsPcPage />
 			</div>
 			<InstallmentOffer />
+			<QuestionsGeneral />
 		</>
 	);
 };

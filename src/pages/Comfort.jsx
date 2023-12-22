@@ -18,6 +18,7 @@ const Comfort = () => {
 				<ProductsComfortPage />
 			</div>
 			<InstallmentOffer />
+			<QuestionsGeneral />
 		</>
 	);
 };
