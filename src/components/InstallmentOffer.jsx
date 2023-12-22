@@ -1,5 +1,6 @@
 import React from "react";
 import "../style/css/installmentOffer.css";
+import zero from "../img/zero.png";
 
 const InstallmentOffer = () => {
 	return (
@@ -42,6 +43,7 @@ const InstallmentOffer = () => {
 						Check the promotion terms and conditions.
 					</span>
 				</div>
+				<img src={zero} className="zero-percentage-img" />
 			</div>
 		</>
 	);

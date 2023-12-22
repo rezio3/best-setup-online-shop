@@ -1,6 +1,7 @@
 @import "./colors.scss";
 
 .installment-offer-wrapper {
+	position: relative;
 	margin: 100px 0;
 	width: 70%;
 	// background-color: red;
@@ -55,5 +56,11 @@
 			font-size: 14px;
 			cursor: pointer;
 		}
+	}
+	.zero-percentage-img {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
 	}
 }
