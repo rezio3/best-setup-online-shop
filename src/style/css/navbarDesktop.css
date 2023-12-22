@@ -46,6 +46,22 @@
 .navbar-container .product-pages-buttons-container .active {
   border-bottom: 1px solid black;
 }
+.navbar-container .product-pages-buttons-container__logo-menu-button {
+  position: absolute;
+  left: 15%;
+  bottom: 5px;
+}
+.navbar-container .product-pages-buttons-container__logo-menu-button .logo-in {
+  animation: showNavLogo 0.4s ease-out forwards;
+}
+.navbar-container .product-pages-buttons-container__logo-menu-button .logo-out {
+  animation: hideNavLogo 0.4s ease-out forwards;
+}
+.navbar-container .product-pages-buttons-container__logo-nav-img {
+  padding: 15px;
+  width: 120px;
+  cursor: pointer;
+}
 .navbar-container .cart-container {
   position: relative;
   right: -50px;
@@ -80,4 +96,27 @@
 
 .spacer {
   margin-top: 70px;
+}
+
+@keyframes showNavLogo {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes hideNavLogo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }

@@ -1,28 +1,61 @@
 import React, { useState, useRef, useEffect } from "react";
 import "../style/css/navbarDesktop.css";
 import { NavLink } from "react-router-dom";
+import logoImg from "../img/BestSetupLogo.png";
 
 const NavbarDesktop = () => {
 	const [snapNav, setSnapNav] = useState(false);
+	const [logoNav, setLogoNav] = useState(false);
 
 	const navRef = useRef();
+	const timeoutRef = useRef(null);
+
 	useEffect(() => {
 		const observer = new IntersectionObserver(
 			(entries) => {
 				const entry = entries[0];
 				entry.intersectionRatio === 0 ? setSnapNav(true) : setSnapNav(false);
+				entry.intersectionRatio === 0
+					? setLogoNav(true)
+					: setTimeout(() => {
+							timeoutRef.current = true;
+							if (timeoutRef.current) {
+								return;
+							}
+							setLogoNav(false);
+							timeoutRef.current = false;
+					  }, 600);
 			},
 			{ threshold: 1 }
 		);
 		observer.observe(navRef.current);
 	}, []);
 
+	useEffect(() => {}, [snapNav]);
+
+	let navLogo = logoNav ? "block" : "none";
+
+	console.log(navLogo);
 	return (
 		<>
 			<div className="nav-treshhold" ref={navRef}></div>
 			<nav className={snapNav ? "navbar-container sticky" : "navbar-container"}>
 				<div className="navbar-container__empty-left-spacer"></div>
 				<ul className="product-pages-buttons-container">
+					<li className="product-pages-buttons-container__logo-menu-button">
+						<NavLink to="/">
+							<img
+								src={logoImg}
+								style={{ display: navLogo, opacity: 1 }}
+								className={
+									snapNav
+										? "product-pages-buttons-container__logo-nav-img logo-in"
+										: "product-pages-buttons-container__logo-nav-img logo-out"
+								}
+							/>
+						</NavLink>
+					</li>
+
 					<li className="product-pages-buttons-container__nav-element">
 						<NavLink to="/display">
 							<button className="product-pages-buttons-container__nav-button">

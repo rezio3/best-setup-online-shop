@@ -49,6 +49,24 @@
 		.active {
 			border-bottom: 1px solid black;
 		}
+		&__logo-menu-button {
+			position: absolute;
+			left: 15%;
+
+			bottom: 5px;
+
+			.logo-in {
+				animation: showNavLogo 0.4s ease-out forwards;
+			}
+			.logo-out {
+				animation: hideNavLogo 0.4s ease-out forwards;
+			}
+		}
+		&__logo-nav-img {
+			padding: 15px;
+			width: 120px;
+			cursor: pointer;
+		}
 	}
 	.cart-container {
 		// margin-left: 30%;
@@ -87,4 +105,31 @@
 
 .spacer {
 	margin-top: 70px;
+}
+
+@keyframes showNavLogo {
+	0% {
+		opacity: 0;
+	}
+
+	20% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes hideNavLogo {
+	0% {
+		opacity: 1;
+	}
+
+	50% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 0;
+	}
 }
