@@ -48,7 +48,7 @@
 }
 .navbar-container .product-pages-buttons-container__logo-menu-button {
   position: absolute;
-  left: 15%;
+  left: 14%;
   bottom: 5px;
 }
 .navbar-container .product-pages-buttons-container__logo-menu-button .logo-in {
@@ -59,7 +59,7 @@
 }
 .navbar-container .product-pages-buttons-container__logo-nav-img {
   padding: 15px;
-  width: 120px;
+  width: 135px;
   cursor: pointer;
 }
 .navbar-container .cart-container {
