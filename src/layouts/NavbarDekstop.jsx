@@ -31,8 +31,6 @@ const NavbarDesktop = () => {
 		observer.observe(navRef.current);
 	}, []);
 
-	useEffect(() => {}, [snapNav]);
-
 	let navLogo = logoNav ? "block" : "none";
 
 	console.log(navLogo);
