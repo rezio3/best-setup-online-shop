@@ -17,7 +17,6 @@ const FilterWindowSoundProducts = () => {
 			data = "appliedFiltersSoundsSet";
 			subtitle = "Speakers set";
 		}
-		console.log(filter.appliedFiltersSoundsType.some((e) => e === "speakers"));
 		if (i === 0) {
 			soundPageCheckboxes.push(
 				<ul>
