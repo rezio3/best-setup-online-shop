@@ -1,6 +1,7 @@
 import React from "react";
 import FilterWindowGeneral from "../components/filter/FilterWindowGeneral";
 import ProductsComfortPage from "../components/comfortpage/ProductsComfortPage";
+import InstallmentOffer from "../components/InstallmentOffer";
 
 const Comfort = () => {
 	return (
@@ -16,6 +17,7 @@ const Comfort = () => {
 				<FilterWindowGeneral page={"comfort-page"} />
 				<ProductsComfortPage />
 			</div>
+			<InstallmentOffer />
 		</>
 	);
 };

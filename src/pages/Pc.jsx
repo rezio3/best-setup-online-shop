@@ -1,6 +1,7 @@
 import React from "react";
 import FilterWindowGeneral from "../components/filter/FilterWindowGeneral";
 import ProductsPcPage from "../components/pcpage/ProductsPcPage";
+import InstallmentOffer from "../components/InstallmentOffer";
 
 const Pc = () => {
 	return (
@@ -16,6 +17,7 @@ const Pc = () => {
 				<FilterWindowGeneral page={"pc-page"} />
 				<ProductsPcPage />
 			</div>
+			<InstallmentOffer />
 		</>
 	);
 };

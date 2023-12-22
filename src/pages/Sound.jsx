@@ -1,6 +1,7 @@
 import React from "react";
 import FilterWindowGeneral from "../components/filter/FilterWindowGeneral";
 import ProductsSoundPage from "../components/soundpage/ProductsSoundPage";
+import InstallmentOffer from "../components/InstallmentOffer";
 
 const Sound = () => {
 	return (
@@ -16,6 +17,7 @@ const Sound = () => {
 				<FilterWindowGeneral page={"sound-page"} />
 				<ProductsSoundPage />
 			</div>
+			<InstallmentOffer />
 		</>
 	);
 };
