@@ -1,4 +1,5 @@
 import "./App.css";
+import OrderContext from "./context/OrderContext";
 import Footer from "./layouts/Footer";
 import Header from "./layouts/Header";
 import Navbar from "./layouts/Navbar";
@@ -9,10 +10,12 @@ function App() {
 	return (
 		<Router>
 			<div className="App">
-				<Header />
-				<Navbar />
-				<Page />
-				<Footer />
+				<OrderContext>
+					<Header />
+					<Navbar />
+					<Page />
+					<Footer />
+				</OrderContext>
 			</div>
 		</Router>
 	);
