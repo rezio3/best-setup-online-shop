@@ -94,6 +94,9 @@ const NavbarDesktop = () => {
 						<span className="material-symbols-outlined cart-container__cart-icon">
 							shopping_cart
 						</span>
+						<div className="cart-container__items-counter-container">
+							<span className="cart-container__items-counter">2</span>
+						</div>
 					</button>
 				</div>
 			</nav>

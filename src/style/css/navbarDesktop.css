@@ -81,6 +81,23 @@
 .navbar-container .cart-container__cart-icon {
   font-size: 30px;
 }
+.navbar-container .cart-container__items-counter-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 40%;
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #7eb8e6;
+}
+.navbar-container .cart-container__items-counter {
+  margin-left: 2px;
+  margin-bottom: 1px;
+  color: white;
+}
 .navbar-container__empty-left-spacer {
   width: 70px;
   height: 50px;

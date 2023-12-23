@@ -79,6 +79,7 @@
 		align-items: center;
 
 		&__cart-button {
+			// position: absolute;
 			padding: 20px;
 			background: none;
 			border: none;
@@ -86,6 +87,24 @@
 		}
 		&__cart-icon {
 			font-size: 30px;
+		}
+		&__items-counter-container {
+			position: absolute;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			top: 40%;
+			left: 10%;
+			width: 20px;
+			height: 20px;
+			// opacity: 0.8;
+			border-radius: 50%;
+			background-color: $lightblue;
+		}
+		&__items-counter {
+			margin-left: 2px;
+			margin-bottom: 1px;
+			color: white;
 		}
 	}
 	&__empty-left-spacer {
