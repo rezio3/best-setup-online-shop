@@ -1,12 +1,16 @@
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
 import { gsap } from "gsap";
 import "../style/css/buttonsAnim.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar as faStarSolid } from "@fortawesome/free-solid-svg-icons";
 import { faStar as faStarRegular } from "@fortawesome/free-regular-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { ProductsOrderContext } from "../context/OrderContext";
+import products from "../objects/products";
 
 const ProductBox = (props) => {
+	const [order, setOrder] = useContext(ProductsOrderContext);
+
 	let productImage = useRef(null);
 
 	// product hover animation
@@ -38,6 +42,13 @@ const ProductBox = (props) => {
 		);
 	}
 
+	const addToCartHandler = () => {
+		setOrder({
+			...order,
+			cart: [...order.cart, props.product],
+		});
+	};
+
 	return (
 		<>
 			<div
@@ -60,7 +71,10 @@ const ProductBox = (props) => {
 					<span className="product-box__price-span">
 						{props.product.price} $
 					</span>
-					<button className="product-box__buy-btn button-anim">
+					<button
+						className="product-box__buy-btn button-anim"
+						onClick={addToCartHandler}
+					>
 						Add to cart
 					</button>
 				</div>
