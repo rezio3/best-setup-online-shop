@@ -1,11 +1,13 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect, useContext } from "react";
 import "../style/css/navbarDesktop.css";
 import { NavLink } from "react-router-dom";
 import logoImg from "../img/BestSetupLogo.png";
+import { ProductsOrderContext } from "../context/OrderContext";
 
 const NavbarDesktop = () => {
 	const [snapNav, setSnapNav] = useState(false);
 	const [logoNav, setLogoNav] = useState(false);
+	const [order] = useContext(ProductsOrderContext);
 
 	const navRef = useRef();
 	const timeoutRef = useRef(null);
@@ -94,9 +96,13 @@ const NavbarDesktop = () => {
 						<span className="material-symbols-outlined cart-container__cart-icon">
 							shopping_cart
 						</span>
-						<div className="cart-container__items-counter-container">
-							<span className="cart-container__items-counter">2</span>
-						</div>
+						{order.cart.length !== 0 ? (
+							<div className="cart-container__items-counter-container">
+								<span className="cart-container__items-counter">
+									{order.cart.length}
+								</span>
+							</div>
+						) : null}
 					</button>
 				</div>
 			</nav>
