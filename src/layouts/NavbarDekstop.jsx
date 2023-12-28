@@ -3,10 +3,12 @@ import "../style/css/navbarDesktop.css";
 import { NavLink } from "react-router-dom";
 import logoImg from "../img/BestSetupLogo.png";
 import { ProductsOrderContext } from "../context/OrderContext";
+import CartWindow from "../components/CartWindow";
 
 const NavbarDesktop = () => {
 	const [snapNav, setSnapNav] = useState(false);
 	const [logoNav, setLogoNav] = useState(false);
+	const [cartOpen, setCartOpen] = useState(false);
 	const [order] = useContext(ProductsOrderContext);
 
 	const navRef = useRef();
@@ -32,6 +34,10 @@ const NavbarDesktop = () => {
 		);
 		observer.observe(navRef.current);
 	}, []);
+
+	const cartButtonHandler = () => {
+		setCartOpen(!cartOpen);
+	};
 
 	let navLogo = logoNav ? "block" : "none";
 
@@ -92,7 +98,10 @@ const NavbarDesktop = () => {
 					</li>
 				</ul>
 				<div className="cart-container">
-					<button className="cart-container__cart-button">
+					<button
+						className="cart-container__cart-button"
+						onClick={cartButtonHandler}
+					>
 						<span className="material-symbols-outlined cart-container__cart-icon">
 							shopping_cart
 						</span>
@@ -104,6 +113,7 @@ const NavbarDesktop = () => {
 							</div>
 						) : null}
 					</button>
+					<CartWindow />
 				</div>
 			</nav>
 			<div className={snapNav ? "spacer" : ""}></div>
