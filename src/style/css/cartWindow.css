@@ -1,0 +1,7 @@
+.cart-window-wrapper {
+  position: absolute;
+  height: 400px;
+  width: 250px;
+  background-color: red;
+  z-index: 1;
+}
