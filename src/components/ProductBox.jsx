@@ -6,7 +6,6 @@ import { faStar as faStarSolid } from "@fortawesome/free-solid-svg-icons";
 import { faStar as faStarRegular } from "@fortawesome/free-regular-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { ProductsOrderContext } from "../context/OrderContext";
-import products from "../objects/products";
 
 const ProductBox = (props) => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
