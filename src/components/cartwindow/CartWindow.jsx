@@ -5,15 +5,15 @@ import ItemInCart from "./ItemInCart";
 
 const CartWindow = () => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
-
-	console.log(order);
 	return (
 		<>
 			{order.cartOpen ? (
 				<div className="cart-window-wrapper">
 					<div className="cart-window-container">
 						<h3 className="cart-window-container__header">Your Cart</h3>
-						<ItemInCart />
+						{order.cart.map((e) => {
+							return <ItemInCart image={e.img} name={e.name} price={e.price} />;
+						})}
 					</div>
 				</div>
 			) : null}
