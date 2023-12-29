@@ -9,7 +9,6 @@ import { faXmark } from "@fortawesome/free-solid-svg-icons";
 const CartWindow = () => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
 	const cartXButtonHandler = (event) => {
-		console.log(event.target);
 		if (event.target === event.currentTarget || event.target.id === "xButton") {
 			setOrder({
 				...order,
@@ -34,10 +33,21 @@ const CartWindow = () => {
 							</div>
 							{order.cart.map((e) => {
 								return (
-									<ItemInCart image={e.img} name={e.name} price={e.price} />
+									<ItemInCart
+										image={e.img}
+										name={e.name}
+										price={e.price}
+										key={e.name}
+									/>
 								);
 							})}
-							{order.cart.length === 0 ? <div>Your cart is empty!</div> : null}
+							{order.cart.length === 0 ? (
+								<div className="cart-window-container__empty-cart-notification-box">
+									<span className="cart-window-container__empty-cart-notification">
+										Your cart is empty!
+									</span>
+								</div>
+							) : null}
 						</div>
 					</div>
 				</div>
