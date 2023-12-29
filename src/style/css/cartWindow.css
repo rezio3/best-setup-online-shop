@@ -1,4 +1,14 @@
-.cart-window-wrapper {
+.cart-window-background {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+.cart-window-background .cart-window-wrapper {
   position: fixed;
   top: 50%;
   transform: translateY(-50%);
@@ -7,36 +17,47 @@
   overflow-y: auto;
   background-color: #ffffff;
   border: 1px solid #1b1b1b;
-  z-index: 1;
+  z-index: 3;
 }
-.cart-window-wrapper .cart-window-container {
+.cart-window-background .cart-window-wrapper .cart-window-container {
   padding: 20px;
   display: flex;
   flex-direction: column;
 }
-.cart-window-wrapper .cart-window-container__item-box {
+.cart-window-background .cart-window-wrapper .cart-window-container__item-box {
   padding: 20px 0;
   width: 100%;
   display: flex;
   align-items: center;
   border-bottom: 1px solid #c7c7c7;
 }
-.cart-window-wrapper .cart-window-container__item-box:last-child {
+.cart-window-background .cart-window-wrapper .cart-window-container__item-box:last-child {
   border-bottom: none;
 }
-.cart-window-wrapper .cart-window-container__header {
+.cart-window-background .cart-window-wrapper .cart-window-container__header-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.cart-window-background .cart-window-wrapper .cart-window-container__header {
   margin: 0;
 }
-.cart-window-wrapper .cart-window-container__item-img {
+.cart-window-background .cart-window-wrapper .cart-window-container__back-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+.cart-window-background .cart-window-wrapper .cart-window-container__item-img {
   margin-right: 30px;
   width: 70px;
 }
-.cart-window-wrapper .cart-window-container__item-name {
+.cart-window-background .cart-window-wrapper .cart-window-container__item-name {
   display: block;
   font-size: 14px;
   width: 50%;
 }
-.cart-window-wrapper .cart-window-container__item-price {
+.cart-window-background .cart-window-wrapper .cart-window-container__item-price {
   position: relative;
   right: 0;
   display: block;
