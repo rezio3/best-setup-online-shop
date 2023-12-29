@@ -42,6 +42,11 @@ const NavbarDesktop = () => {
 
 	let navLogo = logoNav ? "block" : "none";
 
+	let totalProductsQuantity = order.cart.reduce(
+		(sum, obj) => sum + obj.quantity,
+		0
+	);
+
 	return (
 		<>
 			<div className="nav-treshhold" ref={navRef}></div>
@@ -109,7 +114,7 @@ const NavbarDesktop = () => {
 						{order.cart.length !== 0 ? (
 							<div className="cart-container__items-counter-container">
 								<span className="cart-container__items-counter">
-									{order.cart.length}
+									{totalProductsQuantity}
 								</span>
 							</div>
 						) : null}
