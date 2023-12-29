@@ -1,10 +1,11 @@
 import "./App.css";
-import OrderContext from "./context/OrderContext";
+import { BrowserRouter as Router } from "react-router-dom";
 import Footer from "./layouts/Footer";
 import Header from "./layouts/Header";
 import Navbar from "./layouts/Navbar";
 import Page from "./layouts/Page";
-import { BrowserRouter as Router } from "react-router-dom";
+import OrderContext from "./context/OrderContext";
+import CartWindow from "./components/CartWindow";
 
 function App() {
 	return (
@@ -15,6 +16,7 @@ function App() {
 					<Navbar />
 					<Page />
 					<Footer />
+					<CartWindow />
 				</OrderContext>
 			</div>
 		</Router>

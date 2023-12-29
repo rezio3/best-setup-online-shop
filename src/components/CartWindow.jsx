@@ -7,9 +7,13 @@ const CartWindow = () => {
 
 	console.log(order);
 	return (
-		<div className="cart-window-wrapper">
-			<div className="cart-window-container"></div>
-		</div>
+		<>
+			{order.cartOpen ? (
+				<div className="cart-window-wrapper">
+					<div className="cart-window-container"></div>
+				</div>
+			) : null}
+		</>
 	);
 };
 

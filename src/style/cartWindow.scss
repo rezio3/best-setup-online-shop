@@ -1,9 +1,9 @@
 .cart-window-wrapper {
-	position: absolute;
-	// top: 50px;
-	// right: 50px;
-	height: 400px;
-	width: 250px;
+	position: fixed;
+	top: 50%;
+	transform: translateY(-50%);
+	height: 700px;
+	width: 500px;
 	background-color: red;
 	z-index: 1;
 }

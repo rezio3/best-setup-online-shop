@@ -3,13 +3,11 @@ import "../style/css/navbarDesktop.css";
 import { NavLink } from "react-router-dom";
 import logoImg from "../img/BestSetupLogo.png";
 import { ProductsOrderContext } from "../context/OrderContext";
-import CartWindow from "../components/CartWindow";
 
 const NavbarDesktop = () => {
 	const [snapNav, setSnapNav] = useState(false);
 	const [logoNav, setLogoNav] = useState(false);
-	const [cartOpen, setCartOpen] = useState(false);
-	const [order] = useContext(ProductsOrderContext);
+	const [order, setOrder] = useContext(ProductsOrderContext);
 
 	const navRef = useRef();
 	const timeoutRef = useRef(null);
@@ -36,7 +34,10 @@ const NavbarDesktop = () => {
 	}, []);
 
 	const cartButtonHandler = () => {
-		setCartOpen(!cartOpen);
+		setOrder({
+			...order,
+			cartOpen: !order.cartOpen,
+		});
 	};
 
 	let navLogo = logoNav ? "block" : "none";
@@ -113,7 +114,6 @@ const NavbarDesktop = () => {
 							</div>
 						) : null}
 					</button>
-					<CartWindow />
 				</div>
 			</nav>
 			<div className={snapNav ? "spacer" : ""}></div>

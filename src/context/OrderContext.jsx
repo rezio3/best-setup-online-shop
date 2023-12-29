@@ -1,6 +1,7 @@
 import React, { createContext, useState } from "react";
 
 export const orderObj = {
+	cartOpen: false,
 	cart: [],
 };
 
