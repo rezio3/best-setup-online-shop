@@ -5,7 +5,7 @@ import Header from "./layouts/Header";
 import Navbar from "./layouts/Navbar";
 import Page from "./layouts/Page";
 import OrderContext from "./context/OrderContext";
-import CartWindow from "./components/CartWindow";
+import CartWindow from "./components/cartwindow/CartWindow";
 
 function App() {
 	return (
