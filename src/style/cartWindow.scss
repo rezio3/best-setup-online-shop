@@ -4,6 +4,12 @@
 	transform: translateY(-50%);
 	height: 700px;
 	width: 500px;
-	background-color: red;
+	border: 1px solid black;
+	background-color: white;
 	z-index: 1;
+	.cart-window-container {
+		&__header {
+			margin: 0;
+		}
+	}
 }
