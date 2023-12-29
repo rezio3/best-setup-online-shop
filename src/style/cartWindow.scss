@@ -49,6 +49,9 @@
 				font-size: 28px;
 				cursor: pointer;
 			}
+			.XIcon {
+				pointer-events: none;
+			}
 			&__item-img {
 				margin-right: 30px;
 				width: 70px;

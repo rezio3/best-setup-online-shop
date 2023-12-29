@@ -48,6 +48,9 @@
   font-size: 28px;
   cursor: pointer;
 }
+.cart-window-background .cart-window-wrapper .cart-window-container .XIcon {
+  pointer-events: none;
+}
 .cart-window-background .cart-window-wrapper .cart-window-container__item-img {
   margin-right: 30px;
   width: 70px;
