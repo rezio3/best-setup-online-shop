@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter, BrowserRouter as Router } from "react-router-dom";
 import Footer from "./layouts/Footer";
 import Header from "./layouts/Header";
 import Navbar from "./layouts/Navbar";
@@ -15,34 +15,36 @@ function App() {
 		setOk(false);
 	};
 	return (
-		<Router>
-			<div className="App">
-				<OrderContext>
-					<Header />
-					<Navbar />
-					<Page />
-					<Footer />
-					<CartWindow />
-				</OrderContext>
-				<div
-					className={
-						ok ? "in-progress-box" : "in-progress-box in-progress-box--off"
-					}
-				>
-					<h2>This shop ain't work yet!</h2>
-					<span className="in-progress-span">
-						Project is currently in progress...
-					</span>
-					<span className="in-progress-span">
-						So far, you can browse products, filter them and add them to the
-						cart.
-					</span>
-					<button className="ok-btn button-anim" onClick={okBtnHandler}>
-						Ok
-					</button>
+		<BrowserRouter basename="/best-setup-online-shop">
+			<Router>
+				<div className="App">
+					<OrderContext>
+						<Header />
+						<Navbar />
+						<Page />
+						<Footer />
+						<CartWindow />
+					</OrderContext>
+					<div
+						className={
+							ok ? "in-progress-box" : "in-progress-box in-progress-box--off"
+						}
+					>
+						<h2>This shop ain't work yet!</h2>
+						<span className="in-progress-span">
+							Project is currently in progress...
+						</span>
+						<span className="in-progress-span">
+							So far, you can browse products, filter them and add them to the
+							cart.
+						</span>
+						<button className="ok-btn button-anim" onClick={okBtnHandler}>
+							Ok
+						</button>
+					</div>
 				</div>
-			</div>
-		</Router>
+			</Router>
+		</BrowserRouter>
 	);
 }
 
