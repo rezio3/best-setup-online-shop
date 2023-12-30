@@ -1,4 +1,4 @@
-import React, { useContext, useRef } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import "../style/css/buttonsAnim.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -6,9 +6,12 @@ import { faStar as faStarSolid } from "@fortawesome/free-solid-svg-icons";
 import { faStar as faStarRegular } from "@fortawesome/free-regular-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { ProductsOrderContext } from "../context/OrderContext";
+import { cleanup } from "@testing-library/react";
 
 const ProductBox = (props) => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
+	const [btnAnim, setBtnAnim] = useState(false);
+	const timeoutRef = useRef(null);
 
 	let productImage = useRef(null);
 
@@ -68,7 +71,26 @@ const ProductBox = (props) => {
 				cart: updatedCart,
 			});
 		}
+
+		// setBtnAnim(true);
+		// useTimeout(() => {
+		// 	setBtnAnim(false);
+		// }, 700);
 	};
+
+	// function useTimeout(callback, delay) {
+	// 	const stableCallback = useRef(callback);
+	// 	useEffect(() => {
+	// 		stableCallback.current = callback;
+	// 	}, [callback]);
+
+	// 	useEffect(() => {
+	// 		const tick = () => stableCallback.current();
+	// 		if (typeof delay !== "number") return;
+	// 		const t = setTimeout(tick, delay);
+	// 		return () => clearTimeout(t);
+	// 	}, [delay]);
+	// }
 
 	return (
 		<>
@@ -93,6 +115,11 @@ const ProductBox = (props) => {
 						{props.product.price} $
 					</span>
 					<button
+						// className={
+						// 	btnAnim
+						// 		? "product-box__buy-btn button-anim add-item-to-cart-in"
+						// 		: "product-box__buy-btn button-anim"
+						// }
 						className="product-box__buy-btn button-anim"
 						onClick={addToCartHandler}
 					>

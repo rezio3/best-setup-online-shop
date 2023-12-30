@@ -17,16 +17,18 @@ const NavbarDesktop = () => {
 			(entries) => {
 				const entry = entries[0];
 				entry.intersectionRatio === 0 ? setSnapNav(true) : setSnapNav(false);
-				entry.intersectionRatio === 0
-					? setLogoNav(true)
-					: setTimeout(() => {
-							timeoutRef.current = true;
-							if (timeoutRef.current) {
-								return;
-							}
-							setLogoNav(false);
-							timeoutRef.current = false;
-					  }, 600);
+				if (entry.intersectionRatio === 0) {
+					setLogoNav(true);
+					timeoutRef.current = true;
+				} else {
+					setTimeout(() => {
+						if (timeoutRef.current) {
+							return;
+						}
+						setLogoNav(false);
+						timeoutRef.current = false;
+					}, 600);
+				}
 			},
 			{ threshold: 1 }
 		);

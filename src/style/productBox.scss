@@ -50,7 +50,13 @@
 			box-shadow: 0 0 10px -6px;
 			width: 100px;
 			height: 50px;
+			transition: 0.2s ease-out;
+			cursor: pointer;
 		}
+		.add-item-to-cart-in {
+			background-color: greenyellow;
+		}
+
 		&__stars-and-opinions-container {
 			width: 80%;
 			display: flex;

@@ -48,6 +48,11 @@
   box-shadow: 0 0 10px -6px;
   width: 100px;
   height: 50px;
+  transition: 0.2s ease-out;
+  cursor: pointer;
+}
+.products-container .product-box .add-item-to-cart-in {
+  background-color: greenyellow;
 }
 .products-container .product-box__stars-and-opinions-container {
   width: 80%;
