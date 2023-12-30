@@ -29,7 +29,7 @@ function App() {
 						ok ? "in-progress-box" : "in-progress-box in-progress-box--off"
 					}
 				>
-					<h2>This shop ain't work yet!</h2>
+					<h2>This shop ain't working yet!</h2>
 					<span className="in-progress-span">
 						Project is currently in progress...
 					</span>
