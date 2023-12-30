@@ -13,7 +13,7 @@ const Page = () => {
 		<>
 			<FilterProductsContext>
 				<Routes>
-					<Route path="/best-setup-online-shop" exact Component={Home} />
+					<Route path="/" exact Component={Home} />
 					<Route path="/display" Component={Display} />
 					<Route path="/sound" Component={Sound} />
 					<Route path="/pc" Component={Pc} />
