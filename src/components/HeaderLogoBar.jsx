@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 const HeaderLogoBar = () => {
 	return (
 		<div className="header-logo-bar">
-			<NavLink to="/best-setup-online-shop">
+			<NavLink to="/">
 				<img
 					src={bestSetupLogo}
 					alt="shop-logo"

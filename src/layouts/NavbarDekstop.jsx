@@ -56,7 +56,7 @@ const NavbarDesktop = () => {
 				<div className="navbar-container__empty-left-spacer"></div>
 				<ul className="product-pages-buttons-container">
 					<li className="product-pages-buttons-container__logo-menu-button">
-						<NavLink to="/best-setup-online-shop">
+						<NavLink to="/">
 							<img
 								src={logoImg}
 								style={{ display: navLogo, opacity: 1 }}
