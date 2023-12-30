@@ -15,36 +15,34 @@ function App() {
 		setOk(false);
 	};
 	return (
-		<BrowserRouter basename="/best-setup-online-shop">
-			<Router>
-				<div className="App">
-					<OrderContext>
-						<Header />
-						<Navbar />
-						<Page />
-						<Footer />
-						<CartWindow />
-					</OrderContext>
-					<div
-						className={
-							ok ? "in-progress-box" : "in-progress-box in-progress-box--off"
-						}
-					>
-						<h2>This shop ain't work yet!</h2>
-						<span className="in-progress-span">
-							Project is currently in progress...
-						</span>
-						<span className="in-progress-span">
-							So far, you can browse products, filter them and add them to the
-							cart.
-						</span>
-						<button className="ok-btn button-anim" onClick={okBtnHandler}>
-							Ok
-						</button>
-					</div>
+		<Router>
+			<div className="App">
+				<OrderContext>
+					<Header />
+					<Navbar />
+					<Page />
+					<Footer />
+					<CartWindow />
+				</OrderContext>
+				<div
+					className={
+						ok ? "in-progress-box" : "in-progress-box in-progress-box--off"
+					}
+				>
+					<h2>This shop ain't work yet!</h2>
+					<span className="in-progress-span">
+						Project is currently in progress...
+					</span>
+					<span className="in-progress-span">
+						So far, you can browse products, filter them and add them to the
+						cart.
+					</span>
+					<button className="ok-btn button-anim" onClick={okBtnHandler}>
+						Ok
+					</button>
 				</div>
-			</Router>
-		</BrowserRouter>
+			</div>
+		</Router>
 	);
 }
 
