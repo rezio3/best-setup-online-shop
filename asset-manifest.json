@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/best-setup-online-shop/static/css/main.a9f30743.css",
-    "main.js": "/best-setup-online-shop/static/js/main.fd040315.js",
+    "main.js": "/best-setup-online-shop/static/js/main.119d6926.js",
     "static/media/Sony WH-1000XM5.png": "/best-setup-online-shop/static/media/Sony WH-1000XM5.1a5789306f789d16c20a.png",
     "static/media/XIDAX Gaming PC S-200.png": "/best-setup-online-shop/static/media/XIDAX Gaming PC S-200.67ade7b31d7341f9a654.png",
     "static/media/PS5 Console - Marvel's Spider-Man 2 Bundle.jpg": "/best-setup-online-shop/static/media/PS5 Console - Marvel's Spider-Man 2 Bundle.559f24ea257ae755ba14.jpg",
@@ -167,10 +167,10 @@
     "static/media/Brother HL-B2080DW.webp": "/best-setup-online-shop/static/media/Brother HL-B2080DW.485e51b5a61220e90fb1.webp",
     "index.html": "/best-setup-online-shop/index.html",
     "main.a9f30743.css.map": "/best-setup-online-shop/static/css/main.a9f30743.css.map",
-    "main.fd040315.js.map": "/best-setup-online-shop/static/js/main.fd040315.js.map"
+    "main.119d6926.js.map": "/best-setup-online-shop/static/js/main.119d6926.js.map"
   },
   "entrypoints": [
     "static/css/main.a9f30743.css",
-    "static/js/main.fd040315.js"
+    "static/js/main.119d6926.js"
   ]
 }
