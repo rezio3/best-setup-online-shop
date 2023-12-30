@@ -113,7 +113,7 @@
 }
 .cart-window-background .cart-window-wrapper .cart-window-container__empty-cart-notification-box {
   width: 100%;
-  height: 100px;
+  height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
