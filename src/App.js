@@ -1,5 +1,5 @@
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 import Footer from "./layouts/Footer";
 import Header from "./layouts/Header";
 import Navbar from "./layouts/Navbar";
@@ -15,7 +15,7 @@ function App() {
 		setOk(false);
 	};
 	return (
-		<Router basename="/best-setup-online-shop">
+		<Router>
 			<div className="App">
 				<OrderContext>
 					<Header />
