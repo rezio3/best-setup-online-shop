@@ -15,7 +15,7 @@ function App() {
 		setOk(false);
 	};
 	return (
-		<Router>
+		<Router basename="/best-setup-online-shop">
 			<div className="App">
 				<OrderContext>
 					<Header />
