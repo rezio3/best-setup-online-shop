@@ -1,5 +1,7 @@
 import React, { useContext } from "react";
 import { ProductsOrderContext } from "../../context/OrderContext";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 const ItemInCart = (props) => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
@@ -53,6 +55,10 @@ const ItemInCart = (props) => {
 				<span className="cart-window-container__item-price">
 					{props.price} $
 				</span>
+				<FontAwesomeIcon
+					icon={faTrash}
+					className="cart-window-container__trash"
+				/>
 			</div>
 		</>
 	);

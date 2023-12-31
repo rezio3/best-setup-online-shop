@@ -70,8 +70,8 @@
 				justify-content: center;
 				align-items: center;
 				&__btn {
-					width: 25px;
-					height: 25px;
+					width: 22px;
+					height: 22px;
 					display: flex;
 					justify-content: center;
 					align-items: center;
@@ -96,13 +96,14 @@
 				}
 				&__quantity-span {
 					padding: 4px;
-					width: 30px;
-					height: 15px;
+					width: 25px;
+					height: 12px;
 					display: flex;
 					justify-content: center;
 					align-items: center;
 					border: 1px solid $gray;
 					text-align: center;
+					font-size: 14px;
 				}
 			}
 			&__item-price {
@@ -123,6 +124,11 @@
 				font-size: 24px;
 				font-weight: 400;
 				color: $gray;
+			}
+			&__trash {
+				padding: 5px;
+				margin-left: 10px;
+				cursor: pointer;
 			}
 		}
 	}
