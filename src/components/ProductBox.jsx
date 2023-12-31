@@ -72,25 +72,13 @@ const ProductBox = (props) => {
 			});
 		}
 
-		// setBtnAnim(true);
-		// useTimeout(() => {
-		// 	setBtnAnim(false);
-		// }, 700);
+		if (!btnAnim) {
+			setBtnAnim(true);
+			setTimeout(() => {
+				setBtnAnim(false);
+			}, 1000);
+		}
 	};
-
-	// function useTimeout(callback, delay) {
-	// 	const stableCallback = useRef(callback);
-	// 	useEffect(() => {
-	// 		stableCallback.current = callback;
-	// 	}, [callback]);
-
-	// 	useEffect(() => {
-	// 		const tick = () => stableCallback.current();
-	// 		if (typeof delay !== "number") return;
-	// 		const t = setTimeout(tick, delay);
-	// 		return () => clearTimeout(t);
-	// 	}, [delay]);
-	// }
 
 	return (
 		<>
@@ -115,15 +103,14 @@ const ProductBox = (props) => {
 						{props.product.price} $
 					</span>
 					<button
-						// className={
-						// 	btnAnim
-						// 		? "product-box__buy-btn button-anim add-item-to-cart-in"
-						// 		: "product-box__buy-btn button-anim"
-						// }
-						className="product-box__buy-btn button-anim"
+						className={
+							btnAnim
+								? "product-box__buy-btn button-anim add-item-to-cart-in"
+								: "product-box__buy-btn button-anim"
+						}
 						onClick={addToCartHandler}
 					>
-						Add to cart
+						{btnAnim ? "Added!" : "Add to cart"}
 					</button>
 				</div>
 				<div className="product-box__stars-and-opinions-container">
