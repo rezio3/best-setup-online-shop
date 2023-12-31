@@ -7,6 +7,7 @@ import { ProductsOrderContext } from "../context/OrderContext";
 const NavbarDesktop = () => {
 	const [snapNav, setSnapNav] = useState(false);
 	const [logoNav, setLogoNav] = useState(false);
+	const [logoAnimOut, setLogoAnimOut] = useState(false);
 	const [order, setOrder] = useContext(ProductsOrderContext);
 
 	const navRef = useRef();
@@ -20,13 +21,16 @@ const NavbarDesktop = () => {
 				if (entry.intersectionRatio === 0) {
 					setLogoNav(true);
 					timeoutRef.current = true;
+					console.log(timeoutRef);
 				} else {
+					// TO FIX
 					setTimeout(() => {
 						if (timeoutRef.current) {
 							return;
 						}
 						setLogoNav(false);
 						timeoutRef.current = false;
+						console.log(timeoutRef);
 					}, 600);
 				}
 			},
