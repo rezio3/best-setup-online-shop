@@ -6,7 +6,6 @@ import { faStar as faStarSolid } from "@fortawesome/free-solid-svg-icons";
 import { faStar as faStarRegular } from "@fortawesome/free-regular-svg-icons";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { ProductsOrderContext } from "../context/OrderContext";
-import { cleanup } from "@testing-library/react";
 
 const ProductBox = (props) => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
@@ -89,7 +88,6 @@ const ProductBox = (props) => {
 			>
 				<div className="product-box__product-image-container">
 					<img
-						// src={productsImages[props.product.img - 1]}
 						src={props.product.img}
 						alt="product"
 						className="product-box__product-image"
