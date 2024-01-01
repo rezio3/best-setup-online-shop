@@ -5,15 +5,13 @@ import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
 const Cart = () => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
-
-	console.log(order);
 	return (
 		<>
 			<div className="cart-wrapper">
 				<div className="cart-container">
 					<div className="cart-container__header-box">
 						<h3>
-							Cart<span>{}</span>
+							Cart <span>({order.getProductsQuantity()})</span>
 						</h3>
 						<button>
 							Clear cart
