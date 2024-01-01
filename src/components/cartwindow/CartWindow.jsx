@@ -5,6 +5,7 @@ import ItemInCart from "./ItemInCart";
 import "../../style/css/scrollCustom.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark, faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import { NavLink } from "react-router-dom";
 
 const CartWindow = () => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
@@ -25,6 +26,13 @@ const CartWindow = () => {
 			0
 		);
 	}
+
+	const hideCartWindow = () => {
+		setOrder({
+			...order,
+			cartOpen: false,
+		});
+	};
 
 	return (
 		<>
@@ -67,13 +75,18 @@ const CartWindow = () => {
 											{totalPrice} $
 										</span>
 									</div>
-									<button className="cart-window-container__checkoutBtn button-anim">
-										Go to checkout
-										<FontAwesomeIcon
-											icon={faAngleRight}
-											className="arrow-right"
-										/>
-									</button>
+									<NavLink to="/order-form">
+										<button
+											className="cart-window-container__checkoutBtn button-anim"
+											onClick={hideCartWindow}
+										>
+											Go to checkout
+											<FontAwesomeIcon
+												icon={faAngleRight}
+												className="arrow-right"
+											/>
+										</button>
+									</NavLink>
 								</div>
 							)}
 						</div>
