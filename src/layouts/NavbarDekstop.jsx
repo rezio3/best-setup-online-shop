@@ -4,10 +4,58 @@ import { NavLink } from "react-router-dom";
 import logoImg from "../img/BestSetupLogo.png";
 import { ProductsOrderContext } from "../context/OrderContext";
 
+// const Anim = (prop) => {
+// 	const { snapNav, setSnapNav } = prop;
+
+// 	const [props, api] = useSpring(
+// 		() => ({
+// 			from: { opacity: 0 },
+// 			to: { opacity: 0 },
+// 		}),
+// 		[]
+// 	);
+
+// 	if (snapNav) {
+// 		api.start({
+// 			from: {
+// 				opacity: 0,
+// 			},
+// 			to: {
+// 				opacity: 1,
+// 				// display: "block",
+// 			},
+// 		});
+// 	} else {
+// 		api.start({
+// 			from: {
+// 				opacity: 1,
+// 			},
+// 			to: {
+// 				opacity: 0,
+// 				// display: "none",
+// 			},
+// 		});
+// 	}
+// 	console.log(props);
+// 	return (
+// 		<>
+// 			<animated.div style={props}>
+// 				<img
+// 					src={logoImg}
+// 					style={{
+// 						display: props.opacity === 1 ? console.log("none") : "block",
+// 					}}
+// 					className="product-pages-buttons-container__logo-nav-img"
+// 				/>
+// 			</animated.div>
+// 		</>
+// 	);
+// };
+
 const NavbarDesktop = () => {
 	const [snapNav, setSnapNav] = useState(false);
 	const [logoNav, setLogoNav] = useState(false);
-	const [logoAnimOut, setLogoAnimOut] = useState(false);
+	// const [logoAnimOut, setLogoAnimOut] = useState(false);
 	const [order, setOrder] = useContext(ProductsOrderContext);
 
 	const navRef = useRef();
@@ -21,7 +69,6 @@ const NavbarDesktop = () => {
 				if (entry.intersectionRatio === 0) {
 					setLogoNav(true);
 					timeoutRef.current = true;
-					console.log(timeoutRef);
 				} else {
 					// TO FIX
 					setTimeout(() => {
@@ -30,7 +77,6 @@ const NavbarDesktop = () => {
 						}
 						setLogoNav(false);
 						timeoutRef.current = false;
-						console.log(timeoutRef);
 					}, 600);
 				}
 			},
@@ -61,6 +107,7 @@ const NavbarDesktop = () => {
 				<ul className="product-pages-buttons-container">
 					<li className="product-pages-buttons-container__logo-menu-button">
 						<NavLink to="/">
+							{/* <Anim snapNav={snapNav} setSnapNav={setSnapNav} /> */}
 							<img
 								src={logoImg}
 								style={{ display: navLogo, opacity: 1 }}

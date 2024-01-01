@@ -58,6 +58,8 @@
 				animation: showNavLogo 0.4s ease-out forwards;
 			}
 			.logo-out {
+				visibility: hidden;
+				user-select: none;
 				animation: hideNavLogo 0.4s ease-out forwards;
 			}
 		}
