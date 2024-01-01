@@ -16,6 +16,16 @@ const CartWindow = () => {
 			});
 		}
 	};
+
+	let totalPrice;
+	if (order.cart.length > 0) {
+		console.log(order.cart);
+		totalPrice = order.cart.reduce(
+			(acc, obj) => acc + obj.price * obj.quantity,
+			0
+		);
+	}
+
 	return (
 		<>
 			{order.cartOpen ? (
@@ -54,7 +64,7 @@ const CartWindow = () => {
 											Total price:
 										</span>
 										<span className="cart-window-container__total-price">
-											283931 $
+											{totalPrice} $
 										</span>
 									</div>
 									<button className="cart-window-container__checkoutBtn button-anim">
