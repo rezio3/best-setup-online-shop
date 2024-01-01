@@ -5,6 +5,7 @@ import { FilterContext } from "../../context/FilterContext";
 import pricesUpwards from "../../functions/sortItemsUpwards";
 import pricesDownwards from "../../functions/sortItemsDownwards";
 import sortPriceRange from "../../functions/sortPriceRange";
+import NoProductsSpan from "../NoProductsSpan";
 
 const ProductsSoundPage = () => {
 	const [filter, setFilter] = useContext(FilterContext);
@@ -48,6 +49,7 @@ const ProductsSoundPage = () => {
 				{itemsToDisplay.map((e) => {
 					return <ProductBox product={e} key={e.productId} />;
 				})}
+				{itemsToDisplay.length === 0 ? <NoProductsSpan /> : null}
 			</div>
 		</>
 	);
