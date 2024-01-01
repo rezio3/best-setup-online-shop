@@ -7,7 +7,7 @@ import Sound from "../pages/Sound";
 import Pc from "../pages/Pc";
 import Accessories from "../pages/Accessories";
 import Comfort from "../pages/Comfort";
-import OrderFormPage from "../components/orderformpage/OrderFormPage";
+import Cart from "../components/cart/Cart";
 
 const Page = () => {
 	return (
@@ -20,7 +20,7 @@ const Page = () => {
 					<Route path="/pc" Component={Pc} />
 					<Route path="/accessories" Component={Accessories} />
 					<Route path="/comfort" Component={Comfort} />
-					<Route path="/order-form" Component={OrderFormPage} />
+					<Route path="/cart" Component={Cart} />
 				</Routes>
 			</FilterProductsContext>
 		</>

@@ -136,25 +136,32 @@
   border: none;
 }
 .cart-window-background .cart-window-wrapper .cart-window-container__lower-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 25px;
+}
+.cart-window-background .cart-window-wrapper .cart-window-container__total-price-container {
+  width: 90%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  margin-top: 15px;
-  margin-left: 10px;
 }
 .cart-window-background .cart-window-wrapper .cart-window-container__total-price-span {
-  font-size: 16px;
+  font-size: 1em;
 }
 .cart-window-background .cart-window-wrapper .cart-window-container__total-price {
   margin-left: 10px;
-  font-size: 18px;
+  font-size: 1.1em;
   font-weight: 700;
 }
 .cart-window-background .cart-window-wrapper .cart-window-container__checkoutBtn {
+  margin-top: 15px;
+  margin-bottom: 10px;
   padding: 20px 14.5px;
   background: none;
   border: none;
-  font-size: 18px;
+  font-size: 1.1em;
   font-weight: 700;
   cursor: pointer;
 }

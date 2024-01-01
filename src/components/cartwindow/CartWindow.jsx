@@ -67,7 +67,7 @@ const CartWindow = () => {
 								</div>
 							) : (
 								<div className="cart-window-container__lower-container">
-									<div>
+									<div className="cart-window-container__total-price-container">
 										<span className="cart-window-container__total-price-span">
 											Total price:
 										</span>
@@ -75,7 +75,7 @@ const CartWindow = () => {
 											{totalPrice} $
 										</span>
 									</div>
-									<NavLink to="/order-form">
+									<NavLink to="/cart">
 										<button
 											className="cart-window-container__checkoutBtn button-anim"
 											onClick={hideCartWindow}
