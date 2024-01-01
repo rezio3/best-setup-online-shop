@@ -94,10 +94,7 @@ const NavbarDesktop = () => {
 
 	let navLogo = logoNav ? "block" : "none";
 
-	let totalProductsQuantity = order.cart.reduce(
-		(sum, obj) => sum + obj.quantity,
-		0
-	);
+	let totalProductsQuantity = order.getProductsQuantity();
 
 	return (
 		<>
