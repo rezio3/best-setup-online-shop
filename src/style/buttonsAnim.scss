@@ -29,13 +29,13 @@
 
 .button-anim:hover::before {
 	height: 98%;
-	width: 98%;
+	width: 99%;
 	border-top: 1px solid $black;
 	border-left: 1px solid $black;
 }
 .button-anim:hover::after {
 	height: 98%;
-	width: 98%;
+	width: 99%;
 	border-bottom: 1px solid $black;
 	border-right: 1px solid $black;
 }
