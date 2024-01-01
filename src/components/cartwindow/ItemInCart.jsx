@@ -26,6 +26,16 @@ const ItemInCart = (props) => {
 		});
 	};
 
+	const trashHandler = () => {
+		const updatedCart = order.cart.filter((e) => {
+			return e.name !== props.name && e;
+		});
+		setOrder({
+			...order,
+			cart: updatedCart,
+		});
+	};
+
 	return (
 		<>
 			<div className="cart-window-container__item-box">
@@ -55,10 +65,15 @@ const ItemInCart = (props) => {
 				<span className="cart-window-container__item-price">
 					{props.price} $
 				</span>
-				<FontAwesomeIcon
-					icon={faTrash}
-					className="cart-window-container__trash"
-				/>
+				<button
+					className="cart-window-container__trash-button"
+					onClick={trashHandler}
+				>
+					<FontAwesomeIcon
+						icon={faTrash}
+						className="cart-window-container__trash-icon"
+					/>
+				</button>
 			</div>
 		</>
 	);

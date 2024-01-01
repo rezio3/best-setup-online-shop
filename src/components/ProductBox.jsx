@@ -44,26 +44,21 @@ const ProductBox = (props) => {
 	}
 
 	const addToCartHandler = () => {
-		let { product } = props;
-		let newQuantity;
-		if (!product.quantity) {
-			newQuantity = 1;
-		} else if (product.quantity) {
-			newQuantity = product.quantity + 1;
-		}
-		let newItemToCart = product;
-		newItemToCart.quantity = newQuantity;
+		let newItemToCart = { ...props.product };
 
-		if (newQuantity === 1) {
+		if (!order.cart.some((e) => e.name === newItemToCart.name)) {
+			newItemToCart.quantity = 1;
 			setOrder({
 				...order,
 				cart: [...order.cart, newItemToCart],
 			});
 		} else {
-			let objIndex = order.cart.findIndex((obj) => obj.name === product.name);
-
-			const updatedCart = order.cart.map((item, index) => {
-				return index === objIndex ? { ...item, quantity: newQuantity } : item;
+			const updatedCart = order.cart.map((e) => {
+				console.log(e.name);
+				console.log(newItemToCart.name);
+				return e.name === newItemToCart.name
+					? { ...e, quantity: e.quantity + 1 }
+					: e;
 			});
 			setOrder({
 				...order,

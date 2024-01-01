@@ -20,9 +20,37 @@
 		z-index: 3;
 
 		.cart-window-container {
+			// position: relative;
 			padding: 20px;
 			display: flex;
 			flex-direction: column;
+
+			&__header-box {
+				// position: fixed;
+				// top: 0;
+				left: 0px;
+				padding-bottom: 10px;
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				border-bottom: 1px solid $gray;
+			}
+			&__header {
+				display: flex;
+				align-items: center;
+				margin: 0;
+				// margin-left: 30px;
+			}
+			&__back-btn {
+				// margin-right: 20px;
+				background: none;
+				border: none;
+				font-size: 28px;
+				cursor: pointer;
+			}
+			.XIcon {
+				pointer-events: none;
+			}
 
 			&__item-box {
 				padding: 20px 0;
@@ -34,28 +62,7 @@
 			&__item-box:last-child {
 				border-bottom: none;
 			}
-			&__header-box {
-				padding-bottom: 10px;
-				width: 100%;
-				display: flex;
-				justify-content: space-between;
-				border-bottom: 1px solid $gray;
-			}
-			&__header {
-				display: flex;
-				align-items: center;
-				margin: 0;
-				margin-left: 10px;
-			}
-			&__back-btn {
-				background: none;
-				border: none;
-				font-size: 28px;
-				cursor: pointer;
-			}
-			.XIcon {
-				pointer-events: none;
-			}
+
 			&__item-img {
 				margin-right: 15px;
 				width: 70px;
@@ -125,10 +132,18 @@
 				font-weight: 400;
 				color: $gray;
 			}
-			&__trash {
-				padding: 5px;
-				margin-left: 10px;
+			&__trash-icon {
+				padding: 10px;
+				margin-left: 5px;
+				color: $gray;
 				cursor: pointer;
+			}
+			&__trash-icon:hover {
+				color: red;
+			}
+			&__trash-button {
+				background: none;
+				border: none;
 			}
 		}
 	}
