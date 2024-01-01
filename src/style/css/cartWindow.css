@@ -62,13 +62,12 @@
 .cart-window-background .cart-window-wrapper .cart-window-container__item-name {
   display: block;
   font-size: 14px;
-  width: 38%;
+  width: 34%;
 }
 .cart-window-background .cart-window-wrapper .cart-window-container .quantity-box {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 10px;
 }
 .cart-window-background .cart-window-wrapper .cart-window-container .quantity-box__btn {
   width: 22px;
@@ -107,9 +106,6 @@
   font-size: 14px;
 }
 .cart-window-background .cart-window-wrapper .cart-window-container__item-price {
-  position: relative;
-  right: 0;
-  display: block;
   margin-left: auto;
   font-weight: 700;
 }
@@ -127,7 +123,7 @@
 }
 .cart-window-background .cart-window-wrapper .cart-window-container__trash-icon {
   padding: 10px;
-  margin-left: 5px;
+  margin-left: 0px;
   color: #c7c7c7;
   cursor: pointer;
 }
@@ -135,6 +131,7 @@
   color: red;
 }
 .cart-window-background .cart-window-wrapper .cart-window-container__trash-button {
+  margin-left: auto;
   background: none;
   border: none;
 }
@@ -149,12 +146,12 @@
   font-size: 16px;
 }
 .cart-window-background .cart-window-wrapper .cart-window-container__total-price {
-  margin-left: 20px;
+  margin-left: 10px;
   font-size: 18px;
   font-weight: 700;
 }
 .cart-window-background .cart-window-wrapper .cart-window-container__checkoutBtn {
-  padding: 20px 15px;
+  padding: 20px 14.5px;
   background: none;
   border: none;
   font-size: 18px;

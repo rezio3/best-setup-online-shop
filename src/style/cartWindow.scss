@@ -70,13 +70,12 @@
 			&__item-name {
 				display: block;
 				font-size: 14px;
-				width: 38%;
+				width: 34%;
 			}
 			.quantity-box {
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				margin-left: 10px;
 				&__btn {
 					width: 22px;
 					height: 22px;
@@ -115,9 +114,6 @@
 				}
 			}
 			&__item-price {
-				position: relative;
-				right: 0;
-				display: block;
 				margin-left: auto;
 				font-weight: 700;
 			}
@@ -135,7 +131,7 @@
 			}
 			&__trash-icon {
 				padding: 10px;
-				margin-left: 5px;
+				margin-left: 0px;
 				color: $gray;
 				cursor: pointer;
 			}
@@ -143,6 +139,7 @@
 				color: red;
 			}
 			&__trash-button {
+				margin-left: auto;
 				background: none;
 				border: none;
 			}
@@ -159,12 +156,12 @@
 				font-size: 16px;
 			}
 			&__total-price {
-				margin-left: 20px;
+				margin-left: 10px;
 				font-size: 18px;
 				font-weight: 700;
 			}
 			&__checkoutBtn {
-				padding: 20px 15px;
+				padding: 20px 14.5px;
 				background: none;
 				border: none;
 				font-size: 18px;
