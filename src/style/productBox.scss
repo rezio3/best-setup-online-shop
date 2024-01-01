@@ -10,7 +10,7 @@
 	.product-box {
 		padding: 5px;
 		margin: 5px;
-		width: 23%;
+		width: 240px;
 		height: 400px;
 		box-shadow: 0 0 10px -6px;
 		display: flex;
@@ -65,7 +65,7 @@
 			margin-top: 10px;
 			.highlight {
 				color: $blue;
-				font-size: 14px;
+				// font-size: 14px;
 			}
 		}
 		&__opinions-span {

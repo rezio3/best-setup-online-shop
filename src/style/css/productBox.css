@@ -8,7 +8,7 @@
 .products-container .product-box {
   padding: 5px;
   margin: 5px;
-  width: 23%;
+  width: 240px;
   height: 400px;
   box-shadow: 0 0 10px -6px;
   display: flex;
@@ -63,7 +63,6 @@
 }
 .products-container .product-box__stars-and-opinions-container .highlight {
   color: #277ec1;
-  font-size: 14px;
 }
 .products-container .product-box__opinions-span {
   font-size: 12px;
