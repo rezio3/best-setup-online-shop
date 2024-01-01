@@ -55,9 +55,13 @@
   animation: showNavLogo 0.4s ease-out forwards;
 }
 .navbar-container .product-pages-buttons-container__logo-menu-button .logo-out {
-  visibility: hidden;
+  pointer-events: none;
   user-select: none;
   animation: hideNavLogo 0.4s ease-out forwards;
+}
+.navbar-container .product-pages-buttons-container .logo-button-off {
+  user-select: none;
+  pointer-events: none;
 }
 .navbar-container .product-pages-buttons-container__logo-nav-img {
   padding: 15px;

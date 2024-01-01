@@ -71,10 +71,10 @@ const NavbarDesktop = () => {
 					timeoutRef.current = true;
 				} else {
 					// TO FIX
+					if (timeoutRef.current) {
+						return;
+					}
 					setTimeout(() => {
-						if (timeoutRef.current) {
-							return;
-						}
 						setLogoNav(false);
 						timeoutRef.current = false;
 					}, 600);
@@ -105,7 +105,13 @@ const NavbarDesktop = () => {
 			<nav className={snapNav ? "navbar-container sticky" : "navbar-container"}>
 				<div className="navbar-container__empty-left-spacer"></div>
 				<ul className="product-pages-buttons-container">
-					<li className="product-pages-buttons-container__logo-menu-button">
+					<li
+						className={
+							snapNav
+								? "product-pages-buttons-container__logo-menu-button"
+								: "product-pages-buttons-container__logo-menu-button logo-button-off"
+						}
+					>
 						<NavLink to="/">
 							{/* <Anim snapNav={snapNav} setSnapNav={setSnapNav} /> */}
 							<img
