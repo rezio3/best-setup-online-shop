@@ -10,7 +10,6 @@ import { ProductsOrderContext } from "../context/OrderContext";
 const ProductBox = (props) => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
 	const [btnAnim, setBtnAnim] = useState(false);
-	const timeoutRef = useRef(null);
 
 	let productImage = useRef(null);
 
