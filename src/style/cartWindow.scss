@@ -146,6 +146,34 @@
 				background: none;
 				border: none;
 			}
+			&__lower-container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				margin-top: 15px;
+				// margin-right: 15px;
+				margin-left: 10px;
+			}
+
+			&__total-price-span {
+				font-size: 16px;
+			}
+			&__total-price {
+				margin-left: 20px;
+				font-size: 18px;
+				font-weight: 700;
+			}
+			&__checkoutBtn {
+				padding: 20px 15px;
+				background: none;
+				border: none;
+				font-size: 18px;
+				font-weight: 700;
+				cursor: pointer;
+				.arrow-right {
+					margin-left: 15px;
+				}
+			}
 		}
 	}
 }

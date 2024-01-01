@@ -4,7 +4,7 @@ import { ProductsOrderContext } from "../../context/OrderContext";
 import ItemInCart from "./ItemInCart";
 import "../../style/css/scrollCustom.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faXmark } from "@fortawesome/free-solid-svg-icons";
+import { faXmark, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const CartWindow = () => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
@@ -47,7 +47,25 @@ const CartWindow = () => {
 										Your cart is empty!
 									</span>
 								</div>
-							) : null}
+							) : (
+								<div className="cart-window-container__lower-container">
+									<div>
+										<span className="cart-window-container__total-price-span">
+											Total price:
+										</span>
+										<span className="cart-window-container__total-price">
+											283931 $
+										</span>
+									</div>
+									<button className="cart-window-container__checkoutBtn button-anim">
+										Go to checkout
+										<FontAwesomeIcon
+											icon={faAngleRight}
+											className="arrow-right"
+										/>
+									</button>
+								</div>
+							)}
 						</div>
 					</div>
 				</div>
