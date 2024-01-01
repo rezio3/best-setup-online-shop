@@ -69,13 +69,14 @@
 			}
 			&__item-name {
 				display: block;
-				font-size: 12px;
-				width: 40%;
+				font-size: 14px;
+				width: 38%;
 			}
 			.quantity-box {
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				margin-left: 10px;
 				&__btn {
 					width: 22px;
 					height: 22px;

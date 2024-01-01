@@ -61,13 +61,14 @@
 }
 .cart-window-background .cart-window-wrapper .cart-window-container__item-name {
   display: block;
-  font-size: 12px;
-  width: 40%;
+  font-size: 14px;
+  width: 38%;
 }
 .cart-window-background .cart-window-wrapper .cart-window-container .quantity-box {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 10px;
 }
 .cart-window-background .cart-window-wrapper .cart-window-container .quantity-box__btn {
   width: 22px;
