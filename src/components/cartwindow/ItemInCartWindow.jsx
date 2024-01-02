@@ -3,7 +3,7 @@ import { ProductsOrderContext } from "../../context/OrderContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 
-const ItemInCart = (props) => {
+const ItemInCartWindow = (props) => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
 
 	let objIndex = order.cart.findIndex((obj) => obj.name === props.name);
@@ -79,4 +79,4 @@ const ItemInCart = (props) => {
 	);
 };
 
-export default ItemInCart;
+export default ItemInCartWindow;

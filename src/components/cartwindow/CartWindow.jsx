@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "../../style/css/cartWindow.css";
 import { ProductsOrderContext } from "../../context/OrderContext";
-import ItemInCart from "./ItemInCart";
+import ItemInCartWindow from "./ItemInCartWindow";
 import "../../style/css/scrollCustom.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark, faAngleRight } from "@fortawesome/free-solid-svg-icons";
@@ -51,7 +51,7 @@ const CartWindow = () => {
 							</div>
 							{order.cart.map((e) => {
 								return (
-									<ItemInCart
+									<ItemInCartWindow
 										image={e.img}
 										name={e.name}
 										price={e.price}
