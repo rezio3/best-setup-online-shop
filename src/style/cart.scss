@@ -1,0 +1,42 @@
+@import "./colors.scss";
+
+.cart-wrapper {
+	width: 70%;
+	max-width: 70%;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	.cart-container {
+		padding: 15px;
+		width: 65%;
+
+		&__header-box {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		&__header {
+			margin: 0;
+		}
+		&__header--gray {
+			color: $darkGray;
+		}
+		&__clear-cart-btn {
+			padding: 5px;
+			background: none;
+			border: none;
+			cursor: pointer;
+		}
+		&__clear-cart-btn:hover {
+			color: red;
+		}
+		&__trash-icon {
+			margin-left: 10px;
+		}
+	}
+	.go-to-order-form-container {
+		width: 30%;
+		height: 20px;
+		background-color: red;
+	}
+}
