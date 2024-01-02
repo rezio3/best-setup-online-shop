@@ -3,6 +3,7 @@ import { ProductsOrderContext } from "../../context/OrderContext";
 import "../../style/css/cart.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import ItemInCart from "../cartwindow/ItemInCartWindow";
 
 const Cart = () => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
@@ -25,6 +26,7 @@ const Cart = () => {
 							/>
 						</button>
 					</div>
+					<div className="cart-box"></div>
 				</div>
 				<div className="go-to-order-form-container"></div>
 			</div>
