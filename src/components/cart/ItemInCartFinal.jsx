@@ -2,8 +2,9 @@ import React, { useContext } from "react";
 import "../../style/css/cartWindow.css";
 import { ProductsOrderContext } from "../../context/OrderContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faTrash, faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 import QuantityBox from "./QuantityBox";
+import "../../style/css/buttonsAnim.css";
 
 const ItemInCartFinal = (props) => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
@@ -33,6 +34,15 @@ const ItemInCartFinal = (props) => {
 				<span className="cart-window-container__item-price item-box-final__item-price">
 					{props.price} $
 				</span>
+				<div className="item-box-final__info-icon-container">
+					<FontAwesomeIcon
+						icon={faCircleInfo}
+						className="item-box-final__info-icon"
+					/>
+				</div>
+				<button className="item-box-final__insurance-btn button-anim">
+					Buy insurance
+				</button>
 				<button
 					className="cart-window-container__trash-button item-box-final__trash-button"
 					onClick={trashHandler}
