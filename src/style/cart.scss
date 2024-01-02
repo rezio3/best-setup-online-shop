@@ -13,6 +13,7 @@
 		flex-direction: column;
 
 		&__header-box {
+			padding: 0 20px;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
@@ -46,12 +47,27 @@
 
 			.item-box-final {
 				width: 90%;
-				justify-content: flex-start;
+				justify-content: space-between;
 				&__item-img {
 					margin-left: 4%;
 				}
 				&__item-price {
 					margin-left: 20px;
+					width: 60px;
+					min-width: 60px;
+				}
+				&__info-icon-container {
+					margin-left: auto;
+					margin-right: 1%;
+				}
+				&__info-icon {
+					color: $dark;
+				}
+				&__insurance-btn {
+					padding: 15px 5px;
+					background: none;
+					border: none;
+					cursor: pointer;
 				}
 				&__trash-button {
 					margin-left: auto;
