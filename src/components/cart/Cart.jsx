@@ -4,6 +4,7 @@ import "../../style/css/cart.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import ItemInCart from "../cartwindow/ItemInCartWindow";
+import ItemInCartFinal from "./ItemInCartFinal";
 
 const Cart = () => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
@@ -26,7 +27,18 @@ const Cart = () => {
 							/>
 						</button>
 					</div>
-					<div className="cart-box"></div>
+					<div className="cart-box">
+						{order.cart.map((e) => {
+							return (
+								<ItemInCartFinal
+									image={e.img}
+									name={e.name}
+									price={e.price}
+									key={e.name}
+								/>
+							);
+						})}
+					</div>
 				</div>
 				<div className="go-to-order-form-container"></div>
 			</div>
