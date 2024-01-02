@@ -48,10 +48,10 @@
   justify-content: space-between;
 }
 .cart-wrapper .cart-container .cart-box .item-box-final__item-img {
-  margin-left: 4%;
+  margin-left: 0%;
 }
 .cart-wrapper .cart-container .cart-box .item-box-final__item-price {
-  margin-left: 20px;
+  margin-left: 5%;
   width: 60px;
   min-width: 60px;
 }
