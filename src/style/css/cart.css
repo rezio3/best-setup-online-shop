@@ -69,14 +69,23 @@
 }
 .cart-wrapper .cart-container .cart-box .item-box-final__info-box {
   position: absolute;
-  top: -60px;
+  top: -65px;
   left: -240px;
   width: 230px;
-  height: 150px;
   opacity: 0;
   visibility: hidden;
   background-color: #e7e7e7;
   transition: 0.3s ease-out;
+}
+.cart-wrapper .cart-container .cart-box .item-box-final__info {
+  padding: 10px;
+  margin: 0;
+  font-size: 0.75em;
+}
+.cart-wrapper .cart-container .cart-box .item-box-final__insurance-price {
+  display: block;
+  padding: 10px;
+  font-size: 0.75em;
 }
 .cart-wrapper .cart-container .cart-box .item-box-final__insurance-btn {
   padding: 15px 5px;

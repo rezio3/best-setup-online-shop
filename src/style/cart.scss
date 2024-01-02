@@ -71,15 +71,25 @@
 
 				&__info-box {
 					position: absolute;
-					top: -60px;
+					top: -65px;
 					left: -240px;
 					width: 230px;
-					height: 150px;
+					// height: 150px;
 					opacity: 0;
 					// border: 1px solid black;
 					visibility: hidden;
 					background-color: $lightgray;
 					transition: 0.3s ease-out;
+				}
+				&__info {
+					padding: 10px;
+					margin: 0;
+					font-size: 0.75em;
+				}
+				&__insurance-price {
+					display: block;
+					padding: 10px;
+					font-size: 0.75em;
 				}
 				&__insurance-btn {
 					padding: 15px 5px;
