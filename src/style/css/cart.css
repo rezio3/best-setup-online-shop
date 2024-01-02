@@ -56,11 +56,27 @@
   min-width: 60px;
 }
 .cart-wrapper .cart-container .cart-box .item-box-final__info-icon-container {
+  position: relative;
   margin-left: auto;
   margin-right: 1%;
 }
 .cart-wrapper .cart-container .cart-box .item-box-final__info-icon {
   color: #222;
+}
+.cart-wrapper .cart-container .cart-box .item-box-final__info-icon:hover + .show-info {
+  opacity: 1;
+  visibility: visible;
+}
+.cart-wrapper .cart-container .cart-box .item-box-final__info-box {
+  position: absolute;
+  top: -60px;
+  left: -240px;
+  width: 230px;
+  height: 150px;
+  opacity: 0;
+  visibility: hidden;
+  background-color: #e7e7e7;
+  transition: 0.3s ease-out;
 }
 .cart-wrapper .cart-container .cart-box .item-box-final__insurance-btn {
   padding: 15px 5px;

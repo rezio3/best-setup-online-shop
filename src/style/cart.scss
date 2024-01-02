@@ -57,11 +57,29 @@
 					min-width: 60px;
 				}
 				&__info-icon-container {
+					position: relative;
 					margin-left: auto;
 					margin-right: 1%;
 				}
 				&__info-icon {
 					color: $dark;
+				}
+				&__info-icon:hover + .show-info {
+					opacity: 1;
+					visibility: visible;
+				}
+
+				&__info-box {
+					position: absolute;
+					top: -60px;
+					left: -240px;
+					width: 230px;
+					height: 150px;
+					opacity: 0;
+					// border: 1px solid black;
+					visibility: hidden;
+					background-color: $lightgray;
+					transition: 0.3s ease-out;
 				}
 				&__insurance-btn {
 					padding: 15px 5px;

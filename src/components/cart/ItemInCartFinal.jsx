@@ -39,6 +39,7 @@ const ItemInCartFinal = (props) => {
 						icon={faCircleInfo}
 						className="item-box-final__info-icon"
 					/>
+					<div className="item-box-final__info-box show-info"></div>
 				</div>
 				<button className="item-box-final__insurance-btn button-anim">
 					Buy insurance
