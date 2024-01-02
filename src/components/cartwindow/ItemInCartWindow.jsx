@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import { ProductsOrderContext } from "../../context/OrderContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import productsQuantityButtons from "../../functions/productsQuantityButtons";
 
 const ItemInCartWindow = (props) => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
@@ -9,17 +10,7 @@ const ItemInCartWindow = (props) => {
 	let objIndex = order.cart.findIndex((obj) => obj.name === props.name);
 	let directItem = order.cart[objIndex];
 	const quantityButtonHandler = (e) => {
-		let newQuantity;
-		if (e.target.name === "minus-btn") {
-			newQuantity = -1;
-		} else if (e.target.name === "plus-btn") {
-			newQuantity = 1;
-		}
-		const updatedCart = order.cart.map((item, index) => {
-			return index === objIndex
-				? { ...item, quantity: item.quantity + newQuantity }
-				: item;
-		});
+		const updatedCart = productsQuantityButtons(e, order, objIndex);
 		setOrder({
 			...order,
 			cart: updatedCart,
