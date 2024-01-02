@@ -39,7 +39,17 @@ const ItemInCartFinal = (props) => {
 						icon={faCircleInfo}
 						className="item-box-final__info-icon"
 					/>
-					<div className="item-box-final__info-box show-info"></div>
+					<div className="item-box-final__info-box show-info">
+						<p className="item-box-final__info">
+							By having insurance, you're covered against repair costs in case
+							of accidental damage or malfunctions occurring after the warranty
+							period.
+						</p>
+						<span className="item-box-final__insurance-price">
+							Additional cost for the selected product:{" "}
+							<b>{directItem.price * 0.1}$</b>
+						</span>
+					</div>
 				</div>
 				<button className="item-box-final__insurance-btn button-anim">
 					Buy insurance
