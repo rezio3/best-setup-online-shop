@@ -8,6 +8,14 @@ import ItemInCartFinal from "./ItemInCartFinal";
 
 const Cart = () => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
+
+	const deleteCartHandler = () => {
+		setOrder({
+			...order,
+			cart: [],
+		});
+	};
+
 	return (
 		<>
 			<div className="cart-wrapper">
@@ -19,7 +27,10 @@ const Cart = () => {
 								({order.getProductsQuantity()})
 							</span>
 						</h3>
-						<button className="cart-container__clear-cart-btn">
+						<button
+							className="cart-container__clear-cart-btn"
+							onClick={deleteCartHandler}
+						>
 							Clear cart
 							<FontAwesomeIcon
 								icon={faTrash}
