@@ -2,8 +2,12 @@ import React, { useContext } from "react";
 import { ProductsOrderContext } from "../../context/OrderContext";
 import "../../style/css/cartFinal.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleRight, faTrash } from "@fortawesome/free-solid-svg-icons";
-
+import {
+	faAngleRight,
+	faTrash,
+	faAngleLeft,
+} from "@fortawesome/free-solid-svg-icons";
+import { useNavigate } from "react-router-dom";
 import ItemInCartFinal from "./ItemInCartFinal";
 
 const CartFinal = () => {
@@ -16,11 +20,16 @@ const CartFinal = () => {
 		});
 	};
 
+	const navigate = useNavigate();
+	const backBtnHandler = () => {
+		navigate(-1);
+	};
+
 	return (
 		<>
 			<div className="cart-wrapper">
 				{order.cart.length !== 0 ? (
-					<>
+					<div className="cart-inner-wrapper">
 						<div className="cart-container">
 							<div className="cart-container__header-box">
 								<h3 className="cart-container__header">
@@ -73,8 +82,15 @@ const CartFinal = () => {
 								does not reserve them.
 							</span>
 						</div>
-					</>
+					</div>
 				) : null}
+				<button
+					className="cart-page-wrapper__back-to-shopping-btn button-anim"
+					onClick={backBtnHandler}
+				>
+					<FontAwesomeIcon icon={faAngleLeft} className="arrow-left" />
+					Back to shopping
+				</button>
 			</div>
 		</>
 	);
