@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect, useContext } from "react";
 import "../style/css/navbarDesktop.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import logoImg from "../img/BestSetupLogo.png";
 import { ProductsOrderContext } from "../context/OrderContext";
 
@@ -60,6 +60,9 @@ const NavbarDesktop = () => {
 
 	const navRef = useRef();
 	const timeoutRef = useRef(null);
+
+	const location = useLocation();
+	const isFinalCartPage = location.pathname.includes("/cart");
 
 	useEffect(() => {
 		const observer = new IntersectionObserver(
@@ -162,7 +165,7 @@ const NavbarDesktop = () => {
 				<div className="cart-container">
 					<button
 						className="cart-container__cart-button"
-						onClick={cartButtonHandler}
+						onClick={isFinalCartPage ? null : cartButtonHandler}
 					>
 						<span className="material-symbols-outlined cart-container__cart-icon">
 							shopping_cart
