@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { ProductsOrderContext } from "../../context/OrderContext";
-import "../../style/css/cart.css";
+import "../../style/css/cartFinal.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight, faTrash } from "@fortawesome/free-solid-svg-icons";
 
