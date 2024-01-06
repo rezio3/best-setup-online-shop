@@ -6,6 +6,7 @@ import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import QuantityBox from "./QuantityBox";
 import "../../style/css/buttonsAnim.css";
 import InsuranceInfo from "./InsuranceInfo";
+import deleteItem from "../../functions/deleteItemFromCart";
 
 const ItemInCartFinal = (props) => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
@@ -14,13 +15,7 @@ const ItemInCartFinal = (props) => {
 	let directItem = order.cart[objIndex];
 
 	const trashHandler = () => {
-		const updatedCart = order.cart.filter((e) => {
-			return e.name !== props.name && e;
-		});
-		setOrder({
-			...order,
-			cart: updatedCart,
-		});
+		deleteItem(order, setOrder, props);
 	};
 	return (
 		<>

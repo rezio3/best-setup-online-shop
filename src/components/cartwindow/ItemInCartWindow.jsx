@@ -3,21 +3,15 @@ import { ProductsOrderContext } from "../../context/OrderContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import QuantityBox from "../cart/QuantityBox";
+import deleteItem from "../../functions/deleteItemFromCart";
 
 const ItemInCartWindow = (props) => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
 
 	let objIndex = order.cart.findIndex((obj) => obj.name === props.name);
 	let directItem = order.cart[objIndex];
-
 	const trashHandler = () => {
-		const updatedCart = order.cart.filter((e) => {
-			return e.name !== props.name && e;
-		});
-		setOrder({
-			...order,
-			cart: updatedCart,
-		});
+		deleteItem(order, setOrder, props);
 	};
 
 	return (
