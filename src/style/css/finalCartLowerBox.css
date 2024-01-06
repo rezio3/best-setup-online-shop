@@ -1,0 +1,28 @@
+.final-cart-lower-box-wrapper {
+  margin-top: 20px;
+  width: 70%;
+}
+.final-cart-lower-box-wrapper .guarantee-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.final-cart-lower-box-wrapper .guarantee-container__box {
+  display: flex;
+}
+.final-cart-lower-box-wrapper .guarantee-container__icon-img {
+  margin-right: 10px;
+}
+.final-cart-lower-box-wrapper .guarantee-container__description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.final-cart-lower-box-wrapper .guarantee-container__description {
+  font-size: 0.8em;
+  color: #222;
+  letter-spacing: 1px;
+}
+.final-cart-lower-box-wrapper .guarantee-container__description--gray {
+  color: #919191;
+}

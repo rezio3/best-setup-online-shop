@@ -1,0 +1,32 @@
+@import "./colors.scss";
+
+.final-cart-lower-box-wrapper {
+	margin-top: 20px;
+	width: 70%;
+	.guarantee-container {
+		display: flex;
+		justify-content: space-evenly;
+		// background-color: red;
+		&__box {
+			display: flex;
+		}
+		&__icon-img {
+			margin-right: 10px;
+		}
+
+		&__description-container {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: flex-start;
+		}
+		&__description {
+			font-size: 0.8em;
+			color: $dark;
+			letter-spacing: 1px;
+		}
+		&__description--gray {
+			color: $darkGray;
+		}
+	}
+}
