@@ -3,7 +3,7 @@ import { ProductsOrderContext } from "../../context/OrderContext";
 import "../../style/css/cart.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
-import ItemInCart from "../cartwindow/ItemInCartWindow";
+
 import ItemInCartFinal from "./ItemInCartFinal";
 
 const Cart = () => {
