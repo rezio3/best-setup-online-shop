@@ -1,9 +1,11 @@
 @import "./colors.scss";
 
 .final-cart-wrapper {
+	padding-bottom: 30px;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
+	border-bottom: 1px solid $gray;
 	.cart-inner-wrapper {
 		width: 100%;
 		display: flex;

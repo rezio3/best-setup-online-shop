@@ -1,7 +1,9 @@
 .final-cart-wrapper {
+  padding-bottom: 30px;
   width: 100%;
   display: flex;
   flex-direction: column;
+  border-bottom: 1px solid #c7c7c7;
 }
 .final-cart-wrapper .cart-inner-wrapper {
   width: 100%;
