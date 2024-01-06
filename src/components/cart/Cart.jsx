@@ -53,7 +53,15 @@ const Cart = () => {
 								})}
 							</div>
 						</div>
-						<div className="go-to-order-form-container"></div>
+						<div className="go-to-order-form-container">
+							<div className="go-to-order-form-container__total-price-container">
+								<span>Total price</span>
+								<span>{order.getTotalPrice()} $</span>
+							</div>
+							<button className="go-to-order-form-container__delivery-button button-anim">
+								Proceed to delivery
+							</button>
+						</div>
 					</>
 				) : null}
 			</div>
