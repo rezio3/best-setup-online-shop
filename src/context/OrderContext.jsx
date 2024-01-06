@@ -6,6 +6,11 @@ export const orderObj = {
 	getProductsQuantity: function () {
 		return this.cart.reduce((sum, obj) => sum + obj.quantity, 0);
 	},
+	getTotalPrice: function () {
+		if (this.cart.length > 0) {
+			return this.cart.reduce((acc, obj) => acc + obj.price * obj.quantity, 0);
+		}
+	},
 };
 
 export const ProductsOrderContext = createContext();

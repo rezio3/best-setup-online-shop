@@ -18,15 +18,6 @@ const CartWindow = () => {
 		}
 	};
 
-	let totalPrice;
-	if (order.cart.length > 0) {
-		console.log(order.cart);
-		totalPrice = order.cart.reduce(
-			(acc, obj) => acc + obj.price * obj.quantity,
-			0
-		);
-	}
-
 	const hideCartWindow = () => {
 		setOrder({
 			...order,
@@ -72,7 +63,7 @@ const CartWindow = () => {
 											Total price:
 										</span>
 										<span className="cart-window-container__total-price">
-											{totalPrice} $
+											{order.getTotalPrice()} $
 										</span>
 									</div>
 									<NavLink to="/cart">
