@@ -133,6 +133,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 5px;
 }
 .quantity-box__btn {
   width: 22px;

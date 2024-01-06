@@ -1,12 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
 import CartFinal from "./CartFinal";
 import "../../style/css/cartPage.css";
+import { ProductsOrderContext } from "../../context/OrderContext";
 
 const CartPage = () => {
+	const [order, setOrder] = useContext(ProductsOrderContext);
 	return (
 		<>
 			<div className="cart-page-wrapper">
-				<CartFinal />
+				{order.cart.length !== 0 ? <CartFinal /> : null}
 			</div>
 		</>
 	);

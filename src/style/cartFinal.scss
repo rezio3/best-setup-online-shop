@@ -1,6 +1,7 @@
 @import "./colors.scss";
 
-.cart-wrapper {
+.final-cart-wrapper {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	.cart-inner-wrapper {
