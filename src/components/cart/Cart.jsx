@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { ProductsOrderContext } from "../../context/OrderContext";
 import "../../style/css/cart.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTrash } from "@fortawesome/free-solid-svg-icons";
+import { faAngleRight, faTrash } from "@fortawesome/free-solid-svg-icons";
 
 import ItemInCartFinal from "./ItemInCartFinal";
 
@@ -53,14 +53,24 @@ const Cart = () => {
 								})}
 							</div>
 						</div>
-						<div className="go-to-order-form-container">
-							<div className="go-to-order-form-container__total-price-container">
-								<span>Total price</span>
-								<span>{order.getTotalPrice()} $</span>
+						<div className="go-to-order-form-wrapper">
+							<div className="go-to-order-form-container">
+								<div className="go-to-order-form-container__total-price-container">
+									<span>Total price</span>
+									<span>{order.getTotalPrice()} $</span>
+								</div>
+								<button className="go-to-order-form-container__delivery-button button-anim">
+									Proceed to delivery
+									<FontAwesomeIcon
+										icon={faAngleRight}
+										className="arrow-right"
+									/>
+								</button>
 							</div>
-							<button className="go-to-order-form-container__delivery-button button-anim">
-								Proceed to delivery
-							</button>
+							<span className="go-to-order-form-wrapper__info-note">
+								Complete the order - adding products to the cart <br />
+								does not reserve them.
+							</span>
 						</div>
 					</>
 				) : null}

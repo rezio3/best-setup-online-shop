@@ -103,32 +103,45 @@
 			}
 		}
 	}
-	.go-to-order-form-container {
-		padding: 30px;
-		width: 28%;
-		height: fit-content;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		box-shadow: 0 0 10px -6px;
-		&__total-price-container {
-			width: 100%;
+	.go-to-order-form-wrapper {
+		// padding: 30px 20px 30px 0px;
+		width: 30%;
+		.go-to-order-form-container {
+			padding: 20px;
+			// width: 100%;
+			height: fit-content;
 			display: flex;
-			justify-content: space-between;
+			flex-direction: column;
+			align-items: center;
+			box-shadow: 0 0 10px -6px;
+			&__total-price-container {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
 
-			span {
+				span {
+					font-size: 1em;
+					font-weight: 700;
+				}
+			}
+			&__delivery-button {
+				padding: 20px 25px;
+				margin-top: 30px;
+				background: none;
+				border: none;
 				font-size: 1em;
 				font-weight: 700;
+				cursor: pointer;
+				.arrow-right {
+					margin-left: 10px;
+				}
 			}
 		}
-		&__delivery-button {
-			padding: 20px 25px;
-			margin-top: 30px;
-			background: none;
-			border: none;
-			font-size: 1.25em;
-			font-weight: 700;
-			cursor: pointer;
+		&__info-note {
+			margin-top: 10px;
+			display: block;
+			font-size: 0.8em;
+			color: $darkGray;
 		}
 	}
 }
