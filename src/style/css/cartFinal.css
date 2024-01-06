@@ -1,6 +1,5 @@
 .cart-wrapper {
-  width: 70%;
-  max-width: 70%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 40px;
