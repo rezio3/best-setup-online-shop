@@ -1,0 +1,18 @@
+.cart-page-wrapper {
+  width: 70%;
+  max-width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.cart-page-wrapper__back-to-shopping-btn {
+  padding: 20px;
+  margin: 20px 0 0 10px;
+  width: fit-content;
+  font-size: 1em;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.cart-page-wrapper__back-to-shopping-btn .arrow-left {
+  margin-right: 10px;
+}
