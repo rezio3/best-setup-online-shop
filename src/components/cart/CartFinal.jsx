@@ -6,7 +6,7 @@ import { faAngleRight, faTrash } from "@fortawesome/free-solid-svg-icons";
 
 import ItemInCartFinal from "./ItemInCartFinal";
 
-const Cart = () => {
+const CartFinal = () => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
 
 	const deleteCartHandler = () => {
@@ -79,4 +79,4 @@ const Cart = () => {
 	);
 };
 
-export default Cart;
+export default CartFinal;
