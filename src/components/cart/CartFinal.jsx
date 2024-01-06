@@ -59,6 +59,7 @@ const CartFinal = () => {
 									<span>Total price</span>
 									<span>{order.getTotalPrice()} $</span>
 								</div>
+								<div className="go-to-order-form-container__space-line"></div>
 								<button className="go-to-order-form-container__delivery-button button-anim">
 									Proceed to delivery
 									<FontAwesomeIcon
