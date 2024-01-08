@@ -45,7 +45,7 @@
 			// border: 1px solid red;
 			overflow-x: hidden;
 			.recommended-product-box {
-				padding: 10px 20px;
+				padding: 10px 25px;
 				margin: 0 15px;
 				min-height: 280px;
 				display: flex;
@@ -59,6 +59,7 @@
 					width: 150px;
 				}
 				&__product-name {
+					text-align: center;
 					font-size: 0.85em;
 				}
 				&__read-more {
