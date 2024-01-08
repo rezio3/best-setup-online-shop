@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import "../../style/css/finalCartLowerBox.css";
 import GuaranteeBox from "./GuaranteeBox";
 import guaranteeBoxesArray from "../../objects/guaranteeDelivery";
@@ -6,12 +6,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import products from "../../objects/products";
 import RecommendedProduct from "./RecommendedProduct";
+import { useLocation } from "react-router-dom";
 
 const FinalCartLowerBox = () => {
+	const [recommendArr, setRecommendArr] = useState([]);
 	const carouselRef = useRef(null);
+	const location = useLocation();
 
 	const limitRandomize = products.hotDeals.length - 1;
-	const recommendedProductsArray = [];
+	let recommendedProductsArray = [];
 
 	do {
 		const randomNumber = Math.floor(Math.random() * limitRandomize);
@@ -22,9 +25,13 @@ const FinalCartLowerBox = () => {
 		}
 	} while (recommendedProductsArray.length < 10);
 
+	useEffect(() => {
+		setRecommendArr(recommendedProductsArray);
+	}, [location.pathname]);
+
 	const sideScrollHandler = (e) => {
 		if (e.target.className.includes("left")) {
-			carouselRef.current.scrollBy(-220, 0);
+			carouselRef.current.scrollLeft -= 220;
 		} else {
 			carouselRef.current.scrollLeft += 220;
 		}
@@ -56,7 +63,7 @@ const FinalCartLowerBox = () => {
 							<FontAwesomeIcon icon={faAngleLeft} className="arrow-icon" />
 						</button>
 						<div className="recommended-products-carousel" ref={carouselRef}>
-							{recommendedProductsArray.map((e) => (
+							{recommendArr.map((e) => (
 								<RecommendedProduct product={e} />
 							))}
 						</div>
