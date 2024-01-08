@@ -37,14 +37,12 @@
   font-weight: 400;
   border-bottom: 1px solid #c7c7c7;
 }
-.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel {
-  margin-top: 50px;
-  padding: 10px 30px;
+.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel-container {
+  position: relative;
   display: flex;
   align-items: center;
-  overflow-x: auto;
 }
-.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel__arrow-btn {
+.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel-container__arrow-btn {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -55,19 +53,28 @@
   transition: 0.2s ease-out;
   cursor: pointer;
 }
-.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel__arrow-btn .arrow-icon {
+.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel-container__arrow-btn .arrow-icon {
   font-size: 1.75em;
+  pointer-events: none;
 }
-.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel__arrow-btn:hover {
+.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel-container__arrow-btn:hover {
   background-color: #7eb8e6;
 }
-.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel .arrow-left-btn {
-  left: 5px;
+.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel-container .arrow-left-btn {
+  left: 10px;
 }
-.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel .arrow-right-btn {
-  top: 0;
+.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel-container .arrow-right-btn {
+  right: 10px;
 }
-.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel .recommended-product-box {
+.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel-container .recommended-products-carousel {
+  margin: 50px 20px 0;
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel-container .recommended-products-carousel .recommended-product-box {
   padding: 10px 25px;
   margin: 0 15px;
   min-height: 280px;
@@ -76,17 +83,17 @@
   justify-content: flex-start;
   box-shadow: 0 0 10px -6px;
 }
-.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel .recommended-product-box__product-image-container {
+.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel-container .recommended-products-carousel .recommended-product-box__product-image-container {
   height: 160px;
 }
-.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel .recommended-product-box__product-image {
+.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel-container .recommended-products-carousel .recommended-product-box__product-image {
   width: 150px;
 }
-.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel .recommended-product-box__product-name {
+.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel-container .recommended-products-carousel .recommended-product-box__product-name {
   text-align: center;
   font-size: 0.85em;
 }
-.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel .recommended-product-box__read-more {
+.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel-container .recommended-products-carousel .recommended-product-box__read-more {
   margin-top: auto;
   margin-bottom: 10px;
   display: flex;
@@ -95,7 +102,7 @@
   font-weight: 600;
   font-size: 0.75em;
 }
-.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel .recommended-product-box__read-more .highlight {
+.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel-container .recommended-products-carousel .recommended-product-box__read-more .highlight {
   margin-left: 10px;
   transition: 0.3s ease-out;
   font-size: 20px;

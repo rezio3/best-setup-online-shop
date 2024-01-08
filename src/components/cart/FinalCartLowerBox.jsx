@@ -22,9 +22,12 @@ const FinalCartLowerBox = () => {
 		}
 	} while (recommendedProductsArray.length < 10);
 
-	const sideScrollHandler = () => {
-		carouselRef.current.scrollLeft += 200;
-		console.log("ajsdksajd");
+	const sideScrollHandler = (e) => {
+		if (e.target.className.includes("left")) {
+			carouselRef.current.scrollBy(-220, 0);
+		} else {
+			carouselRef.current.scrollLeft += 220;
+		}
 	};
 
 	return (
@@ -45,23 +48,25 @@ const FinalCartLowerBox = () => {
 					<h3 className="recommended-products-container__header">
 						Recommended products
 					</h3>
-					<button
-						className="recommended-products-carousel__arrow-btn arrow-left-btn"
-						onClick={sideScrollHandler}
-					>
-						<FontAwesomeIcon icon={faAngleLeft} className="arrow-icon" />
-					</button>
-					<div className="recommended-products-carousel" ref={carouselRef}>
-						{recommendedProductsArray.map((e) => (
-							<RecommendedProduct product={e} />
-						))}
+					<div className="recommended-products-carousel-container">
+						<button
+							className="recommended-products-carousel-container__arrow-btn arrow-left-btn"
+							onClick={sideScrollHandler}
+						>
+							<FontAwesomeIcon icon={faAngleLeft} className="arrow-icon" />
+						</button>
+						<div className="recommended-products-carousel" ref={carouselRef}>
+							{recommendedProductsArray.map((e) => (
+								<RecommendedProduct product={e} />
+							))}
+						</div>
+						<button
+							className="recommended-products-carousel-container__arrow-btn arrow-right-btn"
+							onClick={sideScrollHandler}
+						>
+							<FontAwesomeIcon icon={faAngleRight} className="arrow-icon" />
+						</button>
 					</div>
-					<button
-						className="recommended-products-carousel__arrow-btn arrow-right-btn"
-						onClick={sideScrollHandler}
-					>
-						<FontAwesomeIcon icon={faAngleRight} className="arrow-icon" />
-					</button>
 				</div>
 			</div>
 		</>

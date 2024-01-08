@@ -39,13 +39,10 @@
 			font-weight: 400;
 			border-bottom: 1px solid $gray;
 		}
-		.recommended-products-carousel {
-			margin-top: 50px;
-
-			padding: 10px 30px;
+		.recommended-products-carousel-container {
+			position: relative;
 			display: flex;
 			align-items: center;
-			overflow-x: auto;
 
 			&__arrow-btn {
 				position: absolute;
@@ -59,48 +56,57 @@
 				cursor: pointer;
 				.arrow-icon {
 					font-size: 1.75em;
+					pointer-events: none;
 				}
 			}
 			&__arrow-btn:hover {
 				background-color: $lightblue;
 			}
 			.arrow-left-btn {
-				left: 5px;
+				left: 10px;
 			}
 			.arrow-right-btn {
-				top: 0;
+				right: 10px;
 			}
-
-			.recommended-product-box {
-				padding: 10px 25px;
-				margin: 0 15px;
-				min-height: 280px;
+			.recommended-products-carousel {
+				margin: 50px 20px 0;
+				padding: 10px 30px;
 				display: flex;
-				flex-direction: column;
-				justify-content: flex-start;
-				box-shadow: 0 0 10px -6px;
-				&__product-image-container {
-					height: 160px;
-				}
-				&__product-image {
-					width: 150px;
-				}
-				&__product-name {
-					text-align: center;
-					font-size: 0.85em;
-				}
-				&__read-more {
-					margin-top: auto;
-					margin-bottom: 10px;
+				align-items: center;
+				overflow-x: hidden;
+				scroll-behavior: smooth;
+
+				.recommended-product-box {
+					padding: 10px 25px;
+					margin: 0 15px;
+					min-height: 280px;
 					display: flex;
-					align-items: center;
-					justify-content: space-evenly;
-					font-weight: 600;
-					font-size: 0.75em;
-					.highlight {
-						margin-left: 10px;
-						transition: 0.3s ease-out;
-						font-size: 20px;
+					flex-direction: column;
+					justify-content: flex-start;
+					box-shadow: 0 0 10px -6px;
+					&__product-image-container {
+						height: 160px;
+					}
+					&__product-image {
+						width: 150px;
+					}
+					&__product-name {
+						text-align: center;
+						font-size: 0.85em;
+					}
+					&__read-more {
+						margin-top: auto;
+						margin-bottom: 10px;
+						display: flex;
+						align-items: center;
+						justify-content: space-evenly;
+						font-weight: 600;
+						font-size: 0.75em;
+						.highlight {
+							margin-left: 10px;
+							transition: 0.3s ease-out;
+							font-size: 20px;
+						}
 					}
 				}
 			}
