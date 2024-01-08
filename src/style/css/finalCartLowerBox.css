@@ -1,5 +1,5 @@
 .final-cart-lower-box-wrapper {
-  margin-top: 40px;
+  margin-top: 100px;
   margin-bottom: 100px;
   width: 100%;
 }
@@ -28,7 +28,8 @@
   color: #919191;
 }
 .final-cart-lower-box-wrapper .recommended-products-container {
-  margin-top: 50px;
+  position: relative;
+  margin-top: 100px;
 }
 .final-cart-lower-box-wrapper .recommended-products-container__header {
   padding-bottom: 10px;
@@ -37,11 +38,11 @@
   border-bottom: 1px solid #c7c7c7;
 }
 .final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel {
-  position: relative;
+  margin-top: 50px;
   padding: 10px 30px;
   display: flex;
   align-items: center;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 .final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel__arrow-btn {
   position: absolute;
@@ -51,15 +52,20 @@
   background-color: #ffffff;
   border: none;
   box-shadow: 0 0 10px -6px;
+  transition: 0.2s ease-out;
+  cursor: pointer;
 }
 .final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel__arrow-btn .arrow-icon {
   font-size: 1.75em;
+}
+.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel__arrow-btn:hover {
+  background-color: #7eb8e6;
 }
 .final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel .arrow-left-btn {
   left: 5px;
 }
 .final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel .arrow-right-btn {
-  right: 5px;
+  top: 0;
 }
 .final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel .recommended-product-box {
   padding: 10px 25px;

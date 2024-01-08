@@ -1,7 +1,7 @@
 @import "./colors.scss";
 
 .final-cart-lower-box-wrapper {
-	margin-top: 40px;
+	margin-top: 100px;
 	margin-bottom: 100px;
 	width: 100%;
 	.guarantee-container {
@@ -30,7 +30,8 @@
 		}
 	}
 	.recommended-products-container {
-		margin-top: 50px;
+		position: relative;
+		margin-top: 100px;
 
 		&__header {
 			padding-bottom: 10px;
@@ -39,12 +40,12 @@
 			border-bottom: 1px solid $gray;
 		}
 		.recommended-products-carousel {
-			position: relative;
+			margin-top: 50px;
+
 			padding: 10px 30px;
 			display: flex;
 			align-items: center;
-			// border: 1px solid red;
-			overflow-x: hidden;
+			overflow-x: auto;
 
 			&__arrow-btn {
 				position: absolute;
@@ -54,16 +55,20 @@
 				background-color: $white;
 				border: none;
 				box-shadow: 0 0 10px -6px;
-
+				transition: 0.2s ease-out;
+				cursor: pointer;
 				.arrow-icon {
 					font-size: 1.75em;
 				}
+			}
+			&__arrow-btn:hover {
+				background-color: $lightblue;
 			}
 			.arrow-left-btn {
 				left: 5px;
 			}
 			.arrow-right-btn {
-				right: 5px;
+				top: 0;
 			}
 
 			.recommended-product-box {

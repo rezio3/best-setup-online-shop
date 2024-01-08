@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../../style/css/finalCartLowerBox.css";
 import GuaranteeBox from "./GuaranteeBox";
 import guaranteeBoxesArray from "../../objects/guaranteeDelivery";
@@ -8,6 +8,8 @@ import products from "../../objects/products";
 import RecommendedProduct from "./RecommendedProduct";
 
 const FinalCartLowerBox = () => {
+	const carouselRef = useRef(null);
+
 	const limitRandomize = products.hotDeals.length - 1;
 	const recommendedProductsArray = [];
 
@@ -19,6 +21,11 @@ const FinalCartLowerBox = () => {
 			recommendedProductsArray.push(selectedProduct);
 		}
 	} while (recommendedProductsArray.length < 10);
+
+	const sideScrollHandler = () => {
+		carouselRef.current.scrollLeft += 200;
+		console.log("ajsdksajd");
+	};
 
 	return (
 		<>
@@ -38,17 +45,23 @@ const FinalCartLowerBox = () => {
 					<h3 className="recommended-products-container__header">
 						Recommended products
 					</h3>
-					<div className="recommended-products-carousel">
-						<button className="recommended-products-carousel__arrow-btn arrow-left-btn">
-							<FontAwesomeIcon icon={faAngleLeft} className="arrow-icon" />
-						</button>
+					<button
+						className="recommended-products-carousel__arrow-btn arrow-left-btn"
+						onClick={sideScrollHandler}
+					>
+						<FontAwesomeIcon icon={faAngleLeft} className="arrow-icon" />
+					</button>
+					<div className="recommended-products-carousel" ref={carouselRef}>
 						{recommendedProductsArray.map((e) => (
 							<RecommendedProduct product={e} />
 						))}
-						<button className="recommended-products-carousel__arrow-btn arrow-right-btn">
-							<FontAwesomeIcon icon={faAngleRight} className="arrow-icon" />
-						</button>
 					</div>
+					<button
+						className="recommended-products-carousel__arrow-btn arrow-right-btn"
+						onClick={sideScrollHandler}
+					>
+						<FontAwesomeIcon icon={faAngleRight} className="arrow-icon" />
+					</button>
 				</div>
 			</div>
 		</>
