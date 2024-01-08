@@ -2,7 +2,8 @@ import React from "react";
 import "../../style/css/finalCartLowerBox.css";
 import GuaranteeBox from "./GuaranteeBox";
 import guaranteeBoxesArray from "../../objects/guaranteeDelivery";
-
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import products from "../../objects/products";
 import RecommendedProduct from "./RecommendedProduct";
 
@@ -38,9 +39,15 @@ const FinalCartLowerBox = () => {
 						Recommended products
 					</h3>
 					<div className="recommended-products-carousel">
+						<button className="recommended-products-carousel__arrow-btn arrow-left-btn">
+							<FontAwesomeIcon icon={faAngleLeft} className="arrow-icon" />
+						</button>
 						{recommendedProductsArray.map((e) => (
 							<RecommendedProduct product={e} />
 						))}
+						<button className="recommended-products-carousel__arrow-btn arrow-right-btn">
+							<FontAwesomeIcon icon={faAngleRight} className="arrow-icon" />
+						</button>
 					</div>
 				</div>
 			</div>
