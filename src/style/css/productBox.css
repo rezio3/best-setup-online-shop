@@ -70,11 +70,11 @@
   font-style: italic;
 }
 .products-container .product-box__read-more {
-  width: 50%;
+  width: 80%;
   margin: 20px 0;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   font-weight: 600;
   font-size: 0.75em;
 }
