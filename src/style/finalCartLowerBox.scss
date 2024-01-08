@@ -7,7 +7,6 @@
 	.guarantee-container {
 		display: flex;
 		justify-content: space-evenly;
-		// background-color: red;
 		&__box {
 			display: flex;
 		}
@@ -28,6 +27,55 @@
 		}
 		&__description--gray {
 			color: $darkGray;
+		}
+	}
+	.recommended-products-container {
+		margin-top: 50px;
+
+		&__header {
+			padding-bottom: 10px;
+			font-size: 1.25em;
+			font-weight: 400;
+			border-bottom: 1px solid $gray;
+		}
+		.recommended-products-carousel {
+			padding: 10px;
+			display: flex;
+			align-items: center;
+			// border: 1px solid red;
+			overflow-x: hidden;
+			.recommended-product-box {
+				padding: 10px 20px;
+				margin: 0 15px;
+				min-height: 280px;
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				box-shadow: 0 0 10px -6px;
+				&__product-image-container {
+					height: 160px;
+				}
+				&__product-image {
+					width: 150px;
+				}
+				&__product-name {
+					font-size: 0.85em;
+				}
+				&__read-more {
+					margin-top: auto;
+					margin-bottom: 10px;
+					display: flex;
+					align-items: center;
+					justify-content: space-evenly;
+					font-weight: 600;
+					font-size: 0.75em;
+					.highlight {
+						margin-left: 10px;
+						transition: 0.3s ease-out;
+						font-size: 20px;
+					}
+				}
+			}
 		}
 	}
 }

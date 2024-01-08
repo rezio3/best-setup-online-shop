@@ -27,3 +27,50 @@
 .final-cart-lower-box-wrapper .guarantee-container__description--gray {
   color: #919191;
 }
+.final-cart-lower-box-wrapper .recommended-products-container {
+  margin-top: 50px;
+}
+.final-cart-lower-box-wrapper .recommended-products-container__header {
+  padding-bottom: 10px;
+  font-size: 1.25em;
+  font-weight: 400;
+  border-bottom: 1px solid #c7c7c7;
+}
+.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  overflow-x: hidden;
+}
+.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel .recommended-product-box {
+  padding: 10px 20px;
+  margin: 0 15px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-shadow: 0 0 10px -6px;
+}
+.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel .recommended-product-box__product-image-container {
+  height: 160px;
+}
+.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel .recommended-product-box__product-image {
+  width: 150px;
+}
+.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel .recommended-product-box__product-name {
+  font-size: 0.85em;
+}
+.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel .recommended-product-box__read-more {
+  margin-top: auto;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-weight: 600;
+  font-size: 0.75em;
+}
+.final-cart-lower-box-wrapper .recommended-products-container .recommended-products-carousel .recommended-product-box__read-more .highlight {
+  margin-left: 10px;
+  transition: 0.3s ease-out;
+  font-size: 20px;
+}
