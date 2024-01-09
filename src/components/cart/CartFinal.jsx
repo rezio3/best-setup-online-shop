@@ -63,7 +63,10 @@ const CartFinal = () => {
 							})}
 						</div>
 					</div>
-					<TotalPriceWindow />
+					<TotalPriceWindow
+						linkTo={"/cart/delivery"}
+						btnText={"Proceed to delivery"}
+					/>
 				</div>
 				<button
 					className="cart-page-wrapper__back-to-shopping-btn button-anim"

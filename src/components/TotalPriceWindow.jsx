@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import "../style/css/totalPriceWindow.css";
 
-const TotalPriceWindow = () => {
+const TotalPriceWindow = (props) => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
 
 	return (
@@ -17,9 +17,9 @@ const TotalPriceWindow = () => {
 						<span>{order.getTotalPrice()} $</span>
 					</div>
 					<div className="total-price-window-container__space-line"></div>
-					<NavLink to="/cart/delivery">
+					<NavLink to={props.linkTo}>
 						<button className="total-price-window-container__delivery-button button-anim">
-							Proceed to delivery
+							{props.btnText}
 							<FontAwesomeIcon icon={faAngleRight} className="arrow-right" />
 						</button>
 					</NavLink>

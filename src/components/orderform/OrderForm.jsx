@@ -5,15 +5,18 @@ import TotalPriceWindow from "../TotalPriceWindow";
 import DeliveryAddress from "./DeliveryAddress";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
+import { NavLink } from "react-router-dom";
 
 const OrderForm = () => {
 	return (
 		<>
 			<div className="back-btn-container">
-				<button className="back-btn-container__back-btn button-anim">
-					<FontAwesomeIcon icon={faAngleLeft} className="arrow" />
-					Edit cart
-				</button>
+				<NavLink to={"/cart"}>
+					<button className="back-btn-container__back-btn button-anim">
+						<FontAwesomeIcon icon={faAngleLeft} className="arrow" />
+						Edit cart
+					</button>
+				</NavLink>
 			</div>
 
 			<div className="order-form-page">
@@ -21,7 +24,7 @@ const OrderForm = () => {
 					<PersonalData />
 					<DeliveryAddress />
 				</div>
-				<TotalPriceWindow />
+				<TotalPriceWindow linkTo={""} btnText={"Submit and buy"} />
 			</div>
 		</>
 	);
