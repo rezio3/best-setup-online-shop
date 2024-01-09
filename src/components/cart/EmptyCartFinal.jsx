@@ -1,4 +1,6 @@
 import React from "react";
+import "../../style/css/emptyCartFinal.css";
+import { NavLink } from "react-router-dom";
 
 const EmptyCartFinal = () => {
 	return (
@@ -10,6 +12,11 @@ const EmptyCartFinal = () => {
 				<span className="empty-cart-final-container__inspiration-span">
 					Looking for inspiration?
 				</span>
+				<NavLink to="/">
+					<button className="empty-cart-final-container__homepage-btn button-anim">
+						Go to the homepage!
+					</button>
+				</NavLink>
 			</div>
 		</>
 	);

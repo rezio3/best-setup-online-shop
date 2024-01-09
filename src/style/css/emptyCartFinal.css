@@ -1,0 +1,24 @@
+.empty-cart-final-container {
+  margin: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.empty-cart-final-container__header {
+  margin: 30px 0;
+  font-size: 1.5em;
+}
+.empty-cart-final-container__inspiration-span {
+  margin-bottom: 30px;
+  font-size: 1em;
+  color: #919191;
+}
+.empty-cart-final-container__homepage-btn {
+  padding: 20px 25px;
+  font-size: 1em;
+  font-weight: 700;
+  background: none;
+  border: none;
+  box-shadow: 0 0 10px -6px;
+  cursor: pointer;
+}
