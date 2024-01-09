@@ -4,11 +4,13 @@
 	margin-top: 50px;
 	margin-bottom: 150px;
 	width: 70%;
-	max-width: 70%;
+	max-width: 1300px;
 	display: flex;
 	justify-content: center;
 	.order-form-container {
-		width: 700px;
+		width: 60%;
+
+		display: flex;
 
 		.personal-data-container {
 			width: 100%;
@@ -45,7 +47,7 @@
 				margin-top: 5px;
 				padding: 10px;
 
-				width: 100%;
+				width: 90%;
 				border-radius: 10px;
 				border: 1px solid $gray;
 			}
