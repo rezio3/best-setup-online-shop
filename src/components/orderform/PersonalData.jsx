@@ -1,4 +1,5 @@
 import React from "react";
+import CustomerDataInput from "./CustomerDataInput";
 
 const PersonalData = () => {
 	return (
@@ -9,24 +10,12 @@ const PersonalData = () => {
 				</h3>
 				<div className="personal-data-container__inputs-container">
 					<div className="personal-data-container__inputs-box">
-						<label className="personal-data-container__label">
-							Name
-							<input type="text" className="personal-data-container__input" />
-						</label>
-						<label className="personal-data-container__label">
-							Surname
-							<input type="text" className="personal-data-container__input" />
-						</label>
+						<CustomerDataInput label="Name" />
+						<CustomerDataInput label="Surname" />
 					</div>
 					<div className="personal-data-container__inputs-box">
-						<label className="personal-data-container__label">
-							Phone
-							<input type="text" className="personal-data-container__input" />
-						</label>
-						<label className="personal-data-container__label">
-							Email
-							<input type="text" className="personal-data-container__input" />
-						</label>
+						<CustomerDataInput label="Phone" />
+						<CustomerDataInput label="Email" />
 					</div>
 				</div>
 			</div>
