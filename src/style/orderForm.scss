@@ -1,0 +1,54 @@
+@import "./colors.scss";
+
+.order-form-page {
+	margin-top: 50px;
+	margin-bottom: 150px;
+	width: 70%;
+	max-width: 70%;
+	display: flex;
+	justify-content: center;
+	.order-form-container {
+		width: 700px;
+
+		.personal-data-container {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			&__inputs-container {
+				width: 100%;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			&__header {
+				padding-bottom: 5px;
+				margin: 30px auto 0 0;
+				width: 100%;
+				font-size: 1.25em;
+				font-weight: 400;
+				border-bottom: 1px solid $gray;
+			}
+			&__inputs-box {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+			}
+			&__label {
+				margin-top: 20px;
+				width: 40%;
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+			}
+			&__input {
+				margin-top: 5px;
+				padding: 10px;
+
+				width: 100%;
+				border-radius: 10px;
+				border: 1px solid $gray;
+			}
+		}
+	}
+}

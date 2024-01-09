@@ -1,0 +1,50 @@
+.order-form-page {
+  margin-top: 50px;
+  margin-bottom: 150px;
+  width: 70%;
+  max-width: 70%;
+  display: flex;
+  justify-content: center;
+}
+.order-form-page .order-form-container {
+  width: 700px;
+}
+.order-form-page .order-form-container .personal-data-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.order-form-page .order-form-container .personal-data-container__inputs-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.order-form-page .order-form-container .personal-data-container__header {
+  padding-bottom: 5px;
+  margin: 30px auto 0 0;
+  width: 100%;
+  font-size: 1.25em;
+  font-weight: 400;
+  border-bottom: 1px solid #c7c7c7;
+}
+.order-form-page .order-form-container .personal-data-container__inputs-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.order-form-page .order-form-container .personal-data-container__label {
+  margin-top: 20px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.order-form-page .order-form-container .personal-data-container__input {
+  margin-top: 5px;
+  padding: 10px;
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #c7c7c7;
+}
