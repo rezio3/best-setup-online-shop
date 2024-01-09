@@ -1,5 +1,5 @@
 .final-cart-lower-box-wrapper {
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 100px;
   width: 100%;
 }
@@ -29,7 +29,7 @@
 }
 .final-cart-lower-box-wrapper .recommended-products-container {
   position: relative;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .final-cart-lower-box-wrapper .recommended-products-container__header {
   padding-bottom: 10px;
