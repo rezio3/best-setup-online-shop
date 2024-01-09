@@ -11,6 +11,20 @@ export const orderObj = {
 			return this.cart.reduce((acc, obj) => acc + obj.price * obj.quantity, 0);
 		}
 	},
+	customer: {
+		name: "",
+		surname: "",
+		email: "",
+		phone: "",
+		address: {
+			city: "",
+			postalCode: "",
+			street: "",
+			buildingNumber: "",
+			flatNumber: "",
+		},
+		delivery: "",
+	},
 };
 
 export const ProductsOrderContext = createContext();
