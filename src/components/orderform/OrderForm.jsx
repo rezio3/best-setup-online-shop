@@ -2,6 +2,7 @@ import React from "react";
 import "../../style/css/orderForm.css";
 import PersonalData from "./PersonalData";
 import TotalPriceWindow from "../TotalPriceWindow";
+import DeliveryAddress from "./DeliveryAddress";
 
 const OrderForm = () => {
 	return (
