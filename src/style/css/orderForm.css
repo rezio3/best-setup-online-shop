@@ -1,5 +1,21 @@
+.back-btn-container {
+  margin-top: 30px;
+  width: 70%;
+  max-width: 1300px;
+}
+.back-btn-container__back-btn {
+  padding: 10px;
+  font-size: 1em;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.back-btn-container__back-btn .arrow {
+  margin-right: 10px;
+}
+
 .order-form-page {
-  margin-top: 50px;
+  margin-top: 0px;
   margin-bottom: 150px;
   width: 70%;
   max-width: 1300px;
