@@ -9,6 +9,7 @@ const OrderForm = () => {
 			<div className="order-form-page">
 				<div className="order-form-container">
 					<PersonalData />
+					<DeliveryAddress />
 				</div>
 				<TotalPriceWindow />
 			</div>
