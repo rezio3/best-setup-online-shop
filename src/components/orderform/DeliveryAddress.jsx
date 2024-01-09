@@ -8,16 +8,15 @@ const DeliveryAddress = () => {
 				<h3 className="data-container__header">Delivery address</h3>
 				<div className="data-container__inputs-container">
 					<div className="data-container__inputs-box">
-						<CustomerDataInput label="City" />
-						<CustomerDataInput label="Postal code" />
+						<CustomerDataInput label="City*" />
+						<CustomerDataInput label="Postal code*" />
 					</div>
 					<div className="data-container__inputs-box">
-						<CustomerDataInput label="Street" />
-						<CustomerDataInput label="Building number" />
+						<CustomerDataInput label="Street*" />
+						<CustomerDataInput label="Building number*" />
 					</div>
 					<div className="data-container__inputs-box">
 						<CustomerDataInput label="Flat number" />
-						{/* <CustomerDataInput label="Building number" /> */}
 					</div>
 				</div>
 			</div>
