@@ -10,6 +10,7 @@ import {
 import { useNavigate } from "react-router-dom";
 import ItemInCartFinal from "./ItemInCartFinal";
 import { NavLink } from "react-router-dom";
+import TotalPriceWindow from "../TotalPriceWindow";
 
 const CartFinal = () => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
@@ -62,28 +63,7 @@ const CartFinal = () => {
 							})}
 						</div>
 					</div>
-					<div className="go-to-order-form-wrapper">
-						<div className="go-to-order-form-container">
-							<div className="go-to-order-form-container__total-price-container">
-								<span>Total price</span>
-								<span>{order.getTotalPrice()} $</span>
-							</div>
-							<div className="go-to-order-form-container__space-line"></div>
-							<NavLink to="/cart/delivery">
-								<button className="go-to-order-form-container__delivery-button button-anim">
-									Proceed to delivery
-									<FontAwesomeIcon
-										icon={faAngleRight}
-										className="arrow-right"
-									/>
-								</button>
-							</NavLink>
-						</div>
-						<span className="go-to-order-form-wrapper__info-note">
-							Complete the order - adding products to the cart <br />
-							does not reserve them.
-						</span>
-					</div>
+					<TotalPriceWindow />
 				</div>
 				<button
 					className="cart-page-wrapper__back-to-shopping-btn button-anim"

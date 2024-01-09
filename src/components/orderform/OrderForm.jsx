@@ -1,6 +1,7 @@
 import React from "react";
 import "../../style/css/orderForm.css";
 import PersonalData from "./PersonalData";
+import TotalPriceWindow from "../TotalPriceWindow";
 
 const OrderForm = () => {
 	return (
@@ -9,6 +10,7 @@ const OrderForm = () => {
 				<div className="order-form-container">
 					<PersonalData />
 				</div>
+				<TotalPriceWindow />
 			</div>
 		</>
 	);
