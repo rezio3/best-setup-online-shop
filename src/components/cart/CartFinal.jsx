@@ -9,6 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 import ItemInCartFinal from "./ItemInCartFinal";
+import { NavLink } from "react-router-dom";
 
 const CartFinal = () => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
@@ -68,10 +69,15 @@ const CartFinal = () => {
 								<span>{order.getTotalPrice()} $</span>
 							</div>
 							<div className="go-to-order-form-container__space-line"></div>
-							<button className="go-to-order-form-container__delivery-button button-anim">
-								Proceed to delivery
-								<FontAwesomeIcon icon={faAngleRight} className="arrow-right" />
-							</button>
+							<NavLink to="/cart/delivery">
+								<button className="go-to-order-form-container__delivery-button button-anim">
+									Proceed to delivery
+									<FontAwesomeIcon
+										icon={faAngleRight}
+										className="arrow-right"
+									/>
+								</button>
+							</NavLink>
 						</div>
 						<span className="go-to-order-form-wrapper__info-note">
 							Complete the order - adding products to the cart <br />

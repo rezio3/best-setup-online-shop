@@ -8,6 +8,7 @@ import Pc from "../pages/Pc";
 import Accessories from "../pages/Accessories";
 import Comfort from "../pages/Comfort";
 import CartPage from "../components/cart/CartPage";
+import OrderForm from "../components/orderform/OrderForm";
 
 const Page = () => {
 	return (
@@ -21,6 +22,7 @@ const Page = () => {
 					<Route path="/accessories" Component={Accessories} />
 					<Route path="/comfort" Component={Comfort} />
 					<Route path="/cart" Component={CartPage} />
+					<Route path="/cart/delivery" Component={OrderForm} />
 				</Routes>
 			</FilterProductsContext>
 		</>
