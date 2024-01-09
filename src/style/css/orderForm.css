@@ -12,7 +12,7 @@
   flex-direction: column;
 }
 .order-form-page .order-form-container .data-container {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -38,7 +38,7 @@
   justify-content: space-between;
 }
 .order-form-page .order-form-container .data-container__label {
-  margin-top: 20px;
+  margin-top: 15px;
   width: 40%;
   display: flex;
   flex-direction: column;
