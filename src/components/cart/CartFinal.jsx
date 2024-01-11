@@ -2,14 +2,9 @@ import React, { useContext } from "react";
 import { ProductsOrderContext } from "../../context/OrderContext";
 import "../../style/css/cartFinal.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-	faAngleRight,
-	faTrash,
-	faAngleLeft,
-} from "@fortawesome/free-solid-svg-icons";
+import { faTrash, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 import ItemInCartFinal from "./ItemInCartFinal";
-import { NavLink } from "react-router-dom";
 import TotalPriceWindow from "../TotalPriceWindow";
 
 const CartFinal = () => {
