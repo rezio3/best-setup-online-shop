@@ -19,6 +19,16 @@
   font-size: 1em;
   font-weight: 700;
 }
+.total-price-window-wrapper .total-price-window-container__prices-container {
+  margin-bottom: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.total-price-window-wrapper .total-price-window-container__prices-container span {
+  font-size: 1em;
+  font-weight: 400;
+}
 .total-price-window-wrapper .total-price-window-container__space-line {
   margin-top: 15px;
   width: 100%;

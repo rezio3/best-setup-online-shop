@@ -3,8 +3,6 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 
 const InsuranceInfo = (props) => {
-	const insurancePrice = (props.price * 0.1).toFixed(2);
-
 	return (
 		<>
 			<div className="item-box-final__info-icon-container">
@@ -19,7 +17,7 @@ const InsuranceInfo = (props) => {
 						period.
 					</p>
 					<span className="item-box-final__insurance-price">
-						Additional cost for the selected product: <b>{insurancePrice}$</b>
+						Additional cost for the selected product: <b>{props.price}$</b>
 					</span>
 				</div>
 			</div>

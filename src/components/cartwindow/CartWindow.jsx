@@ -63,7 +63,7 @@ const CartWindow = () => {
 											Total price:
 										</span>
 										<span className="cart-window-container__total-price">
-											{order.getTotalPrice()} $
+											{order.getTotalProductPrice()} $
 										</span>
 									</div>
 									<NavLink to="/cart">

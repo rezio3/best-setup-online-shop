@@ -12,9 +12,21 @@ const TotalPriceWindow = (props) => {
 		<>
 			<div className="total-price-window-wrapper">
 				<div className="total-price-window-container">
+					<div className="total-price-window-container__prices-container">
+						<span>Your cart</span>
+						<span>{order.getTotalProductPrice()} $</span>
+					</div>
+					<div className="total-price-window-container__prices-container">
+						<span>Delivery</span>
+						<span>{order.getTotalProductPrice()} $</span>
+					</div>
+					<div className="total-price-window-container__prices-container">
+						<span>Insurance</span>
+						<span>{order.getTotalInsurancePrice().toFixed(2)} $</span>
+					</div>
 					<div className="total-price-window-container__total-price-container">
 						<span>Total price</span>
-						<span>{order.getTotalPrice()} $</span>
+						<span>{order.getTotalInsurancePrice()} $</span>
 					</div>
 					<div className="total-price-window-container__space-line"></div>
 					<NavLink to={props.linkTo}>

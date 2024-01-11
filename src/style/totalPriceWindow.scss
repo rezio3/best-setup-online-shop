@@ -20,6 +20,16 @@
 				font-weight: 700;
 			}
 		}
+		&__prices-container {
+			margin-bottom: 15px;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			span {
+				font-size: 1em;
+				font-weight: 400;
+			}
+		}
 		&__space-line {
 			margin-top: 15px;
 			width: 100%;
