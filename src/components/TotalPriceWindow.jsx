@@ -8,6 +8,8 @@ import "../style/css/totalPriceWindow.css";
 const TotalPriceWindow = (props) => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
 
+	const totalPrice = order.getTotalPrice();
+
 	return (
 		<>
 			<div className="total-price-window-wrapper">
@@ -26,7 +28,7 @@ const TotalPriceWindow = (props) => {
 					</div>
 					<div className="total-price-window-container__total-price-container">
 						<span>Total price</span>
-						<span>{order.getTotalInsurancePrice()} $</span>
+						<span>{order.getTotalPrice()} $</span>
 					</div>
 					<div className="total-price-window-container__space-line"></div>
 					<NavLink to={props.linkTo}>
