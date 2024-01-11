@@ -34,7 +34,6 @@ const ProductsHomePage = () => {
 	// sort products depending on the price range
 
 	itemsToDisplay = sortPriceRange(filter.priceRange, itemsToDisplay);
-	console.log(itemsToDisplay.length);
 
 	return (
 		<>
