@@ -18,7 +18,6 @@ const InstallmentOffer = () => {
 							<div className="tick-ul-list" />
 							<span>Up to 20 installments at 0%</span>
 						</li>
-
 						<li>
 							<div className="tick-ul-list" />
 							<span>APR 0%</span>
