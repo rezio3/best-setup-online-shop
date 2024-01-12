@@ -69,6 +69,7 @@
 }
 .order-form-page .order-form-container .delivery-options-container {
   padding-left: 0;
+  margin-bottom: 40px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -76,7 +77,7 @@
 }
 .order-form-page .order-form-container .delivery-options-container__header {
   padding-bottom: 5px;
-  margin: 10px auto 30px 0;
+  margin: 10px auto 15px 0;
   width: 100%;
   font-size: 1.25em;
   font-weight: 400;
@@ -97,4 +98,22 @@
 }
 .order-form-page .order-form-container .delivery-options-container__label input {
   padding-left: 1px;
+}
+.order-form-page .order-form-container .additional-information-container {
+  width: 100%;
+}
+.order-form-page .order-form-container .additional-information-container__header {
+  padding-bottom: 5px;
+  margin: 10px auto 30px 0;
+  width: 100%;
+  font-size: 1.25em;
+  font-weight: 400;
+  border-bottom: 1px solid #c7c7c7;
+}
+.order-form-page .order-form-container .additional-information-container__text-area {
+  padding: 10px;
+  width: 95%;
+  max-width: 95%;
+  height: 200px;
+  font-size: 1em;
 }
