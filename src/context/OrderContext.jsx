@@ -34,12 +34,6 @@ export const orderObj = {
 			return 0;
 		}
 	},
-
-	// getTotalProductPrice: function () {
-	// 	if (this.cart.length > 0) {
-	// 		return this.cart.reduce((acc, obj) => acc + obj.price * obj.quantity, 0);
-	// 	}
-	// },
 };
 
 export const ProductsOrderContext = createContext();
