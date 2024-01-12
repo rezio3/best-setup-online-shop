@@ -10,9 +10,9 @@ const TotalPriceWindow = (props) => {
 	const [snapWindow, setSnapWindow] = useState(false);
 	const totalPriceWindowRef = useRef(null);
 
-	const totalInsurancePrice = Number(order.getTotalInsurancePrice());
+	const totalInsurancePrice = order.getTotalInsurancePrice();
 
-	const totalProductPrice = Number(order.getTotalProductPrice());
+	const totalProductPrice = order.getTotalProductPrice();
 
 	const totalOrderPrice = totalInsurancePrice + totalProductPrice;
 
