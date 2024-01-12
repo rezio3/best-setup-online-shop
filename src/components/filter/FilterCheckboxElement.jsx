@@ -1,4 +1,5 @@
 import React from "react";
+import "../../style/css/checkBoxes.css";
 
 const FilterCheckboxElement = (props) => {
 	const { filter, setFilter } = props.filterState;
@@ -23,7 +24,7 @@ const FilterCheckboxElement = (props) => {
 			<li className="filter-container__filter-checkbox-element">
 				<input
 					type="checkbox"
-					className="filter-container__filter-checkbox"
+					className="checkbox"
 					id={props.id}
 					data={props.data}
 					onChange={inputHandler}

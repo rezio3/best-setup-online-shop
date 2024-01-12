@@ -17,7 +17,7 @@ const FilterCheckboxPriceDirection = (props) => {
 			<li className="filter-container__filter-checkbox-element">
 				<input
 					type="radio"
-					className="filter-container__filter-checkbox"
+					className="checkbox"
 					id="price-up"
 					name="price-radio-checkbox"
 					onChange={inputHandler}
@@ -28,7 +28,7 @@ const FilterCheckboxPriceDirection = (props) => {
 			<li className="filter-container__filter-checkbox-element">
 				<input
 					type="radio"
-					className="filter-container__filter-checkbox"
+					className="checkbox"
 					id="price-down"
 					name="price-radio-checkbox"
 					onChange={inputHandler}

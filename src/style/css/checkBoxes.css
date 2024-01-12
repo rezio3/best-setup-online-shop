@@ -1,0 +1,25 @@
+@charset "UTF-8";
+.checkbox {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #1b1b1b;
+}
+
+.checkbox:checked {
+  background-color: #1b1b1b;
+}
+
+.checkbox:checked::before {
+  content: "✔";
+  position: relative;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 1px;
+  font-size: 12px;
+  color: #ffffff;
+}
