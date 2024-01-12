@@ -17,20 +17,29 @@ const ItemInCartFinal = (props) => {
 	const trashHandler = () => {
 		deleteItem(order, setOrder, props);
 	};
-
 	const insurancePrice = (directItem.price * 0.1).toFixed(2);
-	const addInsuranceHandler = () => {
-		if (!order.insurances.some((obj) => obj.name === directItem.name)) {
-			const newObj = {
-				product: directItem.name,
-				insurancePrice: Number(insurancePrice),
-			};
-
-			setOrder({
-				...order,
-				insurances: [...order.insurances, newObj],
-			});
+	const isInsurance = !order.insurances.some(
+		(obj) => obj.product === directItem.name
+	);
+	const switchInsuranceHandler = () => {
+		let newInsurancesArr;
+		if (isInsurance) {
+			newInsurancesArr = [
+				...order.insurances,
+				{
+					product: directItem.name,
+					insurancePrice: Number(insurancePrice),
+				},
+			];
+		} else {
+			newInsurancesArr = order.insurances.filter(
+				(e) => e.product !== directItem.name
+			);
 		}
+		setOrder({
+			...order,
+			insurances: newInsurancesArr,
+		});
 	};
 	return (
 		<>
@@ -48,9 +57,9 @@ const ItemInCartFinal = (props) => {
 				<InsuranceInfo price={insurancePrice} />
 				<button
 					className="item-box-final__insurance-btn button-anim"
-					onClick={addInsuranceHandler}
+					onClick={switchInsuranceHandler}
 				>
-					Buy insurance
+					{isInsurance ? "Buy insurance" : "Delete insurance"}
 				</button>
 				<button
 					className="cart-window-container__trash-button item-box-final__trash-button"
