@@ -1,6 +1,7 @@
 .total-price-window-wrapper {
-  width: 30%;
   margin-left: auto;
+  width: 30%;
+  height: fit-content;
 }
 .total-price-window-wrapper .total-price-window-container {
   padding: 20px;
@@ -51,4 +52,13 @@
   display: block;
   font-size: 0.8em;
   color: #919191;
+}
+
+.snap-window-price-threshold {
+  height: 0;
+}
+
+.snap-window-price {
+  top: 90px;
+  position: sticky;
 }

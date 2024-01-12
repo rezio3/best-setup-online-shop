@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 import { ProductsOrderContext } from "../context/OrderContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -7,6 +7,8 @@ import "../style/css/totalPriceWindow.css";
 
 const TotalPriceWindow = (props) => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
+	const [snapWindow, setSnapWindow] = useState(false);
+	const totalPriceWindowRef = useRef(null);
 
 	const totalInsurancePrice = Number(order.getTotalInsurancePrice());
 
@@ -14,9 +16,33 @@ const TotalPriceWindow = (props) => {
 
 	const totalOrderPrice = totalInsurancePrice + totalProductPrice;
 
+	useEffect(() => {
+		const observer = new IntersectionObserver(
+			(entries) => {
+				const entry = entries[0];
+				console.log(entry.intersectionRatio === 0);
+				entry.intersectionRatio === 0
+					? setSnapWindow(true)
+					: setSnapWindow(false);
+			},
+			{ threshold: 1, rootMargin: "-110px 0px 0px 0px" }
+		);
+		observer.observe(totalPriceWindowRef.current);
+	}, []);
+
 	return (
 		<>
-			<div className="total-price-window-wrapper">
+			<div
+				className="snap-window-price-threshold"
+				ref={totalPriceWindowRef}
+			></div>
+			<div
+				className={
+					totalPriceWindowRef
+						? "total-price-window-wrapper snap-window-price"
+						: "total-price-window-wrapper"
+				}
+			>
 				<div className="total-price-window-container">
 					<div className="total-price-window-container__prices-container">
 						<span>Your cart</span>
