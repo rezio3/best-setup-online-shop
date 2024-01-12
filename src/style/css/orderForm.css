@@ -67,3 +67,34 @@
   border-radius: 10px;
   border: 1px solid #c7c7c7;
 }
+.order-form-page .order-form-container .delivery-options-container {
+  padding-left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+.order-form-page .order-form-container .delivery-options-container__header {
+  padding-bottom: 5px;
+  margin: 10px auto 30px 0;
+  width: 100%;
+  font-size: 1.25em;
+  font-weight: 400;
+  border-bottom: 1px solid #c7c7c7;
+}
+.order-form-page .order-form-container .delivery-options-container__option-element {
+  width: 50%;
+  min-width: 250px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.order-form-page .order-form-container .delivery-options-container__label {
+  display: flex;
+  width: fit-content;
+  user-select: none;
+}
+.order-form-page .order-form-container .delivery-options-container__label input {
+  padding-left: 1px;
+}
