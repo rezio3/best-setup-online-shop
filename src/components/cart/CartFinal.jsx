@@ -14,6 +14,7 @@ const CartFinal = () => {
 		setOrder({
 			...order,
 			cart: [],
+			insurances: [],
 		});
 	};
 
