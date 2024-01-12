@@ -19,7 +19,7 @@ const FilterWindowSoundProducts = () => {
 		}
 		if (i === 0) {
 			soundPageCheckboxes.push(
-				<ul>
+				<ul key={i + "ul-sound-list"}>
 					<span className="filter-container__subtitle">{subtitle}</span>
 					{soundPageCheckboxesNames[0].map((e) => {
 						return (

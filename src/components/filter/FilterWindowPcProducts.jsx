@@ -25,7 +25,7 @@ const FilterWindowPcProducts = () => {
 		}
 
 		pcPageCheckboxes.push(
-			<ul>
+			<ul key={i + "ul-pc-list"}>
 				<span className="filter-container__subtitle">{subtitle}</span>
 				{pcPageCheckboxesNames[i].map((e) => {
 					return (

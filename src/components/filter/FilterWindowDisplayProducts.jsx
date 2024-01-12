@@ -22,7 +22,7 @@ const FilterWindowDisplayProducts = () => {
 		}
 
 		displayPageCheckboxes.push(
-			<ul>
+			<ul key={i + "ul-display-list"}>
 				<span className="filter-container__subtitle">{subtitle}</span>
 				{displayPageCheckboxesNames[i].map((e) => {
 					return (
