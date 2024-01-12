@@ -6,7 +6,8 @@ import DeliveryAddress from "./DeliveryAddress";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
-import DeliveryOptions from "./DeliveryOptions";
+import DeliveryAndPaymentOptions from "./DeliveryAndPaymentOptions";
+import AdditionalInformation from "./AdditionalInformation";
 
 const OrderForm = () => {
 	return (
@@ -24,7 +25,8 @@ const OrderForm = () => {
 				<div className="order-form-container">
 					<PersonalData />
 					<DeliveryAddress />
-					<DeliveryOptions />
+					<DeliveryAndPaymentOptions />
+					<AdditionalInformation />
 				</div>
 				<TotalPriceWindow linkTo={""} btnText={"Submit and buy"} />
 			</div>
