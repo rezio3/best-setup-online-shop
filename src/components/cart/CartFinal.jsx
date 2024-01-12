@@ -3,9 +3,10 @@ import { ProductsOrderContext } from "../../context/OrderContext";
 import "../../style/css/cartFinal.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import ItemInCartFinal from "./ItemInCartFinal";
 import TotalPriceWindow from "../TotalPriceWindow";
+import { NavLink } from "react-router-dom";
 
 const CartFinal = () => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
@@ -18,10 +19,10 @@ const CartFinal = () => {
 		});
 	};
 
-	const navigate = useNavigate();
-	const backBtnHandler = () => {
-		navigate(-1);
-	};
+	// const navigate = useNavigate();
+	// const backBtnHandler = () => {
+	// 	navigate(-1);
+	// };
 
 	return (
 		<>
@@ -64,13 +65,15 @@ const CartFinal = () => {
 						btnText={"Proceed to delivery"}
 					/>
 				</div>
-				<button
-					className="cart-page-wrapper__back-to-shopping-btn button-anim"
-					onClick={backBtnHandler}
-				>
-					<FontAwesomeIcon icon={faAngleLeft} className="arrow-left" />
-					Back to shopping
-				</button>
+				<NavLink to="/">
+					<button
+						className="cart-page-wrapper__back-to-shopping-btn button-anim"
+						// onClick={backBtnHandler}
+					>
+						<FontAwesomeIcon icon={faAngleLeft} className="arrow-left" />
+						Back to shopping
+					</button>
+				</NavLink>
 			</div>
 		</>
 	);
