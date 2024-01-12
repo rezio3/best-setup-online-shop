@@ -17,6 +17,7 @@ export const orderObj = {
 			flatNumber: "",
 		},
 		delivery: "Courier",
+		totalOrderPrice: null,
 	},
 	getProductsQuantity: function () {
 		return this.cart.reduce((sum, obj) => sum + obj.quantity, 0);
@@ -33,9 +34,7 @@ export const orderObj = {
 			return 0;
 		}
 	},
-	getTotalPrice: function () {
-		return this.getTotalProductPrice + this.getTotalInsurancePrice;
-	},
+
 	// getTotalProductPrice: function () {
 	// 	if (this.cart.length > 0) {
 	// 		return this.cart.reduce((acc, obj) => acc + obj.price * obj.quantity, 0);

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { ProductsOrderContext } from "../context/OrderContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -8,7 +8,11 @@ import "../style/css/totalPriceWindow.css";
 const TotalPriceWindow = (props) => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
 
-	const totalPrice = order.getTotalPrice();
+	const totalInsurancePrice = Number(order.getTotalInsurancePrice());
+
+	const totalProductPrice = Number(order.getTotalProductPrice());
+
+	const totalOrderPrice = totalInsurancePrice + totalProductPrice;
 
 	return (
 		<>
@@ -16,19 +20,19 @@ const TotalPriceWindow = (props) => {
 				<div className="total-price-window-container">
 					<div className="total-price-window-container__prices-container">
 						<span>Your cart</span>
-						<span>{order.getTotalProductPrice()} $</span>
+						<span>{totalProductPrice.toFixed(2)} $</span>
 					</div>
 					<div className="total-price-window-container__prices-container">
 						<span>Delivery</span>
-						<span>{order.getTotalProductPrice()} $</span>
+						<span>{0} $</span>
 					</div>
 					<div className="total-price-window-container__prices-container">
 						<span>Insurance</span>
-						<span>{order.getTotalInsurancePrice().toFixed(2)} $</span>
+						<span>{totalInsurancePrice.toFixed(2)} $</span>
 					</div>
 					<div className="total-price-window-container__total-price-container">
 						<span>Total price</span>
-						<span>{order.getTotalPrice()} $</span>
+						<span>{totalOrderPrice.toFixed(2)} $</span>
 					</div>
 					<div className="total-price-window-container__space-line"></div>
 					<NavLink to={props.linkTo}>
