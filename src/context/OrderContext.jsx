@@ -23,16 +23,20 @@ export const orderObj = {
 		return this.cart.reduce((sum, obj) => sum + obj.quantity, 0);
 	},
 	getTotalProductPrice: function () {
-		if (this.cart.length > 0) {
-			return this.cart.reduce((acc, obj) => acc + obj.price * obj.quantity, 0);
-		}
-	},
-	getTotalInsurancePrice: function () {
-		if (this.insurances.length > 0) {
-			return this.insurances.reduce((acc, obj) => acc + obj.insurancePrice, 0);
-		} else {
+		if (this.cart.length === 0) {
 			return 0;
 		}
+		return Number(
+			this.cart.reduce((acc, obj) => acc + obj.price * obj.quantity, 0)
+		);
+	},
+	getTotalInsurancePrice: function () {
+		if (this.insurances.length === 0) {
+			return 0;
+		}
+		return Number(
+			this.insurances.reduce((acc, obj) => acc + obj.insurancePrice, 0)
+		);
 	},
 };
 
