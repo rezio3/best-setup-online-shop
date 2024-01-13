@@ -18,7 +18,7 @@ export const orderObj = {
 		},
 		deliveryMethod: {
 			method: "Courier shipping",
-			price: "7.99",
+			price: 7.99,
 		},
 		paymentMethod: "Credit/Debit card",
 		totalOrderPrice: null,
@@ -41,9 +41,6 @@ export const orderObj = {
 		return Number(
 			this.insurances.reduce((acc, obj) => acc + obj.insurancePrice, 0)
 		);
-	},
-	getDeliveryPrice: function () {
-		return Number(this.customer.deliveryMethod.price);
 	},
 };
 
