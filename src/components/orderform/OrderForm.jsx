@@ -10,21 +10,12 @@ import DeliveryAndPaymentOptions from "./DeliveryAndPaymentOptions";
 import AdditionalInformation from "./AdditionalInformation";
 import FinalCartLowerBox from "../cart/FinalCartLowerBox";
 import "../../style/css/finalCartLowerBox.css";
+import {
+	deliveryCheckboxesArray,
+	paymentCheckboxesArray,
+} from "../../objects/deliveryAndPaymentCheckboxes";
 
 const OrderForm = () => {
-	const deliveryCheckboxesArray = [
-		{ name: "Courier shipping", price: "7.99" },
-		{ name: "Express delivery", price: "11.00" },
-		{ name: "Parcel locker", price: "5.99" },
-	];
-	const paymentCheckboxesArray = [
-		{ name: "Credit/Debit card" },
-		{ name: "PayPal" },
-		{ name: "Cryptocurrency" },
-		{ name: "American Express" },
-		{ name: "BLIK" },
-	];
-
 	return (
 		<>
 			<div className="back-btn-container">
