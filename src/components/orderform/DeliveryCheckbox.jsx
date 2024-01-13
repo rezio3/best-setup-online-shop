@@ -2,7 +2,7 @@ import React from "react";
 
 const DeliveryCheckbox = (props) => {
 	const checkboxInnerHandler = () => {
-		props.checkboxHandler(props.name);
+		props.checkboxHandler(props);
 	};
 
 	return (

@@ -1,11 +1,31 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import DeliveryCheckbox from "./DeliveryCheckbox";
+import { ProductsOrderContext } from "../../context/OrderContext";
 
 const DeliveryAndPaymentOptions = (props) => {
+	const [order, setOrder] = useContext(ProductsOrderContext);
 	const [check, setCheck] = useState(props.default);
 
 	const checkboxHandler = (e) => {
-		setCheck(e);
+		setCheck(e.name);
+		if (props.header === "Delivery method") {
+			console.log("HALO!");
+			setOrder({
+				...order,
+				customer: {
+					...order.customer,
+					deliveryMethod: { method: e.name, price: e.price },
+				},
+			});
+		} else if (props.header === "Payment method") {
+			setOrder({
+				...order,
+				customer: {
+					...order.customer,
+					paymentMethod: e.name,
+				},
+			});
+		}
 	};
 
 	return (

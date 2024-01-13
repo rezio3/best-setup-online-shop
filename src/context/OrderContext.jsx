@@ -17,10 +17,10 @@ export const orderObj = {
 			flatNumber: "",
 		},
 		deliveryMethod: {
-			method: "",
-			price: "",
+			method: "Courier shipping",
+			price: "7.99",
 		},
-		paymentMethod: "",
+		paymentMethod: "Credit/Debit card",
 		totalOrderPrice: null,
 	},
 	getProductsQuantity: function () {
@@ -41,6 +41,9 @@ export const orderObj = {
 		return Number(
 			this.insurances.reduce((acc, obj) => acc + obj.insurancePrice, 0)
 		);
+	},
+	getDeliveryPrice: function () {
+		return Number(this.customer.deliveryMethod.price);
 	},
 };
 

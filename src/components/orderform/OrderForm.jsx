@@ -14,8 +14,11 @@ import {
 	deliveryCheckboxesArray,
 	paymentCheckboxesArray,
 } from "../../objects/deliveryAndPaymentCheckboxes";
+import { ProductsOrderContext } from "../../context/OrderContext";
 
 const OrderForm = () => {
+	const [order] = useContext(ProductsOrderContext);
+	console.log(order);
 	return (
 		<>
 			<div className="back-btn-container">
@@ -34,12 +37,12 @@ const OrderForm = () => {
 						<DeliveryAndPaymentOptions
 							header={"Delivery method"}
 							checkboxes={deliveryCheckboxesArray}
-							default={"Courier shipping"}
+							default={order.customer.deliveryMethod.method}
 						/>
 						<DeliveryAndPaymentOptions
 							header={"Payment method"}
 							checkboxes={paymentCheckboxesArray}
-							default={"Credit/Debit card"}
+							default={order.customer.paymentMethod}
 						/>
 						<AdditionalInformation />
 					</div>

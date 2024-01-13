@@ -9,12 +9,15 @@ const TotalPriceWindow = (props) => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
 	const [snapWindow, setSnapWindow] = useState(false);
 	const totalPriceWindowRef = useRef(null);
+	const deliveryPrice = Number(order.customer.deliveryMethod.price);
+	console.log(typeof deliveryPrice);
 
 	const totalInsurancePrice = order.getTotalInsurancePrice();
 
 	const totalProductPrice = order.getTotalProductPrice();
 
-	const totalOrderPrice = totalInsurancePrice + totalProductPrice;
+	const totalOrderPrice =
+		totalInsurancePrice + totalProductPrice + deliveryPrice;
 
 	useEffect(() => {
 		const observer = new IntersectionObserver(
@@ -49,7 +52,7 @@ const TotalPriceWindow = (props) => {
 					</div>
 					<div className="total-price-window-container__prices-container">
 						<span>Delivery</span>
-						<span>{0} $</span>
+						<span>{deliveryPrice.toFixed(2)} $</span>
 					</div>
 					<div className="total-price-window-container__prices-container">
 						<span>Insurance</span>
