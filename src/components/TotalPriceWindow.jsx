@@ -20,7 +20,6 @@ const TotalPriceWindow = (props) => {
 		const observer = new IntersectionObserver(
 			(entries) => {
 				const entry = entries[0];
-				console.log(entry.intersectionRatio === 0);
 				entry.intersectionRatio === 0
 					? setSnapWindow(true)
 					: setSnapWindow(false);

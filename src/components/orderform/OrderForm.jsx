@@ -8,8 +8,23 @@ import { faAngleLeft } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
 import DeliveryAndPaymentOptions from "./DeliveryAndPaymentOptions";
 import AdditionalInformation from "./AdditionalInformation";
+import FinalCartLowerBox from "../cart/FinalCartLowerBox";
+import "../../style/css/finalCartLowerBox.css";
 
 const OrderForm = () => {
+	const deliveryCheckboxesArray = [
+		{ name: "Courier shipping", price: "7.99" },
+		{ name: "Express delivery", price: "11.00" },
+		{ name: "Parcel locker", price: "5.99" },
+		{ name: "In-store pickup", price: "0.00" },
+	];
+	const paymentCheckboxesArray = [
+		{ name: "Credit/Debit card" },
+		{ name: "PayPal" },
+		{ name: "Cryptocurrency" },
+		{ name: "American Express" },
+		{ name: "BLIK" },
+	];
 	return (
 		<>
 			<div className="back-btn-container">
@@ -20,15 +35,24 @@ const OrderForm = () => {
 					</button>
 				</NavLink>
 			</div>
-
-			<div className="order-form-page">
-				<div className="order-form-container">
-					<PersonalData />
-					<DeliveryAddress />
-					<DeliveryAndPaymentOptions />
-					<AdditionalInformation />
+			<div className="order-form-page-wrapper">
+				<div className="order-form-page">
+					<div className="order-form-container">
+						<PersonalData />
+						<DeliveryAddress />
+						<DeliveryAndPaymentOptions
+							header={"Delivery method"}
+							checkboxes={deliveryCheckboxesArray}
+						/>
+						<DeliveryAndPaymentOptions
+							header={"Payment method"}
+							checkboxes={paymentCheckboxesArray}
+						/>
+						<AdditionalInformation />
+					</div>
+					<TotalPriceWindow linkTo={""} btnText={"Submit and buy"} />
 				</div>
-				<TotalPriceWindow linkTo={""} btnText={"Submit and buy"} />
+				<FinalCartLowerBox />
 			</div>
 		</>
 	);
