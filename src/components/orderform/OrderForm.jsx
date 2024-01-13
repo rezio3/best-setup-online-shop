@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../../style/css/orderForm.css";
 import PersonalData from "./PersonalData";
 import TotalPriceWindow from "../TotalPriceWindow";
@@ -10,13 +10,15 @@ import DeliveryAndPaymentOptions from "./DeliveryAndPaymentOptions";
 import AdditionalInformation from "./AdditionalInformation";
 import FinalCartLowerBox from "../cart/FinalCartLowerBox";
 import "../../style/css/finalCartLowerBox.css";
+import { ProductsOrderContext } from "../../context/OrderContext";
 
 const OrderForm = () => {
+	const [order, setOrder] = useContext(ProductsOrderContext);
+
 	const deliveryCheckboxesArray = [
 		{ name: "Courier shipping", price: "7.99" },
 		{ name: "Express delivery", price: "11.00" },
 		{ name: "Parcel locker", price: "5.99" },
-		{ name: "In-store pickup", price: "0.00" },
 	];
 	const paymentCheckboxesArray = [
 		{ name: "Credit/Debit card" },
@@ -25,6 +27,7 @@ const OrderForm = () => {
 		{ name: "American Express" },
 		{ name: "BLIK" },
 	];
+
 	return (
 		<>
 			<div className="back-btn-container">
@@ -43,10 +46,12 @@ const OrderForm = () => {
 						<DeliveryAndPaymentOptions
 							header={"Delivery method"}
 							checkboxes={deliveryCheckboxesArray}
+							default={"Courier shipping"}
 						/>
 						<DeliveryAndPaymentOptions
 							header={"Payment method"}
 							checkboxes={paymentCheckboxesArray}
+							default={"Credit/Debit card"}
 						/>
 						<AdditionalInformation />
 					</div>

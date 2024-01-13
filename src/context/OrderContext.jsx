@@ -16,7 +16,11 @@ export const orderObj = {
 			buildingNumber: "",
 			flatNumber: "",
 		},
-		delivery: "Courier",
+		deliveryMethod: {
+			method: "",
+			price: "",
+		},
+		paymentMethod: "",
 		totalOrderPrice: null,
 	},
 	getProductsQuantity: function () {

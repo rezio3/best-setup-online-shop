@@ -47,6 +47,7 @@ const FinalCartLowerBox = () => {
 								txt1={e.firstText}
 								txt2={e.secondText}
 								img={e.img}
+								key={e.firstText}
 							/>
 						);
 					})}
@@ -64,7 +65,7 @@ const FinalCartLowerBox = () => {
 						</button>
 						<div className="recommended-products-carousel" ref={carouselRef}>
 							{recommendArr.map((e) => (
-								<RecommendedProduct product={e} />
+								<RecommendedProduct product={e} key={e.product} />
 							))}
 						</div>
 						<button
