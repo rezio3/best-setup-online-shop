@@ -10,11 +10,8 @@ import DeliveryAndPaymentOptions from "./DeliveryAndPaymentOptions";
 import AdditionalInformation from "./AdditionalInformation";
 import FinalCartLowerBox from "../cart/FinalCartLowerBox";
 import "../../style/css/finalCartLowerBox.css";
-import { ProductsOrderContext } from "../../context/OrderContext";
 
 const OrderForm = () => {
-	const [order, setOrder] = useContext(ProductsOrderContext);
-
 	const deliveryCheckboxesArray = [
 		{ name: "Courier shipping", price: "7.99" },
 		{ name: "Express delivery", price: "11.00" },
