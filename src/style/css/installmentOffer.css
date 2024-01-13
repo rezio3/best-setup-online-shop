@@ -47,6 +47,7 @@
 }
 .installment-offer-wrapper .installment-offer-section__link {
   margin-top: 20px;
+  width: fit-content;
   text-decoration: none;
   color: #277ec1;
   font-size: 14px;
