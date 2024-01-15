@@ -10,7 +10,6 @@ const TotalPriceWindow = (props) => {
 	const [snapWindow, setSnapWindow] = useState(false);
 	const totalPriceWindowRef = useRef(null);
 	const deliveryPrice = Number(order.customer.deliveryMethod.price);
-	console.log(typeof deliveryPrice);
 
 	const totalInsurancePrice = order.getTotalInsurancePrice();
 

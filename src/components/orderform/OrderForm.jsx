@@ -18,7 +18,6 @@ import { ProductsOrderContext } from "../../context/OrderContext";
 
 const OrderForm = () => {
 	const [order] = useContext(ProductsOrderContext);
-	console.log(order);
 	return (
 		<>
 			<div className="back-btn-container">
