@@ -11,7 +11,6 @@ const CustomerDataInput = (props) => {
 				[props.inputName]: e.target.value,
 			},
 		});
-		// console.log(e.target.value);
 	};
 	return (
 		<>
