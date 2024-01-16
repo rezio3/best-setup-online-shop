@@ -9,7 +9,6 @@ const DeliveryAndPaymentOptions = (props) => {
 	const checkboxHandler = (e) => {
 		setCheck(e.name);
 		if (props.header === "Delivery method") {
-			console.log("HALO!");
 			setOrder({
 				...order,
 				customer: {
