@@ -23,6 +23,7 @@ export const orderObj = {
 		paymentMethod: "Credit/Debit card",
 		totalOrderPrice: null,
 	},
+	additionalNote: "",
 	getProductsQuantity: function () {
 		return this.cart.reduce((sum, obj) => sum + obj.quantity, 0);
 	},
