@@ -8,12 +8,28 @@ const PersonalData = () => {
 				<h3 className="data-container__header">Personal data & contact</h3>
 				<div className="data-container__inputs-container">
 					<div className="data-container__inputs-box">
-						<CustomerDataInput label="Name*" inputName="name" />
-						<CustomerDataInput label="Surname*" inputName="surname" />
+						<CustomerDataInput
+							label="Name*"
+							inputName="name"
+							dataType="personal"
+						/>
+						<CustomerDataInput
+							label="Surname*"
+							inputName="surname"
+							dataType="personal"
+						/>
 					</div>
 					<div className="data-container__inputs-box">
-						<CustomerDataInput label="Phone*" inputName="phone" />
-						<CustomerDataInput label="Email*" inputName="email" />
+						<CustomerDataInput
+							label="Phone*"
+							inputName="phone"
+							dataType="personal"
+						/>
+						<CustomerDataInput
+							label="Email*"
+							inputName="email"
+							dataType="personal"
+						/>
 					</div>
 				</div>
 			</div>

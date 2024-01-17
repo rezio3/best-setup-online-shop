@@ -4,13 +4,26 @@ import { ProductsOrderContext } from "../../context/OrderContext";
 const CustomerDataInput = (props) => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
 	const inputHandler = (e) => {
-		setOrder({
-			...order,
-			customer: {
-				...order.customer,
-				[props.inputName]: e.target.value,
-			},
-		});
+		if (props.dataType === "personal") {
+			setOrder({
+				...order,
+				customer: {
+					...order.customer,
+					[props.inputName]: e.target.value,
+				},
+			});
+		} else if (props.dataType === "address") {
+			setOrder({
+				...order,
+				customer: {
+					...order.customer,
+					address: {
+						...order.customer.address,
+						[props.inputName]: e.target.value,
+					},
+				},
+			});
+		}
 	};
 	return (
 		<>
