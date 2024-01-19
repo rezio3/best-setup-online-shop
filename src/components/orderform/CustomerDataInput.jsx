@@ -3,6 +3,27 @@ import { ProductsOrderContext } from "../../context/OrderContext";
 
 const CustomerDataInput = (props) => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
+
+	let isInputValid =
+		props.dataType === "personal"
+			? props.valid.test(order.customer[props.inputName])
+			: props.valid.test(order.customer.address[props.inputName]);
+
+	let validationColorClassName;
+
+	if (isInputValid === null) {
+		validationColorClassName = "data-container__input";
+		// console.log("invalid");
+	} else if (isInputValid) {
+		validationColorClassName =
+			"data-container__input data-container__input--valid";
+		// console.log("valid");
+	} else if (!isInputValid) {
+		validationColorClassName =
+			"data-container__input data-container__input--invalid";
+		// console.log("invalid");
+	}
+
 	const inputHandler = (e) => {
 		if (props.dataType === "personal") {
 			setOrder({
@@ -31,7 +52,7 @@ const CustomerDataInput = (props) => {
 				{props.label}
 				<input
 					type="text"
-					className="data-container__input"
+					className={validationColorClassName}
 					onChange={inputHandler}
 					value={order.customer[props.inputName]}
 				/>
