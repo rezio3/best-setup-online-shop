@@ -71,6 +71,12 @@
   border-radius: 10px;
   border: 1px solid #c7c7c7;
 }
+.order-form-page-wrapper .order-form-page .order-form-container .data-container__input--invalid {
+  background-color: #ffa0a0;
+}
+.order-form-page-wrapper .order-form-page .order-form-container .data-container__input--valid {
+  background-color: rgb(185, 255, 179);
+}
 .order-form-page-wrapper .order-form-page .order-form-container .delivery-payment-options-container {
   padding-left: 0;
   margin-bottom: 30px;
