@@ -3,7 +3,6 @@ import { ProductsOrderContext } from "../../context/OrderContext";
 import "../../style/css/cartFinal.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTrash, faAngleLeft } from "@fortawesome/free-solid-svg-icons";
-// import { useNavigate } from "react-router-dom";
 import ItemInCartFinal from "./ItemInCartFinal";
 import TotalPriceWindow from "../TotalPriceWindow";
 import { NavLink } from "react-router-dom";
