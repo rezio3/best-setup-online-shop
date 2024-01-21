@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import "../../style/css/orderForm.css";
 import PersonalData from "./PersonalData";
 import TotalPriceWindow from "../TotalPriceWindow";
@@ -18,6 +18,16 @@ import { ProductsOrderContext } from "../../context/OrderContext";
 
 const OrderForm = () => {
 	const [order] = useContext(ProductsOrderContext);
+	const [validation, setValidation] = useState({
+		name: "empty",
+		surname: "empty",
+		phone: "empty",
+		email: "empty",
+		city: "empty",
+		postalCode: "empty",
+		street: "empty",
+		buildingNumber: "empty",
+	});
 	return (
 		<>
 			<div className="back-btn-container">
@@ -31,8 +41,8 @@ const OrderForm = () => {
 			<div className="order-form-page-wrapper">
 				<div className="order-form-page">
 					<div className="order-form-container">
-						<PersonalData />
-						<DeliveryAddress />
+						<PersonalData validation={validation} />
+						<DeliveryAddress validation={validation} />
 						<DeliveryAndPaymentOptions
 							header={"Delivery method"}
 							checkboxes={deliveryCheckboxesArray}
