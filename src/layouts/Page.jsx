@@ -9,6 +9,7 @@ import Accessories from "../pages/Accessories";
 import Comfort from "../pages/Comfort";
 import CartPage from "../components/cart/CartPage";
 import OrderForm from "../components/orderform/OrderForm";
+import SummaryPage from "../components/summarypage/SummagePage";
 
 const Page = () => {
 	return (
@@ -23,6 +24,7 @@ const Page = () => {
 					<Route path="/comfort" Component={Comfort} />
 					<Route path="/cart" Component={CartPage} />
 					<Route path="/cart/delivery" Component={OrderForm} />
+					<Route path="/summary" Component={SummaryPage} />
 				</Routes>
 			</FilterProductsContext>
 		</>

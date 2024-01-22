@@ -62,7 +62,7 @@ const OrderForm = () => {
 						/>
 						<AdditionalInformation />
 					</div>
-					<TotalPriceWindow linkTo={""} btnText={"Submit and buy"} />
+					<TotalPriceWindow linkTo={"/summary"} btnText={"Submit and buy"} />
 				</div>
 				<FinalCartLowerBox />
 			</div>
