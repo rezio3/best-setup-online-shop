@@ -13,15 +13,12 @@ const CustomerDataInput = (props) => {
 
 	if (isInputValid === null) {
 		validationColorClassName = "data-container__input";
-		// console.log("invalid");
 	} else if (isInputValid) {
 		validationColorClassName =
 			"data-container__input data-container__input--valid";
-		// console.log("valid");
 	} else if (!isInputValid) {
 		validationColorClassName =
 			"data-container__input data-container__input--invalid";
-		// console.log("invalid");
 	}
 
 	const inputHandler = (e) => {
