@@ -60,10 +60,10 @@ const SummaryPage = () => {
 					<h3 className="summary-page-container__header">
 						Thank you {finalOrder.customer.name} for making a purchase!
 					</h3>
-					<img src={tick} className="summary-page-container__tick-img" />
 					<span className="summary-page-container__delivery-shipped-span">
 						The order will be shipped as soon as we process the payment.
 					</span>
+					<img src={tick} className="summary-page-container__tick-img" />
 					<ul className="summary-list-container">
 						{finalOrder.cart.map((e) => {
 							return (
@@ -75,7 +75,38 @@ const SummaryPage = () => {
 							);
 						})}
 					</ul>
-					<div className="final-order-details-container"></div>
+					<h3 className="receipt-details-header">Customer's receipt details</h3>
+					<div className="final-order-details-container">
+						<div className="final-order-details-box">
+							<h4 className="final-order-details-box__customer-header">
+								Customer
+							</h4>
+							<div className="final-order-details-box__customer-details-container">
+								<span>
+									{finalOrder.customer.name} {finalOrder.customer.surname}
+								</span>
+								<span>{finalOrder.customer.phone}</span>
+								<span>{finalOrder.customer.email}</span>
+								<h4 className="final-order-details-box__customer-header">
+									Delivery address
+								</h4>
+								<span>
+									{finalOrder.customer.address.city}{" "}
+									{finalOrder.customer.address.postalCode}
+								</span>
+								<span>
+									{finalOrder.customer.address.street}{" "}
+									{finalOrder.customer.address.buildingNumber}/
+									{finalOrder.customer.address.flatNumber}
+								</span>
+							</div>
+						</div>
+						<div className="final-order-details-box">
+							<h4 className="final-order-details-box__address-header">
+								fdkjgk
+							</h4>
+						</div>
+					</div>
 				</div>
 			</div>
 		</>

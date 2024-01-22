@@ -12,7 +12,7 @@
 		align-items: center;
 		&__header {
 			margin: 0;
-
+			margin-bottom: 10px;
 			font-size: 1.5em;
 		}
 		&__tick-img {
@@ -33,14 +33,45 @@
 				align-items: center;
 				border-bottom: 1px solid $gray;
 			}
+			&__element:last-child {
+				border-bottom: none;
+			}
 			&__img {
 				width: 50px;
 			}
 			&__product-name {
 				width: 70%;
+				margin: 0 10px;
 			}
 			&__quantity {
 				font-weight: bold;
+			}
+		}
+		.receipt-details-header {
+			margin: 0 auto 0 20px;
+			width: 100%;
+		}
+		.final-order-details-container {
+			padding: 30px 20px;
+			margin-top: 20px;
+			width: 95%;
+			display: flex;
+			box-shadow: 0 0 10px -6px black;
+			.final-order-details-box {
+				padding: 20px 40px;
+				height: 200px;
+				width: 50%;
+
+				&__customer-header {
+					margin: 20px 0 5px;
+				}
+				&__customer-details-container {
+					display: flex;
+					flex-direction: column;
+				}
+			}
+			.final-order-details-box:first-child {
+				border-right: 1px solid $gray;
 			}
 		}
 	}
