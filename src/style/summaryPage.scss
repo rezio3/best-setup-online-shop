@@ -22,5 +22,26 @@
 		&__delivery-shipped-span {
 			font-size: 1em;
 		}
+		.summary-list-container {
+			list-style: none;
+			padding-left: 0;
+
+			&__element {
+				padding: 10px 30px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				border-bottom: 1px solid $gray;
+			}
+			&__img {
+				width: 50px;
+			}
+			&__product-name {
+				width: 70%;
+			}
+			&__quantity {
+				font-weight: bold;
+			}
+		}
 	}
 }

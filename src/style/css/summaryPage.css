@@ -20,3 +20,23 @@
 .summary-page-wrapper .summary-page-container__delivery-shipped-span {
   font-size: 1em;
 }
+.summary-page-wrapper .summary-page-container .summary-list-container {
+  list-style: none;
+  padding-left: 0;
+}
+.summary-page-wrapper .summary-page-container .summary-list-container__element {
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #c7c7c7;
+}
+.summary-page-wrapper .summary-page-container .summary-list-container__img {
+  width: 50px;
+}
+.summary-page-wrapper .summary-page-container .summary-list-container__product-name {
+  width: 70%;
+}
+.summary-page-wrapper .summary-page-container .summary-list-container__quantity {
+  font-weight: bold;
+}
