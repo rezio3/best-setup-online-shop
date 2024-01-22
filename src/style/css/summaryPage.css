@@ -1,6 +1,22 @@
 .summary-page-wrapper {
   width: 70%;
   max-width: 1400px;
-  height: 300px;
-  background-color: red;
+}
+.summary-page-wrapper .summary-page-container {
+  margin: 100px 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.summary-page-wrapper .summary-page-container__header {
+  margin: 0;
+  font-size: 1.5em;
+}
+.summary-page-wrapper .summary-page-container__tick-img {
+  margin: 15px 0;
+  width: 70px;
+}
+.summary-page-wrapper .summary-page-container__delivery-shipped-span {
+  font-size: 1em;
 }
