@@ -9,7 +9,7 @@ import Accessories from "../pages/Accessories";
 import Comfort from "../pages/Comfort";
 import CartPage from "../components/cart/CartPage";
 import OrderForm from "../components/orderform/OrderForm";
-import SummaryPage from "../components/summarypage/SummagePage";
+import SummaryPage from "../components/summarypage/SummaryPage";
 
 const Page = () => {
 	return (
