@@ -18,6 +18,9 @@ const CustomerDataInput = (props) => {
 		validationColorClassName =
 			"data-container__input data-container__input--invalid";
 	}
+	if (props.inputName === "flatNumber") {
+		validationColorClassName = "data-container__input";
+	}
 
 	const inputHandler = (e) => {
 		if (props.dataType === "personal") {
@@ -49,7 +52,7 @@ const CustomerDataInput = (props) => {
 			});
 		}
 	};
-	console.log(props.validation[props.inputName]);
+
 	return (
 		<>
 			<label className="data-container__label">
@@ -62,7 +65,11 @@ const CustomerDataInput = (props) => {
 							: validationColorClassName
 					}
 					onChange={inputHandler}
-					value={order.customer[props.inputName]}
+					value={
+						props.dataType === "personal"
+							? order.customer[props.inputName]
+							: order.customer.address[props.inputName]
+					}
 				/>
 			</label>
 		</>
