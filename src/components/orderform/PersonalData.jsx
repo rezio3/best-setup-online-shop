@@ -1,7 +1,7 @@
 import React from "react";
 import CustomerDataInput from "./CustomerDataInput";
 
-const PersonalData = () => {
+const PersonalData = (props) => {
 	const validNameAndSurname = /^[\p{L}\s]{1,}$/u;
 	const validPhoneNumber = /^[0-9\-\+\s]{9,15}$/;
 	const validEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
@@ -16,13 +16,17 @@ const PersonalData = () => {
 							label="Name*"
 							inputName="name"
 							dataType="personal"
-							valid={validNameAndSurname}
+							regex={validNameAndSurname}
+							validation={props.validation}
+							setValidation={props.setValidation}
 						/>
 						<CustomerDataInput
 							label="Surname*"
 							inputName="surname"
 							dataType="personal"
-							valid={validNameAndSurname}
+							regex={validNameAndSurname}
+							validation={props.validation}
+							setValidation={props.setValidation}
 						/>
 					</div>
 					<div className="data-container__inputs-box">
@@ -30,13 +34,17 @@ const PersonalData = () => {
 							label="Phone*"
 							inputName="phone"
 							dataType="personal"
-							valid={validPhoneNumber}
+							regex={validPhoneNumber}
+							validation={props.validation}
+							setValidation={props.setValidation}
 						/>
 						<CustomerDataInput
 							label="Email*"
 							inputName="email"
 							dataType="personal"
-							valid={validEmail}
+							regex={validEmail}
+							validation={props.validation}
+							setValidation={props.setValidation}
 						/>
 					</div>
 				</div>

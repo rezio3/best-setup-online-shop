@@ -27,6 +27,7 @@ const OrderForm = () => {
 		postalCode: "empty",
 		street: "empty",
 		buildingNumber: "empty",
+		flatNumber: "empty",
 	});
 	return (
 		<>
@@ -41,8 +42,14 @@ const OrderForm = () => {
 			<div className="order-form-page-wrapper">
 				<div className="order-form-page">
 					<div className="order-form-container">
-						<PersonalData validation={validation} />
-						<DeliveryAddress validation={validation} />
+						<PersonalData
+							validation={validation}
+							setValidation={setValidation}
+						/>
+						<DeliveryAddress
+							validation={validation}
+							setValidation={setValidation}
+						/>
 						<DeliveryAndPaymentOptions
 							header={"Delivery method"}
 							checkboxes={deliveryCheckboxesArray}

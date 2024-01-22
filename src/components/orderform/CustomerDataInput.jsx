@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { ProductsOrderContext } from "../../context/OrderContext";
 
 const CustomerDataInput = (props) => {
@@ -6,14 +6,12 @@ const CustomerDataInput = (props) => {
 
 	let isInputValid =
 		props.dataType === "personal"
-			? props.valid.test(order.customer[props.inputName])
-			: props.valid.test(order.customer.address[props.inputName]);
+			? props.regex.test(order.customer[props.inputName])
+			: props.regex.test(order.customer.address[props.inputName]);
 
 	let validationColorClassName;
 
-	if (isInputValid === null) {
-		validationColorClassName = "data-container__input";
-	} else if (isInputValid) {
+	if (isInputValid) {
 		validationColorClassName =
 			"data-container__input data-container__input--valid";
 	} else if (!isInputValid) {
@@ -30,6 +28,10 @@ const CustomerDataInput = (props) => {
 					[props.inputName]: e.target.value,
 				},
 			});
+			props.setValidation({
+				...props.validation,
+				[props.inputName]: isInputValid,
+			});
 		} else if (props.dataType === "address") {
 			setOrder({
 				...order,
@@ -41,15 +43,24 @@ const CustomerDataInput = (props) => {
 					},
 				},
 			});
+			props.setValidation({
+				...props.validation,
+				[props.inputName]: isInputValid,
+			});
 		}
 	};
+	console.log(props.validation[props.inputName]);
 	return (
 		<>
 			<label className="data-container__label">
 				{props.label}
 				<input
 					type="text"
-					className={validationColorClassName}
+					className={
+						props.validation[props.inputName] === "empty"
+							? "data-container__input"
+							: validationColorClassName
+					}
 					onChange={inputHandler}
 					value={order.customer[props.inputName]}
 				/>

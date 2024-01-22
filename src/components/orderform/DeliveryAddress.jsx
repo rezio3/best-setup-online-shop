@@ -1,7 +1,7 @@
 import React from "react";
 import CustomerDataInput from "./CustomerDataInput";
 
-const DeliveryAddress = () => {
+const DeliveryAddress = (props) => {
 	const validCityAndStreet = /^[\p{L}\s]{1,}$/u;
 	const validPostalCode = /^.{3,}$/;
 	const validBuildingNumber = /^.*\S.*$/;
@@ -16,13 +16,17 @@ const DeliveryAddress = () => {
 							label="City*"
 							inputName="city"
 							dataType="address"
-							valid={validCityAndStreet}
+							regex={validCityAndStreet}
+							validation={props.validation}
+							setValidation={props.setValidation}
 						/>
 						<CustomerDataInput
 							label="Postal code*"
 							inputName="postalCode"
 							dataType="address"
-							valid={validPostalCode}
+							regex={validPostalCode}
+							validation={props.validation}
+							setValidation={props.setValidation}
 						/>
 					</div>
 					<div className="data-container__inputs-box">
@@ -30,13 +34,17 @@ const DeliveryAddress = () => {
 							label="Street*"
 							inputName="street"
 							dataType="address"
-							valid={validCityAndStreet}
+							regex={validCityAndStreet}
+							validation={props.validation}
+							setValidation={props.setValidation}
 						/>
 						<CustomerDataInput
 							label="Building number*"
 							inputName="buildingNumber"
 							dataType="address"
-							valid={validBuildingNumber}
+							regex={validBuildingNumber}
+							validation={props.validation}
+							setValidation={props.setValidation}
 						/>
 					</div>
 					<div className="data-container__inputs-box">
@@ -44,7 +52,9 @@ const DeliveryAddress = () => {
 							label="Flat number"
 							inputName="flatNumber"
 							dataType="address"
-							valid={validBuildingNumber}
+							regex={validBuildingNumber}
+							validation={props.validation}
+							setValidation={props.setValidation}
 						/>
 					</div>
 				</div>
