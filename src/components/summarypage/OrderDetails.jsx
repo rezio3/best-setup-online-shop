@@ -53,12 +53,34 @@ const OrderDetails = (props) => {
 									img={e.img}
 									name={e.name}
 									quantity={e.quantity}
+									price={e.price}
 								/>
 							);
 						})}
 					</ul>
-					<div className="final-order-details-box__total-price-box">
-						<span className="final-order-details-box__price-span">Total:</span>
+					<div className="final-order-details-box__price-box">
+						<span className="final-order-details-box__price-span">
+							Delivery:
+						</span>
+						<span className="final-order-details-box__price-span">
+							{Number(props.finalOrder.customer.deliveryMethod.price).toFixed(
+								2
+							)}{" "}
+							$
+						</span>
+					</div>
+					<div className="final-order-details-box__price-box">
+						<span className="final-order-details-box__price-span">
+							Insurances:
+						</span>
+						<span className="final-order-details-box__price-span">
+							{totalInsurancePrice.toFixed(2)} $
+						</span>
+					</div>
+					<div className="final-order-details-box__price-box">
+						<span className="final-order-details-box__price-span">
+							<b>Total:</b>
+						</span>
 						<span className="final-order-details-box__price-span">
 							{totalPrice.toFixed(2)} $
 						</span>
