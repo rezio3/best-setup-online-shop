@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import "../../style/css/summaryPage.css";
 import tick from "../../img/tick.png";
 import { ProductsOrderContext } from "../../context/OrderContext";
-import ProductFinalList from "./ProductFinalList";
 import FinalCartLowerBox from "../cart/FinalCartLowerBox";
 import GoToHomePageButton from "../GoToHomePageButton";
 import OrderDetails from "./OrderDetails";
@@ -61,7 +60,7 @@ const SummaryPage = () => {
 			<div className="summary-page-wrapper">
 				<div className="summary-page-container">
 					<h3 className="summary-page-container__header">
-						Thank you {finalOrder.customer.name} for making a purchase!
+						Thanks {finalOrder.customer.name} for making a purchase!
 					</h3>
 					<span className="summary-page-container__delivery-shipped-span">
 						The order will be shipped as soon as we process the payment.
