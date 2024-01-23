@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/best-setup-online-shop/static/css/main.d01a214f.css",
-    "main.js": "/best-setup-online-shop/static/js/main.8a5a9367.js",
+    "main.css": "/best-setup-online-shop/static/css/main.1fc5b4f5.css",
+    "main.js": "/best-setup-online-shop/static/js/main.293d7ab7.js",
     "static/media/Sony WH-1000XM5.png": "/best-setup-online-shop/static/media/Sony WH-1000XM5.1a5789306f789d16c20a.png",
     "static/media/XIDAX Gaming PC S-200.png": "/best-setup-online-shop/static/media/XIDAX Gaming PC S-200.67ade7b31d7341f9a654.png",
     "static/media/PS5 Console - Marvel's Spider-Man 2 Bundle.jpg": "/best-setup-online-shop/static/media/PS5 Console - Marvel's Spider-Man 2 Bundle.559f24ea257ae755ba14.jpg",
@@ -136,6 +136,7 @@
     "static/media/Diablo Chairs V-Basic.webp": "/best-setup-online-shop/static/media/Diablo Chairs V-Basic.62914b73472700f3ff48.webp",
     "static/media/Huzaro Hero 8.5 Black.webp": "/best-setup-online-shop/static/media/Huzaro Hero 8.5 Black.85c2b918f7c0afdb60b9.webp",
     "static/media/SPC Gear LIX Plus.webp": "/best-setup-online-shop/static/media/SPC Gear LIX Plus.93901204c2734383aaf0.webp",
+    "static/media/tick.png": "/best-setup-online-shop/static/media/tick.7df601e497e3bc0837df.png",
     "static/media/Huzaro Combat 8.0 White.webp": "/best-setup-online-shop/static/media/Huzaro Combat 8.0 White.681bea71d7ef638ec7b5.webp",
     "static/media/payment-method-3.png": "/best-setup-online-shop/static/media/payment-method-3.3a7c1fda0a6f5c9f66e9.png",
     "static/media/BestSetupLogo.png": "/best-setup-online-shop/static/media/BestSetupLogo.38051e9a78598852bca6.png",
@@ -166,11 +167,11 @@
     "static/media/Silver Monkey M40 Wireless Comfort.webp": "/best-setup-online-shop/static/media/Silver Monkey M40 Wireless Comfort.4c8fe21a851e8b96f4de.webp",
     "static/media/Brother HL-B2080DW.webp": "/best-setup-online-shop/static/media/Brother HL-B2080DW.485e51b5a61220e90fb1.webp",
     "index.html": "/best-setup-online-shop/index.html",
-    "main.d01a214f.css.map": "/best-setup-online-shop/static/css/main.d01a214f.css.map",
-    "main.8a5a9367.js.map": "/best-setup-online-shop/static/js/main.8a5a9367.js.map"
+    "main.1fc5b4f5.css.map": "/best-setup-online-shop/static/css/main.1fc5b4f5.css.map",
+    "main.293d7ab7.js.map": "/best-setup-online-shop/static/js/main.293d7ab7.js.map"
   },
   "entrypoints": [
-    "static/css/main.d01a214f.css",
-    "static/js/main.8a5a9367.js"
+    "static/css/main.1fc5b4f5.css",
+    "static/js/main.293d7ab7.js"
   ]
 }
