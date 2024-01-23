@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import "../../style/css/summaryPage.css";
 import tick from "../../img/tick.png";
 import { ProductsOrderContext } from "../../context/OrderContext";
@@ -8,52 +8,57 @@ import OrderDetails from "./OrderDetails";
 
 const SummaryPage = () => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
-	const finalOrder = order;
 
-	// setOrder({
-	// 	cartOpen: false,
-	// 	cart: [],
-	// 	insurances: [],
-	// 	customer: {
-	// 		name: "",
-	// 		surname: "",
-	// 		email: "",
-	// 		phone: "",
-	// 		address: {
-	// 			city: "",
-	// 			postalCode: "",
-	// 			street: "",
-	// 			buildingNumber: "",
-	// 			flatNumber: "",
-	// 		},
-	// 		deliveryMethod: {
-	// 			method: "Courier shipping",
-	// 			price: 7.99,
-	// 		},
-	// 		paymentMethod: "Credit/Debit card",
-	// 		totalOrderPrice: null,
-	// 	},
-	// 	additionalNote: "",
-	// 	getProductsQuantity: function () {
-	// 		return this.cart.reduce((sum, obj) => sum + obj.quantity, 0);
-	// 	},
-	// 	getTotalProductPrice: function () {
-	// 		if (this.cart.length === 0) {
-	// 			return 0;
-	// 		}
-	// 		return Number(
-	// 			this.cart.reduce((acc, obj) => acc + obj.price * obj.quantity, 0)
-	// 		);
-	// 	},
-	// 	getTotalInsurancePrice: function () {
-	// 		if (this.insurances.length === 0) {
-	// 			return 0;
-	// 		}
-	// 		return Number(
-	// 			this.insurances.reduce((acc, obj) => acc + obj.insurancePrice, 0)
-	// 		);
-	// 	},
-	// });
+	// copy Order Context to local state as a final order.
+	const [finalOrder, setFinalOrder] = useState({ ...order });
+
+	// set Order Context to default
+	useEffect(() => {
+		setOrder({
+			cartOpen: false,
+			cart: [],
+			insurances: [],
+			customer: {
+				name: "",
+				surname: "",
+				email: "",
+				phone: "",
+				address: {
+					city: "",
+					postalCode: "",
+					street: "",
+					buildingNumber: "",
+					flatNumber: "",
+				},
+				deliveryMethod: {
+					method: "Courier shipping",
+					price: 7.99,
+				},
+				paymentMethod: "Credit/Debit card",
+				totalOrderPrice: null,
+			},
+			additionalNote: "",
+			getProductsQuantity: function () {
+				return this.cart.reduce((sum, obj) => sum + obj.quantity, 0);
+			},
+			getTotalProductPrice: function () {
+				if (this.cart.length === 0) {
+					return 0;
+				}
+				return Number(
+					this.cart.reduce((acc, obj) => acc + obj.price * obj.quantity, 0)
+				);
+			},
+			getTotalInsurancePrice: function () {
+				if (this.insurances.length === 0) {
+					return 0;
+				}
+				return Number(
+					this.insurances.reduce((acc, obj) => acc + obj.insurancePrice, 0)
+				);
+			},
+		});
+	}, []);
 
 	return (
 		<>
