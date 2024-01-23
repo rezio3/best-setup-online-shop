@@ -52,7 +52,14 @@ const SummaryPage = () => {
 	// 		);
 	// 	},
 	// });
+	console.log(finalOrder.customer.deliveryMethod.price);
 
+	const totalProductPrice = finalOrder.getTotalProductPrice();
+	const totalInsurancePrice = finalOrder.getTotalInsurancePrice();
+	const totalPrice =
+		Number(totalProductPrice) +
+		Number(totalInsurancePrice) +
+		Number(finalOrder.customer.deliveryMethod.price);
 	return (
 		<>
 			<div className="summary-page-wrapper">
@@ -64,24 +71,14 @@ const SummaryPage = () => {
 						The order will be shipped as soon as we process the payment.
 					</span>
 					<img src={tick} className="summary-page-container__tick-img" />
-					<ul className="summary-list-container">
-						{finalOrder.cart.map((e) => {
-							return (
-								<ProductFinalList
-									img={e.img}
-									name={e.name}
-									quantity={e.quantity}
-								/>
-							);
-						})}
-					</ul>
+
 					<h3 className="receipt-details-header">Customer's receipt details</h3>
 					<div className="final-order-details-container">
 						<div className="final-order-details-box">
-							<h4 className="final-order-details-box__customer-header">
-								Customer
-							</h4>
 							<div className="final-order-details-box__customer-details-container">
+								<h4 className="final-order-details-box__customer-header">
+									Customer
+								</h4>
 								<span>
 									{finalOrder.customer.name} {finalOrder.customer.surname}
 								</span>
@@ -99,12 +96,39 @@ const SummaryPage = () => {
 									{finalOrder.customer.address.buildingNumber}/
 									{finalOrder.customer.address.flatNumber}
 								</span>
+								<h4 className="final-order-details-box__customer-header">
+									Delivery method
+								</h4>
+								<span>{finalOrder.customer.deliveryMethod.method}</span>
+								<h4 className="final-order-details-box__customer-header">
+									Payment method
+								</h4>
+								<span>{finalOrder.customer.paymentMethod}</span>
 							</div>
 						</div>
 						<div className="final-order-details-box">
-							<h4 className="final-order-details-box__address-header">
-								fdkjgk
+							<h4 className="final-order-details-box__customer-header">
+								Order
 							</h4>
+							<ul className="summary-list-container">
+								{finalOrder.cart.map((e) => {
+									return (
+										<ProductFinalList
+											img={e.img}
+											name={e.name}
+											quantity={e.quantity}
+										/>
+									);
+								})}
+							</ul>
+							<div className="final-order-details-box__total-price-box">
+								<span className="final-order-details-box__price-span">
+									Total:
+								</span>
+								<span className="final-order-details-box__price-span">
+									{totalPrice.toFixed(2)} $
+								</span>
+							</div>
 						</div>
 					</div>
 				</div>

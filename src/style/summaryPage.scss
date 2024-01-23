@@ -5,7 +5,7 @@
 	max-width: 1400px;
 
 	.summary-page-container {
-		margin: 100px 0;
+		margin: 80px 0;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -40,8 +40,9 @@
 				width: 50px;
 			}
 			&__product-name {
-				width: 70%;
-				margin: 0 10px;
+				width: 100%;
+
+				margin: 0 15px;
 			}
 			&__quantity {
 				font-weight: bold;
@@ -59,7 +60,6 @@
 			box-shadow: 0 0 10px -6px black;
 			.final-order-details-box {
 				padding: 20px 40px;
-				height: 200px;
 				width: 50%;
 
 				&__customer-header {
@@ -68,6 +68,16 @@
 				&__customer-details-container {
 					display: flex;
 					flex-direction: column;
+				}
+				&__total-price-box {
+					margin-top: 40px;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+				}
+				&__price-span {
+					font-weight: bold;
+					font-size: 1.2em;
 				}
 			}
 			.final-order-details-box:first-child {
