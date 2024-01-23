@@ -3,6 +3,8 @@ import "../../style/css/summaryPage.css";
 import tick from "../../img/tick.png";
 import { ProductsOrderContext } from "../../context/OrderContext";
 import ProductFinalList from "./ProductFinalList";
+import FinalCartLowerBox from "../cart/FinalCartLowerBox";
+import GoToHomePageButton from "../GoToHomePageButton";
 
 const SummaryPage = () => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
@@ -131,7 +133,9 @@ const SummaryPage = () => {
 							</div>
 						</div>
 					</div>
+					<GoToHomePageButton />
 				</div>
+				<FinalCartLowerBox />
 			</div>
 		</>
 	);
