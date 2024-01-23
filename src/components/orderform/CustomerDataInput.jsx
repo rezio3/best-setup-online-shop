@@ -1,26 +1,10 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { ProductsOrderContext } from "../../context/OrderContext";
 
 const CustomerDataInput = (props) => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
-
-	let isInputValid =
-		props.dataType === "personal"
-			? props.regex.test(order.customer[props.inputName])
-			: props.regex.test(order.customer.address[props.inputName]);
-
-	let validationColorClassName;
-
-	if (isInputValid) {
-		validationColorClassName =
-			"data-container__input data-container__input--valid";
-	} else if (!isInputValid) {
-		validationColorClassName =
-			"data-container__input data-container__input--invalid";
-	}
-	if (props.inputName === "flatNumber") {
-		validationColorClassName = "data-container__input";
-	}
+	// const [validationColorClassName, setValidationColorClassName] =
+	// 	useState(null);
 
 	const inputHandler = (e) => {
 		if (props.dataType === "personal") {
@@ -52,6 +36,46 @@ const CustomerDataInput = (props) => {
 			});
 		}
 	};
+
+	let isInputValid =
+		props.dataType === "personal"
+			? props.regex.test(order.customer[props.inputName])
+			: props.regex.test(order.customer.address[props.inputName]);
+	console.log(isInputValid);
+	let validationColorClassName;
+
+	if (isInputValid) {
+		// console.log("valid");
+		validationColorClassName =
+			"data-container__input data-container__input--valid";
+	} else if (!isInputValid) {
+		// console.log("invalid");
+		validationColorClassName =
+			"data-container__input data-container__input--invalid";
+	}
+	if (props.inputName === "flatNumber") {
+		validationColorClassName = "data-container__input";
+	}
+
+	// useEffect(() => {
+	// 	props.setValidation({
+	// 		...props.validation,
+	// 		[props.inputName]: isInputValid,
+	// 	});
+	// }, [order.customer]);
+
+	// if (isInputValid) {
+	// 	setValidationColorClassName(
+	// 		"data-container__input data-container__input--valid"
+	// 	);
+	// } else if (!isInputValid) {
+	// 	setValidationColorClassName(
+	// 		"data-container__input data-container__input--invalid"
+	// 	);
+	// }
+	// if (props.inputName === "flatNumber") {
+	// 	setValidationColorClassName("data-container__input");
+	// }
 
 	return (
 		<>
