@@ -3,10 +3,13 @@ import { ProductsOrderContext } from "../../context/OrderContext";
 
 const CustomerDataInput = (props) => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
-	// const [validationColorClassName, setValidationColorClassName] =
-	// 	useState(null);
+	const [validationColorClassName, setValidationColorClassName] = useState(
+		"data-container__input"
+	);
 
 	const inputHandler = (e) => {
+		let isInputValid = props.regex.test(e.target.value);
+
 		if (props.dataType === "personal") {
 			setOrder({
 				...order,
@@ -35,47 +38,25 @@ const CustomerDataInput = (props) => {
 				[props.inputName]: isInputValid,
 			});
 		}
+
+		if (props.inputName === "flatNumber") {
+			return;
+		}
+
+		if (isInputValid) {
+			setValidationColorClassName(
+				"data-container__input data-container__input--valid"
+			);
+		} else if (!isInputValid) {
+			setValidationColorClassName(
+				"data-container__input data-container__input--invalid"
+			);
+		}
+		props.setValidation({
+			...props.validation,
+			[props.inputName]: isInputValid,
+		});
 	};
-
-	let isInputValid =
-		props.dataType === "personal"
-			? props.regex.test(order.customer[props.inputName])
-			: props.regex.test(order.customer.address[props.inputName]);
-	console.log(isInputValid);
-	let validationColorClassName;
-
-	if (isInputValid) {
-		// console.log("valid");
-		validationColorClassName =
-			"data-container__input data-container__input--valid";
-	} else if (!isInputValid) {
-		// console.log("invalid");
-		validationColorClassName =
-			"data-container__input data-container__input--invalid";
-	}
-	if (props.inputName === "flatNumber") {
-		validationColorClassName = "data-container__input";
-	}
-
-	// useEffect(() => {
-	// 	props.setValidation({
-	// 		...props.validation,
-	// 		[props.inputName]: isInputValid,
-	// 	});
-	// }, [order.customer]);
-
-	// if (isInputValid) {
-	// 	setValidationColorClassName(
-	// 		"data-container__input data-container__input--valid"
-	// 	);
-	// } else if (!isInputValid) {
-	// 	setValidationColorClassName(
-	// 		"data-container__input data-container__input--invalid"
-	// 	);
-	// }
-	// if (props.inputName === "flatNumber") {
-	// 	setValidationColorClassName("data-container__input");
-	// }
 
 	return (
 		<>
@@ -83,11 +64,7 @@ const CustomerDataInput = (props) => {
 				{props.label}
 				<input
 					type="text"
-					className={
-						props.validation[props.inputName] === "empty"
-							? "data-container__input"
-							: validationColorClassName
-					}
+					className={validationColorClassName}
 					onChange={inputHandler}
 					value={
 						props.dataType === "personal"
