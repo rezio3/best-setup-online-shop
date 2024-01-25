@@ -2,11 +2,24 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import { NavLink } from "react-router-dom";
+import gsap from "gsap";
 
 const BuyButton = (props) => {
+	let animation;
+	const playAnimation = () => {
+		animation = gsap.from(".total-price-window-container__delivery-button", {
+			duration: 0.7,
+			x: 15,
+			ease: "elastic.out(1.75,0.3)",
+		});
+	};
+
 	const invalidFormBtnAnimation = () => {
 		props.setBuyBtnClicked(true);
-		console.log("nieprawidłowy formularz!!!");
+		if (animation && animation.isActive()) {
+			animation.revert();
+		}
+		playAnimation();
 	};
 
 	let allValidationsTrue;
