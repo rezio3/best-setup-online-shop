@@ -4,6 +4,7 @@ import { ProductsOrderContext } from "../context/OrderContext";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import "../style/css/totalPriceWindow.css";
+import BuyButton from "./orderform/BuyButton";
 
 const TotalPriceWindow = (props) => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
@@ -62,12 +63,21 @@ const TotalPriceWindow = (props) => {
 						<span>{totalOrderPrice.toFixed(2)} $</span>
 					</div>
 					<div className="total-price-window-container__space-line"></div>
-					<NavLink to={props.linkTo}>
-						<button className="total-price-window-container__delivery-button button-anim">
-							{props.btnText}
-							<FontAwesomeIcon icon={faAngleRight} className="arrow-right" />
-						</button>
-					</NavLink>
+
+					{!props.validation ? (
+						<NavLink to={props.linkTo}>
+							<button className="total-price-window-container__delivery-button button-anim">
+								{props.btnText}
+								<FontAwesomeIcon icon={faAngleRight} className="arrow-right" />
+							</button>
+						</NavLink>
+					) : (
+						<BuyButton
+							linkTo={props.linkTo}
+							btnText={props.btnText}
+							validation={props.validation}
+						/>
+					)}
 				</div>
 				<span className="total-price-window-wrapper__info-note">
 					Complete the order - adding products to the cart <br />
