@@ -1,3 +1,9 @@
+a {
+  text-decoration: none;
+  color: #1b1b1b;
+  cursor: default;
+}
+
 .products-container {
   width: 80%;
   display: flex;
@@ -26,6 +32,7 @@
 .products-container .product-box__product-image-container {
   width: 180px;
   height: 199px;
+  cursor: pointer;
 }
 .products-container .product-box__product-image {
   margin: 20px 0;
@@ -77,6 +84,7 @@
   justify-content: space-evenly;
   font-weight: 600;
   font-size: 0.75em;
+  cursor: pointer;
 }
 .products-container .product-box__read-more .highlight {
   transition: 0.3s ease-out;
