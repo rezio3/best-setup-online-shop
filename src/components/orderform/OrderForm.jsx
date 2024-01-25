@@ -28,6 +28,7 @@ const OrderForm = () => {
 		street: false,
 		buildingNumber: false,
 	});
+	const [buyBtnClicked, setBuyBtnClicked] = useState(false);
 
 	return (
 		<>
@@ -45,6 +46,7 @@ const OrderForm = () => {
 						<PersonalData
 							validation={validation}
 							setValidation={setValidation}
+							buyBtnClicked={buyBtnClicked}
 						/>
 						<DeliveryAddress
 							validation={validation}
@@ -66,6 +68,7 @@ const OrderForm = () => {
 						linkTo={"/summary"}
 						btnText={"Submit and buy"}
 						validation={validation}
+						setBuyBtnClicked={setBuyBtnClicked}
 					/>
 				</div>
 				<FinalCartLowerBox />

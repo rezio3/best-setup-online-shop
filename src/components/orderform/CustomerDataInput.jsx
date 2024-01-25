@@ -58,6 +58,26 @@ const CustomerDataInput = (props) => {
 		});
 	};
 
+	// check if buy button is clicked and validate inputs
+	useEffect(() => {
+		if (props.buyBtnClicked) {
+			let isInputValid = props.validation[props.inputName];
+			if (props.inputName === "flatNumber") {
+				return;
+			}
+
+			if (isInputValid) {
+				setValidationColorClassName(
+					"data-container__input data-container__input--valid"
+				);
+			} else if (!isInputValid) {
+				setValidationColorClassName(
+					"data-container__input data-container__input--invalid"
+				);
+			}
+		}
+	}, [props.buyBtnClicked]);
+
 	return (
 		<>
 			<label className="data-container__label">

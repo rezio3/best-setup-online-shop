@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 
 const BuyButton = (props) => {
 	const invalidFormBtnAnimation = () => {
+		props.setBuyBtnClicked(true);
 		console.log("nieprawidłowy formularz!!!");
 	};
 

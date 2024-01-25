@@ -19,6 +19,7 @@ const PersonalData = (props) => {
 							regex={validNameAndSurname}
 							validation={props.validation}
 							setValidation={props.setValidation}
+							buyBtnClicked={props.buyBtnClicked}
 						/>
 						<CustomerDataInput
 							label="Surname*"
@@ -27,6 +28,7 @@ const PersonalData = (props) => {
 							regex={validNameAndSurname}
 							validation={props.validation}
 							setValidation={props.setValidation}
+							buyBtnClicked={props.buyBtnClicked}
 						/>
 					</div>
 					<div className="data-container__inputs-box">
@@ -37,6 +39,7 @@ const PersonalData = (props) => {
 							regex={validPhoneNumber}
 							validation={props.validation}
 							setValidation={props.setValidation}
+							buyBtnClicked={props.buyBtnClicked}
 						/>
 						<CustomerDataInput
 							label="Email*"
@@ -45,6 +48,7 @@ const PersonalData = (props) => {
 							regex={validEmail}
 							validation={props.validation}
 							setValidation={props.setValidation}
+							buyBtnClicked={props.buyBtnClicked}
 						/>
 					</div>
 				</div>

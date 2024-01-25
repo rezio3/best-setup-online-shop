@@ -76,6 +76,7 @@ const TotalPriceWindow = (props) => {
 							linkTo={props.linkTo}
 							btnText={props.btnText}
 							validation={props.validation}
+							setBuyBtnClicked={props.setBuyBtnClicked}
 						/>
 					)}
 				</div>
