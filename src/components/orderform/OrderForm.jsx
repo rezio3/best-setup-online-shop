@@ -51,6 +51,7 @@ const OrderForm = () => {
 						<DeliveryAddress
 							validation={validation}
 							setValidation={setValidation}
+							buyBtnClicked={buyBtnClicked}
 						/>
 						<DeliveryAndPaymentOptions
 							header={"Delivery method"}

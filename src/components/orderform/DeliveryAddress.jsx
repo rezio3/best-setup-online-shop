@@ -19,6 +19,7 @@ const DeliveryAddress = (props) => {
 							regex={validCityAndStreet}
 							validation={props.validation}
 							setValidation={props.setValidation}
+							buyBtnClicked={props.buyBtnClicked}
 						/>
 						<CustomerDataInput
 							label="Postal code*"
@@ -27,6 +28,7 @@ const DeliveryAddress = (props) => {
 							regex={validPostalCode}
 							validation={props.validation}
 							setValidation={props.setValidation}
+							buyBtnClicked={props.buyBtnClicked}
 						/>
 					</div>
 					<div className="data-container__inputs-box">
@@ -37,6 +39,7 @@ const DeliveryAddress = (props) => {
 							regex={validCityAndStreet}
 							validation={props.validation}
 							setValidation={props.setValidation}
+							buyBtnClicked={props.buyBtnClicked}
 						/>
 						<CustomerDataInput
 							label="Building number*"
@@ -45,6 +48,7 @@ const DeliveryAddress = (props) => {
 							regex={validBuildingNumber}
 							validation={props.validation}
 							setValidation={props.setValidation}
+							buyBtnClicked={props.buyBtnClicked}
 						/>
 					</div>
 					<div className="data-container__inputs-box">
@@ -55,6 +59,7 @@ const DeliveryAddress = (props) => {
 							regex={validBuildingNumber}
 							validation={props.validation}
 							setValidation={props.setValidation}
+							buyBtnClicked={props.buyBtnClicked}
 						/>
 					</div>
 				</div>
