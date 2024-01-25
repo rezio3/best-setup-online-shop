@@ -19,15 +19,14 @@ import { ProductsOrderContext } from "../../context/OrderContext";
 const OrderForm = () => {
 	const [order] = useContext(ProductsOrderContext);
 	const [validation, setValidation] = useState({
-		name: "empty",
-		surname: "empty",
-		phone: "empty",
-		email: "empty",
-		city: "empty",
-		postalCode: "empty",
-		street: "empty",
-		buildingNumber: "empty",
-		flatNumber: "empty",
+		name: false,
+		surname: false,
+		phone: false,
+		email: false,
+		city: false,
+		postalCode: false,
+		street: false,
+		buildingNumber: false,
 	});
 
 	return (
@@ -63,7 +62,11 @@ const OrderForm = () => {
 						/>
 						<AdditionalInformation />
 					</div>
-					<TotalPriceWindow linkTo={"/summary"} btnText={"Submit and buy"} />
+					<TotalPriceWindow
+						linkTo={"/summary"}
+						btnText={"Submit and buy"}
+						validation={validation}
+					/>
 				</div>
 				<FinalCartLowerBox />
 			</div>
