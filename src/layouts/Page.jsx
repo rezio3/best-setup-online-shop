@@ -10,6 +10,7 @@ import Comfort from "../pages/Comfort";
 import CartPage from "../components/cart/CartPage";
 import OrderForm from "../components/orderform/OrderForm";
 import SummaryPage from "../components/summarypage/SummaryPage";
+import ProductPage from "../components/productPage/ProductPage";
 
 const Page = () => {
 	return (
@@ -25,6 +26,7 @@ const Page = () => {
 					<Route path="/cart" Component={CartPage} />
 					<Route path="/cart/delivery" Component={OrderForm} />
 					<Route path="/summary" Component={SummaryPage} />
+					<Route path="/product" Component={ProductPage} />
 				</Routes>
 			</FilterProductsContext>
 		</>
