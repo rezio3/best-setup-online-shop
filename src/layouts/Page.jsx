@@ -26,7 +26,7 @@ const Page = () => {
 					<Route path="/cart" Component={CartPage} />
 					<Route path="/cart/delivery" Component={OrderForm} />
 					<Route path="/summary" Component={SummaryPage} />
-					<Route path="/product" Component={ProductPage} />
+					<Route path="/product/:page/:productId" Component={ProductPage} />
 				</Routes>
 			</FilterProductsContext>
 		</>

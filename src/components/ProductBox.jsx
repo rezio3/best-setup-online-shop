@@ -13,7 +13,6 @@ const ProductBox = (props) => {
 	const [btnAnim, setBtnAnim] = useState(false);
 
 	let productImage = useRef(null);
-
 	// product hover animation
 	const handleHover = () => {
 		gsap.to(productImage, { scale: 1.15, duration: 0.3, ease: "expo" });
@@ -75,7 +74,7 @@ const ProductBox = (props) => {
 
 	return (
 		<>
-			<NavLink to="/product">
+			<NavLink to={`/product/${"hotDeals"}/${props.product.productId}`}>
 				<div
 					className="product-box"
 					onMouseEnter={handleHover}
