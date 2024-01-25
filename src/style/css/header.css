@@ -16,6 +16,7 @@
 }
 .header-container .header-logo-bar__logo {
   width: 300px;
+  cursor: pointer;
 }
 .header-container .header-logo-bar__button {
   margin: 0 10px;
