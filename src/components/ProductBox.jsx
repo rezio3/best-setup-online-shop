@@ -74,7 +74,7 @@ const ProductBox = (props) => {
 
 	return (
 		<>
-			<NavLink to={`/product/${"hotDeals"}/${props.product.productId}`}>
+			<NavLink to={`/product/${props.page}/${props.product.productId}`}>
 				<div
 					className="product-box"
 					onMouseEnter={handleHover}

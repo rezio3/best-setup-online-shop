@@ -63,7 +63,7 @@ const ProductsPcPage = () => {
 		<>
 			<div className="products-container">
 				{itemsToDisplay.map((e) => {
-					return <ProductBox product={e} key={e.productId} />;
+					return <ProductBox product={e} key={e.productId} page="pc" />;
 				})}
 				{itemsToDisplay.length === 0 ? <NoProductsSpan /> : null}
 			</div>
