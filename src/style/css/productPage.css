@@ -1,0 +1,16 @@
+.product-page-wrapper {
+  margin-top: 50px;
+  width: 70%;
+  max-width: 1400px;
+}
+.product-page-wrapper .product-header-container {
+  padding: 50px;
+  display: flex;
+}
+.product-page-wrapper .product-header-container__product-image {
+  width: 500px;
+}
+.product-page-wrapper .product-header-container__product-details-header {
+  display: flex;
+  flex-direction: column;
+}

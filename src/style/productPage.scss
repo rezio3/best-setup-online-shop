@@ -1,1 +1,18 @@
 @import "./colors.scss";
+
+.product-page-wrapper {
+	margin-top: 50px;
+	width: 70%;
+	max-width: 1400px;
+	.product-header-container {
+		padding: 50px;
+		display: flex;
+		&__product-image {
+			width: 500px;
+		}
+		&__product-details-header {
+			display: flex;
+			flex-direction: column;
+		}
+	}
+}
