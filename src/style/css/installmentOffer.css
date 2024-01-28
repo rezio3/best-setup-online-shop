@@ -2,7 +2,8 @@
 .installment-offer-wrapper {
   position: relative;
   margin: 150px 0 100px;
-  width: 70%;
+  width: 100%;
+  max-width: 1330px;
 }
 .installment-offer-wrapper .installment-offer-section {
   padding: 60px 100px;
