@@ -6,6 +6,10 @@ const QuantityBox = (props) => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
 	const quantityButtonHandler = (e) => {
 		if (props.page === "product-page") {
+			const updateQuantity = e.target.name === "plus-btn" ? 1 : -1;
+			props.setDirectItem({
+				quantity: props.directItem.quantity + updateQuantity,
+			});
 		} else {
 			const updatedCart = productsQuantityButtons(e, order, props.objIndex);
 			setOrder({
