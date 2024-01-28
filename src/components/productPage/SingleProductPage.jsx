@@ -11,9 +11,7 @@ const SingleProductPage = () => {
 		(e) => e.productId === Number(productId)
 	);
 	const ProductToRender = () => {
-		if (page === "display") {
-			return <DisplayProduct singleProduct={singleProduct} />;
-		}
+		return <DisplayProduct singleProduct={singleProduct} type={page} />;
 	};
 
 	return (
