@@ -615,6 +615,7 @@ const products = {
 			opinions: 318,
 			productId: 52,
 			type: "headphones",
+			set: "headphones",
 		},
 		{
 			name: "Edifier X3s",
@@ -624,6 +625,7 @@ const products = {
 			opinions: 762,
 			productId: 53,
 			type: "headphones",
+			set: "headphones",
 		},
 		{
 			name: "Edifier G1500 MAX",
@@ -713,6 +715,7 @@ const products = {
 			opinions: 260,
 			productId: 56,
 			type: "headphones",
+			set: "headphones",
 		},
 		{
 			name: "Logitech Z407",
@@ -732,6 +735,7 @@ const products = {
 			opinions: 851,
 			productId: 58,
 			type: "headphones",
+			set: "headphones",
 		},
 		{
 			name: "Razer Leviathan V2",
@@ -761,6 +765,7 @@ const products = {
 			opinions: 2785,
 			productId: 61,
 			type: "headphones",
+			set: "headphones",
 		},
 		{
 			name: "Silver Monkey SP100 2.0 USB",
@@ -780,6 +785,7 @@ const products = {
 			opinions: 2572,
 			productId: 63,
 			type: "headphones",
+			set: "headphones",
 		},
 		{
 			name: "SoundCore Life Q30",
@@ -789,6 +795,7 @@ const products = {
 			opinions: 1824,
 			productId: 64,
 			type: "headphones",
+			set: "headphones",
 		},
 		{
 			name: "SoundCore Space Q20i",
@@ -798,6 +805,7 @@ const products = {
 			opinions: 733,
 			productId: 65,
 			type: "headphones",
+			set: "headphones",
 		},
 		{
 			name: "SpeedLink GRAVITY CARBON RGB 2.1",
@@ -817,6 +825,7 @@ const products = {
 			opinions: 1889,
 			productId: 67,
 			type: "headphones",
+			set: "headphones",
 		},
 		{
 			name: "SteelSeries Arena 7",
@@ -846,6 +855,7 @@ const products = {
 			opinions: 257,
 			productId: 70,
 			type: "headphones",
+			set: "headphones",
 		},
 		{
 			name: "Trust Gemi RGB",
