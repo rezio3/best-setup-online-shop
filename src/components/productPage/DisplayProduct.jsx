@@ -3,6 +3,7 @@ import QuantityBox from "../cart/QuantityBox";
 import InstallmentOffer from "../InstallmentOffer";
 import QuestionsGeneral from "../QuestionsGeneral";
 import SingleDisplayProductDetails from "./singleProductDetails/SingleDisplayProductDetails";
+import SingleSoundProductDetails from "./singleProductDetails/SingleSoundProductDetails copy";
 
 const DisplayProduct = (props) => {
 	const [directItem, setDirectItem] = useState({
@@ -13,6 +14,8 @@ const DisplayProduct = (props) => {
 	const ProductDetailsToDisplay = () => {
 		if (props.type === "display") {
 			return <SingleDisplayProductDetails singleProduct={singleProduct} />;
+		} else if (props.type === "sound") {
+			return <SingleSoundProductDetails singleProduct={singleProduct} />;
 		}
 	};
 
@@ -27,7 +30,7 @@ const DisplayProduct = (props) => {
 				<div className="product-header-container__price-and-buy-box">
 					<div className="product-header-container__price-box">
 						<span>Price:</span>
-						<span>50.00 $</span>
+						<span>{singleProduct.price.toFixed(2)} $</span>
 					</div>
 					<QuantityBox
 						directItem={directItem}
