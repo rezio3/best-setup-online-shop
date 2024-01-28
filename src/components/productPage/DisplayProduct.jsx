@@ -3,8 +3,9 @@ import QuantityBox from "../cart/QuantityBox";
 import InstallmentOffer from "../InstallmentOffer";
 import QuestionsGeneral from "../QuestionsGeneral";
 import SingleDisplayProductDetails from "./singleProductDetails/SingleDisplayProductDetails";
-import SingleSoundProductDetails from "./singleProductDetails/SingleSoundProductDetails copy";
+import SingleSoundProductDetails from "./singleProductDetails/SingleSoundProductDetails";
 import SinglePcProductDetails from "./singleProductDetails/SinglePcProductDetails";
+import SingleAccessoriesProductDetails from "./singleProductDetails/SingleAccessoriesProductDetails";
 
 const DisplayProduct = (props) => {
 	const [directItem, setDirectItem] = useState({
@@ -19,8 +20,8 @@ const DisplayProduct = (props) => {
 			return <SingleSoundProductDetails singleProduct={singleProduct} />;
 		} else if (props.type === "pc") {
 			return <SinglePcProductDetails singleProduct={singleProduct} />;
-		} else if (props.type === "pc") {
-			return <SinglePcProductDetails singleProduct={singleProduct} />;
+		} else if (props.type === "accessories") {
+			return <SingleAccessoriesProductDetails singleProduct={singleProduct} />;
 		}
 	};
 
