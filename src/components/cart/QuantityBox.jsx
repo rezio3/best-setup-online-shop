@@ -5,11 +5,14 @@ import { ProductsOrderContext } from "../../context/OrderContext";
 const QuantityBox = (props) => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
 	const quantityButtonHandler = (e) => {
-		const updatedCart = productsQuantityButtons(e, order, props.objIndex);
-		setOrder({
-			...order,
-			cart: updatedCart,
-		});
+		if (props.page === "product-page") {
+		} else {
+			const updatedCart = productsQuantityButtons(e, order, props.objIndex);
+			setOrder({
+				...order,
+				cart: updatedCart,
+			});
+		}
 	};
 	return (
 		<>
