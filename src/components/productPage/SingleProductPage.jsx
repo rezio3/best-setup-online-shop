@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import products from "../../objects/products";
 import DisplayProduct from "./DisplayProduct";
 
-const ProductPage = () => {
+const SingleProductPage = () => {
 	const { page, productId } = useParams();
 
 	const singleProduct = products[page].find(
@@ -25,4 +25,4 @@ const ProductPage = () => {
 	);
 };
 
-export default ProductPage;
+export default SingleProductPage;
