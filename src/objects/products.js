@@ -155,6 +155,12 @@ const products = {
 			opinions: 673,
 			productId: 7,
 			type: "displays",
+			details: {
+				type: "display",
+				resolution: "Ultrawide",
+				fps: "120fps",
+				size: `27"`,
+			},
 		},
 		{
 			name: "G4M3R-HERO i7-14900KF 16GB 1TB RTX4080 W11x",
@@ -164,6 +170,13 @@ const products = {
 			opinions: 147,
 			productId: 2,
 			type: "pc",
+			details: {
+				type: "pc",
+				cpu: "i9-14900KF",
+				ram: "32GB",
+				memory: "2TB",
+				gpu: "RTX4080",
+			},
 		},
 		{
 			name: "Genesis-Xenon-220-G2-RGB",
@@ -173,6 +186,11 @@ const products = {
 			opinions: 923,
 			productId: 3,
 			type: "accessories",
+			details: {
+				type: "mouse",
+				wireless: "no",
+				rgb: "yes",
+			},
 		},
 		{
 			name: "Gigabyte-M32QC-Curved-HDR-KVM",
@@ -182,6 +200,12 @@ const products = {
 			opinions: 517,
 			productId: 4,
 			type: "displays",
+			details: {
+				type: "display",
+				resolution: "2k",
+				fps: "100fps",
+				size: `25"`,
+			},
 		},
 		{
 			name: "XIDAX Gaming PC S-200",
@@ -191,6 +215,13 @@ const products = {
 			opinions: 1224,
 			productId: 17,
 			type: "pc",
+			details: {
+				type: "pc",
+				cpu: "i7-10400F",
+				ram: "16GB",
+				memory: "2TB",
+				gpu: "RTX4070",
+			},
 		},
 		{
 			name: "Sony WH-1000XM5",
@@ -200,6 +231,10 @@ const products = {
 			opinions: 329,
 			productId: 19,
 			type: "sounds",
+			details: {
+				type: "headphones",
+				set: "headphones",
+			},
 		},
 
 		{
@@ -210,6 +245,11 @@ const products = {
 			opinions: 812,
 			productId: 6,
 			type: "accessories",
+			details: {
+				type: "keyboard",
+				wireless: "no",
+				rgb: "yes",
+			},
 		},
 		{
 			name: "Dell-SE2422H",
@@ -219,6 +259,12 @@ const products = {
 			opinions: 824,
 			productId: 1,
 			type: "displays",
+			details: {
+				type: "display",
+				resolution: "Full HD",
+				fps: "60fps",
+				size: `24"`,
+			},
 		},
 
 		{
@@ -229,6 +275,10 @@ const products = {
 			opinions: 723,
 			productId: 16,
 			type: "sounds",
+			details: {
+				type: "speakers",
+				set: "2.1",
+			},
 		},
 		{
 			name: "Logitech-G502-HERO",
@@ -238,6 +288,11 @@ const products = {
 			opinions: 114,
 			productId: 8,
 			type: "accessories",
+			details: {
+				type: "mouse",
+				wireless: "no",
+				rgb: "yes",
+			},
 		},
 		{
 			name: "LG-Ultrawide-34WP65CP-B",
@@ -247,6 +302,12 @@ const products = {
 			opinions: 234,
 			productId: 5,
 			type: "displays",
+			details: {
+				type: "display",
+				resolution: "Ultrawide",
+				fps: "120fps",
+				size: `26"`,
+			},
 		},
 		{
 			name: "Silver-Monkey-X-Mandrill",
@@ -256,6 +317,11 @@ const products = {
 			opinions: 581,
 			productId: 9,
 			type: "accessories",
+			details: {
+				type: "keyboard",
+				wireless: "no",
+				rgb: "yes",
+			},
 		},
 		{
 			name: "ASUS Rog Strix Ultra wide",
@@ -265,6 +331,12 @@ const products = {
 			opinions: 410,
 			productId: 18,
 			type: "displays",
+			details: {
+				type: "display",
+				resolution: "Ultrawide",
+				fps: "120fps",
+				size: `27"`,
+			},
 		},
 		{
 			name: "Logitech-G502-X-PLUS",
@@ -274,6 +346,11 @@ const products = {
 			opinions: 234,
 			productId: 10,
 			type: "accessories",
+			details: {
+				type: "mouse",
+				wireless: "yes",
+				rgb: "yes",
+			},
 		},
 		{
 			name: "Cougar Argo One Blackorange",
@@ -283,6 +360,11 @@ const products = {
 			opinions: 462,
 			productId: 13,
 			type: "comfort",
+			details: {
+				type: "chair",
+				size: "60x50x130",
+				color: "black-orange",
+			},
 		},
 		{
 			name: "Logitech-LIFT",
@@ -292,6 +374,11 @@ const products = {
 			opinions: 734,
 			productId: 11,
 			type: "accessories",
+			details: {
+				type: "mouse",
+				wireless: "yes",
+				rgb: "no",
+			},
 		},
 		{
 			name: "Samsung-QE65Q77B",
@@ -301,6 +388,12 @@ const products = {
 			opinions: 992,
 			productId: 12,
 			type: "displays",
+			details: {
+				type: "display",
+				resolution: "5k",
+				fps: "120fps",
+				size: `28"`,
+			},
 		},
 		{
 			name: "Genesis Speakers Helium 800BT 60W 2.1 ARGB",
@@ -310,6 +403,10 @@ const products = {
 			opinions: 283,
 			productId: 14,
 			type: "sounds",
+			details: {
+				type: "speakers",
+				set: "2.1",
+			},
 		},
 		{
 			name: "Silver Monkey Chair SMO-650",
@@ -319,6 +416,11 @@ const products = {
 			opinions: 571,
 			productId: 15,
 			type: "comfort",
+			details: {
+				type: "chair",
+				size: "50x50x120",
+				color: "black",
+			},
 		},
 	],
 	display: [
