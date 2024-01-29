@@ -6,7 +6,9 @@ const SinglePcProductDetails = (props) => {
 		<>
 			<div className="product-header-container__product-details-header">
 				<h3>{singleProduct.name}</h3>
-
+				<span className="product-header-container__specification-span">
+					Specification
+				</span>
 				<div>
 					<span>CPU: </span>
 					<span>{singleProduct.cpu}</span>
