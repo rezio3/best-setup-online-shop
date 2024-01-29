@@ -102,3 +102,6 @@
 .final-cart-wrapper .cart-inner-wrapper .cart-container .cart-box .item-box-final__trash-button {
   margin-left: auto;
 }
+.final-cart-wrapper a {
+  width: fit-content;
+}

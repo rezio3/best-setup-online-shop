@@ -4,6 +4,9 @@
 	margin-top: 50px;
 	width: 70%;
 	max-width: 1400px;
+	// .product-header-wrapper {
+	// 	display: flex;
+	// 	// flex-direction: column;
 	.product-header-container {
 		padding: 50px;
 		display: flex;
@@ -19,15 +22,20 @@
 			display: flex;
 			flex-direction: column;
 			justify-content: flex-start;
-			border-left: 1px solid black;
+			border-left: 1px solid $darkGray;
 			div {
 				margin-top: 10px;
 			}
 		}
+		&__specification-span {
+			padding-bottom: 5px;
+			width: 60%;
+			border-bottom: 1px solid $darkGray;
+		}
 		&__price-and-buy-box {
 			padding: 15px;
 			padding-top: 25px;
-			width: 30%;
+			width: 100%;
 			height: fit-content;
 			display: flex;
 			flex-direction: column;
@@ -37,18 +45,34 @@
 		}
 		&__price-box {
 			margin-bottom: 30px;
-			width: 100%;
+			width: 80%;
 			display: flex;
-			justify-content: space-around;
+			justify-content: space-between;
+		}
+		&__price-box:nth-child(2) {
+			padding-bottom: 30px;
+			margin-bottom: 20px;
+			border-bottom: 1px solid $gray;
 		}
 		&__add-to-cart-btn {
 			padding: 20px;
-			margin-top: 25px;
 			width: fit-content;
 			background: none;
 			border: none;
 			font-size: 1em;
 			cursor: pointer;
+		}
+		&__under-price-box-span {
+			margin-top: 10px;
+			color: $darkGray;
+			font-size: 0.8em;
+		}
+		.price-and-buy-box-wrapper {
+			width: 30%;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
 		}
 	}
 }
