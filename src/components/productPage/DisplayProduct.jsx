@@ -16,18 +16,21 @@ const DisplayProduct = (props) => {
 	const { singleProduct } = props;
 
 	const ProductDetailsToDisplay = () => {
-		if (props.type === "display") {
-			return <SingleDisplayProductDetails singleProduct={singleProduct} />;
-		} else if (props.type === "sound") {
-			return <SingleSoundProductDetails singleProduct={singleProduct} />;
-		} else if (props.type === "pc") {
-			return <SinglePcProductDetails singleProduct={singleProduct} />;
-		} else if (props.type === "accessories") {
-			return <SingleAccessoriesProductDetails singleProduct={singleProduct} />;
-		} else if (props.type === "comfort") {
-			return <SingleComfortProductDetails singleProduct={singleProduct} />;
-		} else if (props.type === "hotDeals") {
-			return <SingleHotDealsProductDetails singleProduct={singleProduct} />;
+		switch (props.type) {
+			case "display":
+				return <SingleDisplayProductDetails singleProduct={singleProduct} />;
+			case "sound":
+				return <SingleSoundProductDetails singleProduct={singleProduct} />;
+			case "pc":
+				return <SinglePcProductDetails singleProduct={singleProduct} />;
+			case "accessories":
+				return (
+					<SingleAccessoriesProductDetails singleProduct={singleProduct} />
+				);
+			case "comfort":
+				return <SingleComfortProductDetails singleProduct={singleProduct} />;
+			case "hotDeals":
+				return <SingleHotDealsProductDetails singleProduct={singleProduct} />;
 		}
 	};
 
