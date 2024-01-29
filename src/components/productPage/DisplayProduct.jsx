@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import QuantityBox from "../cart/QuantityBox";
 import InstallmentOffer from "../InstallmentOffer";
 import QuestionsGeneral from "../QuestionsGeneral";
@@ -8,8 +8,10 @@ import SinglePcProductDetails from "./singleProductDetails/SinglePcProductDetail
 import SingleAccessoriesProductDetails from "./singleProductDetails/SingleAccessoriesProductDetails";
 import SingleComfortProductDetails from "./singleProductDetails/SingleComfortProductDetails";
 import SingleHotDealsProductDetails from "./singleProductDetails/SingleHotDealProductDetails";
+import { ProductsOrderContext } from "../../context/OrderContext";
 
 const DisplayProduct = (props) => {
+	const [order, setOrder] = useContext(ProductsOrderContext);
 	const [directItem, setDirectItem] = useState({
 		quantity: 1,
 	});
@@ -31,6 +33,28 @@ const DisplayProduct = (props) => {
 				return <SingleComfortProductDetails singleProduct={singleProduct} />;
 			case "hotDeals":
 				return <SingleHotDealsProductDetails singleProduct={singleProduct} />;
+		}
+	};
+
+	const addToCartHandler = (e) => {
+		let newItemToCart = { ...singleProduct };
+
+		if (!order.cart.some((e) => e.name === newItemToCart.name)) {
+			newItemToCart.quantity = directItem.quantity;
+			setOrder({
+				...order,
+				cart: [...order.cart, newItemToCart],
+			});
+		} else {
+			const updatedCart = order.cart.map((e) => {
+				return e.name === newItemToCart.name
+					? { ...e, quantity: e.quantity + directItem.quantity }
+					: e;
+			});
+			setOrder({
+				...order,
+				cart: updatedCart,
+			});
 		}
 	};
 
@@ -60,7 +84,10 @@ const DisplayProduct = (props) => {
 								setDirectItem={setDirectItem}
 							/>
 						</div>
-						<button className="product-header-container__add-to-cart-btn button-anim">
+						<button
+							className="product-header-container__add-to-cart-btn button-anim"
+							onClick={addToCartHandler}
+						>
 							Add to cart
 						</button>
 					</div>
