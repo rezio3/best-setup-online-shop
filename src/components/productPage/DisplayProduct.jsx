@@ -7,6 +7,7 @@ import SingleSoundProductDetails from "./singleProductDetails/SingleSoundProduct
 import SinglePcProductDetails from "./singleProductDetails/SinglePcProductDetails";
 import SingleAccessoriesProductDetails from "./singleProductDetails/SingleAccessoriesProductDetails";
 import SingleComfortProductDetails from "./singleProductDetails/SingleComfortProductDetails";
+import SingleHotDealsProductDetails from "./singleProductDetails/SingleHotDealProductDetails";
 
 const DisplayProduct = (props) => {
 	const [directItem, setDirectItem] = useState({
@@ -25,6 +26,8 @@ const DisplayProduct = (props) => {
 			return <SingleAccessoriesProductDetails singleProduct={singleProduct} />;
 		} else if (props.type === "comfort") {
 			return <SingleComfortProductDetails singleProduct={singleProduct} />;
+		} else if (props.type === "hotDeals") {
+			return <SingleHotDealsProductDetails singleProduct={singleProduct} />;
 		}
 	};
 
