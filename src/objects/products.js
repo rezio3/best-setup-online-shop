@@ -887,6 +887,8 @@ const products = {
 			opinions: 1952,
 			productId: 73,
 			type: "mouse",
+			wireless: "no",
+			rgb: "yes",
 		},
 		{
 			name: "A4Tech XGame X89 Maze",
@@ -896,6 +898,8 @@ const products = {
 			opinions: 2175,
 			productId: 74,
 			type: "mouse",
+			wireless: "no",
+			rgb: "yes",
 		},
 		{
 			name: "AOC GK200 Gaming Rainbow LX",
@@ -905,6 +909,8 @@ const products = {
 			opinions: 803,
 			productId: 75,
 			type: "keyboard",
+			wireless: "no",
+			rgb: "yes",
 		},
 		{
 			name: "Brother HL-B2080DW",
@@ -914,6 +920,8 @@ const products = {
 			opinions: 952,
 			productId: 76,
 			type: "printer",
+			printing: "laser",
+			format: "A4, A5",
 		},
 		{
 			name: "Delux M618DB BT 2.4G RGB",
@@ -923,6 +931,8 @@ const products = {
 			opinions: 489,
 			productId: 77,
 			type: "mouse",
+			wireless: "yes",
+			rgb: "yes",
 		},
 
 		{
@@ -933,6 +943,8 @@ const products = {
 			opinions: 481,
 			productId: 78,
 			type: "printer",
+			printing: "toner",
+			format: "A4, A5, A6",
 		},
 		{
 			name: "Genesis Thor 300 RGB",
@@ -942,6 +954,8 @@ const products = {
 			opinions: 198,
 			productId: 79,
 			type: "keyboard",
+			wireless: "no",
+			rgb: "yes",
 		},
 		{
 			name: "Genesis Thor 404 TKL Kailh Brown RGB",
@@ -951,6 +965,8 @@ const products = {
 			opinions: 575,
 			productId: 80,
 			type: "keyboard",
+			wireless: "yes",
+			rgb: "yes",
 		},
 		{
 			name: "Canon Pixma G3470",
@@ -960,6 +976,8 @@ const products = {
 			opinions: 1205,
 			productId: 81,
 			type: "printer",
+			printing: "toner",
+			format: "A4, A5, A6",
 		},
 		{
 			name: "Keychron K2 C1H",
@@ -969,6 +987,8 @@ const products = {
 			opinions: 741,
 			productId: 82,
 			type: "keyboard",
+			wireless: "yes",
+			rgb: "no",
 		},
 		{
 			name: "Canon SELPHY CP1500",
@@ -978,6 +998,8 @@ const products = {
 			opinions: 482,
 			productId: 83,
 			type: "printer",
+			printing: "laser",
+			format: "A4, A5, A6",
 		},
 		{
 			name: "Logitech G213 PRODIGY",
@@ -987,6 +1009,8 @@ const products = {
 			opinions: 2895,
 			productId: 84,
 			type: "keyboard",
+			wireless: "no",
+			rgb: "yes",
 		},
 		{
 			name: "Logitech G502 X",
@@ -996,6 +1020,8 @@ const products = {
 			opinions: 1407,
 			productId: 85,
 			type: "mouse",
+			wireless: "no",
+			rgb: "no",
 		},
 		{
 			name: "Epson Expression Photo HD XP-15000",
@@ -1005,6 +1031,8 @@ const products = {
 			opinions: 2895,
 			productId: 86,
 			type: "printer",
+			printing: "toner",
+			format: "A3, A4, A5, A6",
 		},
 		{
 			name: "HP LaserJet M110w WiFi USB AirPrint",
@@ -1014,6 +1042,8 @@ const products = {
 			opinions: 109,
 			productId: 87,
 			type: "printer",
+			printing: "laser",
+			format: "A4, A5",
 		},
 		{
 			name: "HP LaserJet M209dw Duplex Mono LAN WiFi",
@@ -1023,6 +1053,8 @@ const products = {
 			opinions: 428,
 			productId: 88,
 			type: "printer",
+			printing: "laser",
+			format: "A4, A5",
 		},
 		{
 			name: "Logitech M705 Marathon",
@@ -1032,6 +1064,8 @@ const products = {
 			opinions: 891,
 			productId: 89,
 			type: "mouse",
+			wireless: "yes",
+			rgb: "no",
 		},
 		{
 			name: "Razer Basilisk V3",
@@ -1041,6 +1075,8 @@ const products = {
 			opinions: 3877,
 			productId: 90,
 			type: "mouse",
+			wireless: "no",
+			rgb: "yes",
 		},
 		{
 			name: "Razer Ornata V3",
@@ -1050,6 +1086,8 @@ const products = {
 			opinions: 807,
 			productId: 91,
 			type: "keyboard",
+			wireless: "no",
+			rgb: "yes",
 		},
 		{
 			name: "Redragon Draconic PRO",
@@ -1059,6 +1097,8 @@ const products = {
 			opinions: 1221,
 			productId: 92,
 			type: "keyboard",
+			wireless: "yes",
+			rgb: "yes",
 		},
 		{
 			name: "Silver Monkey M40 Wireless Comfort",
@@ -1068,6 +1108,8 @@ const products = {
 			opinions: 865,
 			productId: 93,
 			type: "mouse",
+			wireless: "yes",
+			rgb: "no",
 		},
 		{
 			name: "Silver Monkey X Mandrill",
@@ -1077,6 +1119,8 @@ const products = {
 			opinions: 517,
 			productId: 94,
 			type: "keyboard",
+			wireless: "no",
+			rgb: "yes",
 		},
 		{
 			name: "SPC Gear LIX Plus",
@@ -1086,6 +1130,8 @@ const products = {
 			opinions: 4771,
 			productId: 95,
 			type: "mouse",
+			wireless: "no",
+			rgb: "no",
 		},
 		{
 			name: "SpeedLink PIAVO 2,4GHz",
@@ -1095,6 +1141,8 @@ const products = {
 			opinions: 713,
 			productId: 96,
 			type: "mouse",
+			wireless: "yes",
+			rgb: "no",
 		},
 		{
 			name: "SteelSeries Aerox 3 Snow",
@@ -1104,6 +1152,8 @@ const products = {
 			opinions: 614,
 			productId: 97,
 			type: "mouse",
+			wireless: "no",
+			rgb: "yes",
 		},
 		{
 			name: "SteelSeries Aerox 5",
@@ -1113,6 +1163,8 @@ const products = {
 			opinions: 969,
 			productId: 98,
 			type: "mouse",
+			wireless: "no",
+			rgb: "yes",
 		},
 		{
 			name: "SteelSeries Apex 3 TKL",
@@ -1122,6 +1174,8 @@ const products = {
 			opinions: 274,
 			productId: 99,
 			type: "keyboard",
+			wireless: "no",
+			rgb: "yes",
 		},
 		{
 			name: "SteelSeries Apex 3",
@@ -1131,6 +1185,8 @@ const products = {
 			opinions: 784,
 			productId: 100,
 			type: "keyboard",
+			wireless: "no",
+			rgb: "yes",
 		},
 		{
 			name: "SteelSeries Rival 5",
@@ -1140,6 +1196,8 @@ const products = {
 			opinions: 1181,
 			productId: 101,
 			type: "mouse",
+			wireless: "no",
+			rgb: "yes",
 		},
 		{
 			name: "Xerox Phaser 3020",
@@ -1149,6 +1207,8 @@ const products = {
 			opinions: 722,
 			productId: 102,
 			type: "printer",
+			printing: "laser",
+			format: "A4, A5, A6",
 		},
 	],
 	comfort: [
@@ -1160,6 +1220,8 @@ const products = {
 			opinions: 1895,
 			productId: 103,
 			type: "chair",
+			size: "60x50x120",
+			color: "black",
 		},
 		{
 			name: "Cougar Argo One Black Orange",
@@ -1169,6 +1231,8 @@ const products = {
 			opinions: 1122,
 			productId: 104,
 			type: "chair",
+			size: "60x50x130",
+			color: "orange",
 		},
 		{
 			name: "Cougar E-DEIMUS",
@@ -1178,6 +1242,8 @@ const products = {
 			opinions: 562,
 			productId: 105,
 			type: "desk",
+			size: "150x70x80-120",
+			automatic: "yes",
 		},
 		{
 			name: "Diablo Chairs V-Basic",
@@ -1187,6 +1253,8 @@ const products = {
 			opinions: 848,
 			productId: 106,
 			type: "chair",
+			size: "60x50x130",
+			color: "silver",
 		},
 		{
 			name: "Diablo Chairs V-Commander",
@@ -1196,6 +1264,8 @@ const products = {
 			opinions: 1159,
 			productId: 107,
 			type: "chair",
+			size: "50x50x130",
+			color: "black",
 		},
 		{
 			name: "ENDORFY Atlas L",
@@ -1205,6 +1275,8 @@ const products = {
 			opinions: 721,
 			productId: 108,
 			type: "desk",
+			size: "180x70x70-130",
+			automatic: "yes",
 		},
 		{
 			name: "Huzaro Combat 8.0 White",
@@ -1214,6 +1286,8 @@ const products = {
 			opinions: 761,
 			productId: 109,
 			type: "chair",
+			size: "60x60x110",
+			color: "white",
 		},
 		{
 			name: "Huzaro Hero 8.5 Black",
@@ -1223,6 +1297,8 @@ const products = {
 			opinions: 576,
 			productId: 110,
 			type: "desk",
+			size: "140x60x70-115",
+			automatic: "yes",
 		},
 		{
 			name: "Huzaro Mark Adler Boss 8.0",
@@ -1232,6 +1308,8 @@ const products = {
 			opinions: 2009,
 			productId: 111,
 			type: "chair",
+			size: "50x50x120",
+			color: "wood",
 		},
 		{
 			name: "Huzaro Mark Adler Boss 8.2 White",
@@ -1241,6 +1319,8 @@ const products = {
 			opinions: 1896,
 			productId: 112,
 			type: "chair",
+			size: "60x50x140",
+			color: "white",
 		},
 		{
 			name: "Huzaro Mark Adler Expert 6.2",
@@ -1250,6 +1330,8 @@ const products = {
 			opinions: 117,
 			productId: 113,
 			type: "chair",
+			size: "50x45x140",
+			color: "black",
 		},
 		{
 			name: "Pro-Gamer D-6000 XXL",
@@ -1259,6 +1341,8 @@ const products = {
 			opinions: 980,
 			productId: 114,
 			type: "desk",
+			size: "200x80x100",
+			automatic: "no",
 		},
 		{
 			name: "Silver Monkey ED-140 black",
@@ -1268,6 +1352,8 @@ const products = {
 			opinions: 571,
 			productId: 115,
 			type: "desk",
+			size: "130x60x90-100",
+			automatic: "yes",
 		},
 		{
 			name: "Silver Monkey SMO-650",
@@ -1277,6 +1363,8 @@ const products = {
 			opinions: 278,
 			productId: 116,
 			type: "chair",
+			size: "60x60x110",
+			color: "black",
 		},
 		{
 			name: "Spacetronik Bard",
@@ -1286,6 +1374,8 @@ const products = {
 			opinions: 188,
 			productId: 117,
 			type: "chair",
+			size: "50x60x135",
+			color: "black",
 		},
 		{
 			name: "Spacetronik Elsa",
@@ -1295,6 +1385,8 @@ const products = {
 			opinions: 281,
 			productId: 118,
 			type: "chair",
+			size: "50x50x130",
+			color: "white",
 		},
 		{
 			name: "Spacetronik Gerd 4D",
@@ -1304,6 +1396,8 @@ const products = {
 			opinions: 736,
 			productId: 119,
 			type: "chair",
+			size: "60x50x120",
+			color: "gray",
 		},
 		{
 			name: "Spacetronik Moris SPE-O133BB",
@@ -1313,6 +1407,8 @@ const products = {
 			opinions: 298,
 			productId: 120,
 			type: "desk",
+			size: "120x70x90-110",
+			automatic: "yes",
 		},
 		{
 			name: "Spacetronik SPE-G110B",
@@ -1322,6 +1418,8 @@ const products = {
 			opinions: 925,
 			productId: 121,
 			type: "desk",
+			size: "140x60x90",
+			automatic: "no",
 		},
 		{
 			name: "Ultradesk LEVEL V2 LED RGB",
@@ -1331,6 +1429,8 @@ const products = {
 			opinions: 2866,
 			productId: 122,
 			type: "desk",
+			size: "180x80x90-140",
+			automatic: "yes",
 		},
 		{
 			name: "Ultradesk Pulsar",
@@ -1340,6 +1440,8 @@ const products = {
 			opinions: 1786,
 			productId: 123,
 			type: "desk",
+			size: "140x80x80-120",
+			automatic: "yes",
 		},
 		{
 			name: "Ultradesk UPLIFT",
@@ -1349,6 +1451,8 @@ const products = {
 			opinions: 1127,
 			productId: 124,
 			type: "desk",
+			size: "140x80x90",
+			automatic: "no",
 		},
 	],
 	pc: [
