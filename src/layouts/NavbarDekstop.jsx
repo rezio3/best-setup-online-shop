@@ -3,6 +3,7 @@ import "../style/css/navbarDesktop.css";
 import { NavLink, useLocation } from "react-router-dom";
 import logoImg from "../img/BestSetupLogo.png";
 import { ProductsOrderContext } from "../context/OrderContext";
+import { cartButtonHandler } from "../functions/cartButtonHandler";
 
 // const Anim = (prop) => {
 // 	const { snapNav, setSnapNav } = prop;
@@ -88,11 +89,8 @@ const NavbarDesktop = () => {
 		observer.observe(navRef.current);
 	}, []);
 
-	const cartButtonHandler = () => {
-		setOrder({
-			...order,
-			cartOpen: !order.cartOpen,
-		});
+	const cartButtonHandlerInner = () => {
+		cartButtonHandler(order, setOrder);
 	};
 
 	let navLogo = logoNav ? "block" : "none";
@@ -165,7 +163,7 @@ const NavbarDesktop = () => {
 				<div className="cart-container">
 					<button
 						className="cart-container__cart-button"
-						onClick={isFinalCartPage ? null : cartButtonHandler}
+						onClick={isFinalCartPage ? null : cartButtonHandlerInner}
 					>
 						<span className="material-symbols-outlined cart-container__cart-icon">
 							shopping_cart
