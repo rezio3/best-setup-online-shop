@@ -163,3 +163,11 @@
     z-index: 1;
   }
 }
+@media (max-width: 1300px) {
+  .navbar-container {
+    width: 100%;
+  }
+  .navbar-container .product-pages-buttons-container__logo-menu-button {
+    left: 1%;
+  }
+}

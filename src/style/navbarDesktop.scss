@@ -186,3 +186,14 @@
 		z-index: 1;
 	}
 }
+// RWD for 150% display scale
+@media (max-width: 1300px) {
+	.navbar-container {
+		width: 100%;
+		.product-pages-buttons-container {
+			&__logo-menu-button {
+				left: 1%;
+			}
+		}
+	}
+}
