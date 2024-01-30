@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import "../../../style/css/dellNews.css";
 import "../../../style/css/scrollCustom.css";
 import dell1 from "../../../img/news/Alienware Aurora R16 Gaming Desktop.jpg";
@@ -12,6 +12,8 @@ import dell8 from "../../../img/news/Alienware m18 Gaming Laptop.jpg";
 import dell9 from "../../../img/news/Dell 27 Monitor - E2723H.jpg";
 import DellProductBox from "./DellProductBox";
 import DellNewsHeader from "./DellNewsHeader";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const DellNews = () => {
 	const dellProductsArr = [
@@ -97,9 +99,43 @@ const DellNews = () => {
 			id: 9,
 		},
 	];
+
+	const carouselRef = useRef(null);
+
+	const sideScrollHandler = (e) => {
+		console.log("halo");
+		if (e.target.className.includes("left")) {
+			carouselRef.current.scrollLeft -= 420;
+		} else {
+			carouselRef.current.scrollLeft += 420;
+		}
+	};
 	return (
 		<>
-			<div className="dell-news-scroller-container vertical-scroll">
+			<div className="dell-news-buttons-container">
+				<button
+					className="dell-news-buttons-container__button button-anim left"
+					onClick={sideScrollHandler}
+				>
+					<FontAwesomeIcon
+						icon={faAngleLeft}
+						className="dell-news-buttons-container__arrow"
+					/>
+				</button>
+				<button
+					className="dell-news-buttons-container__button button-anim right"
+					onClick={sideScrollHandler}
+				>
+					<FontAwesomeIcon
+						icon={faAngleRight}
+						className="dell-news-buttons-container__arrow"
+					/>
+				</button>
+			</div>
+			<div
+				className="dell-news-scroller-container vertical-scroll"
+				ref={carouselRef}
+			>
 				<div className="spacer"></div>
 				<DellNewsHeader />
 				{dellProductsArr.map((e) => {

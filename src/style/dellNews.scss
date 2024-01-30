@@ -2,14 +2,38 @@
 // @import "https://unpkg.com/open-props";
 // @import "https://unpkg.com/open-props/normalize.min.css";
 
+.dell-news-buttons-container {
+	margin-top: 200px;
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
+
+	&__button {
+		padding: 20px 50px;
+		margin: 0 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: none;
+		border: none;
+		box-shadow: 0 0 10px -6px;
+		cursor: pointer;
+	}
+	&__arrow {
+		font-size: 2em;
+		user-select: none;
+	}
+}
+
 .dell-news-scroller-container {
 	padding: 10px 0 50px;
-	margin: 200px 0 150px;
+	margin-bottom: 150px;
 	width: 100%;
 	display: grid;
 	grid-auto-flow: column;
 	// grid-auto-columns: 450px;
 	overflow-x: auto;
+	scroll-behavior: smooth;
 
 	.spacer {
 		width: 380px;
