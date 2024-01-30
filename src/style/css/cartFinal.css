@@ -105,3 +105,9 @@
 .final-cart-wrapper a {
   width: fit-content;
 }
+
+@media (min-width: 2000px) {
+  .final-cart-wrapper {
+    max-width: 1700px;
+  }
+}

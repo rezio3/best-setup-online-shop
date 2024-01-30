@@ -8,5 +8,11 @@
 .news-section .news-container {
   margin-top: 50px;
   width: 60%;
-  min-width: 60%;
+}
+
+@media (min-width: 2000px) {
+  .news-section .news-container {
+    width: 60%;
+    max-width: 1500px;
+  }
 }

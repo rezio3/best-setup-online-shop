@@ -85,3 +85,21 @@
 .footer-layout .copyright-container__copyright-span {
   font-size: 12px;
 }
+
+@media (min-width: 2000px) {
+  .footer-layout {
+    width: 100%;
+  }
+  .footer-layout .payments-span {
+    width: 70%;
+    max-width: 1700px;
+  }
+  .footer-layout .footer-upper-container {
+    width: 70%;
+    max-width: 1700px;
+  }
+  .footer-layout .footer-lower-container {
+    width: 70%;
+    max-width: 1700px;
+  }
+}

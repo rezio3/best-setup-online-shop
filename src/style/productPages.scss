@@ -25,3 +25,11 @@
 	align-items: flex-start;
 	width: 70%;
 }
+@media (min-width: 2000px) {
+	.navigator-description-container {
+		max-width: 1700px;
+	}
+	.main-product-container {
+		max-width: 1700px;
+	}
+}

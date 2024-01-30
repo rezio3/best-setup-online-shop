@@ -143,3 +143,8 @@
     opacity: 0;
   }
 }
+@media (min-width: 2000px) {
+  .navbar-container .product-pages-buttons-container__logo-menu-button {
+    left: 20%;
+  }
+}

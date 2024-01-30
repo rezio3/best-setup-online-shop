@@ -92,3 +92,22 @@
 		}
 	}
 }
+
+@media (min-width: 2000px) {
+	.footer-layout {
+		width: 100%;
+		.payments-span {
+			width: 70%;
+			max-width: 1700px;
+		}
+		.footer-upper-container {
+			width: 70%;
+			max-width: 1700px;
+		}
+
+		.footer-lower-container {
+			width: 70%;
+			max-width: 1700px;
+		}
+	}
+}

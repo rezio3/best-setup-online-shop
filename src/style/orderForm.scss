@@ -4,6 +4,7 @@
 	margin-top: 30px;
 	width: 70%;
 	max-width: 1400px;
+
 	&__back-btn {
 		padding: 10px;
 		font-size: 1em;
@@ -20,11 +21,13 @@
 .order-form-page-wrapper {
 	width: 70%;
 	max-width: 1300px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	.order-form-page {
 		margin-top: 0px;
 		margin-bottom: 150px;
 		width: 100%;
-		max-width: 1300px;
 		display: flex;
 		justify-content: center;
 
@@ -137,4 +140,11 @@
 	}
 }
 
-// zrobić zmienną do wszystkich headerów
+@media (min-width: 2000px) {
+	.back-btn-container {
+		max-width: 1700px;
+	}
+	.order-form-page-wrapper {
+		max-width: 1700px;
+	}
+}
