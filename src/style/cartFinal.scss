@@ -114,11 +114,30 @@
 	}
 }
 
+// RWD for 4k
 @media (min-width: 2000px) {
 	.final-cart-wrapper {
 		max-width: 1700px;
 		.cart-inner-wrapper {
 			.cart-container {
+			}
+		}
+	}
+}
+
+// RWD for 125% display scale
+@media (max-width: 1600px) {
+	.final-cart-wrapper {
+		.cart-inner-wrapper {
+			.cart-container {
+				.cart-box {
+					.item-box-final {
+						&__insurance-btn {
+							width: 120px;
+							font-size: 0.7em;
+						}
+					}
+				}
 			}
 		}
 	}

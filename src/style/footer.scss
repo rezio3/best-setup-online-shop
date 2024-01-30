@@ -93,6 +93,7 @@
 	}
 }
 
+// RWD for 4k
 @media (min-width: 2000px) {
 	.footer-layout {
 		width: 100%;
@@ -108,6 +109,25 @@
 		.footer-lower-container {
 			width: 70%;
 			max-width: 1700px;
+		}
+	}
+}
+
+// RWD for 125% display scale
+@media (max-width: 1600px) {
+	.footer-layout {
+		.payments-span {
+			width: 80%;
+		}
+		.footer-upper-container {
+			width: 80%;
+		}
+
+		.footer-lower-container {
+			width: 80%;
+		}
+		.copyright-container {
+			width: 80%;
 		}
 	}
 }

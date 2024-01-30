@@ -4,7 +4,6 @@
 	position: relative;
 	width: 70%;
 	height: 70px;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -158,7 +157,7 @@
 		opacity: 0;
 	}
 }
-
+// RWD for 4k
 @media (min-width: 2000px) {
 	.navbar-container {
 		.product-pages-buttons-container {
@@ -166,5 +165,24 @@
 				left: 20%;
 			}
 		}
+	}
+}
+
+// RWD for 125% display scale
+@media (max-width: 1600px) {
+	.navbar-container {
+		width: 80%;
+		.product-pages-buttons-container {
+			&__logo-menu-button {
+				left: 7%;
+			}
+		}
+	}
+	.sticky {
+		position: fixed;
+		top: 0;
+		margin-top: 0;
+		width: 100%;
+		z-index: 1;
 	}
 }

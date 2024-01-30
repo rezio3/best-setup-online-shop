@@ -148,3 +148,18 @@
     left: 20%;
   }
 }
+@media (max-width: 1600px) {
+  .navbar-container {
+    width: 80%;
+  }
+  .navbar-container .product-pages-buttons-container__logo-menu-button {
+    left: 7%;
+  }
+  .sticky {
+    position: fixed;
+    top: 0;
+    margin-top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+}

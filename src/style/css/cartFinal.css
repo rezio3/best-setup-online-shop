@@ -111,3 +111,9 @@
     max-width: 1700px;
   }
 }
+@media (max-width: 1600px) {
+  .final-cart-wrapper .cart-inner-wrapper .cart-container .cart-box .item-box-final__insurance-btn {
+    width: 120px;
+    font-size: 0.7em;
+  }
+}

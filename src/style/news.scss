@@ -12,11 +12,21 @@
 	}
 }
 
+// RWD for 4k
 @media (min-width: 2000px) {
 	.news-section {
 		.news-container {
 			width: 60%;
 			max-width: 1500px;
+		}
+	}
+}
+
+// RWD for 125% display scale
+@media (max-width: 1600px) {
+	.news-section {
+		.news-container {
+			width: 80%;
 		}
 	}
 }

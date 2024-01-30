@@ -103,3 +103,17 @@
     max-width: 1700px;
   }
 }
+@media (max-width: 1600px) {
+  .footer-layout .payments-span {
+    width: 80%;
+  }
+  .footer-layout .footer-upper-container {
+    width: 80%;
+  }
+  .footer-layout .footer-lower-container {
+    width: 80%;
+  }
+  .footer-layout .copyright-container {
+    width: 80%;
+  }
+}

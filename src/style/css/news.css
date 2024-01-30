@@ -16,3 +16,8 @@
     max-width: 1500px;
   }
 }
+@media (max-width: 1600px) {
+  .news-section .news-container {
+    width: 80%;
+  }
+}

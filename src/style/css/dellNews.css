@@ -35,7 +35,6 @@
 .dell-news-scroller-container .dell-news-box {
   margin: 0 20px;
   width: 450px;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -102,4 +101,36 @@
 .dell-news-scroller-container .dell-news-header-container .dell-news-box__promo-description-lower {
   margin-top: 0;
   font-size: 14px;
+}
+
+@media (max-width: 1750px) {
+  .news-section .news-container {
+    width: 80%;
+  }
+  .dell-news-scroller-container .dell-news-box {
+    width: 400px;
+  }
+  .dell-news-scroller-container .dell-news-box__image-container {
+    width: 100%;
+    height: 220px;
+  }
+  .dell-news-scroller-container .dell-news-box__image {
+    width: 200px;
+  }
+  .dell-news-scroller-container .dell-news-box__description-container {
+    width: 90%;
+    height: 270px;
+  }
+  .dell-news-scroller-container .dell-news-box__product-header-container {
+    height: 100px;
+  }
+  .dell-news-scroller-container .dell-news-box__product-name {
+    font-size: 1.1em;
+  }
+  .dell-news-scroller-container .dell-news-box__product-description {
+    font-size: 1em;
+  }
+  .dell-news-scroller-container .dell-news-header-container .dell-news-box__promo-description {
+    line-height: 35px;
+  }
 }
