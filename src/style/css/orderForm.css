@@ -139,3 +139,11 @@
     max-width: 1700px;
   }
 }
+@media (max-width: 1300px) {
+  .back-btn-container {
+    width: 85%;
+  }
+  .order-form-page-wrapper {
+    width: 85%;
+  }
+}

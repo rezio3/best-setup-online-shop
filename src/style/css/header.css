@@ -80,3 +80,14 @@
 .header-container .carousel-container .arrow-container:hover {
   background-color: rgba(0, 0, 0, 0.4);
 }
+
+@media (max-width: 1300px) {
+  .header-container {
+    width: 90%;
+  }
+}
+@media (max-width: 992px) {
+  .header-container {
+    width: 90%;
+  }
+}

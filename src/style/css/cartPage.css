@@ -17,3 +17,10 @@
 .cart-page-wrapper__back-to-shopping-btn .arrow-left {
   margin-right: 10px;
 }
+
+@media (max-width: 1300px) {
+  .cart-page-wrapper {
+    width: 85%;
+    max-width: 85%;
+  }
+}

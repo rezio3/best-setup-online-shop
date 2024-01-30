@@ -89,3 +89,17 @@
 		}
 	}
 }
+
+// RWD for 150% display scale
+@media (max-width: 1300px) {
+	.header-container {
+		width: 90%;
+	}
+}
+
+// RWD Mobile
+@media (max-width: 992px) {
+	.header-container {
+		width: 90%;
+	}
+}

@@ -13,7 +13,8 @@
 		justify-content: space-between;
 
 		&__product-image {
-			width: 30%;
+			width: 350px;
+			// height: fit-content;
 		}
 		&__product-details-header {
 			padding-left: 30px;
@@ -74,5 +75,11 @@
 			justify-content: flex-start;
 			align-items: flex-start;
 		}
+	}
+}
+// RWD for 150% display scale
+@media (max-width: 1300px) {
+	.product-page-wrapper {
+		width: 85%;
 	}
 }
