@@ -43,6 +43,7 @@ const DisplayProduct = (props) => {
 			newItemToCart.quantity = directItem.quantity;
 			setOrder({
 				...order,
+				cartOpen: !order.cartOpen,
 				cart: [...order.cart, newItemToCart],
 			});
 		} else {
@@ -53,6 +54,7 @@ const DisplayProduct = (props) => {
 			});
 			setOrder({
 				...order,
+				cartOpen: !order.cartOpen,
 				cart: updatedCart,
 			});
 		}

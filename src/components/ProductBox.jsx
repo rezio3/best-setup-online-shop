@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import "../style/css/buttonsAnim.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -10,7 +10,7 @@ import { NavLink } from "react-router-dom";
 
 const ProductBox = (props) => {
 	const [order, setOrder] = useContext(ProductsOrderContext);
-	const [btnAnim, setBtnAnim] = useState(false);
+	// const [btnAnim, setBtnAnim] = useState(false);
 
 	let productImage = useRef(null);
 	// product hover animation
@@ -50,6 +50,7 @@ const ProductBox = (props) => {
 			newItemToCart.quantity = 1;
 			setOrder({
 				...order,
+				cartOpen: !order.cartOpen,
 				cart: [...order.cart, newItemToCart],
 			});
 		} else {
@@ -60,15 +61,9 @@ const ProductBox = (props) => {
 			});
 			setOrder({
 				...order,
+				cartOpen: !order.cartOpen,
 				cart: updatedCart,
 			});
-		}
-
-		if (!btnAnim) {
-			setBtnAnim(true);
-			setTimeout(() => {
-				setBtnAnim(false);
-			}, 1000);
 		}
 	};
 
@@ -95,14 +90,10 @@ const ProductBox = (props) => {
 							{props.product.price} $
 						</span>
 						<button
-							className={
-								btnAnim
-									? "product-box__buy-btn button-anim add-item-to-cart-in"
-									: "product-box__buy-btn button-anim"
-							}
+							className="product-box__buy-btn button-anim"
 							onClick={addToCartHandler}
 						>
-							{btnAnim ? "Added!" : "Add to cart"}
+							Add to cart
 						</button>
 					</div>
 					<div className="product-box__stars-and-opinions-container">
