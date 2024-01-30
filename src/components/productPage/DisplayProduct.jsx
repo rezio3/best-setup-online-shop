@@ -55,6 +55,7 @@ const DisplayProduct = (props) => {
 			setOrder({
 				...order,
 				cartOpen: !order.cartOpen,
+
 				cart: updatedCart,
 			});
 		}
