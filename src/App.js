@@ -26,12 +26,14 @@ function App() {
 						<Footer />
 						<CartWindow />
 					</OrderContext>
-					<div
+					{/* <div
 						className={
 							ok ? "in-progress-box" : "in-progress-box in-progress-box--off"
 						}
 					>
-						<h2>This shop ain't working yet!</h2>
+						<h2 className="in-progress-box__header">
+							This shop ain't working yet!
+						</h2>
 						<span className="in-progress-span">
 							Project is currently in progress...
 						</span>
@@ -42,7 +44,7 @@ function App() {
 						<button className="ok-btn button-anim" onClick={okBtnHandler}>
 							Ok
 						</button>
-					</div>
+					</div> */}
 				</div>
 			</ScrollToTop>
 		</Router>
