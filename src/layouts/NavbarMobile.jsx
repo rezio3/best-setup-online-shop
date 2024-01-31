@@ -18,7 +18,6 @@ const NavbarMobile = () => {
 
 	const navRef = useRef();
 	const timeoutRef = useRef(null);
-	const navButtonsContainer = useRef(null);
 
 	const location = useLocation();
 	const isFinalCartPage = location.pathname.includes("/cart");
