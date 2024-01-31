@@ -6,16 +6,19 @@ import { ProductsOrderContext } from "../context/OrderContext";
 import { cartButtonHandler } from "../functions/cartButtonHandler";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
+import gsap from "gsap";
 
 const NavbarMobile = () => {
 	const [burgerIconActive, setBurgerIconActive] = useState(false);
 	const [snapNav, setSnapNav] = useState(false);
 	const [logoNav, setLogoNav] = useState(false);
+	const [isFirstRender, setIsFirstRender] = useState(true);
 	// const [logoAnimOut, setLogoAnimOut] = useState(false);
 	const [order, setOrder] = useContext(ProductsOrderContext);
 
 	const navRef = useRef();
 	const timeoutRef = useRef(null);
+	const navButtonsContainer = useRef(null);
 
 	const location = useLocation();
 	const isFinalCartPage = location.pathname.includes("/cart");
@@ -39,7 +42,7 @@ const NavbarMobile = () => {
 					}, 600);
 				}
 			},
-			{ threshold: 1 }
+			{ threshold: 0 }
 		);
 		observer.observe(navRef.current);
 	}, []);
@@ -56,6 +59,29 @@ const NavbarMobile = () => {
 		setBurgerIconActive(!burgerIconActive);
 	};
 	console.log(burgerIconActive);
+
+	useEffect(() => {
+		if (!isFirstRender) {
+			let ctx = gsap.context(() => {
+				if (burgerIconActive) {
+					gsap.to("#navButtonsContainer", {
+						duration: 0.4,
+						x: 250,
+						ease: "power3",
+					});
+				} else {
+					gsap.from("#navButtonsContainer", {
+						duration: 0.4,
+						x: 250,
+						ease: "power3",
+					});
+				}
+			});
+			return () => ctx.revert();
+		}
+		setIsFirstRender(false);
+	}, [burgerIconActive]);
+
 	return (
 		<>
 			<div className="nav-treshhold" ref={navRef}></div>
@@ -69,13 +95,7 @@ const NavbarMobile = () => {
 					className="burger-icon"
 					onClick={burgerIconHandler}
 				/>
-				<div
-					className={
-						snapNav
-							? "product-pages-buttons-container__logo-menu-button"
-							: "product-pages-buttons-container__logo-menu-button logo-button-off"
-					}
-				>
+				<div className="product-pages-buttons-container__logo-menu-button">
 					<NavLink to="/">
 						{/* <Anim snapNav={snapNav} setSnapNav={setSnapNav} /> */}
 						<img
@@ -90,11 +110,8 @@ const NavbarMobile = () => {
 					</NavLink>
 				</div>
 				<ul
-					className={
-						burgerIconActive
-							? "product-pages-buttons-container"
-							: "product-pages-buttons-container--off"
-					}
+					className="product-pages-buttons-container"
+					id="navButtonsContainer"
 				>
 					<li
 						className="product-pages-buttons-container__x-btn"
