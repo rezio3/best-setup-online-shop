@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/best-setup-online-shop/static/css/main.d414cd85.css",
-    "main.js": "/best-setup-online-shop/static/js/main.45753ffd.js",
+    "main.css": "/best-setup-online-shop/static/css/main.27535872.css",
+    "main.js": "/best-setup-online-shop/static/js/main.fa4ee2dc.js",
     "static/media/Sony WH-1000XM5.png": "/best-setup-online-shop/static/media/Sony WH-1000XM5.1a5789306f789d16c20a.png",
     "static/media/XIDAX Gaming PC S-200.png": "/best-setup-online-shop/static/media/XIDAX Gaming PC S-200.67ade7b31d7341f9a654.png",
     "static/media/PS5 Console - Marvel's Spider-Man 2 Bundle.jpg": "/best-setup-online-shop/static/media/PS5 Console - Marvel's Spider-Man 2 Bundle.559f24ea257ae755ba14.jpg",
@@ -22,6 +22,7 @@
     "static/media/LG UltraGear 27GR75Q-B.jpg": "/best-setup-online-shop/static/media/LG UltraGear 27GR75Q-B.0bd493d1992c6653f2b9.jpg",
     "static/media/Lenovo G24e-20.jpg": "/best-setup-online-shop/static/media/Lenovo G24e-20.a2d6af10e3da5ff091cb.jpg",
     "static/media/iiyama ProLite XU2494HSU-B2.jpg": "/best-setup-online-shop/static/media/iiyama ProLite XU2494HSU-B2.abe77dccb4ef841dbca3.jpg",
+    "static/media/baner3mobile.png": "/best-setup-online-shop/static/media/baner3mobile.a05f29bf39c3e40f2343.png",
     "static/media/Nintendo Switch - OLED Model.jpg": "/best-setup-online-shop/static/media/Nintendo Switch - OLED Model.e3876aa2c230fb868417.jpg",
     "static/media/Alienware Aurora R15 Gaming Desktop.jpg": "/best-setup-online-shop/static/media/Alienware Aurora R15 Gaming Desktop.3ed046acccecf488e19e.jpg",
     "static/media/Cougar Argo One Blackorange.jpg": "/best-setup-online-shop/static/media/Cougar Argo One Blackorange.5d81e8ebde3ea494605f.jpg",
@@ -34,12 +35,14 @@
     "static/media/LG 24MR400-B.jpg": "/best-setup-online-shop/static/media/LG 24MR400-B.8c8cede72255ab6cdf14.jpg",
     "static/media/baner1.png": "/best-setup-online-shop/static/media/baner1.d193d8e53703af456ed5.png",
     "static/media/ASUS Rog Strix Ultra wide.jpg": "/best-setup-online-shop/static/media/ASUS Rog Strix Ultra wide.bcc76978b4c6bc3daec4.jpg",
+    "static/media/baner2mobile.png": "/best-setup-online-shop/static/media/baner2mobile.4a4a8d7afd3078d2490b.png",
     "static/media/Genesis Thor 404 TKL Kailh Brown RGB.jpg": "/best-setup-online-shop/static/media/Genesis Thor 404 TKL Kailh Brown RGB.7c5ffa0375b752854413.jpg",
     "static/media/Inpiron 24 All-In-One.jpg": "/best-setup-online-shop/static/media/Inpiron 24 All-In-One.504bed404ac685a87973.jpg",
     "static/media/Alienware m18 Gaming Laptop.jpg": "/best-setup-online-shop/static/media/Alienware m18 Gaming Laptop.f0d2930dc7016167e9fd.jpg",
     "static/media/Genesis Głośniki Helium 800BT 60W 2.1 ARGB.jpg": "/best-setup-online-shop/static/media/Genesis Głośniki Helium 800BT 60W 2.1 ARGB.e91efee6a66e1a3d01c9.jpg",
     "static/media/Samsung-QE65Q77B.webp": "/best-setup-online-shop/static/media/Samsung-QE65Q77B.d12e2a3588e7ec05623f.webp",
     "static/media/Dell Alienware AW3423DWF OLED 210-BFRQ.jpg": "/best-setup-online-shop/static/media/Dell Alienware AW3423DWF OLED 210-BFRQ.a523ff6912e306a3336f.jpg",
+    "static/media/baner1mobile.png": "/best-setup-online-shop/static/media/baner1mobile.56d7dfde57d5168bd1f2.png",
     "static/media/Philips E-line 276E8VJSB.jpg": "/best-setup-online-shop/static/media/Philips E-line 276E8VJSB.a790b6dc8ad458dec04f.jpg",
     "static/media/AOC C24G2AE.jpg": "/best-setup-online-shop/static/media/AOC C24G2AE.76b8a30a956f3fe9c053.jpg",
     "static/media/Trust GXT606B JAVV RGB.jpg": "/best-setup-online-shop/static/media/Trust GXT606B JAVV RGB.e9d36d162d1ff744ad4b.jpg",
@@ -167,11 +170,11 @@
     "static/media/Silver Monkey M40 Wireless Comfort.webp": "/best-setup-online-shop/static/media/Silver Monkey M40 Wireless Comfort.4c8fe21a851e8b96f4de.webp",
     "static/media/Brother HL-B2080DW.webp": "/best-setup-online-shop/static/media/Brother HL-B2080DW.485e51b5a61220e90fb1.webp",
     "index.html": "/best-setup-online-shop/index.html",
-    "main.d414cd85.css.map": "/best-setup-online-shop/static/css/main.d414cd85.css.map",
-    "main.45753ffd.js.map": "/best-setup-online-shop/static/js/main.45753ffd.js.map"
+    "main.27535872.css.map": "/best-setup-online-shop/static/css/main.27535872.css.map",
+    "main.fa4ee2dc.js.map": "/best-setup-online-shop/static/js/main.fa4ee2dc.js.map"
   },
   "entrypoints": [
-    "static/css/main.d414cd85.css",
-    "static/js/main.45753ffd.js"
+    "static/css/main.27535872.css",
+    "static/js/main.fa4ee2dc.js"
   ]
 }
