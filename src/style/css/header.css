@@ -109,8 +109,11 @@
     align-items: flex-start;
   }
   .header-container .header-logo-bar__logo {
-    padding-left: 20px;
-    margin-bottom: 20px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
+  .header-container .header-logo-bar__button {
+    padding: 10px;
   }
   .header-container .carousel-container {
     width: 100%;
