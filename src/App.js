@@ -6,15 +6,15 @@ import Navbar from "./layouts/Navbar";
 import Page from "./layouts/Page";
 import OrderContext from "./context/OrderContext";
 import CartWindow from "./components/cartwindow/CartWindow";
-import { useState } from "react";
+// import { useState } from "react";
 import "./style/css/buttonsAnim.css";
 import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
-	const [ok, setOk] = useState(true);
-	const okBtnHandler = () => {
-		setOk(false);
-	};
+	// const [ok, setOk] = useState(true);
+	// const okBtnHandler = () => {
+	// 	setOk(false);
+	// };
 	return (
 		<Router>
 			<ScrollToTop>
