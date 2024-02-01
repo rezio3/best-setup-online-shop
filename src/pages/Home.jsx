@@ -1,8 +1,7 @@
 import React from "react";
 import "../style/css/productPages.css";
 import FilterWindow from "../components/filter/FilterWindow";
-import FilterWindowMobile from "../components/filter/FilterWindow";
-
+import FilterWindowMobile from "../components/filter/FilterWindowMobile";
 import ProductsHomePage from "../components/homepage/ProductsHomePage";
 import News from "../components/homepage/News";
 import Media from "react-media";
