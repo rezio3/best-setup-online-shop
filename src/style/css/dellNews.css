@@ -18,6 +18,7 @@
 .dell-news-buttons-container__arrow {
   font-size: 2em;
   user-select: none;
+  pointer-events: none;
 }
 
 .dell-news-scroller-container {
@@ -132,5 +133,10 @@
   }
   .dell-news-scroller-container .dell-news-header-container .dell-news-box__promo-description {
     line-height: 35px;
+  }
+}
+@media (max-width: 992px) {
+  .dell-news-scroller-container .spacer {
+    width: 50px;
   }
 }

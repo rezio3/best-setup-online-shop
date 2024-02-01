@@ -22,6 +22,7 @@
 	&__arrow {
 		font-size: 2em;
 		user-select: none;
+		pointer-events: none;
 	}
 }
 
@@ -156,6 +157,15 @@
 			.dell-news-box__promo-description {
 				line-height: 35px;
 			}
+		}
+	}
+}
+
+// RWD for mobile
+@media (max-width: 992px) {
+	.dell-news-scroller-container {
+		.spacer {
+			width: 50px;
 		}
 	}
 }
