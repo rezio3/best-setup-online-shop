@@ -31,3 +31,8 @@
     max-width: 1700px;
   }
 }
+@media (max-width: 992px) {
+  .main-product-container {
+    width: 100%;
+  }
+}

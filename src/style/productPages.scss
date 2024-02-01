@@ -25,11 +25,18 @@
 	align-items: flex-start;
 	width: 70%;
 }
+// RWD for 4k
 @media (min-width: 2000px) {
 	.navigator-description-container {
 		max-width: 1700px;
 	}
 	.main-product-container {
 		max-width: 1700px;
+	}
+}
+// RWD for mobile
+@media (max-width: 992px) {
+	.main-product-container {
+		width: 100%;
 	}
 }
