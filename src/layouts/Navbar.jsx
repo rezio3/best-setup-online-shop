@@ -8,7 +8,6 @@ const Navbar = () => {
 		<>
 			<Media query="(min-width: 992px)">
 				{(matches) => {
-					console.log(matches);
 					return matches ? <NavbarDesktop /> : <NavbarMobile />;
 				}}
 			</Media>
