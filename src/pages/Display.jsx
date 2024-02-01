@@ -1,6 +1,6 @@
 import React from "react";
 import "../style/css/productPages.css";
-import FilterWindowGeneral from "../components/filter/FilterWindowGeneral";
+import FilterWindowGeneral from "../components/filter/FilterWindow";
 import ProductsDisplayPage from "../components/displaypage/ProductsDisplayPage";
 import InstallmentOffer from "../components/InstallmentOffer";
 import QuestionsGeneral from "../components/QuestionsGeneral";

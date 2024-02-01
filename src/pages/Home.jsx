@@ -1,8 +1,11 @@
 import React from "react";
 import "../style/css/productPages.css";
-import FilterWindowGeneral from "../components/filter/FilterWindowGeneral";
+import FilterWindow from "../components/filter/FilterWindow";
+import FilterWindowMobile from "../components/filter/FilterWindow";
+
 import ProductsHomePage from "../components/homepage/ProductsHomePage";
 import News from "../components/homepage/News";
+import Media from "react-media";
 
 const Home = () => {
 	return (
@@ -15,7 +18,15 @@ const Home = () => {
 				<h2 className="navigator-description-container__header">Hot deals</h2>
 			</div>
 			<div className="main-product-container">
-				<FilterWindowGeneral page={"home-page"} />
+				<Media query="(min-width: 992px)">
+					{(matches) => {
+						return matches ? (
+							<FilterWindow page={"home-page"} />
+						) : (
+							<FilterWindowMobile page={"home-page"} />
+						);
+					}}
+				</Media>
 				<ProductsHomePage />
 			</div>
 			<News />

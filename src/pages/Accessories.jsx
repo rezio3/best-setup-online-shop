@@ -1,5 +1,5 @@
 import React from "react";
-import FilterWindowGeneral from "../components/filter/FilterWindowGeneral";
+import FilterWindowGeneral from "../components/filter/FilterWindow";
 import ProductsAccessoriesPage from "../components/accessoriespage/ProductsAccessoriesPage";
 import InstallmentOffer from "../components/InstallmentOffer";
 import QuestionsGeneral from "../components/QuestionsGeneral";
