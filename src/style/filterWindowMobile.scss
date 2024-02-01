@@ -1,0 +1,90 @@
+@import "./colors.scss";
+
+.filter-container-mobile {
+	top: 0;
+	position: sticky;
+	margin-top: 5px;
+	margin-bottom: 4px;
+	width: 20%;
+	min-width: 250px;
+	max-height: 85vh;
+	overflow-y: auto;
+	box-shadow: 0 0 10px -6px;
+
+	.filter-padding-container {
+		padding: 20px;
+		ul {
+			margin: 0;
+			padding: 0;
+			margin-top: 20px;
+			list-style: none;
+		}
+		label {
+			user-select: none;
+			font-size: 14px;
+		}
+	}
+
+	&__filter-header {
+		margin: 0;
+		font-size: 18px;
+		font-weight: 600;
+	}
+
+	&__subtitle {
+		position: relative;
+		display: block;
+		margin-bottom: 10px;
+		font-size: 14px;
+		font-weight: 700;
+	}
+
+	&__subtitle::before {
+		content: "";
+		position: absolute;
+		bottom: -4px;
+		width: 120px;
+		border-bottom: 1px solid $gray;
+	}
+
+	&__filter-checkbox-element {
+		margin-bottom: 10px;
+		display: flex;
+		align-items: center;
+	}
+
+	&__price-range-inputs-container {
+		margin-top: 15px;
+		font-size: 12px;
+
+		input[type="number"] {
+			all: unset;
+			padding: 2px;
+			width: 60px;
+			border: 1px solid $black;
+			font-size: 12px;
+		}
+	}
+
+	input[type="radio"] {
+		margin: 3px 10px 3px 4px;
+	}
+
+	&__reset-button {
+		margin-top: 10px;
+		padding: 10px 30px;
+		background: none;
+		border: none;
+		box-shadow: 0px 0px 10px -6px;
+		cursor: pointer;
+	}
+}
+
+.filter-snap-threshold {
+	height: 0;
+}
+
+.filter-sticky {
+	top: 90px;
+	position: sticky;
+}
