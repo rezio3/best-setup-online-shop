@@ -12,7 +12,6 @@ const NavbarMobile = () => {
 	const [burgerIconActive, setBurgerIconActive] = useState(false);
 	const [snapNav, setSnapNav] = useState(false);
 	const [logoNav, setLogoNav] = useState(false);
-	const [isFirstRender, setIsFirstRender] = useState(true);
 	// const [logoAnimOut, setLogoAnimOut] = useState(false);
 	const [order, setOrder] = useContext(ProductsOrderContext);
 
@@ -57,29 +56,22 @@ const NavbarMobile = () => {
 	const burgerIconHandler = () => {
 		setBurgerIconActive(!burgerIconActive);
 	};
-	console.log(burgerIconActive);
 
 	useEffect(() => {
-		if (!isFirstRender) {
-			let ctx = gsap.context(() => {
-				if (burgerIconActive) {
-					gsap.to("#navButtonsContainer", {
-						duration: 0.4,
-						x: 250,
-						ease: "power3",
-					});
-				} else {
-					gsap.from("#navButtonsContainer", {
-						duration: 0.4,
-						x: 250,
-						ease: "power3",
-					});
-				}
-			});
-			return () => ctx.revert();
+		if (burgerIconActive) {
+			burgerIconHandler();
 		}
-		setIsFirstRender(false);
-	}, [burgerIconActive]);
+	}, [location]);
+
+	useEffect(() => {
+		if (burgerIconActive) {
+			gsap.from("#navButtonsContainer", {
+				duration: 0.4,
+				x: -250,
+				ease: "power3",
+			});
+		}
+	}, [burgerIconActive, location]);
 
 	return (
 		<>
@@ -109,7 +101,11 @@ const NavbarMobile = () => {
 					</NavLink>
 				</div>
 				<ul
-					className="product-pages-buttons-container"
+					className={
+						burgerIconActive
+							? "product-pages-buttons-container"
+							: "product-pages-buttons-container product-pages-buttons-container--off"
+					}
 					id="navButtonsContainer"
 				>
 					<li
