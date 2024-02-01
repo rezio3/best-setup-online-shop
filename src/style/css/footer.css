@@ -21,6 +21,7 @@
 }
 .footer-layout .footer-upper-container__payment-methods-box {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   gap: 30px;
@@ -64,6 +65,7 @@
 .footer-layout .footer-lower-container__social-icons {
   margin-top: 15px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .footer-layout .footer-lower-container__social-icons .social-icon {

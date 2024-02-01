@@ -24,6 +24,7 @@
 
 		&__payment-methods-box {
 			display: flex;
+			flex-wrap: wrap;
 			justify-content: flex-start;
 			align-items: center;
 			gap: 30px;
@@ -68,6 +69,7 @@
 		&__social-icons {
 			margin-top: 15px;
 			display: flex;
+			flex-wrap: wrap;
 			justify-content: space-between;
 
 			.social-icon {
@@ -130,4 +132,8 @@
 			width: 80%;
 		}
 	}
+}
+
+// RWD for mobile
+@media (max-width: 992px) {
 }
