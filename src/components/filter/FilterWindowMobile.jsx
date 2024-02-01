@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef, useContext } from "react";
-import "../../style/css/filterWindow.css";
+import "../../style/css/filterWindowMobile.css";
 import "../../style/css/buttonsAnim.css";
 import FilterCheckboxElement from "./FilterCheckboxElement";
 import FilterCheckboxPriceDirection from "./FilterCheckboxPriceDirection";
@@ -11,15 +11,18 @@ import {
 	comfortPageCheckboxesNames,
 } from "../../objects/filterCheckboxes";
 import "../../style/css/scrollCustom.css";
-// import { useLocation } from "react-router-dom";
+import gsap from "gsap";
 
 import { defaultFilterSettings } from "../../context/FilterContext";
 import FilterWindowDisplayProducts from "./FilterWindowDisplayProducts";
 import FilterWindowSoundProducts from "./FilterWindowSoundProducts";
 import FilterWindowPcProducts from "./FilterWindowPcProducts";
+import { useLocation } from "react-router-dom";
 
 const FilterWindowMobile = (props) => {
+	const [isFilter, setIsFilter] = useState(false);
 	const [filter, setFilter] = useContext(FilterContext);
+	const location = useLocation();
 
 	const resetButtonHandler = () => {
 		setFilter(defaultFilterSettings);
@@ -96,36 +99,64 @@ const FilterWindowMobile = (props) => {
 			</ul>
 		) : null;
 
+	const showFilterHandler = () => {
+		setIsFilter(!isFilter);
+		console.log(isFilter);
+	};
+
+	useEffect(() => {
+		if (isFilter) {
+			gsap.from(".filter-container-mobile", {
+				duration: 0.4,
+				x: -250,
+				ease: "power3",
+			});
+		}
+	}, [isFilter, location]);
+
 	return (
 		<>
 			<div className="filter-snap-threshold" ref={filterRef}></div>
 			<div
 				className={
 					snapFilter
-						? "filter-container filter-scroll filter-sticky"
-						: "filter-container filter-scroll"
+						? "filter-container-wrapper filter-sticky"
+						: "filter-container-wrapper"
 				}
 			>
-				<div className="filter-padding-container">
-					<h5 className="filter-container__filter-header">Filter</h5>
-					{homePageCheckboxes}
-					{props.page === "display-page" ? (
-						<FilterWindowDisplayProducts />
-					) : null}
-					{props.page === "sound-page" ? <FilterWindowSoundProducts /> : null}
-					{props.page === "pc-page" ? <FilterWindowPcProducts /> : null}
-					{accessoriesPageCheckboxesType}
-					{comfortPageCheckboxesType}
-					<FilterPriceRange filterState={{ filter, setFilter }} />
-					<ul>
-						<FilterCheckboxPriceDirection filterState={{ filter, setFilter }} />
-					</ul>
-					<button
-						className="filter-container__reset-button button-anim"
-						onClick={resetButtonHandler}
-					>
-						Reset
-					</button>
+				<button className="reveal-filter-btn" onClick={showFilterHandler}>
+					Filter
+				</button>
+				<div
+					className={
+						isFilter
+							? "filter-container-mobile filter-scroll "
+							: " filter-container-mobile filter-scroll filter-container-mobile--off"
+					}
+				>
+					<div className="filter-padding-container">
+						<h5 className="filter-container__filter-header">Filter</h5>
+						{homePageCheckboxes}
+						{props.page === "display-page" ? (
+							<FilterWindowDisplayProducts />
+						) : null}
+						{props.page === "sound-page" ? <FilterWindowSoundProducts /> : null}
+						{props.page === "pc-page" ? <FilterWindowPcProducts /> : null}
+						{accessoriesPageCheckboxesType}
+						{comfortPageCheckboxesType}
+						<FilterPriceRange filterState={{ filter, setFilter }} />
+						<ul>
+							<FilterCheckboxPriceDirection
+								filterState={{ filter, setFilter }}
+							/>
+						</ul>
+						<button
+							className="filter-container__reset-button button-anim"
+							onClick={resetButtonHandler}
+						>
+							Reset
+						</button>
+					</div>
 				</div>
 			</div>
 		</>
