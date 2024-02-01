@@ -69,3 +69,16 @@
   font-weight: 200;
   user-select: none;
 }
+
+@media (max-width: 992px) {
+  .adam-audio-container .adam-audio-img-box {
+    width: 110px;
+    height: 250px;
+  }
+  .adam-audio-container .adam-audio-img-box__adam-image {
+    width: 100px;
+  }
+  .adam-audio-container .adam-audio-img-box__header {
+    font-size: 2em;
+  }
+}
