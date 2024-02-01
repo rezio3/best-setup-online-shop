@@ -120,7 +120,7 @@ const FilterWindowMobile = (props) => {
 			<div
 				className={
 					snapFilter
-						? "filter-container-wrapper filter-sticky"
+						? "filter-container-wrapper filter-sticky-mobile"
 						: "filter-container-wrapper"
 				}
 			>
