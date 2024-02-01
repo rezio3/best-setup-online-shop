@@ -79,16 +79,17 @@
 @media (max-width: 992px) {
 	.adam-audio-container {
 		.adam-audio-img-box {
-			width: 110px;
+			width: 80px;
 			height: 250px;
 
 			&__adam-image {
-				width: 100px;
+				width: 70px;
 			}
 			&__header {
 				font-size: 2em;
 			}
 			&__description {
+				font-size: 0.7em;
 			}
 		}
 	}
