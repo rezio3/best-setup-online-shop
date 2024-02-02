@@ -12,12 +12,13 @@ import {
 } from "../../objects/filterCheckboxes";
 import "../../style/css/scrollCustom.css";
 import gsap from "gsap";
-
 import { defaultFilterSettings } from "../../context/FilterContext";
 import FilterWindowDisplayProducts from "./FilterWindowDisplayProducts";
 import FilterWindowSoundProducts from "./FilterWindowSoundProducts";
 import FilterWindowPcProducts from "./FilterWindowPcProducts";
 import { useLocation } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const FilterWindowMobile = (props) => {
 	const [isFilter, setIsFilter] = useState(false);
@@ -134,6 +135,9 @@ const FilterWindowMobile = (props) => {
 							: " filter-container-mobile filter-scroll filter-container-mobile--off"
 					}
 				>
+					<button onClick={showFilterHandler} className="XIcon-btn">
+						<FontAwesomeIcon icon={faXmark} className="XIcon" />
+					</button>
 					<div className="filter-padding-container">
 						<h5 className="filter-container__filter-header">Filter</h5>
 						{homePageCheckboxes}
