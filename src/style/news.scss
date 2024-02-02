@@ -30,3 +30,12 @@
 		}
 	}
 }
+// RWD for mobile
+@media (max-width: 992px) {
+	.news-section {
+		width: 98%;
+		.news-container {
+			width: 95%;
+		}
+	}
+}

@@ -21,3 +21,11 @@
     width: 80%;
   }
 }
+@media (max-width: 992px) {
+  .news-section {
+    width: 98%;
+  }
+  .news-section .news-container {
+    width: 95%;
+  }
+}
