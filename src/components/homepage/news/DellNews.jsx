@@ -29,8 +29,7 @@ const DellNews = () => {
 			name: "Alienware 34 Curved QD-OLED Gaming Monitor - AW3424DWF",
 			description: `Experience Marvel’s Spider-Man 2 with PS5 innovations. Feel the
 			force of web-swinging with adaptive triggers, while haptic
-			feedback responds to Peter Parker’s new symbiote abilities and
-			Miles Morales’ evolved bio-electric skills.`,
+			feedback responds to Peter Parker’s new symbiote abilities.`,
 			img: dell2,
 			id: 2,
 		},
