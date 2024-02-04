@@ -1,8 +1,10 @@
 import React from "react";
-import FilterWindowGeneral from "../components/filter/FilterWindow";
+import FilterWindow from "../components/filter/FilterWindow";
+import FilterWindowMobile from "../components/filter/FilterWindowMobile";
 import ProductsSoundPage from "../components/soundpage/ProductsSoundPage";
 import InstallmentOffer from "../components/InstallmentOffer";
 import QuestionsGeneral from "../components/QuestionsGeneral";
+import Media from "react-media";
 
 const Sound = () => {
 	return (
@@ -15,7 +17,15 @@ const Sound = () => {
 				<h2 className="navigator-description-container__header">Sound</h2>
 			</div>
 			<div className="main-product-container">
-				<FilterWindowGeneral page={"sound-page"} />
+				<Media query="(min-width: 992px)">
+					{(matches) => {
+						return matches ? (
+							<FilterWindow page={"sound-page"} />
+						) : (
+							<FilterWindowMobile page={"sound-page"} />
+						);
+					}}
+				</Media>
 				<ProductsSoundPage />
 			</div>
 			<InstallmentOffer />
