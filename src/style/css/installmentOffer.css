@@ -60,3 +60,28 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
+@media (max-width: 992px) {
+  .installment-offer-wrapper {
+    margin: 150px 0 40px;
+    width: 90%;
+    max-width: 90%;
+  }
+  .installment-offer-wrapper .installment-offer-section {
+    padding: 60px 40px;
+  }
+  .installment-offer-wrapper .installment-offer-section__header {
+    font-size: 1.4em;
+  }
+  .installment-offer-wrapper .installment-offer-section .lower-header {
+    font-size: 0.9em;
+  }
+  .installment-offer-wrapper .zero-percentage-img {
+    position: absolute;
+    right: 0;
+    top: 45%;
+    left: -5%;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+}
