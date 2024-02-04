@@ -122,12 +122,14 @@
 @media (max-width: 992px) {
   .footer-layout .payments-span {
     width: 85%;
+    margin-bottom: 20px;
   }
   .footer-layout .footer-upper-container {
     width: 85%;
   }
   .footer-layout .footer-lower-container {
-    width: 85%;
+    padding: 80px 0 0;
+    width: 90%;
   }
   .footer-layout .footer-lower-container__box {
     padding: 0 10px;

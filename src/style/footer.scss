@@ -139,13 +139,15 @@
 	.footer-layout {
 		.payments-span {
 			width: 85%;
+			margin-bottom: 20px;
 		}
 		.footer-upper-container {
 			width: 85%;
 		}
 
 		.footer-lower-container {
-			width: 85%;
+			padding: 80px 0 0;
+			width: 90%;
 
 			&__box {
 				padding: 0 10px;
