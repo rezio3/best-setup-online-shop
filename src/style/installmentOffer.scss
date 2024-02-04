@@ -81,12 +81,18 @@
 			.lower-header {
 				font-size: 0.9em;
 			}
+			ul {
+				li {
+					font-size: 0.8em;
+				}
+			}
 		}
 		.zero-percentage-img {
 			position: absolute;
 			right: 0;
-			top: 45%;
-			left: -5%;
+			top: 42%;
+			left: -10%;
+			scale: 70%;
 			transform: translateY(-50%);
 			z-index: -1;
 		}
