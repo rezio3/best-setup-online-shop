@@ -26,7 +26,6 @@ const Comfort = () => {
 						);
 					}}
 				</Media>
-
 				<ProductsComfortPage />
 			</div>
 			<InstallmentOffer />
