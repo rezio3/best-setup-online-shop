@@ -136,4 +136,40 @@
 
 // RWD for mobile
 @media (max-width: 992px) {
+	.footer-layout {
+		.payments-span {
+			width: 85%;
+		}
+		.footer-upper-container {
+			width: 85%;
+		}
+
+		.footer-lower-container {
+			width: 85%;
+
+			&__box {
+				padding: 0 10px;
+			}
+			&__link {
+				font-size: 0.8em;
+			}
+			&__social-icons {
+				margin-top: 15px;
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: flex-start;
+
+				.social-icon {
+					padding: 10px 5px;
+					font-size: 18px;
+				}
+				.social-icon:first-child {
+					padding-left: 5px;
+				}
+			}
+		}
+		.copyright-container {
+			width: 85%;
+		}
+	}
 }
