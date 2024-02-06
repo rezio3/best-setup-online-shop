@@ -68,36 +68,38 @@ const DisplayProduct = (props) => {
 					src={singleProduct.img}
 					className="product-header-container__product-image"
 				/>
-				<ProductDetailsToDisplay />
-				<div className="price-and-buy-box-wrapper">
-					<div className="product-header-container__price-and-buy-box">
-						<div className="product-header-container__price-box">
-							<span>
-								<b>Price:</b>
-							</span>
-							<span>{singleProduct.price.toFixed(2)} $</span>
+				<div className="product-header-container__details-container">
+					<ProductDetailsToDisplay />
+					<div className="price-and-buy-box-wrapper">
+						<div className="product-header-container__price-and-buy-box">
+							<div className="product-header-container__price-box">
+								<span>
+									<b>Price:</b>
+								</span>
+								<span>{singleProduct.price.toFixed(2)} $</span>
+							</div>
+							<div className="product-header-container__price-box">
+								<span>
+									<b>Quantity:</b>
+								</span>
+								<QuantityBox
+									directItem={directItem}
+									page="product-page"
+									setDirectItem={setDirectItem}
+								/>
+							</div>
+							<button
+								className="product-header-container__add-to-cart-btn button-anim"
+								onClick={addToCartHandler}
+							>
+								Add to cart
+							</button>
 						</div>
-						<div className="product-header-container__price-box">
-							<span>
-								<b>Quantity:</b>
-							</span>
-							<QuantityBox
-								directItem={directItem}
-								page="product-page"
-								setDirectItem={setDirectItem}
-							/>
-						</div>
-						<button
-							className="product-header-container__add-to-cart-btn button-anim"
-							onClick={addToCartHandler}
-						>
-							Add to cart
-						</button>
+						<span className="product-header-container__under-price-box-span">
+							Complete the order - adding products to the cart <br />
+							does not reserve them.
+						</span>
 					</div>
-					<span className="product-header-container__under-price-box-span">
-						Complete the order - adding products to the cart <br />
-						does not reserve them.
-					</span>
 				</div>
 			</div>
 			<InstallmentOffer />
