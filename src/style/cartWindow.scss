@@ -203,3 +203,57 @@
 		scale: 100%;
 	}
 }
+
+// RWD for mobile
+@media (max-width: 992px) {
+	.cart-window-background {
+		.cart-window-wrapper {
+			width: 95%;
+		}
+	}
+	.cart-window-container {
+		padding: 20px;
+
+		&__item-box {
+			padding: 10px 0;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			border-bottom: 1px solid $gray;
+		}
+
+		&__item-img {
+			margin-right: 5px;
+			width: 50px;
+		}
+		&__item-name {
+			font-size: 0.7em;
+		}
+		&__item-price {
+			margin-left: auto;
+			min-width: fit-content;
+			font-weight: 700;
+			font-size: 0.75em;
+		}
+
+		&__empty-cart-notification {
+			font-size: 1.2em;
+		}
+		&__trash-icon {
+			padding: 5px;
+		}
+
+		&__total-price-span {
+			font-size: 0.9em;
+		}
+		&__total-price {
+			font-size: 1em;
+		}
+		&__checkoutBtn {
+			font-size: 1em;
+		}
+	}
+	.quantity-box {
+		margin-right: 5px;
+	}
+}
