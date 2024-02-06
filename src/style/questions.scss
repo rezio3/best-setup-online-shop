@@ -45,7 +45,30 @@
 			font-size: 14px;
 		}
 	}
-	// .single-question-container:hover {
-	// 	background-color: $lightblue;
-	// }
+}
+
+// RWD for mobile
+@media (max-width: 992px) {
+	.questions-wrapper {
+		margin-top: 50px;
+		margin-bottom: 100px;
+		width: 85%;
+		&__header {
+			text-align: center;
+			font-size: 28px;
+		}
+
+		.single-question-container {
+			width: 80%;
+			&__header {
+				margin: 20px 0;
+				text-align: start;
+				font-weight: 400;
+				font-size: 16px;
+			}
+			&__answer {
+				font-size: 12px;
+			}
+		}
+	}
 }
