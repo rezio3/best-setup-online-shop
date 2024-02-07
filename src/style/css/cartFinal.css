@@ -159,6 +159,16 @@
     margin-left: 10px;
     margin-right: 5px;
   }
+  .final-cart-wrapper .cart-inner-wrapper .cart-container .cart-box .item-box-final__info-box {
+    top: -70px;
+    left: 30px;
+    z-index: 2;
+  }
+  .final-cart-wrapper .cart-inner-wrapper .cart-container .cart-box .item-box-final__info {
+    padding: 10px;
+    margin: 0;
+    font-size: 0.75em;
+  }
   .final-cart-wrapper a {
     width: fit-content;
   }
