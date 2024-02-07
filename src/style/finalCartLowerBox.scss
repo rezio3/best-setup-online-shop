@@ -123,11 +123,40 @@
 		}
 	}
 }
+// RWD for 4k
 @media (min-width: 2000px) {
 	.final-cart-lower-box-wrapper {
 		max-width: 1700px;
+	}
+}
+
+// RWD for mobile
+@media (max-width: 992px) {
+	.final-cart-lower-box-wrapper {
+		margin-top: 50px;
+		margin-bottom: 100px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
 		.guarantee-container {
-			.recommended-products-container {
+			display: flex;
+			justify-content: space-evenly;
+
+			flex-wrap: wrap;
+			&__box {
+				margin-bottom: 15px;
+				flex-direction: column;
+				align-items: center;
+			}
+			&__icon-img {
+				height: auto;
+				width: 40px;
+				margin-right: 0px;
+				margin-bottom: 5px;
+			}
+
+			&__description-container {
+				align-items: center;
 			}
 		}
 	}

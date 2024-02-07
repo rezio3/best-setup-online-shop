@@ -31,9 +31,9 @@ const FinalCartLowerBox = () => {
 
 	const sideScrollHandler = (e) => {
 		if (e.target.className.includes("left")) {
-			carouselRef.current.scrollLeft -= 220;
+			carouselRef.current.scrollLeft -= 230;
 		} else {
-			carouselRef.current.scrollLeft += 220;
+			carouselRef.current.scrollLeft += 230;
 		}
 	};
 
@@ -63,7 +63,10 @@ const FinalCartLowerBox = () => {
 						>
 							<FontAwesomeIcon icon={faAngleLeft} className="arrow-icon" />
 						</button>
-						<div className="recommended-products-carousel" ref={carouselRef}>
+						<div
+							className="recommended-products-carousel snaps-inline"
+							ref={carouselRef}
+						>
 							{recommendArr.map((e) => (
 								<RecommendedProduct product={e} key={e.product} />
 							))}
