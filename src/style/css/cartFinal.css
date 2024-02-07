@@ -120,6 +120,7 @@
 @media (max-width: 992px) {
   .final-cart-wrapper {
     width: 100%;
+    align-items: center;
   }
   .final-cart-wrapper .cart-inner-wrapper {
     width: 100%;

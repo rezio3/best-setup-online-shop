@@ -29,4 +29,7 @@
     width: 90%;
     max-width: 100%;
   }
+  .cart-page-wrapper__back-to-shopping-btn {
+    margin: 20px 0 0 0;
+  }
 }
