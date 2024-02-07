@@ -24,3 +24,9 @@
     max-width: 85%;
   }
 }
+@media (max-width: 992px) {
+  .cart-page-wrapper {
+    width: 90%;
+    max-width: 100%;
+  }
+}

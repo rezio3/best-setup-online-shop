@@ -20,16 +20,18 @@
 	}
 }
 
-// RWD for 4k
-@media (min-width: 2000px) {
-	.cart-page-wrapper {
-	}
-}
-
 // RWD for 150% display scale
 @media (max-width: 1300px) {
 	.cart-page-wrapper {
 		width: 85%;
 		max-width: 85%;
+	}
+}
+
+// RWD for mobile
+@media (max-width: 992px) {
+	.cart-page-wrapper {
+		width: 90%;
+		max-width: 100%;
 	}
 }

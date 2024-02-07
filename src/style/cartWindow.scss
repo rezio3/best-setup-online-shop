@@ -231,7 +231,8 @@
 		}
 		&__item-price {
 			margin-left: auto;
-			min-width: fit-content;
+			min-width: 45px;
+			text-align: end;
 			font-weight: 700;
 			font-size: 0.75em;
 		}

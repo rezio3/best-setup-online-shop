@@ -142,3 +142,54 @@
 		}
 	}
 }
+
+// RWD for mobile
+@media (max-width: 992px) {
+	.final-cart-wrapper {
+		width: 100%;
+		.cart-inner-wrapper {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: center;
+			.cart-container {
+				width: 100%;
+				margin-bottom: 30px;
+				&__header-box {
+					padding: 0;
+				}
+				.cart-box {
+					.item-box-final {
+						width: 95%;
+						flex-wrap: wrap;
+						justify-content: flex-start;
+
+						&__item-img {
+							margin-left: 0%;
+							margin-bottom: 10px;
+						}
+						&__item-name {
+							margin-right: 10px;
+						}
+
+						&__item-price {
+							text-align: end;
+							font-size: 0.7em;
+							margin-left: 5px;
+							width: 45px;
+							min-width: 45px;
+						}
+						&__info-icon-container {
+							margin-left: 10px;
+							margin-right: 5px;
+						}
+					}
+				}
+			}
+		}
+		a {
+			width: fit-content;
+		}
+	}
+}

@@ -48,7 +48,9 @@ const ItemInCartFinal = (props) => {
 					src={props.image}
 					className="cart-window-container__item-img item-box-final__item-img"
 				/>
-				<span className="cart-window-container__item-name">{props.name}</span>
+				<span className="cart-window-container__item-name item-box-final__item-name">
+					{props.name}
+				</span>
 				<QuantityBox directItem={directItem} objIndex={objIndex} />
 
 				<span className="cart-window-container__item-price item-box-final__item-price">
